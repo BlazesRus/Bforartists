@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blentranslation\msgfmt\msgfmt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\blender\blentranslation\msgfmt\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EF281415-9C27-31F6-BC52-8296F3C94897}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

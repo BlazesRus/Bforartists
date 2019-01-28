@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_batch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_element.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_matrix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_offscreen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_select.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_shader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_types.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_vertex_buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_vertex_format.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_batch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_element.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_offscreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_select.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_vertex_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\gpu_py_vertex_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\blender\python\gpu\CMakeLists.txt">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0A083356-E22C-3FF4-89E7-40C1C36442D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EF281415-9C27-31F6-BC52-8296F3C94897}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\source\bake_api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\source\external_engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\source\imagetexture.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\source\initrender.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\source\multires_bake.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\source\pipeline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\source\pointdensity.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\source\render_result.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\source\render_texture.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\source\zbuf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\render\extern\include\RE_bake.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\render\extern\include\RE_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\render\extern\include\RE_multires_bake.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\render\extern\include\RE_pipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\render\extern\include\RE_render_ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\render\extern\include\RE_shader_ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\include\initrender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\include\render_result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\include\render_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\include\renderpipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\include\texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\render\intern\include\zbuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\blender\render\CMakeLists.txt">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0A083356-E22C-3FF4-89E7-40C1C36442D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EF281415-9C27-31F6-BC52-8296F3C94897}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/BlenderStuff/BlenderScope/extern/audaspace/CMakeLists.txt
+C:/BlenderStuff/BlenderScope/extern/audaspace/blender_config.cmake
+C:/BlenderStuff/BlenderScope/extern/audaspace/config/Audaspace.h.in
+C:/BlenderStuff/BlenderScope/extern/audaspace/src/plugin/PluginManagerWindows.cpp.in
+C:/UserFiles/SubversionTools/CMake/share/cmake-3.13/Modules/CMakeDependentOption.cmake

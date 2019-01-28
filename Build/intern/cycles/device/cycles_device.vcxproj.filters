@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_cpu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_cuda.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_denoising.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_multi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_opencl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_split_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_task.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\opencl\opencl_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\opencl\opencl_mega.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\opencl\opencl_split.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\opencl\opencl_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\opencl\memory_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\opencl\opencl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\opencl\memory_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_denoising.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_intern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_network.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_split_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\device_task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\intern\cycles\device\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0A083356-E22C-3FF4-89E7-40C1C36442D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EF281415-9C27-31F6-BC52-8296F3C94897}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

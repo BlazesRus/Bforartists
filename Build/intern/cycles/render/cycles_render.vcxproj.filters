@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\attribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\background.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\bake.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\buffers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\constant_fold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\coverage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\film.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\integrator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\mesh_displace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\mesh_subdivision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\mesh_volume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\nodes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\osl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\particles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\curves.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\sobol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\svm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\tile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\attribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\bake.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\background.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\buffers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\constant_fold.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\coverage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\film.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\integrator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\nodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\osl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\particles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\curves.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\sobol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\stats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\svm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\tables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\tile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\intern\cycles\render\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0A083356-E22C-3FF4-89E7-40C1C36442D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EF281415-9C27-31F6-BC52-8296F3C94897}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8806136E-375C-3651-8778-D8DCC8DCD354}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>makesrna</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">makesrna.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">makesrna</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">makesrna.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">makesrna</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">makesrna.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">makesrna</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">makesrna.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">makesrna</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800;4828;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4133;4431</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;_DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_CYCLES;WITH_PYTHON;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AUDASPACE;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_ALEMBIC;WITH_BULLET;WITH_FREESTYLE;WITH_OPENSUBDIV;WITH_INPUT_NDOF;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_CYCLES;WITH_PYTHON;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AUDASPACE;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_ALEMBIC;WITH_BULLET;WITH_FREESTYLE;WITH_OPENSUBDIV;WITH_INPUT_NDOF;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\Debug\bf_dna.lib;..\..\..\..\lib\Debug\bf_dna_blenlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4049 /ignore:4217 /ignore:4221 /IGNORE:4099</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcmrt.lib;msvcurt.lib;msvcrtd.lib;libcmt.lib;libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/BlenderStuff/BlenderScope/Build/bin/Debug/makesrna.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/BlenderStuff/BlenderScope/Build/bin/Debug/makesrna.pdb</ProgramDataBaseFile>
+      <StackReserveSize>2097152</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800;4828;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4133;4431</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_CYCLES;WITH_PYTHON;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AUDASPACE;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_ALEMBIC;WITH_BULLET;WITH_FREESTYLE;WITH_OPENSUBDIV;WITH_INPUT_NDOF;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_CYCLES;WITH_PYTHON;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AUDASPACE;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_ALEMBIC;WITH_BULLET;WITH_FREESTYLE;WITH_OPENSUBDIV;WITH_INPUT_NDOF;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\Release\bf_dna.lib;..\..\..\..\lib\Release\bf_dna_blenlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4049 /ignore:4217 /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcmrt.lib;msvcurt.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/BlenderStuff/BlenderScope/Build/bin/Release/makesrna.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/BlenderStuff/BlenderScope/Build/bin/Release/makesrna.pdb</ProgramDataBaseFile>
+      <StackReserveSize>2097152</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800;4828;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4133;4431</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_CYCLES;WITH_PYTHON;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AUDASPACE;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_ALEMBIC;WITH_BULLET;WITH_FREESTYLE;WITH_OPENSUBDIV;WITH_INPUT_NDOF;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_CYCLES;WITH_PYTHON;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AUDASPACE;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_ALEMBIC;WITH_BULLET;WITH_FREESTYLE;WITH_OPENSUBDIV;WITH_INPUT_NDOF;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\MinSizeRel\bf_dna.lib;..\..\..\..\lib\MinSizeRel\bf_dna_blenlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4049 /ignore:4217 /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcmrt.lib;msvcurt.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/BlenderStuff/BlenderScope/Build/bin/MinSizeRel/makesrna.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/BlenderStuff/BlenderScope/Build/bin/MinSizeRel/makesrna.pdb</ProgramDataBaseFile>
+      <StackReserveSize>2097152</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800;4828;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4133;4431</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_CYCLES;WITH_PYTHON;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AUDASPACE;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_ALEMBIC;WITH_BULLET;WITH_FREESTYLE;WITH_OPENSUBDIV;WITH_INPUT_NDOF;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_CYCLES;WITH_PYTHON;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AUDASPACE;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_ALEMBIC;WITH_BULLET;WITH_FREESTYLE;WITH_OPENSUBDIV;WITH_INPUT_NDOF;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\..\lib\RelWithDebInfo\bf_dna.lib;..\..\..\..\lib\RelWithDebInfo\bf_dna_blenlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4049 /ignore:4217 /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcmrt.lib;msvcurt.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/BlenderStuff/BlenderScope/Build/bin/RelWithDebInfo/makesrna.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/BlenderStuff/BlenderScope/Build/bin/RelWithDebInfo/makesrna.pdb</ProgramDataBaseFile>
+      <StackReserveSize>2097152</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/makesrna/intern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/source/blender/makesrna/intern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/source/blender/makesrna/intern/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\makesrna\intern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/makesrna/intern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/source/blender/makesrna/intern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/source/blender/makesrna/intern/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\makesrna\intern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/makesrna/intern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/source/blender/makesrna/intern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/source/blender/makesrna/intern/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\makesrna\intern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/makesrna/intern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/source/blender/makesrna/intern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/source/blender/makesrna/intern/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\makesrna\intern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\makesrna.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_define.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_ID.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_action.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_animation.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_animviz.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_armature.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_boid.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_brush.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_cachefile.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_camera.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_cloth.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_collection.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_color.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_constraint.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_context.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_curve.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_depsgraph.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_dynamicpaint.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_fcurve.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_fluidsim.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_gpencil.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_gpencil_modifier.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_image.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_key.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_lamp.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_lattice.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_layer.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_lightprobe.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_linestyle.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_main.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_mask.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_material.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_mesh.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_meta.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_modifier.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_movieclip.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_nla.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_nodetree.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_object.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_object_force.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_packedfile.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_palette.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_particle.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_pose.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_render.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_rigidbody.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_rna.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_scene.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_screen.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_sculpt_paint.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_sequencer.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_shader_fx.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_smoke.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_sound.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_space.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_speaker.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_test.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_text.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_texture.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_timeline.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_tracking.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_ui.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_userdef.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_vfont.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_wm.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_wm_gizmo.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_workspace.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_world.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_action_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_animation_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_armature_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_camera_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_curve_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_fcurve_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_image_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_lattice_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_main_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_material_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_mesh_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_meta_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_object_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_pose_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_scene_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_sequencer_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_sound_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_space_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_text_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_texture_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_ui_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_vfont_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_wm_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_wm_gizmo_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\intern\rna_workspace_api.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\guardedalloc\intern\mallocn.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\guardedalloc\intern\mallocn_guarded_impl.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\guardedalloc\intern\mallocn_lockfree_impl.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\guardedalloc\intern\mmap_win.c" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\RNA_access.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\RNA_define.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\RNA_documentation.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\RNA_enum_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesrna\RNA_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_ID.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_action_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_anim_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_armature_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_boid_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_brush_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_cachefile_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_camera_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_cloth_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_collection_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_color_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_constraint_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_curve_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_customdata_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_defs.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_documentation.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_dynamicpaint_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_effect_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_fileglobal_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_freestyle_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_genfile.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_gpencil_modifier_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_gpencil_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_gpu_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_image_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_ipo_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_key_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_lamp_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_lattice_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_layer_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_lightprobe_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_linestyle_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_listBase.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_mask_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_material_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_mesh_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_meshdata_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_meta_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_modifier_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_movieclip_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_nla_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_node_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_object_enums.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_object_fluidsim_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_object_force_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_object_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_outliner_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_packedFile_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_particle_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_rigidbody_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_scene_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_screen_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_sdna_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_sequence_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_shader_fx_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_smoke_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_sound_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_space_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_speaker_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_text_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_texture_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_tracking_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_userdef_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_vec_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_vfont_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_view2d_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_view3d_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_windowmanager_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_workspace_types.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_world_types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\ZERO_CHECK.vcxproj">
+      <Project>{D519D051-5A79-323C-9110-7C69506A4014}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\bf_dna.vcxproj">
+      <Project>{ED6B6FC4-6016-3240-A9FF-39F42F200368}</Project>
+      <Name>bf_dna</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\bf_dna_blenlib.vcxproj">
+      <Project>{C7023429-1766-34F8-910E-C6CD5DA052AD}</Project>
+      <Name>bf_dna_blenlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

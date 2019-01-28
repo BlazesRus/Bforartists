@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/BlenderStuff/BlenderScope/intern/cycles/CMakeLists.txt
+C:/BlenderStuff/BlenderScope/intern/cycles/cmake/external_libs.cmake
+C:/BlenderStuff/BlenderScope/intern/cycles/cmake/macros.cmake
+C:/UserFiles/SubversionTools/CMake/share/cmake-3.13/Modules/FindCUDA.cmake
+C:/UserFiles/SubversionTools/CMake/share/cmake-3.13/Modules/FindCUDA/select_compute_arch.cmake
+C:/UserFiles/SubversionTools/CMake/share/cmake-3.13/Modules/FindPackageHandleStandardArgs.cmake
+C:/UserFiles/SubversionTools/CMake/share/cmake-3.13/Modules/FindPackageMessage.cmake

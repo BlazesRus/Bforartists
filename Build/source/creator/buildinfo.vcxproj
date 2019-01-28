@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{82A45203-3BE3-3F42-AE38-C1DBC5CD8AF8}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>buildinfo</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\Build\source\creator;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\Build\source\creator;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\Build\source\creator;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\freestyle;C:\BlenderStuff\BlenderScope\Build\source\creator;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\buildinfo.h_fake.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating buildinfo.h_fake, buildinfo.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -DSOURCE_DIR=C:/BlenderStuff/BlenderScope -DBUILD_DATE= -DBUILD_TIME= -P C:/BlenderStuff/BlenderScope/build_files/cmake/buildinfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/Build/CMakeFiles/43bfc74f8f54f872f5a21ed5e55b8bb6/buildinfo.h_fake.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.h_fake;C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating buildinfo.h_fake, buildinfo.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -DSOURCE_DIR=C:/BlenderStuff/BlenderScope -DBUILD_DATE= -DBUILD_TIME= -P C:/BlenderStuff/BlenderScope/build_files/cmake/buildinfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/Build/CMakeFiles/43bfc74f8f54f872f5a21ed5e55b8bb6/buildinfo.h_fake.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.h_fake;C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating buildinfo.h_fake, buildinfo.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -DSOURCE_DIR=C:/BlenderStuff/BlenderScope -DBUILD_DATE= -DBUILD_TIME= -P C:/BlenderStuff/BlenderScope/build_files/cmake/buildinfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/Build/CMakeFiles/43bfc74f8f54f872f5a21ed5e55b8bb6/buildinfo.h_fake.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.h_fake;C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating buildinfo.h_fake, buildinfo.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -DSOURCE_DIR=C:/BlenderStuff/BlenderScope -DBUILD_DATE= -DBUILD_TIME= -P C:/BlenderStuff/BlenderScope/build_files/cmake/buildinfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/Build/CMakeFiles/43bfc74f8f54f872f5a21ed5e55b8bb6/buildinfo.h_fake.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.h_fake;C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\0d2338e98360316e3a60830504742088\buildinfo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/Build/CMakeFiles/0d2338e98360316e3a60830504742088/buildinfo.rule;C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.h_fake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\source\creator\CMakeFiles\buildinfo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/Build/CMakeFiles/0d2338e98360316e3a60830504742088/buildinfo.rule;C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.h_fake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\source\creator\CMakeFiles\buildinfo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/Build/CMakeFiles/0d2338e98360316e3a60830504742088/buildinfo.rule;C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.h_fake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\source\creator\CMakeFiles\buildinfo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/Build/CMakeFiles/0d2338e98360316e3a60830504742088/buildinfo.rule;C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.h_fake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\source\creator\CMakeFiles\buildinfo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\creator\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/creator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/source/creator/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/source/creator/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\creator\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\creator\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\source\creator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/creator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/source/creator/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/source/creator/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\creator\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\creator\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\source\creator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/creator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/source/creator/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/source/creator/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\creator\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\creator\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\source\creator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/creator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/source/creator/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/source/creator/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\creator\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\creator\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\source\creator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\BlenderStuff\BlenderScope\Build\source\creator\CMakeFiles\buildinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\ZERO_CHECK.vcxproj">
+      <Project>{D519D051-5A79-323C-9110-7C69506A4014}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

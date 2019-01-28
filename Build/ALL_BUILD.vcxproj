@@ -1,0 +1,971 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1757ED57-49FD-3F00-A14A-00DA3B57A022}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/CMakeLists.txt;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeCCompiler.cmake;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeCXXCompiler.cmake;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeRCCompiler.cmake;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeSystem.cmake;C:\BlenderStuff\BlenderScope\CMakeLists.txt;C:\BlenderStuff\BlenderScope\build_files\cmake\macros.cmake;C:\BlenderStuff\BlenderScope\build_files\cmake\packaging.cmake;C:\BlenderStuff\BlenderScope\build_files\cmake\platform\platform_win32.cmake;C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_blender_version.h;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeParseImplicitLinkInfo.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CPack.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CPackComponent.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CheckCSourceRuns.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindGit.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindOpenMP.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\InstallRequiredSystemLibraries.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Templates\CPackConfig.cmake.in;C:\BlenderStuff\BlenderScope\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/CMakeLists.txt;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeCCompiler.cmake;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeCXXCompiler.cmake;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeRCCompiler.cmake;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeSystem.cmake;C:\BlenderStuff\BlenderScope\CMakeLists.txt;C:\BlenderStuff\BlenderScope\build_files\cmake\macros.cmake;C:\BlenderStuff\BlenderScope\build_files\cmake\packaging.cmake;C:\BlenderStuff\BlenderScope\build_files\cmake\platform\platform_win32.cmake;C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_blender_version.h;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeParseImplicitLinkInfo.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CPack.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CPackComponent.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CheckCSourceRuns.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindGit.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindOpenMP.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\InstallRequiredSystemLibraries.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Templates\CPackConfig.cmake.in;C:\BlenderStuff\BlenderScope\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/CMakeLists.txt;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeCCompiler.cmake;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeCXXCompiler.cmake;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeRCCompiler.cmake;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeSystem.cmake;C:\BlenderStuff\BlenderScope\CMakeLists.txt;C:\BlenderStuff\BlenderScope\build_files\cmake\macros.cmake;C:\BlenderStuff\BlenderScope\build_files\cmake\packaging.cmake;C:\BlenderStuff\BlenderScope\build_files\cmake\platform\platform_win32.cmake;C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_blender_version.h;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeParseImplicitLinkInfo.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CPack.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CPackComponent.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CheckCSourceRuns.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindGit.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindOpenMP.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\InstallRequiredSystemLibraries.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Templates\CPackConfig.cmake.in;C:\BlenderStuff\BlenderScope\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/CMakeLists.txt;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeCCompiler.cmake;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeCXXCompiler.cmake;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeRCCompiler.cmake;C:\BlenderStuff\BlenderScope\Build\CMakeFiles\3.13.3\CMakeSystem.cmake;C:\BlenderStuff\BlenderScope\CMakeLists.txt;C:\BlenderStuff\BlenderScope\build_files\cmake\macros.cmake;C:\BlenderStuff\BlenderScope\build_files\cmake\packaging.cmake;C:\BlenderStuff\BlenderScope\build_files\cmake\platform\platform_win32.cmake;C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_blender_version.h;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeParseImplicitLinkInfo.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CPack.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CPackComponent.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CheckCSourceRuns.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindGit.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindOpenGL.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindOpenMP.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\InstallRequiredSystemLibraries.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Templates\CPackConfig.cmake.in;C:\BlenderStuff\BlenderScope\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\ZERO_CHECK.vcxproj">
+      <Project>{D519D051-5A79-323C-9110-7C69506A4014}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\audaspace\audaspace.vcxproj">
+      <Project>{09E00FB2-0AFD-377C-BAE9-16F5F7C95874}</Project>
+      <Name>audaspace</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\audaspace\audaspace-py.vcxproj">
+      <Project>{5CAAEE9B-4E58-34A8-8CF1-533854F3420E}</Project>
+      <Name>audaspace-py</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\alembic\bf_alembic.vcxproj">
+      <Project>{EDEC1268-B3C7-3ABB-A0C6-F8B841A08709}</Project>
+      <Name>bf_alembic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\avi\bf_avi.vcxproj">
+      <Project>{458175EB-35B8-36EF-B81D-7CA10C6B54BF}</Project>
+      <Name>bf_avi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\blenfont\bf_blenfont.vcxproj">
+      <Project>{A8CBEB73-3231-3109-894E-8546146C8E8D}</Project>
+      <Name>bf_blenfont</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\blenkernel\bf_blenkernel.vcxproj">
+      <Project>{1EF952C6-4FF0-3619-B5B7-EA69D9BAE17F}</Project>
+      <Name>bf_blenkernel</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\blenlib\bf_blenlib.vcxproj">
+      <Project>{08BEE6A3-0A31-3E48-AE03-A919FC4DCC6F}</Project>
+      <Name>bf_blenlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\blenloader\bf_blenloader.vcxproj">
+      <Project>{B5C27F7F-8DAE-37E4-B829-EDC31BC43DF1}</Project>
+      <Name>bf_blenloader</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\blentranslation\bf_blentranslation.vcxproj">
+      <Project>{E5418322-F0F3-35D9-A524-C1634831BD53}</Project>
+      <Name>bf_blentranslation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\bmesh\bf_bmesh.vcxproj">
+      <Project>{B6468624-C798-3876-AF96-DE84F30DBF26}</Project>
+      <Name>bf_bmesh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\collada\bf_collada.vcxproj">
+      <Project>{E6CB470E-95ED-372A-92E7-7EC224BA177D}</Project>
+      <Name>bf_collada</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\compositor\bf_compositor.vcxproj">
+      <Project>{CA3EEBF9-64FE-344D-B3A5-0D936154C6D8}</Project>
+      <Name>bf_compositor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\depsgraph\bf_depsgraph.vcxproj">
+      <Project>{D1671EB7-2ED6-3494-9616-147AF9FE8618}</Project>
+      <Name>bf_depsgraph</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\bf_dna.vcxproj">
+      <Project>{ED6B6FC4-6016-3240-A9FF-39F42F200368}</Project>
+      <Name>bf_dna</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\bf_dna_blenlib.vcxproj">
+      <Project>{C7023429-1766-34F8-910E-C6CD5DA052AD}</Project>
+      <Name>bf_dna_blenlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\draw\bf_draw.vcxproj">
+      <Project>{BE2B545C-5A6B-31D8-8BB7-1A0A732056CA}</Project>
+      <Name>bf_draw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\animation\bf_editor_animation.vcxproj">
+      <Project>{26B5F8B7-1B4B-3354-9DD8-6282E377A9A2}</Project>
+      <Name>bf_editor_animation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\armature\bf_editor_armature.vcxproj">
+      <Project>{6671FDA6-B7F6-3785-B790-BE812AA18071}</Project>
+      <Name>bf_editor_armature</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\curve\bf_editor_curve.vcxproj">
+      <Project>{5C490E53-9272-3AF7-9072-715FF112DBCD}</Project>
+      <Name>bf_editor_curve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\datafiles\bf_editor_datafiles.vcxproj">
+      <Project>{81E4FCA2-2786-3820-B6E0-5872BDD321EC}</Project>
+      <Name>bf_editor_datafiles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\gizmo_library\bf_editor_gizmo_library.vcxproj">
+      <Project>{C1A2C2F7-7643-39ED-87BE-563CCF942409}</Project>
+      <Name>bf_editor_gizmo_library</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\gpencil\bf_editor_gpencil.vcxproj">
+      <Project>{34BE76AD-381B-3363-A582-34D6B3DE10ED}</Project>
+      <Name>bf_editor_gpencil</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\interface\bf_editor_interface.vcxproj">
+      <Project>{9CFD0F5A-E635-3A20-8023-D45969EF8557}</Project>
+      <Name>bf_editor_interface</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\io\bf_editor_io.vcxproj">
+      <Project>{36A13962-3DD8-33E4-B08A-68517704F2BD}</Project>
+      <Name>bf_editor_io</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\lattice\bf_editor_lattice.vcxproj">
+      <Project>{6BE33EAB-7FB5-3774-B7A2-C1DFEAC8BDD4}</Project>
+      <Name>bf_editor_lattice</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\mask\bf_editor_mask.vcxproj">
+      <Project>{2D55A522-FD78-3AF8-ACD3-750C1E0DD0BE}</Project>
+      <Name>bf_editor_mask</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\mesh\bf_editor_mesh.vcxproj">
+      <Project>{F1EB14DB-8936-3EF2-A576-1E491EF59CC8}</Project>
+      <Name>bf_editor_mesh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\metaball\bf_editor_metaball.vcxproj">
+      <Project>{242B2988-874C-3445-92BB-614ECF2BC23F}</Project>
+      <Name>bf_editor_metaball</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\object\bf_editor_object.vcxproj">
+      <Project>{D4A29118-A124-35FC-8C12-42BFEB097339}</Project>
+      <Name>bf_editor_object</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\physics\bf_editor_physics.vcxproj">
+      <Project>{950FB0D8-E6FE-3B2D-8967-DB51EE8382B5}</Project>
+      <Name>bf_editor_physics</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\render\bf_editor_render.vcxproj">
+      <Project>{ACFBD997-1486-340A-BCB7-4292F8ACB86C}</Project>
+      <Name>bf_editor_render</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\scene\bf_editor_scene.vcxproj">
+      <Project>{37231203-3018-3532-8566-6B72843CEED3}</Project>
+      <Name>bf_editor_scene</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\screen\bf_editor_screen.vcxproj">
+      <Project>{3185E0E3-56B5-3475-B9CD-FE1C5CF6826E}</Project>
+      <Name>bf_editor_screen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\sculpt_paint\bf_editor_sculpt_paint.vcxproj">
+      <Project>{A319D05B-2458-33C6-BB34-4BF2493D6452}</Project>
+      <Name>bf_editor_sculpt_paint</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\sound\bf_editor_sound.vcxproj">
+      <Project>{526F6797-AC36-308F-B073-94742A2C2AE4}</Project>
+      <Name>bf_editor_sound</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_action\bf_editor_space_action.vcxproj">
+      <Project>{1AA7661A-054E-33FC-91FD-153963F499E5}</Project>
+      <Name>bf_editor_space_action</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_api\bf_editor_space_api.vcxproj">
+      <Project>{1FA3D848-7C1F-3ADC-A50F-3F1277005DC5}</Project>
+      <Name>bf_editor_space_api</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_buttons\bf_editor_space_buttons.vcxproj">
+      <Project>{558500F4-92F5-371D-A259-4CEEAEB33E32}</Project>
+      <Name>bf_editor_space_buttons</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_clip\bf_editor_space_clip.vcxproj">
+      <Project>{3A28B3D6-8972-3F7E-96F4-8400BCFC24B1}</Project>
+      <Name>bf_editor_space_clip</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_console\bf_editor_space_console.vcxproj">
+      <Project>{D2726087-7E76-3478-B922-952A50399746}</Project>
+      <Name>bf_editor_space_console</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_file\bf_editor_space_file.vcxproj">
+      <Project>{E982FCE0-1D3B-3878-898B-71E073D19C02}</Project>
+      <Name>bf_editor_space_file</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_graph\bf_editor_space_graph.vcxproj">
+      <Project>{79213B03-C60F-3DAB-AA42-18537E8EF15D}</Project>
+      <Name>bf_editor_space_graph</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_image\bf_editor_space_image.vcxproj">
+      <Project>{737E3D19-B8C6-3818-9D76-1DEAD32B226E}</Project>
+      <Name>bf_editor_space_image</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_info\bf_editor_space_info.vcxproj">
+      <Project>{E4352FB2-6A3B-34D6-BED5-DC87F7F1205C}</Project>
+      <Name>bf_editor_space_info</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_nla\bf_editor_space_nla.vcxproj">
+      <Project>{18C7B805-D855-3F77-AA2E-B78979E9A92D}</Project>
+      <Name>bf_editor_space_nla</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_node\bf_editor_space_node.vcxproj">
+      <Project>{74A8EF2C-3097-3243-8900-D8D1BD9052EE}</Project>
+      <Name>bf_editor_space_node</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_outliner\bf_editor_space_outliner.vcxproj">
+      <Project>{DF42BB6A-EFB8-3766-A1BD-81025A105DD2}</Project>
+      <Name>bf_editor_space_outliner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_script\bf_editor_space_script.vcxproj">
+      <Project>{B35D3BC2-6093-32AA-9886-F5F8A9EBA968}</Project>
+      <Name>bf_editor_space_script</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_sequencer\bf_editor_space_sequencer.vcxproj">
+      <Project>{A2218854-1E02-34FF-92CB-15E1DC33D052}</Project>
+      <Name>bf_editor_space_sequencer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_statusbar\bf_editor_space_statusbar.vcxproj">
+      <Project>{44F49826-F68F-353F-9F71-640B7989FEE9}</Project>
+      <Name>bf_editor_space_statusbar</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_text\bf_editor_space_text.vcxproj">
+      <Project>{DAED936C-DA60-3BFD-8549-E43797A2CEFA}</Project>
+      <Name>bf_editor_space_text</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_toolbar\bf_editor_space_toolbar.vcxproj">
+      <Project>{EE7E6801-F23D-3776-B3FD-99706EBC1E13}</Project>
+      <Name>bf_editor_space_toolbar</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_topbar\bf_editor_space_topbar.vcxproj">
+      <Project>{34333AF6-BB8B-382E-9B6F-2B4A228BBDB0}</Project>
+      <Name>bf_editor_space_topbar</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_userpref\bf_editor_space_userpref.vcxproj">
+      <Project>{32DA5B7C-EA3A-30D6-B5F1-6BDD6B07CD4A}</Project>
+      <Name>bf_editor_space_userpref</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\space_view3d\bf_editor_space_view3d.vcxproj">
+      <Project>{CF7B1FE3-0F79-3537-ADAA-6C5694958C0E}</Project>
+      <Name>bf_editor_space_view3d</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\transform\bf_editor_transform.vcxproj">
+      <Project>{4B0B6DD7-F49B-3434-9211-4749250D2D74}</Project>
+      <Name>bf_editor_transform</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\undo\bf_editor_undo.vcxproj">
+      <Project>{70FC88C5-3662-3AC6-ABF2-8F9DF83CA959}</Project>
+      <Name>bf_editor_undo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\util\bf_editor_util.vcxproj">
+      <Project>{D043DDCF-2045-3EDA-A368-8B34C4F5AD92}</Project>
+      <Name>bf_editor_util</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\editors\uvedit\bf_editor_uvedit.vcxproj">
+      <Project>{E55DBA24-51AD-39E6-BD64-B38A0CA5021F}</Project>
+      <Name>bf_editor_uvedit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\freestyle\bf_freestyle.vcxproj">
+      <Project>{8D2626AC-3161-316B-9C9C-4679AD83C2B7}</Project>
+      <Name>bf_freestyle</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\gpencil_modifiers\bf_gpencil_modifiers.vcxproj">
+      <Project>{DBD37D6C-0E65-36E8-B233-D4B8979C0194}</Project>
+      <Name>bf_gpencil_modifiers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\gpu\bf_gpu.vcxproj">
+      <Project>{25435DF0-7A7A-3847-8D97-98C00298EFE6}</Project>
+      <Name>bf_gpu</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\ikplugin\bf_ikplugin.vcxproj">
+      <Project>{BF92F300-B1BF-3BAA-8584-E118DD83430A}</Project>
+      <Name>bf_ikplugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\imbuf\bf_imbuf.vcxproj">
+      <Project>{AA988738-6B73-3542-A195-A18CA17E95A0}</Project>
+      <Name>bf_imbuf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\imbuf\intern\cineon\bf_imbuf_cineon.vcxproj">
+      <Project>{27301E90-A5F1-3011-89A7-2DA02A5DB293}</Project>
+      <Name>bf_imbuf_cineon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\imbuf\intern\dds\bf_imbuf_dds.vcxproj">
+      <Project>{21067E1D-015E-35A6-91B8-8205D13F6872}</Project>
+      <Name>bf_imbuf_dds</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\imbuf\intern\openexr\bf_imbuf_openexr.vcxproj">
+      <Project>{B1D1BD49-20BC-3EC2-8633-C8704632EF64}</Project>
+      <Name>bf_imbuf_openexr</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\imbuf\intern\oiio\bf_imbuf_openimageio.vcxproj">
+      <Project>{FB1A679C-823C-3326-A767-B0B22003202A}</Project>
+      <Name>bf_imbuf_openimageio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\audaspace\bf_intern_audaspace.vcxproj">
+      <Project>{4FCFF796-267C-3631-86FA-9634E364DF0D}</Project>
+      <Name>bf_intern_audaspace</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\clog\bf_intern_clog.vcxproj">
+      <Project>{D600E59A-7632-3827-BCFF-94DB007E32EF}</Project>
+      <Name>bf_intern_clog</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\cycles\blender\bf_intern_cycles.vcxproj">
+      <Project>{FABBBD7A-296D-3BFC-A5E6-F86DCE4BAF30}</Project>
+      <Name>bf_intern_cycles</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\dualcon\bf_intern_dualcon.vcxproj">
+      <Project>{D880B314-55D8-3148-8B9F-0204BA78FE5F}</Project>
+      <Name>bf_intern_dualcon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\eigen\bf_intern_eigen.vcxproj">
+      <Project>{F26D5578-F374-360F-8666-BE670C02FFA3}</Project>
+      <Name>bf_intern_eigen</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\elbeem\bf_intern_elbeem.vcxproj">
+      <Project>{EEFC2874-EB9C-35FC-A9DD-C3BD9282A745}</Project>
+      <Name>bf_intern_elbeem</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\ghost\bf_intern_ghost.vcxproj">
+      <Project>{698F39E1-B703-3520-ABD5-3B1EE64D2EAB}</Project>
+      <Name>bf_intern_ghost</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\glew-mx\bf_intern_glew_mx.vcxproj">
+      <Project>{DB9FABF4-D7C1-3BBD-AF73-DEECBF81563B}</Project>
+      <Name>bf_intern_glew_mx</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\guardedalloc\bf_intern_guardedalloc.vcxproj">
+      <Project>{54E73E3D-865F-3CFA-97A3-8B972333D55D}</Project>
+      <Name>bf_intern_guardedalloc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\iksolver\bf_intern_iksolver.vcxproj">
+      <Project>{057078FD-3A0E-3B66-9059-4194FCAA8331}</Project>
+      <Name>bf_intern_iksolver</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\itasc\bf_intern_itasc.vcxproj">
+      <Project>{82C9CF93-9743-3CB0-9928-0D5F36E5FD35}</Project>
+      <Name>bf_intern_itasc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\libmv\bf_intern_libmv.vcxproj">
+      <Project>{EA29A79C-0ECF-36CF-88CA-151ED703CD98}</Project>
+      <Name>bf_intern_libmv</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\locale\bf_intern_locale.vcxproj">
+      <Project>{2D654B02-2045-305B-9170-54B316083162}</Project>
+      <Name>bf_intern_locale</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\memutil\bf_intern_memutil.vcxproj">
+      <Project>{66EEBEFA-DF0C-3F47-A538-4B5B97EE775F}</Project>
+      <Name>bf_intern_memutil</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\mikktspace\bf_intern_mikktspace.vcxproj">
+      <Project>{4FE92143-B17B-3EA9-A05C-E50DBEC06AEC}</Project>
+      <Name>bf_intern_mikktspace</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\numaapi\bf_intern_numaapi.vcxproj">
+      <Project>{979AD259-D521-3EFB-B819-377D567399C4}</Project>
+      <Name>bf_intern_numaapi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\bf_intern_opencolorio.vcxproj">
+      <Project>{C68F0417-DB7B-37C8-B08E-32716A9E434E}</Project>
+      <Name>bf_intern_opencolorio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\opensubdiv\bf_intern_opensubdiv.vcxproj">
+      <Project>{5857DA62-AC9B-3A8D-9EEA-7B4DD2870F7E}</Project>
+      <Name>bf_intern_opensubdiv</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\rigidbody\bf_intern_rigidbody.vcxproj">
+      <Project>{88E993C0-274D-3B14-A533-889E15EBDA47}</Project>
+      <Name>bf_intern_rigidbody</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\smoke\bf_intern_smoke.vcxproj">
+      <Project>{723AFCEB-D2AF-35A8-9DFE-34C8069DF6F6}</Project>
+      <Name>bf_intern_smoke</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\string\bf_intern_string.vcxproj">
+      <Project>{4A674997-ADE1-349F-A477-2B98E7A10E3A}</Project>
+      <Name>bf_intern_string</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\utfconv\bf_intern_utfconv.vcxproj">
+      <Project>{A7A93157-5A4F-302E-8AE8-5E0D52E3CEB5}</Project>
+      <Name>bf_intern_utfconv</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\modifiers\bf_modifiers.vcxproj">
+      <Project>{7CE031D9-C003-32EE-8E9D-11ABF6CEAF7B}</Project>
+      <Name>bf_modifiers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\nodes\bf_nodes.vcxproj">
+      <Project>{A40990DB-AD76-3C73-8E36-2EB017626476}</Project>
+      <Name>bf_nodes</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\physics\bf_physics.vcxproj">
+      <Project>{AD13A8C8-9F69-332C-8A7E-4CB7482B106A}</Project>
+      <Name>bf_physics</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\python\intern\bf_python.vcxproj">
+      <Project>{CCAC55F1-95DA-36AB-9AB1-0608CA0D112E}</Project>
+      <Name>bf_python</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\python\bmesh\bf_python_bmesh.vcxproj">
+      <Project>{A5F27465-2323-3B26-BACD-B40F6B908283}</Project>
+      <Name>bf_python_bmesh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\python\generic\bf_python_ext.vcxproj">
+      <Project>{E66BF42D-585E-3071-A9B6-9F1B1654B76F}</Project>
+      <Name>bf_python_ext</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\python\gpu\bf_python_gpu.vcxproj">
+      <Project>{CEC69BF6-8EAC-311C-A5F2-001C89F6A417}</Project>
+      <Name>bf_python_gpu</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\python\mathutils\bf_python_mathutils.vcxproj">
+      <Project>{0B905CDA-CAE4-3F6D-8F31-EEF5C5427BA3}</Project>
+      <Name>bf_python_mathutils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\render\bf_render.vcxproj">
+      <Project>{19955E80-5F93-3AA6-96A6-477458D78F7C}</Project>
+      <Name>bf_render</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\makesrna\intern\bf_rna.vcxproj">
+      <Project>{67F4D955-0468-3336-9008-FE565333802A}</Project>
+      <Name>bf_rna</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\shader_fx\bf_shader_fx.vcxproj">
+      <Project>{BCD40011-D04C-3AD5-8BFA-7FCB07D89F22}</Project>
+      <Name>bf_shader_fx</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\windowmanager\bf_windowmanager.vcxproj">
+      <Project>{B182CA99-C0DD-3C25-B038-E598595C8E1E}</Project>
+      <Name>bf_windowmanager</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\creator\bforartists.vcxproj">
+      <Project>{542AAE74-9B3A-3A64-B37E-23F8E50EC76D}</Project>
+      <Name>bforartists</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfo.vcxproj">
+      <Project>{82A45203-3BE3-3F42-AE38-C1DBC5CD8AF8}</Project>
+      <Name>buildinfo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfoobj.vcxproj">
+      <Project>{7BEC0E73-9D56-36A4-8099-297066620949}</Project>
+      <Name>buildinfoobj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\cycles\bvh\cycles_bvh.vcxproj">
+      <Project>{6FAC8728-1439-39ED-BFB4-F49457312CFF}</Project>
+      <Name>cycles_bvh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\cycles\device\cycles_device.vcxproj">
+      <Project>{B4EF6E3F-21AC-339E-A575-2707930CCB39}</Project>
+      <Name>cycles_device</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\cycles\graph\cycles_graph.vcxproj">
+      <Project>{56613244-81A9-35CC-858E-3F4C8957E0DB}</Project>
+      <Name>cycles_graph</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\cycles\kernel\cycles_kernel.vcxproj">
+      <Project>{845E68A2-08C3-3C52-8D58-0441EB4BFF80}</Project>
+      <Name>cycles_kernel</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\cycles\kernel\cycles_kernel_cuda.vcxproj">
+      <Project>{418CE09F-2515-3297-BB4F-7A151C1F87AD}</Project>
+      <Name>cycles_kernel_cuda</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\cycles\kernel\osl\cycles_kernel_osl.vcxproj">
+      <Project>{AC70E85E-89AB-35EC-81E6-6DE3DA9411E8}</Project>
+      <Name>cycles_kernel_osl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\cycles\kernel\shaders\cycles_osl_shaders.vcxproj">
+      <Project>{CFA78F84-911E-3D1C-B029-52BFCE31193D}</Project>
+      <Name>cycles_osl_shaders</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\cycles\render\cycles_render.vcxproj">
+      <Project>{448AEFAF-5B66-3B30-912F-787875286E3D}</Project>
+      <Name>cycles_render</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\cycles\subd\cycles_subd.vcxproj">
+      <Project>{292A7D88-3CB2-30EC-957A-EF9D3D1A1198}</Project>
+      <Name>cycles_subd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\intern\cycles\util\cycles_util.vcxproj">
+      <Project>{BC8FAD34-2BB7-39F6-B05D-D563412F38EF}</Project>
+      <Name>cycles_util</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\datatoc\datatoc.vcxproj">
+      <Project>{E16A571E-51F0-3C2C-A696-8FB4BB66DE86}</Project>
+      <Name>datatoc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\datatoc\datatoc_icon.vcxproj">
+      <Project>{94AFDE1F-7440-3E42-B5E0-22EEDC21855F}</Project>
+      <Name>datatoc_icon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\bullet2\extern_bullet.vcxproj">
+      <Project>{11EA8FE9-7124-3EF4-A013-ED10F276AA21}</Project>
+      <Name>extern_bullet</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\ceres\extern_ceres.vcxproj">
+      <Project>{94B86F46-2915-3544-8B31-6BAA397D3952}</Project>
+      <Name>extern_ceres</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\clew\extern_clew.vcxproj">
+      <Project>{B2D6A226-5AC5-39D0-8595-3E3E4457AD60}</Project>
+      <Name>extern_clew</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\cuew\extern_cuew.vcxproj">
+      <Project>{1090BD5A-A46B-3C67-AB83-AE257715F2B9}</Project>
+      <Name>extern_cuew</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\curve_fit_nd\extern_curve_fit_nd.vcxproj">
+      <Project>{BBAEEEEF-7724-39F2-B3E8-ADF454D889D1}</Project>
+      <Name>extern_curve_fit_nd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\gflags\extern_gflags.vcxproj">
+      <Project>{FC0C786F-8EF7-3734-905C-8398968431C8}</Project>
+      <Name>extern_gflags</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\glew\extern_glew.vcxproj">
+      <Project>{A6B7E776-79BB-3177-9D0C-74BB615FD80E}</Project>
+      <Name>extern_glew</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\glog\extern_glog.vcxproj">
+      <Project>{442100FE-E883-394C-AE42-40D2061C3054}</Project>
+      <Name>extern_glog</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\lzma\extern_lzma.vcxproj">
+      <Project>{F60BF688-0C24-3A37-95F5-5E4735901071}</Project>
+      <Name>extern_lzma</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\lzo\extern_minilzo.vcxproj">
+      <Project>{AA0589B3-B64E-3892-B1F7-4FE94B2B5231}</Project>
+      <Name>extern_minilzo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\rangetree\extern_rangetree.vcxproj">
+      <Project>{312931C8-659A-3CAE-8614-C9EEFDAFB371}</Project>
+      <Name>extern_rangetree</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\wcwidth\extern_wcwidth.vcxproj">
+      <Project>{8FF17FA8-BCC7-3F73-87BE-6468A59AD9D5}</Project>
+      <Name>extern_wcwidth</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\makesdna.vcxproj">
+      <Project>{D730E4E5-C17D-3C67-A9F3-0BD1F1CF92BF}</Project>
+      <Name>makesdna</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\makesrna\intern\makesrna.vcxproj">
+      <Project>{8806136E-375C-3651-8778-D8DCC8DCD354}</Project>
+      <Name>makesrna</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\blentranslation\msgfmt\msgfmt.vcxproj">
+      <Project>{771850AD-69ED-3E5F-9CD9-377E014E9512}</Project>
+      <Name>msgfmt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\creator\python_numpy.vcxproj">
+      <Project>{775D7A04-B255-38FB-8BBC-A998920D11F5}</Project>
+      <Name>python_numpy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

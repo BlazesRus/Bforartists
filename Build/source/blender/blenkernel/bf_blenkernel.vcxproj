@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1EF952C6-4FF0-3619-B5B7-EA69D9BAE17F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bf_blenkernel</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_blenkernel.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_blenkernel</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_blenkernel.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_blenkernel</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_blenkernel.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_blenkernel</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_blenkernel.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_blenkernel</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\modifiers;C:\BlenderStuff\BlenderScope\source\blender\gpencil_modifiers;C:\BlenderStuff\BlenderScope\source\blender\shader_fx;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\ghost;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\iksolver\extern;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\mikktspace;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\BlenderScope\extern\curve_fit_nd;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\avi;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\elbeem\extern;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\lib\win64_vc14\zlib\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\bullet2\src;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\extern\lzo\minilzo;C:\BlenderStuff\BlenderScope\extern\lzma;C:\BlenderStuff\lib\win64_vc14\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800;4828;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4133;4431</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;_DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;WITH_AUDASPACE;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_ALEMBIC;WITH_OPENSUBDIV;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;WITH_AUDASPACE;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_ALEMBIC;WITH_OPENSUBDIV;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\modifiers;C:\BlenderStuff\BlenderScope\source\blender\gpencil_modifiers;C:\BlenderStuff\BlenderScope\source\blender\shader_fx;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\ghost;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\iksolver\extern;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\mikktspace;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\BlenderScope\extern\curve_fit_nd;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\avi;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\elbeem\extern;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\lib\win64_vc14\zlib\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\bullet2\src;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\extern\lzo\minilzo;C:\BlenderStuff\BlenderScope\extern\lzma;C:\BlenderStuff\lib\win64_vc14\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\modifiers;C:\BlenderStuff\BlenderScope\source\blender\gpencil_modifiers;C:\BlenderStuff\BlenderScope\source\blender\shader_fx;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\ghost;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\iksolver\extern;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\mikktspace;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\BlenderScope\extern\curve_fit_nd;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\avi;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\elbeem\extern;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\lib\win64_vc14\zlib\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\bullet2\src;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\extern\lzo\minilzo;C:\BlenderStuff\BlenderScope\extern\lzma;C:\BlenderStuff\lib\win64_vc14\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\modifiers;C:\BlenderStuff\BlenderScope\source\blender\gpencil_modifiers;C:\BlenderStuff\BlenderScope\source\blender\shader_fx;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\ghost;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\iksolver\extern;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\mikktspace;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\BlenderScope\extern\curve_fit_nd;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\avi;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\elbeem\extern;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\lib\win64_vc14\zlib\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\bullet2\src;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\extern\lzo\minilzo;C:\BlenderStuff\BlenderScope\extern\lzma;C:\BlenderStuff\lib\win64_vc14\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800;4828;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4133;4431</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;WITH_AUDASPACE;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_ALEMBIC;WITH_OPENSUBDIV;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;WITH_AUDASPACE;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_ALEMBIC;WITH_OPENSUBDIV;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\modifiers;C:\BlenderStuff\BlenderScope\source\blender\gpencil_modifiers;C:\BlenderStuff\BlenderScope\source\blender\shader_fx;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\ghost;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\iksolver\extern;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\mikktspace;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\BlenderScope\extern\curve_fit_nd;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\avi;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\elbeem\extern;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\lib\win64_vc14\zlib\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\bullet2\src;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\extern\lzo\minilzo;C:\BlenderStuff\BlenderScope\extern\lzma;C:\BlenderStuff\lib\win64_vc14\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\modifiers;C:\BlenderStuff\BlenderScope\source\blender\gpencil_modifiers;C:\BlenderStuff\BlenderScope\source\blender\shader_fx;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\ghost;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\iksolver\extern;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\mikktspace;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\BlenderScope\extern\curve_fit_nd;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\avi;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\elbeem\extern;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\lib\win64_vc14\zlib\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\bullet2\src;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\extern\lzo\minilzo;C:\BlenderStuff\BlenderScope\extern\lzma;C:\BlenderStuff\lib\win64_vc14\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\modifiers;C:\BlenderStuff\BlenderScope\source\blender\gpencil_modifiers;C:\BlenderStuff\BlenderScope\source\blender\shader_fx;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\ghost;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\iksolver\extern;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\mikktspace;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\BlenderScope\extern\curve_fit_nd;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\avi;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\elbeem\extern;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\lib\win64_vc14\zlib\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\bullet2\src;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\extern\lzo\minilzo;C:\BlenderStuff\BlenderScope\extern\lzma;C:\BlenderStuff\lib\win64_vc14\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800;4828;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4133;4431</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;WITH_AUDASPACE;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_ALEMBIC;WITH_OPENSUBDIV;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;WITH_AUDASPACE;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_ALEMBIC;WITH_OPENSUBDIV;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\modifiers;C:\BlenderStuff\BlenderScope\source\blender\gpencil_modifiers;C:\BlenderStuff\BlenderScope\source\blender\shader_fx;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\ghost;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\iksolver\extern;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\mikktspace;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\BlenderScope\extern\curve_fit_nd;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\avi;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\elbeem\extern;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\lib\win64_vc14\zlib\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\bullet2\src;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\extern\lzo\minilzo;C:\BlenderStuff\BlenderScope\extern\lzma;C:\BlenderStuff\lib\win64_vc14\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\modifiers;C:\BlenderStuff\BlenderScope\source\blender\gpencil_modifiers;C:\BlenderStuff\BlenderScope\source\blender\shader_fx;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\ghost;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\iksolver\extern;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\mikktspace;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\BlenderScope\extern\curve_fit_nd;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\avi;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\elbeem\extern;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\lib\win64_vc14\zlib\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\bullet2\src;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\extern\lzo\minilzo;C:\BlenderStuff\BlenderScope\extern\lzma;C:\BlenderStuff\lib\win64_vc14\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\modifiers;C:\BlenderStuff\BlenderScope\source\blender\gpencil_modifiers;C:\BlenderStuff\BlenderScope\source\blender\shader_fx;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\ghost;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\iksolver\extern;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\mikktspace;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\BlenderScope\extern\curve_fit_nd;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\avi;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\elbeem\extern;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\lib\win64_vc14\zlib\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\bullet2\src;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\extern\lzo\minilzo;C:\BlenderStuff\BlenderScope\extern\lzma;C:\BlenderStuff\lib\win64_vc14\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800;4828;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4133;4431</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;WITH_AUDASPACE;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_ALEMBIC;WITH_OPENSUBDIV;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;WITH_AUDASPACE;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_ALEMBIC;WITH_OPENSUBDIV;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\modifiers;C:\BlenderStuff\BlenderScope\source\blender\gpencil_modifiers;C:\BlenderStuff\BlenderScope\source\blender\shader_fx;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\ghost;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\iksolver\extern;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\mikktspace;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\BlenderScope\extern\curve_fit_nd;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\avi;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\elbeem\extern;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\lib\win64_vc14\zlib\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\bullet2\src;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\extern\lzo\minilzo;C:\BlenderStuff\BlenderScope\extern\lzma;C:\BlenderStuff\lib\win64_vc14\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenfont;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\depsgraph;C:\BlenderStuff\BlenderScope\source\blender\draw;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\ikplugin;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\bmesh;C:\BlenderStuff\BlenderScope\source\blender\modifiers;C:\BlenderStuff\BlenderScope\source\blender\gpencil_modifiers;C:\BlenderStuff\BlenderScope\source\blender\shader_fx;C:\BlenderStuff\BlenderScope\source\blender\nodes;C:\BlenderStuff\BlenderScope\source\blender\physics;C:\BlenderStuff\BlenderScope\source\blender\render\extern\include;C:\BlenderStuff\BlenderScope\intern\ghost;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\glew-mx;C:\BlenderStuff\BlenderScope\intern\iksolver\extern;C:\BlenderStuff\BlenderScope\intern\memutil;C:\BlenderStuff\BlenderScope\intern\mikktspace;C:\BlenderStuff\BlenderScope\intern\smoke\extern;C:\BlenderStuff\BlenderScope\intern\atomic;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\libmv;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\BlenderScope\extern\curve_fit_nd;C:\BlenderStuff\BlenderScope\intern\utfconv;C:\BlenderStuff\BlenderScope\intern\rigidbody;C:\BlenderStuff\BlenderScope\source\blender\avi;C:\BlenderStuff\BlenderScope\intern\ffmpeg;C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\intern\elbeem\extern;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\BlenderScope\extern\glew\include;C:\BlenderStuff\lib\win64_vc14\zlib\include;C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\C;C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\bullet2\src;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\extern\lzo\minilzo;C:\BlenderStuff\BlenderScope\extern\lzma;C:\BlenderStuff\lib\win64_vc14\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/blenkernel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/source/blender/blenkernel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/source/blender/blenkernel/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\blenkernel\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\blenkernel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\blenkernel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/blenkernel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/source/blender/blenkernel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/source/blender/blenkernel/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\blenkernel\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\blenkernel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\blenkernel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/blenkernel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/source/blender/blenkernel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/source/blender/blenkernel/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\blenkernel\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\blenkernel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\blenkernel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/blenkernel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/Build/source/blender/blenkernel/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/source/blender/blenkernel/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\blenkernel\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\blenkernel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\blenkernel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\CCGSubSurf.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\CCGSubSurf_legacy.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\CCGSubSurf_opensubdiv.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\CCGSubSurf_opensubdiv_converter.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\CCGSubSurf_util.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\DerivedMesh.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\action.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\addon.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\anim.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\anim_sys.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\appdir.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\armature.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\armature_update.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\autoexec.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\blender.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\blender_copybuffer.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\blender_undo.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\blender_user_menu.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\blendfile.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\boids.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\bpath.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\brush.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\bvhutils.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\cachefile.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\camera.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\cdderivedmesh.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\cloth.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\collection.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\collision.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\colorband.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\colortools.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\constraint.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\context.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\crazyspace.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\curve.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\curve_decimate.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\customdata.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\customdata_file.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\data_transfer.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\deform.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\displist.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\dynamicpaint.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\editderivedmesh.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\editlattice.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\editmesh.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\editmesh_bvh.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\editmesh_cache.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\editmesh_tangent.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\effect.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\fcurve.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\fluidsim.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\fmodifier.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\font.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\freestyle.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\gpencil.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\gpencil_modifier.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\icons.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\icons_rasterize.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\idcode.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\idprop.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\idprop_utils.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\image.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\image_gen.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\ipo.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\key.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\keyconfig.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\lamp.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\lattice.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\layer.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\layer_utils.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\library.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\library_idmap.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\library_override.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\library_query.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\library_remap.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\lightprobe.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\linestyle.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\main.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mask.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mask_evaluate.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mask_rasterize.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\material.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mball.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mball_tessellate.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mesh.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mesh_convert.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mesh_evaluate.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mesh_iterators.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mesh_mapping.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mesh_merge.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mesh_remap.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mesh_runtime.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mesh_tangent.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\mesh_validate.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\modifier.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\movieclip.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\multires.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\multires_reshape.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\multires_subdiv.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\nla.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\node.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\object.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\object_deform.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\object_dupli.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\object_facemap.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\object_update.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\ocean.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\outliner_treehash.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\packedFile.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\paint.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\paint_toolslots.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\particle.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\particle_child.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\particle_distribute.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\particle_system.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\pbvh.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\pbvh_bmesh.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\pointcache.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\report.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\rigidbody.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\scene.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\screen.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\seqcache.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\seqeffects.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\seqmodifier.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\sequencer.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\shader_fx.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\shrinkwrap.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\smoke.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\softbody.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\sound.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\speaker.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\studiolight.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv_ccg.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv_ccg_mask.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv_converter.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv_converter_mesh.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv_displacement.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv_displacement_multires.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv_eval.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv_foreach.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv_mesh.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv_stats.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subsurf_ccg.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\suggestions.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\text.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\texture.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\tracking.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\tracking_auto.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\tracking_detect.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\tracking_plane_tracker.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\tracking_region_tracker.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\tracking_solver.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\tracking_stabilize.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\tracking_util.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\undo_system.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\unit.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\workspace.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\world.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\writeavi.c" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_DerivedMesh.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_action.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_addon.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_anim.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_animsys.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_appdir.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_armature.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_autoexec.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_blender.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_blender_copybuffer.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_blender_undo.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_blender_user_menu.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_blender_version.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_blendfile.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_boids.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_bpath.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_brush.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_bvhutils.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_cachefile.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_camera.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_ccg.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_cdderivedmesh.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_cloth.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_collection.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_collision.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_colorband.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_colortools.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_constraint.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_context.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_crazyspace.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_curve.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_customdata.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_customdata_file.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_data_transfer.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_deform.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_displist.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_dynamicpaint.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_editlattice.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_editmesh.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_editmesh_bvh.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_editmesh_cache.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_editmesh_tangent.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_effect.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_fcurve.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_fluidsim.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_font.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_freestyle.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_global.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_gpencil.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_gpencil_modifier.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_icons.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_idcode.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_idprop.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_image.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_ipo.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_key.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_keyconfig.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_lamp.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_lattice.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_layer.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_library.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_library_idmap.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_library_override.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_library_query.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_library_remap.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_lightprobe.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_linestyle.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_main.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_mask.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_material.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_mball.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_mball_tessellate.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_mesh.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_mesh_iterators.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_mesh_mapping.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_mesh_remap.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_mesh_runtime.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_mesh_tangent.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_modifier.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_movieclip.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_multires.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_nla.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_node.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_object.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_object_deform.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_object_facemap.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_ocean.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_outliner_treehash.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_packedFile.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_paint.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_particle.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_pbvh.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_pointcache.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_report.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_rigidbody.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_scene.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_screen.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_sequencer.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_shader_fx.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_shrinkwrap.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_smoke.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_softbody.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_sound.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_speaker.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_studiolight.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_subdiv.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_subdiv_ccg.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_subdiv_eval.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_subdiv_foreach.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_subdiv_mesh.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_subsurf.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_suggestions.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_text.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_texture.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_tracking.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_undo_system.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_unit.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_workspace.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_world.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_writeavi.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\nla_private.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\particle_private.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\tracking_private.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\CCGSubSurf.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\CCGSubSurf_inline.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\CCGSubSurf_intern.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\data_transfer_intern.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\multires_inline.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\pbvh_intern.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv_converter.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\subdiv_inline.h" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\intern\writeffmpeg.c" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\blenkernel\BKE_writeffmpeg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\ZERO_CHECK.vcxproj">
+      <Project>{D519D051-5A79-323C-9110-7C69506A4014}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
