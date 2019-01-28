@@ -42,3 +42,9 @@ Desktop.ini
 /build_files/build_environment/downloads
 /.gitmodules
 /.gitmodules
+
+Build/bin/
+*.tlog
+*.obj
+*.log
+*.lib
