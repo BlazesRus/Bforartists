@@ -194,18 +194,15 @@ class MASK_PT_point:
             row = col.row()
             row.prop(parent, "type", expand=True)
 
-            col.prop_search(parent, "parent", tracking,
-                            "objects", icon='OBJECT_DATA', text="Object")
+            col.prop_search(parent, "parent", tracking, "objects", text = "Object", icon='OBJECT_DATA')
 
             tracks_list = "tracks" if parent.type == 'POINT_TRACK' else "plane_tracks"
 
             if parent.parent in tracking.objects:
                 object = tracking.objects[parent.parent]
-                col.prop_search(parent, "sub_parent", object,
-                                tracks_list, icon='ANIM_DATA', text="Track")
+                col.prop_search(parent, "sub_parent", object, tracks_list, text="Track", icon = 'ANIM_DATA')
             else:
-                col.prop_search(parent, "sub_parent", tracking,
-                                tracks_list, icon='ANIM_DATA', text="Track")
+                col.prop_search(parent, "sub_parent", tracking, tracks_list, text="Track", icon = 'ANIM_DATA')
 
 
 class MASK_PT_display:
@@ -252,10 +249,14 @@ class MASK_PT_transforms:
 
         col = layout.column(align=True)
         col.label(text="Transform:")
-        col.operator("transform.translate")
-        col.operator("transform.rotate")
-        col.operator("transform.resize", text="Scale")
-        col.operator("transform.transform", text="Scale Feather").mode = 'MASK_SHRINKFATTEN'
+        col.operator("transform.translate", icon = "TRANSFORM_MOVE")
+        col.operator("transform.rotate", icon = "TRANSFORM_ROTATE")
+        col.operator("transform.resize", text = "Scale", icon = "TRANSFORM_SCALE")
+        col.operator("transform.transform", text = "Scale Feather", icon = 'SHRINK_FATTEN').mode = 'MASK_SHRINKFATTEN'
+
+        layout.separator()
+
+        col.operator("mask.feather_weight_clear", text = "  Clear Feather Weight", icon = "CLEAR")
 
 
 class MASK_MT_add(Menu):
@@ -264,8 +265,8 @@ class MASK_MT_add(Menu):
     def draw(self, context):
         layout = self.layout
 
-        layout.operator("mask.primitive_circle_add", icon='MESH_CIRCLE')
-        layout.operator("mask.primitive_square_add", icon='MESH_PLANE')
+        layout.operator("mask.primitive_circle_add", icon = 'MESH_CIRCLE')
+        layout.operator("mask.primitive_square_add", icon = 'MESH_PLANE')
 
 
 class MASK_MT_mask(Menu):
@@ -278,21 +279,24 @@ class MASK_MT_mask(Menu):
         layout.operator("mask.duplicate_move", text = "Duplicate", icon = "DUPLICATE")
 
         layout.separator()
-        layout.operator("mask.cyclic_toggle")
-        layout.operator("mask.switch_direction")
-        layout.operator("mask.normals_make_consistent")
-        layout.operator("mask.handle_type_set")
-        layout.operator("mask.feather_weight_clear")  # TODO, better place?
+
+        layout.operator("mask.cyclic_toggle", icon = 'TOGGLE_CYCLIC')
+        layout.operator("mask.switch_direction", icon = 'SWITCH_DIRECTION')
+        layout.operator("mask.normals_make_consistent", icon = "RECALC_NORMALS")
+        layout.operator("mask.handle_type_set", icon = 'HANDLE_AUTO')
 
         layout.separator()
+
         layout.operator("mask.parent_clear", icon = "PARENT_CLEAR")
         layout.operator("mask.parent_set", icon = "PARENT_SET")
 
         layout.separator()
+
         layout.operator("mask.copy_splines", icon = "COPYDOWN")
         layout.operator("mask.paste_splines", icon = "PASTEDOWN")
 
         layout.separator()
+
         layout.menu("MASK_MT_visibility")
         layout.menu("MASK_MT_transform")
         layout.menu("MASK_MT_animation")
@@ -303,9 +307,9 @@ class MASK_MT_visibility(Menu):
     def draw(self, context):
         layout = self.layout
 
-        layout.operator("mask.hide_view_clear", text="Show Hidden", icon = "RESTRICT_VIEW_OFF")
-        layout.operator("mask.hide_view_set", text="Hide Selected", icon = "RESTRICT_VIEW_ON").unselected = False
-        layout.operator("mask.hide_view_set", text="Hide Unselected", icon = "HIDE_UNSELECTED").unselected = True
+        layout.operator("mask.hide_view_clear", text = "Show Hidden", icon = "RESTRICT_VIEW_OFF")
+        layout.operator("mask.hide_view_set", text = "Hide Selected", icon = "RESTRICT_VIEW_ON").unselected = False
+        layout.operator("mask.hide_view_set", text = "Hide Unselected", icon = "HIDE_UNSELECTED").unselected = True
 
 
 class MASK_MT_transform(Menu):
@@ -316,8 +320,12 @@ class MASK_MT_transform(Menu):
 
         layout.operator("transform.translate", icon = "TRANSFORM_MOVE")
         layout.operator("transform.rotate", icon = "TRANSFORM_ROTATE")
-        layout.operator("transform.resize", text="Scale",  icon = "TRANSFORM_SCALE")
-        layout.operator("transform.transform", text="Scale Feather", icon = 'SHRINK_FATTEN').mode = 'MASK_SHRINKFATTEN'
+        layout.operator("transform.resize", text = "Scale",  icon = "TRANSFORM_SCALE")
+        layout.operator("transform.transform", text = "Scale Feather", icon = 'SHRINK_FATTEN').mode = 'MASK_SHRINKFATTEN'
+
+        layout.separator()
+
+        layout.operator("mask.feather_weight_clear", text = "  Clear Feather Weight", icon = "CLEAR")
 
 
 class MASK_MT_animation(Menu):
@@ -326,10 +334,10 @@ class MASK_MT_animation(Menu):
     def draw(self, context):
         layout = self.layout
 
-        layout.operator("mask.shape_key_clear")
-        layout.operator("mask.shape_key_insert")
-        layout.operator("mask.shape_key_feather_reset")
-        layout.operator("mask.shape_key_rekey")
+        layout.operator("mask.shape_key_clear", icon = "CLEAR")
+        layout.operator("mask.shape_key_insert", icon = "KEYFRAMES_INSERT")
+        layout.operator("mask.shape_key_feather_reset", icon = "RESET")
+        layout.operator("mask.shape_key_rekey", icon = 'KEY_HLT')
 
 
 class MASK_MT_select(Menu):
@@ -343,9 +351,9 @@ class MASK_MT_select(Menu):
 
         layout.separator()
 
-        layout.operator("mask.select_all", icon='SELECT_ALL').action = 'TOGGLE'
-        layout.operator("mask.select_all", text="Inverse", icon='INVERSE').action = 'INVERT'
-        layout.operator("mask.select_linked", text="Select Linked", icon = "LINKED")
+        layout.operator("mask.select_all", icon = 'SELECT_ALL').action = 'TOGGLE'
+        layout.operator("mask.select_all", text = "Inverse", icon='INVERSE').action = 'INVERT'
+        layout.operator("mask.select_linked", text = "Select Linked", icon = "LINKED")
 
         layout.separator()
 

@@ -255,7 +255,7 @@
             inner_sel="#5680c2ff"
             item="#acacac80"
             text="#cccccc"
-            text_sel="#000000"
+            text_sel="#ffffff"
             show_shaded="FALSE"
             shadetop="38"
             shadedown="0"
@@ -426,14 +426,14 @@
             execution_buts="#00000000"
             tab_active="#4d6b99"
             tab_inactive="#333333"
-            tab_back="#33333300"
+            tab_back="#333333cc"
             tab_outline="#000000"
             >
             <gradients>
               <ThemeGradientColors
                 show_grad="TRUE"
-                high_gradient="#808080"
-                gradient="#4d4d4d"
+                high_gradient="#666666"
+                gradient="#404040"
                 >
               </ThemeGradientColors>
             </gradients>
@@ -1194,7 +1194,7 @@
           <ThemeSpaceListGeneric
             list="#454545"
             list_title="#000000"
-            list_text="#000000"
+            list_text="#808080"
             list_text_hi="#ffffff"
             >
           </ThemeSpaceListGeneric>

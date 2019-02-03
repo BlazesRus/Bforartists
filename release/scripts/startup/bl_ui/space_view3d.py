@@ -1060,7 +1060,8 @@ class VIEW3D_MT_select_particle(Menu):
 
         layout.separator()
 
-        layout.operator("particle.select_linked", text = "Linked", icon = "LINKED")
+        layout.operator("particle.select_linked", text="Linked", icon = "LINKED").deselect = False
+        layout.operator("particle.select_linked", text="Deselect Linked", icon = "LINKED").deselect = True
 
         layout.separator()
 
@@ -1259,6 +1260,8 @@ class VIEW3D_MT_select_edit_curve(Menu):
         layout.operator("curve.select_random", text= "Random", icon = "RANDOMIZE")
         layout.operator("curve.select_nth", icon = "CHECKER_DESELECT")
         layout.operator("curve.select_linked", text="Linked", icon = "LINKED")
+        layout.operator("curve.select_linked_pick", text="Linked Pick Select", icon = "LINKED").deselect = False
+        layout.operator("curve.select_linked_pick", text="Linked Pick Deselect", icon = "LINKED").deselect = True
         layout.menu("VIEW3D_MT_select_edit_curve_select_similar")
 
         layout.separator()
@@ -1562,6 +1565,8 @@ class VIEW3D_MT_select_paint_mask(Menu):
         layout.separator()
 
         layout.operator("paint.face_select_linked", text="Linked", icon = "LINKED")
+        layout.operator("paint.face_select_linked_pick", text="Linked Pick Select", icon = "LINKED").deselect = False
+        layout.operator("paint.face_select_linked_pick", text="Linked Pick Deselect", icon = "LINKED").deselect = True
 
 
 # Workaround to separate the tooltips
@@ -1951,6 +1956,7 @@ class VIEW3D_MT_object(Menu):
         layout.separator()
 
         layout.menu("VIEW3D_MT_object_quick_effects")
+        layout.menu("VIEW3D_MT_subdivision_set")
 
         layout.separator()
 
@@ -2268,10 +2274,11 @@ class VIEW3D_MT_object_parent(Menu):
         layout = self.layout
 
         layout.operator_enum("object.parent_set", "type")
+        layout.operator("object.parent_no_inverse_set", text = "Make Parent no Inverse" )
 
         layout.separator()
 
-        layout.operator_enum("object.parent_clear", "type")
+        layout.operator_enum("object.parent_clear", "type")       
 
 
 class VIEW3D_MT_object_track(Menu):
@@ -2613,6 +2620,32 @@ class VIEW3D_MT_paint_weight(Menu):
         self.draw_generic(self.layout, is_editmode=False)
 
 
+class VIEW3D_MT_subdivision_set(Menu):
+    bl_label = "Subdivide"
+
+    def draw(self, context):
+        layout = self.layout
+
+        myvar = layout.operator("object.subdivision_set", text = "Level 0", icon = "SUBDIVIDE_EDGES")
+        myvar.relative = False
+        myvar.level = 0
+        myvar = layout.operator("object.subdivision_set", text = "Level 1", icon = "SUBDIVIDE_EDGES")
+        myvar.relative = False
+        myvar.level = 1
+        myvar = layout.operator("object.subdivision_set", text = "Level 2", icon = "SUBDIVIDE_EDGES")
+        myvar.relative = False
+        myvar.level = 2
+        myvar = layout.operator("object.subdivision_set", text = "Level 3", icon = "SUBDIVIDE_EDGES")
+        myvar.relative = False
+        myvar.level = 3
+        myvar = layout.operator("object.subdivision_set", text = "Level 4", icon = "SUBDIVIDE_EDGES")
+        myvar.relative = False
+        myvar.level = 4
+        myvar = layout.operator("object.subdivision_set", text = "Level 5", icon = "SUBDIVIDE_EDGES")
+        myvar.relative = False
+        myvar.level = 5
+
+
 class VIEW3D_MT_sculpt(Menu):
     bl_label = "Sculpt"
 
@@ -2621,6 +2654,8 @@ class VIEW3D_MT_sculpt(Menu):
 
         tool_settings = context.tool_settings
         sculpt = tool_settings.sculpt
+
+        layout.menu("VIEW3D_MT_subdivision_set")
 
         layout.prop(sculpt, "use_symmetry_x")
         layout.prop(sculpt, "use_symmetry_y")
@@ -3133,6 +3168,7 @@ class VIEW3D_MT_edit_mesh(Menu):
         layout.menu("VIEW3D_MT_edit_mesh_shading")
         layout.menu("VIEW3D_MT_edit_mesh_weights")
         layout.menu("VIEW3D_MT_edit_mesh_sort_elements")
+        layout.menu("VIEW3D_MT_subdivision_set")
 
         layout.separator()
 
@@ -3143,6 +3179,7 @@ class VIEW3D_MT_edit_mesh(Menu):
         layout.separator()
 
         layout.menu("VIEW3D_MT_edit_mesh_delete")
+        layout.menu("VIEW3D_MT_edit_mesh_select_mode")
 
 class VIEW3D_MT_edit_mesh_sort_elements(Menu):
     bl_label = "Sort Elements"
@@ -3361,6 +3398,28 @@ class VIEW3D_MT_edit_mesh_select_mode(Menu):
         layout.operator("mesh.select_mode", text="Face", icon='FACESEL').type = 'FACE'
 
 
+class VIEW3D_MT_edit_mesh_extrude_dupli(bpy.types.Operator):
+    """Duplicate or Extrude to Cursor\nCreates a slightly rotated copy of the current mesh selection\nThe tool can also extrude the selected geometry, dependant of the selection\nHotkey tool! """      # blender will use this as a tooltip for menu items and buttons.
+    bl_idname = "mesh.dupli_extrude_cursor_norotate"        # unique identifier for buttons and menu items to reference.
+    bl_label = "Duplicate or Extrude to Cursor"         # display name in the interface.
+    bl_options = {'REGISTER', 'UNDO'}  # enable undo for the operator.
+
+    def execute(self, context):        # execute() is called by blender when running the operator.
+        bpy.ops.mesh.dupli_extrude_cursor('INVOKE_DEFAULT',rotate_source = False)
+        return {'FINISHED'}
+
+class VIEW3D_MT_edit_mesh_extrude_dupli_rotate(bpy.types.Operator):
+    """Duplicate or Extrude to Cursor Rotated\nCreates a slightly rotated copy of the current mesh selection, and rotates the source slightly\nThe tool can also extrude the selected geometry, dependant of the selection\nHotkey tool!"""      # blender will use this as a tooltip for menu items and buttons.
+    bl_idname = "mesh.dupli_extrude_cursor_rotate"        # unique identifier for buttons and menu items to reference.
+    bl_label = "Duplicate or Extrude to Cursor Rotated"         # display name in the interface.
+    bl_options = {'REGISTER', 'UNDO'}  # enable undo for the operator.
+
+    def execute(self, context):        # execute() is called by blender when running the operator.
+        bpy.ops.mesh.dupli_extrude_cursor('INVOKE_DEFAULT', rotate_source = True)
+        return {'FINISHED'}
+
+
+
 class VIEW3D_MT_edit_mesh_extrude(Menu):
     bl_label = "Extrude"
 
@@ -3375,6 +3434,10 @@ class VIEW3D_MT_edit_mesh_extrude(Menu):
             layout.operator("view3d.edit_mesh_extrude_move_shrink_fatten", text="Extrude Faces Along Normals", icon='EXTRUDE_REGION'),
         'FACE': lambda layout:
             layout.operator("mesh.extrude_faces_move", text="Extrude Individual Faces", icon='EXTRUDE_REGION'),
+        'DUPLI_EXTRUDE': lambda layout:
+            layout.operator("mesh.dupli_extrude_cursor_norotate", text="Dupli Extrude", icon='DUPLI_EXTRUDE'),
+        'DUPLI_EX_ROTATE': lambda layout:
+            layout.operator("mesh.dupli_extrude_cursor_rotate", text="Dupli Extrude Rotate", icon='DUPLI_EXTRUDE_ROTATE')
     }
 
     @staticmethod
@@ -3390,6 +3453,7 @@ class VIEW3D_MT_edit_mesh_extrude(Menu):
             menu += ['EDGE']
         if mesh.total_vert_sel and select_mode[0]:
             menu += ['VERT']
+        menu += ['DUPLI_EXTRUDE', 'DUPLI_EX_ROTATE']
 
         # should never get here
         return menu
@@ -3520,11 +3584,6 @@ class VIEW3D_MT_edit_mesh_edges(Menu):
 
         layout.operator("transform.edge_crease", icon = "CREASE")
         layout.operator("transform.edge_bevelweight", icon = "BEVEL")
-
-        layout.separator()
-
-        layout.operator("mesh.mark_seam", icon = 'MARK_SEAM').clear = False
-        layout.operator("mesh.mark_seam", text="Clear Seam", icon = 'CLEAR_SEAM').clear = True
 
         layout.separator()
 
@@ -4685,6 +4744,7 @@ class VIEW3D_PT_view3d_properties(Panel):
     bl_region_type = 'UI'
     bl_category = "View"
     bl_label = "View"
+    bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
         layout = self.layout
@@ -4710,7 +4770,10 @@ class VIEW3D_PT_view3d_properties(Panel):
         col = flow.column()
 
         subcol = col.column()
-        subcol.enabled = not view.lock_camera_and_layers
+        subcol.prop(view, "use_local_camera")
+
+        subcol = col.column()
+        subcol.enabled = view.use_local_camera
         subcol.prop(view, "camera", text="Local Camera")
 
         subcol = col.column(align=True)
@@ -4758,6 +4821,7 @@ class VIEW3D_PT_view3d_cursor(Panel):
     bl_region_type = 'UI'
     bl_category = "View"
     bl_label = "3D Cursor"
+    bl_options = {'DEFAULT_CLOSED'}
 
     def draw(self, context):
         layout = self.layout
@@ -6253,6 +6317,7 @@ classes = (
     VIEW3D_MT_hook,
     VIEW3D_MT_vertex_group,
     VIEW3D_MT_paint_weight,
+    VIEW3D_MT_subdivision_set,
     VIEW3D_MT_sculpt,
     VIEW3D_MT_hide_mask,
     VIEW3D_MT_particle,
@@ -6277,6 +6342,8 @@ classes = (
     VIEW3D_MT_bone_options_disable,
     VIEW3D_MT_edit_mesh_specials,
     VIEW3D_MT_edit_mesh_select_mode,
+    VIEW3D_MT_edit_mesh_extrude_dupli,
+    VIEW3D_MT_edit_mesh_extrude_dupli_rotate,
     VIEW3D_MT_edit_mesh_extrude,
     VIEW3D_MT_edit_mesh_vertices,
     VIEW3D_MT_edit_mesh_edges,
