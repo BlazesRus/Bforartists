@@ -56,19 +56,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\lib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\lib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_intern_opencolorio.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_intern_opencolorio</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\lib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\lib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_intern_opencolorio.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_intern_opencolorio</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\lib\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\lib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_intern_opencolorio.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_intern_opencolorio</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\lib\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\lib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_intern_opencolorio.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_intern_opencolorio</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
@@ -237,7 +237,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\cf6a3e1ef6e6b76a7d2cef1dd698f91f\gpu_shader_display_transform.glsl.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\cf6a3e1ef6e6b76a7d2cef1dd698f91f\gpu_shader_display_transform.glsl.c.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating gpu_shader_display_transform.glsl.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -E make_directory C:/BlenderStuff/BlenderScope/ProjectFiles/intern/opencolorio
@@ -250,8 +250,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform.glsl;C:\BlenderStuff\BlenderScope\Build\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\gpu_shader_display_transform.glsl.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform.glsl;C:\BlenderStuff\BlenderScope\ProjectFiles\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\gpu_shader_display_transform.glsl.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating gpu_shader_display_transform.glsl.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -265,8 +265,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform.glsl;C:\BlenderStuff\BlenderScope\Build\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\gpu_shader_display_transform.glsl.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform.glsl;C:\BlenderStuff\BlenderScope\ProjectFiles\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\gpu_shader_display_transform.glsl.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating gpu_shader_display_transform.glsl.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
@@ -280,8 +280,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform.glsl;C:\BlenderStuff\BlenderScope\Build\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\gpu_shader_display_transform.glsl.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform.glsl;C:\BlenderStuff\BlenderScope\ProjectFiles\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\gpu_shader_display_transform.glsl.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating gpu_shader_display_transform.glsl.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
@@ -295,13 +295,13 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform.glsl;C:\BlenderStuff\BlenderScope\Build\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\gpu_shader_display_transform.glsl.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform.glsl;C:\BlenderStuff\BlenderScope\ProjectFiles\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\gpu_shader_display_transform.glsl.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\cf6a3e1ef6e6b76a7d2cef1dd698f91f\gpu_shader_display_transform_vertex.glsl.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\cf6a3e1ef6e6b76a7d2cef1dd698f91f\gpu_shader_display_transform_vertex.glsl.c.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating gpu_shader_display_transform_vertex.glsl.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -E make_directory C:/BlenderStuff/BlenderScope/ProjectFiles/intern/opencolorio
@@ -314,8 +314,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform_vertex.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform_vertex.glsl;C:\BlenderStuff\BlenderScope\Build\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\gpu_shader_display_transform_vertex.glsl.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform_vertex.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform_vertex.glsl;C:\BlenderStuff\BlenderScope\ProjectFiles\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\gpu_shader_display_transform_vertex.glsl.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating gpu_shader_display_transform_vertex.glsl.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -329,8 +329,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform_vertex.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform_vertex.glsl;C:\BlenderStuff\BlenderScope\Build\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\gpu_shader_display_transform_vertex.glsl.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform_vertex.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform_vertex.glsl;C:\BlenderStuff\BlenderScope\ProjectFiles\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\gpu_shader_display_transform_vertex.glsl.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating gpu_shader_display_transform_vertex.glsl.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
@@ -344,8 +344,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform_vertex.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform_vertex.glsl;C:\BlenderStuff\BlenderScope\Build\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\gpu_shader_display_transform_vertex.glsl.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform_vertex.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform_vertex.glsl;C:\BlenderStuff\BlenderScope\ProjectFiles\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\gpu_shader_display_transform_vertex.glsl.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating gpu_shader_display_transform_vertex.glsl.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
@@ -359,8 +359,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform_vertex.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform_vertex.glsl;C:\BlenderStuff\BlenderScope\Build\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\gpu_shader_display_transform_vertex.glsl.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/cf6a3e1ef6e6b76a7d2cef1dd698f91f/gpu_shader_display_transform_vertex.glsl.c.rule;C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform_vertex.glsl;C:\BlenderStuff\BlenderScope\ProjectFiles\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\gpu_shader_display_transform_vertex.glsl.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
@@ -377,7 +377,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/intern/opencolorio/CMakeLists.txt;C:\BlenderStuff\BlenderScope\intern\opencolorio\CMakeLists.txt;C:\BlenderStuff\BlenderScope\intern\opencolorio\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/intern/opencolorio/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -390,7 +390,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/intern/opencolorio/CMakeLists.txt;C:\BlenderStuff\BlenderScope\intern\opencolorio\CMakeLists.txt;C:\BlenderStuff\BlenderScope\intern\opencolorio\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/intern/opencolorio/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
@@ -403,7 +403,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/intern/opencolorio/CMakeLists.txt;C:\BlenderStuff\BlenderScope\intern\opencolorio\CMakeLists.txt;C:\BlenderStuff\BlenderScope\intern\opencolorio\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/intern/opencolorio/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
@@ -416,7 +416,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/intern/opencolorio/CMakeLists.txt;C:\BlenderStuff\BlenderScope\intern\opencolorio\CMakeLists.txt;C:\BlenderStuff\BlenderScope\intern\opencolorio\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
@@ -427,14 +427,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\BlenderStuff\BlenderScope\intern\opencolorio\ocio_impl.h" />
     <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\opencolorio\ocio_impl.cc" />
     <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\opencolorio\ocio_impl_glsl.cc" />
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\gpu_shader_display_transform.glsl.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\gpu_shader_display_transform.glsl.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <None Include="C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform.glsl" />
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\intern\opencolorio\gpu_shader_display_transform_vertex.glsl.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opencolorio\gpu_shader_display_transform_vertex.glsl.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
@@ -443,13 +443,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <None Include="C:\BlenderStuff\BlenderScope\intern\opencolorio\gpu_shader_display_transform_vertex.glsl" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\ZERO_CHECK.vcxproj">
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\ProjectFiles\ZERO_CHECK.vcxproj">
       <Project>{D519D051-5A79-323C-9110-7C69506A4014}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\datatoc\datatoc.vcxproj">
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\datatoc\datatoc.vcxproj">
       <Project>{E16A571E-51F0-3C2C-A696-8FB4BB66DE86}</Project>
       <Name>datatoc</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

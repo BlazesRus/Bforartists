@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\21d002f43d2ad5f4dc0bf7037a3b5bfa\PACKAGE_force.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\21d002f43d2ad5f4dc0bf7037a3b5bfa\PACKAGE_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>

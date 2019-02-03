@@ -46,13 +46,13 @@
     <ClCompile Include="C:\BlenderStuff\BlenderScope\intern\opensubdiv\internal\opensubdiv_util.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\intern\opensubdiv\shader\gpu_shader_opensubdiv_vertex.glsl.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opensubdiv\shader\gpu_shader_opensubdiv_vertex.glsl.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\intern\opensubdiv\shader\gpu_shader_opensubdiv_geometry.glsl.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opensubdiv\shader\gpu_shader_opensubdiv_geometry.glsl.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\intern\opensubdiv\shader\gpu_shader_opensubdiv_fragment.glsl.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\intern\opensubdiv\shader\gpu_shader_opensubdiv_fragment.glsl.c">
       <Filter>Generated</Filter>
     </ClCompile>
   </ItemGroup>
@@ -119,13 +119,13 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\e62fdb920a9ac29ba3c0a19cae899327\gpu_shader_opensubdiv_vertex.glsl.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\e62fdb920a9ac29ba3c0a19cae899327\gpu_shader_opensubdiv_vertex.glsl.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\e62fdb920a9ac29ba3c0a19cae899327\gpu_shader_opensubdiv_geometry.glsl.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\e62fdb920a9ac29ba3c0a19cae899327\gpu_shader_opensubdiv_geometry.glsl.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\e62fdb920a9ac29ba3c0a19cae899327\gpu_shader_opensubdiv_fragment.glsl.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\e62fdb920a9ac29ba3c0a19cae899327\gpu_shader_opensubdiv_fragment.glsl.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\BlenderStuff\BlenderScope\intern\opensubdiv\CMakeLists.txt">

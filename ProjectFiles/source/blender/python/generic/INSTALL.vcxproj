@@ -150,7 +150,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\2dde1ee4c3e724ac85258f2c49d9a0e9\INSTALL_force.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\2dde1ee4c3e724ac85258f2c49d9a0e9\INSTALL_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 cd .
@@ -162,7 +162,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/2dde1ee4c3e724ac85258f2c49d9a0e9/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\python\generic\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\python\generic\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -175,7 +175,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/2dde1ee4c3e724ac85258f2c49d9a0e9/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\python\generic\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\python\generic\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
@@ -188,7 +188,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/2dde1ee4c3e724ac85258f2c49d9a0e9/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\python\generic\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\python\generic\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
@@ -201,18 +201,18 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/2dde1ee4c3e724ac85258f2c49d9a0e9/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\python\generic\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\python\generic\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\ZERO_CHECK.vcxproj">
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\ProjectFiles\ZERO_CHECK.vcxproj">
       <Project>{D519D051-5A79-323C-9110-7C69506A4014}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\audaspace\ALL_BUILD.vcxproj">
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace\ALL_BUILD.vcxproj">
       <Project>{1757ED57-49FD-3F00-A14A-00DA3B57A022}</Project>
       <Name>ALL_BUILD</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

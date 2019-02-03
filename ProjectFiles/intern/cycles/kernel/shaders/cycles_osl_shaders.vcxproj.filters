@@ -1,274 +1,274 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_add_closure.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_add_closure.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_ambient_occlusion.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_ambient_occlusion.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_anisotropic_bsdf.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_anisotropic_bsdf.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_attribute.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_attribute.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_background.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_background.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_bevel.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_bevel.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_brick_texture.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_brick_texture.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_brightness.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_brightness.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_bump.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_bump.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_camera.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_camera.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_checker_texture.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_checker_texture.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_combine_rgb.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_combine_rgb.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_combine_hsv.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_combine_hsv.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_combine_xyz.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_combine_xyz.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_convert_from_color.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_convert_from_color.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_convert_from_float.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_convert_from_float.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_convert_from_int.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_convert_from_int.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_convert_from_normal.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_convert_from_normal.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_convert_from_point.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_convert_from_point.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_convert_from_vector.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_convert_from_vector.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_diffuse_bsdf.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_diffuse_bsdf.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_displacement.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_displacement.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_vector_displacement.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_vector_displacement.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_emission.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_emission.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_environment_texture.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_environment_texture.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_fresnel.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_fresnel.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_gamma.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_gamma.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_geometry.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_geometry.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_glass_bsdf.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_glass_bsdf.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_glossy_bsdf.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_glossy_bsdf.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_gradient_texture.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_gradient_texture.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_hair_info.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_hair_info.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_scatter_volume.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_scatter_volume.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_absorption_volume.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_absorption_volume.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_principled_volume.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_principled_volume.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_holdout.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_holdout.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_hsv.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_hsv.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_ies_light.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_ies_light.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_image_texture.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_image_texture.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_invert.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_invert.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_layer_weight.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_layer_weight.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_light_falloff.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_light_falloff.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_light_path.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_light_path.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_magic_texture.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_magic_texture.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_mapping.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_mapping.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_math.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_math.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_mix.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_mix.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_mix_closure.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_mix_closure.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_musgrave_texture.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_musgrave_texture.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_noise_texture.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_noise_texture.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_normal.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_normal.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_normal_map.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_normal_map.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_object_info.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_object_info.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_output_displacement.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_output_displacement.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_output_surface.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_output_surface.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_output_volume.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_output_volume.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_particle_info.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_particle_info.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_refraction_bsdf.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_refraction_bsdf.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_rgb_curves.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_rgb_curves.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_rgb_ramp.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_rgb_ramp.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_separate_rgb.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_separate_rgb.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_separate_hsv.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_separate_hsv.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_separate_xyz.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_separate_xyz.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_set_normal.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_set_normal.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_sky_texture.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_sky_texture.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_subsurface_scattering.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_subsurface_scattering.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_tangent.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_tangent.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_texture_coordinate.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_texture_coordinate.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_toon_bsdf.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_toon_bsdf.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_translucent_bsdf.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_translucent_bsdf.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_transparent_bsdf.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_transparent_bsdf.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_value.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_value.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_vector_curves.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_vector_curves.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_vector_math.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_vector_math.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_vector_transform.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_vector_transform.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_velvet_bsdf.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_velvet_bsdf.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_voronoi_texture.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_voronoi_texture.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_voxel_texture.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_voxel_texture.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_wavelength.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_wavelength.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_blackbody.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_blackbody.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_wave_texture.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_wave_texture.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_wireframe.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_wireframe.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_hair_bsdf.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_hair_bsdf.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_principled_hair_bsdf.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_principled_hair_bsdf.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_uv_map.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_uv_map.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_principled_bsdf.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_principled_bsdf.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_rgb_to_bw.oso.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\527e752c9dbf21bae9f2d6cda12c01fc\node_rgb_to_bw.oso.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\142d11310664d0ac40b9b6c29c321255\cycles_osl_shaders.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\142d11310664d0ac40b9b6c29c321255\cycles_osl_shaders.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\BlenderStuff\BlenderScope\intern\cycles\kernel\shaders\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\BlenderStuff\BlenderScope\Build\intern\cycles\kernel\shaders\CMakeFiles\cycles_osl_shaders" />
+    <None Include="C:\BlenderStuff\BlenderScope\ProjectFiles\intern\cycles\kernel\shaders\CMakeFiles\cycles_osl_shaders" />
     <None Include="C:\BlenderStuff\BlenderScope\intern\cycles\kernel\shaders\node_add_closure.osl" />
     <None Include="C:\BlenderStuff\BlenderScope\intern\cycles\kernel\shaders\node_ambient_occlusion.osl" />
     <None Include="C:\BlenderStuff\BlenderScope\intern\cycles\kernel\shaders\node_anisotropic_bsdf.osl" />

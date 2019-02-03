@@ -4,7 +4,7 @@
     <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\intern\dna_genfile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\dna.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\dna.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -221,7 +221,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\e867f8f98b3605a6477cac43ec72136d\dna.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\e867f8f98b3605a6477cac43ec72136d\dna.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\intern\CMakeLists.txt">

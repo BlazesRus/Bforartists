@@ -56,26 +56,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\lib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\lib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">audaspace-py.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">audaspace-py</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\lib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\lib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">audaspace-py.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">audaspace-py</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\lib\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\lib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">audaspace-py.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">audaspace-py</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\lib\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\lib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">audaspace-py.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">audaspace-py</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -100,10 +100,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;_USE_MATH_DEFINES;NOMINMAX;_STDINT_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -116,7 +116,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CallingConvention>Cdecl</CallingConvention>
@@ -141,10 +141,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;_USE_MATH_DEFINES;NOMINMAX;_STDINT_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -157,7 +157,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CallingConvention>Cdecl</CallingConvention>
@@ -182,10 +182,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;_USE_MATH_DEFINES;NOMINMAX;_STDINT_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -198,7 +198,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CallingConvention>Cdecl</CallingConvention>
@@ -222,10 +222,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;_USE_MATH_DEFINES;NOMINMAX;_STDINT_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\Build\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace;C:\BlenderStuff\BlenderScope\extern\audaspace\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openal\include\AL;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\python\include\python3.7;C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\sdl\include;C:\BlenderStuff\lib\win64_vc14\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -249,7 +249,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/extern/audaspace/CMakeLists.txt;C:\BlenderStuff\BlenderScope\extern\audaspace\CMakeLists.txt;C:\BlenderStuff\BlenderScope\extern\audaspace\blender_config.cmake;C:\BlenderStuff\BlenderScope\extern\audaspace\config\Audaspace.h.in;C:\BlenderStuff\BlenderScope\extern\audaspace\src\plugin\PluginManagerWindows.cpp.in;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeDependentOption.cmake;C:\BlenderStuff\BlenderScope\extern\audaspace\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\extern\audaspace\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/extern/audaspace/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -262,7 +262,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/extern/audaspace/CMakeLists.txt;C:\BlenderStuff\BlenderScope\extern\audaspace\CMakeLists.txt;C:\BlenderStuff\BlenderScope\extern\audaspace\blender_config.cmake;C:\BlenderStuff\BlenderScope\extern\audaspace\config\Audaspace.h.in;C:\BlenderStuff\BlenderScope\extern\audaspace\src\plugin\PluginManagerWindows.cpp.in;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeDependentOption.cmake;C:\BlenderStuff\BlenderScope\extern\audaspace\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\extern\audaspace\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/extern/audaspace/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
@@ -275,7 +275,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/extern/audaspace/CMakeLists.txt;C:\BlenderStuff\BlenderScope\extern\audaspace\CMakeLists.txt;C:\BlenderStuff\BlenderScope\extern\audaspace\blender_config.cmake;C:\BlenderStuff\BlenderScope\extern\audaspace\config\Audaspace.h.in;C:\BlenderStuff\BlenderScope\extern\audaspace\src\plugin\PluginManagerWindows.cpp.in;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeDependentOption.cmake;C:\BlenderStuff\BlenderScope\extern\audaspace\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\extern\audaspace\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/extern/audaspace/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
@@ -288,7 +288,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/extern/audaspace/CMakeLists.txt;C:\BlenderStuff\BlenderScope\extern\audaspace\CMakeLists.txt;C:\BlenderStuff\BlenderScope\extern\audaspace\blender_config.cmake;C:\BlenderStuff\BlenderScope\extern\audaspace\config\Audaspace.h.in;C:\BlenderStuff\BlenderScope\extern\audaspace\src\plugin\PluginManagerWindows.cpp.in;C:\UserFiles\SubversionTools\CMake\share\cmake-3.13\Modules\CMakeDependentOption.cmake;C:\BlenderStuff\BlenderScope\extern\audaspace\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\extern\audaspace\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
@@ -315,13 +315,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\BlenderStuff\BlenderScope\extern\audaspace\bindings\python\PyThreadPool.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\ZERO_CHECK.vcxproj">
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\ProjectFiles\ZERO_CHECK.vcxproj">
       <Project>{D519D051-5A79-323C-9110-7C69506A4014}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\extern\audaspace\audaspace.vcxproj">
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace\audaspace.vcxproj">
       <Project>{09E00FB2-0AFD-377C-BAE9-16F5F7C95874}</Project>
       <Name>audaspace</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

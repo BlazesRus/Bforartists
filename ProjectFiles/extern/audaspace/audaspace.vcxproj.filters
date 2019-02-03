@@ -319,7 +319,7 @@
     <ClCompile Include="C:\BlenderStuff\BlenderScope\extern\audaspace\plugins\sdl\SDLDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\extern\audaspace\PluginManager.cpp">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace\PluginManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -690,7 +690,7 @@
     <ClInclude Include="C:\BlenderStuff\BlenderScope\extern\audaspace\plugins\sdl\SDLDevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\BlenderStuff\BlenderScope\Build\extern\audaspace\Audaspace.h">
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\ProjectFiles\extern\audaspace\Audaspace.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

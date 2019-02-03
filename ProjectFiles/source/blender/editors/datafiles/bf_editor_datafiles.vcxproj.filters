@@ -1,348 +1,348 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\bfont.pfb.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\bfont.pfb.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\bfont.ttf.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\bfont.ttf.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\bmonofont.ttf.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\bmonofont.ttf.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\preview_cycles.blend.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\preview_cycles.blend.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\preview_grease_pencil.blend.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\preview_grease_pencil.blend.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\splash.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\splash.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\splash_2x.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\splash_2x.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\blender_icons16.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\blender_icons16.png.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\blender_icons32.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\blender_icons32.png.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\prvicons.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\prvicons.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\blob.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\blob.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\blur.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\blur.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\clay.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\clay.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\claystrips.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\claystrips.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\clone.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\clone.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\crease.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\crease.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\draw.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\draw.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\fill.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\fill.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\flatten.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\flatten.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\grab.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\grab.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\inflate.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\inflate.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\layer.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\layer.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\mask.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\mask.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\mix.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\mix.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\nudge.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\nudge.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\pinch.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\pinch.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\scrape.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\scrape.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\smear.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\smear.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\smooth.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\smooth.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\snake_hook.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\snake_hook.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\soften.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\soften.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\texdraw.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\texdraw.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\texfill.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\texfill.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\texmask.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\texmask.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\thumb.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\thumb.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\twist.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\twist.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_smooth.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_smooth.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_thickness.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_thickness.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_strength.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_strength.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_grab.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_grab.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_push.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_push.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_twist.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_twist.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_pinch.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_pinch.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_randomize.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_randomize.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_clone.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_clone.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_weight.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_weight.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_pencil.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_pencil.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_pen.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_pen.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_ink.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_ink.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_inknoise.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_inknoise.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_block.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_block.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_marker.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_marker.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_fill.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_fill.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_erase_soft.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_erase_soft.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_erase_hard.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_erase_hard.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\brushicons\gp_brush_erase_stroke.png.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\brushicons\gp_brush_erase_stroke.png.c">
       <Filter>Generated</Filter>
     </ClCompile>
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\release\datafiles\startup.blend.c">
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\release\datafiles\startup.blend.c">
       <Filter>Generated</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\bfont.pfb.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\bfont.pfb.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\bfont.ttf.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\bfont.ttf.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\bmonofont.ttf.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\bmonofont.ttf.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\preview_cycles.blend.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\preview_cycles.blend.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\preview_grease_pencil.blend.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\preview_grease_pencil.blend.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\splash.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\splash.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\splash_2x.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\splash_2x.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\blender_icons16.png.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\blender_icons16.png.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\blender_icons32.png.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\blender_icons32.png.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\prvicons.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\prvicons.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\blob.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\blob.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\blur.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\blur.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\clay.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\clay.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\claystrips.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\claystrips.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\clone.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\clone.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\crease.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\crease.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\draw.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\draw.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\fill.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\fill.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\flatten.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\flatten.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\grab.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\grab.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\inflate.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\inflate.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\layer.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\layer.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\mask.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\mask.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\mix.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\mix.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\nudge.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\nudge.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\pinch.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\pinch.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\scrape.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\scrape.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\smear.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\smear.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\smooth.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\smooth.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\snake_hook.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\snake_hook.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\soften.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\soften.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\texdraw.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\texdraw.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\texfill.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\texfill.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\texmask.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\texmask.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\thumb.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\thumb.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\twist.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\twist.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_smooth.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_smooth.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_thickness.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_thickness.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_strength.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_strength.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_grab.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_grab.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_push.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_push.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_twist.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_twist.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_pinch.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_pinch.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_randomize.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_randomize.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_clone.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_clone.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_weight.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_weight.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_pencil.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_pencil.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_pen.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_pen.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_ink.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_ink.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_inknoise.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_inknoise.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_block.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_block.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_marker.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_marker.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_fill.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_fill.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_erase_soft.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_erase_soft.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_erase_hard.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_erase_hard.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_erase_stroke.png.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\d9ebdaee9efd86521c6a22ad8704695e\gp_brush_erase_stroke.png.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\startup.blend.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\03ae720ad9a6d722ce377b2135edbae6\startup.blend.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\blender\editors\datafiles\CMakeLists.txt">

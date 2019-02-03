@@ -56,19 +56,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\lib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\lib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_dna.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_dna</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\lib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\lib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_dna.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_dna</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\lib\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\lib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_dna.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_dna</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\lib\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\lib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_dna.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_dna</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
@@ -237,7 +237,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\e867f8f98b3605a6477cac43ec72136d\dna.c.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\e867f8f98b3605a6477cac43ec72136d\dna.c.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating dna.c, dna_type_offsets.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 ..\..\..\..\bin\Debug\makesdna.exe C:/BlenderStuff/BlenderScope/ProjectFiles/source/blender/makesdna/intern/dna.c C:/BlenderStuff/BlenderScope/ProjectFiles/source/blender/makesdna/intern/dna_type_offsets.h C:/BlenderStuff/BlenderScope/source/blender/makesdna/
@@ -248,8 +248,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/e867f8f98b3605a6477cac43ec72136d/dna.c.rule;C:\BlenderStuff\BlenderScope\Build\bin\Debug\makesdna.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\dna.c;C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\dna_type_offsets.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/e867f8f98b3605a6477cac43ec72136d/dna.c.rule;C:\BlenderStuff\BlenderScope\ProjectFiles\bin\Debug\makesdna.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\dna.c;C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\dna_type_offsets.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating dna.c, dna_type_offsets.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -261,8 +261,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/e867f8f98b3605a6477cac43ec72136d/dna.c.rule;C:\BlenderStuff\BlenderScope\Build\bin\Release\makesdna.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\dna.c;C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\dna_type_offsets.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/e867f8f98b3605a6477cac43ec72136d/dna.c.rule;C:\BlenderStuff\BlenderScope\ProjectFiles\bin\Release\makesdna.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\dna.c;C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\dna_type_offsets.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating dna.c, dna_type_offsets.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
@@ -274,8 +274,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/e867f8f98b3605a6477cac43ec72136d/dna.c.rule;C:\BlenderStuff\BlenderScope\Build\bin\MinSizeRel\makesdna.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\dna.c;C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\dna_type_offsets.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/e867f8f98b3605a6477cac43ec72136d/dna.c.rule;C:\BlenderStuff\BlenderScope\ProjectFiles\bin\MinSizeRel\makesdna.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\dna.c;C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\dna_type_offsets.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating dna.c, dna_type_offsets.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
@@ -287,8 +287,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/e867f8f98b3605a6477cac43ec72136d/dna.c.rule;C:\BlenderStuff\BlenderScope\Build\bin\RelWithDebInfo\makesdna.exe;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\dna.c;C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\dna_type_offsets.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/ProjectFiles/CMakeFiles/e867f8f98b3605a6477cac43ec72136d/dna.c.rule;C:\BlenderStuff\BlenderScope\ProjectFiles\bin\RelWithDebInfo\makesdna.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\dna.c;C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\dna_type_offsets.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
@@ -305,7 +305,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/source/blender/makesdna/intern/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesdna\intern\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesdna\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/makesdna/intern/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -318,7 +318,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/source/blender/makesdna/intern/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesdna\intern\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesdna\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/makesdna/intern/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
@@ -331,7 +331,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/source/blender/makesdna/intern/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesdna\intern\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesdna\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/makesdna/intern/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
@@ -344,13 +344,13 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/source/blender/makesdna/intern/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesdna\intern\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\makesdna\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\intern\dna_genfile.c" />
-    <ClCompile Include="C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\dna.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\dna.c" />
     <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_ID.h" />
     <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_action_types.h" />
     <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_anim_types.h" />
@@ -423,13 +423,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\makesdna\DNA_world_types.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\ZERO_CHECK.vcxproj">
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\ProjectFiles\ZERO_CHECK.vcxproj">
       <Project>{D519D051-5A79-323C-9110-7C69506A4014}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\BlenderStuff\BlenderScope\Build\source\blender\makesdna\intern\makesdna.vcxproj">
+    <ProjectReference Include="C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\makesdna\intern\makesdna.vcxproj">
       <Project>{D730E4E5-C17D-3C67-A9F3-0BD1F1CF92BF}</Project>
       <Name>makesdna</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

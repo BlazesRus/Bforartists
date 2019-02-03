@@ -1302,12 +1302,12 @@
     <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\compositor\operations\COM_MaskOperation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\BlenderStuff\BlenderScope\Build\source\blender\compositor\operations\COM_OpenCLKernels.cl.h">
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\ProjectFiles\source\blender\compositor\operations\COM_OpenCLKernels.cl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\BlenderStuff\BlenderScope\Build\CMakeFiles\b9fa0e3edb32a9c527cf2f4dcc369324\COM_OpenCLKernels.cl.h.rule">
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\ProjectFiles\CMakeFiles\b9fa0e3edb32a9c527cf2f4dcc369324\COM_OpenCLKernels.cl.h.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
     <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\blender\compositor\CMakeLists.txt">
