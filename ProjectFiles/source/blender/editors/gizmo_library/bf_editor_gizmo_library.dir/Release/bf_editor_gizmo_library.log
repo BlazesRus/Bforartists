@@ -1,0 +1,20 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/gizmo_library/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/gizmo_library/CMakeFiles/generate.stamp is up-to-date.
+  gizmo_draw_utils.c
+  gizmo_library_presets.c
+  gizmo_library_utils.c
+  geom_arrow_gizmo.c
+  geom_cube_gizmo.c
+  geom_dial_gizmo.c
+  value2d_gizmo_group.c
+  arrow2d_gizmo.c
+  arrow3d_gizmo.c
+  blank3d_gizmo.c
+  button2d_gizmo.c
+  cage2d_gizmo.c
+  cage3d_gizmo.c
+  dial3d_gizmo.c
+  move3d_gizmo.c
+  primitive3d_gizmo.c
+  value2d_gizmo.c
+  bf_editor_gizmo_library.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_gizmo_library.lib

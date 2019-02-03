@@ -1,0 +1,9 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/extern/glog/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/extern/glog/CMakeFiles/generate.stamp is up-to-date.
+  logging.cc
+  raw_logging.cc
+  utilities.cc
+  vlog_is_on.cc
+  port.cc
+c:\blenderstuff\blenderscope\extern\glog\src\logging.cc(2028): warning C4722: 'google::LogMessageFatal::~LogMessageFatal': destructor never returns, potential memory leak
+  extern_glog.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\extern_glog.lib

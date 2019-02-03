@@ -1,0 +1,24 @@
+﻿  Generating shader/gpu_shader_opensubdiv_vertex.glsl.c
+  Generating shader/gpu_shader_opensubdiv_geometry.glsl.c
+  Generating shader/gpu_shader_opensubdiv_fragment.glsl.c
+  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/opensubdiv/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/opensubdiv/CMakeFiles/generate.stamp is up-to-date.
+  opensubdiv.cc
+  opensubdiv_converter_factory.cc
+  opensubdiv_converter_internal.cc
+  opensubdiv_converter_orient.cc
+  opensubdiv_device_context_cuda.cc
+  opensubdiv_device_context_opencl.cc
+  opensubdiv_evaluator.cc
+  opensubdiv_evaluator_internal.cc
+  opensubdiv_gl_mesh.cc
+  opensubdiv_gl_mesh_draw.cc
+  opensubdiv_gl_mesh_fvar.cc
+  opensubdiv_gl_mesh_internal.cc
+  opensubdiv_topology_refiner.cc
+  opensubdiv_topology_refiner_internal.cc
+  opensubdiv_util.cc
+  gpu_shader_opensubdiv_vertex.glsl.c
+  gpu_shader_opensubdiv_geometry.glsl.c
+  gpu_shader_opensubdiv_fragment.glsl.c
+  bf_intern_opensubdiv.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_opensubdiv.lib

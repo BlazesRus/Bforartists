@@ -1,0 +1,21 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/blenloader/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/blenloader/CMakeFiles/generate.stamp is up-to-date.
+  userdef_default_theme.c
+  blend_validate.c
+  readblenentry.c
+  readfile.c
+  undofile.c
+  versioning_250.c
+  versioning_260.c
+  versioning_270.c
+  versioning_280.c
+  versioning_defaults.c
+  versioning_legacy.c
+  versioning_userdef.c
+C:\BlenderStuff\BlenderScope\source\blender\blenloader\intern\readfile.c(372): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:\BlenderStuff\BlenderScope\source\blender\blenloader\intern\readfile.c(378): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:\BlenderStuff\BlenderScope\source\blender\blenloader\intern\readfile.c(379): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:\BlenderStuff\BlenderScope\source\blender\blenloader\intern\readfile.c(394): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:\BlenderStuff\BlenderScope\source\blender\blenloader\intern\readfile.c(395): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+  writefile.c
+  bf_blenloader.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_blenloader.lib

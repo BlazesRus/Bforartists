@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/imbuf/intern/openexr/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/imbuf/intern/openexr/CMakeFiles/generate.stamp is up-to-date.
+  openexr_api.cpp
+  bf_imbuf_openexr.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_imbuf_openexr.lib

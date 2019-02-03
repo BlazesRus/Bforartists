@@ -1,0 +1,41 @@
+
+This version of Bforartists has been originally released at www.Bforartists.de.
+It is subject to the GNU GPL license, which is part of this download.
+For more information please review the Bforartists source code distribution, 
+which can be found at Github: https://github.com/Bforartists/Bforartists
+  
+Bforartists is a fork of the popular 3D package Blender.
+
+LICENSE AGREEMENT
+===================
+
+You should read the following terms and conditions carefully before using 
+this software.Your use of this software indicates your full acceptance of 
+this license agreement and warranty.
+
+The term "Software" also shall include any upgrades, modified versions, 
+editions, issues or updates of the Software.
+
+1. GRANTING OF LICENSE: Asides the GPL License, Bforartists, grants to you, 
+the Licensee, a non-exclusive right and licence to install and use this Software. 
+You may install and use the SOFTWARE on as many computers as you wish.
+
+2. OWNERSHIP: Every artwork you create with the software, be it images, 
+movies, scripts, exported 2d and 3d content, or even the *.blend files, is 
+completely your property. And can be licensed in any way you want.
+
+3. REDISTRIBUTION: You are allowed to distribute copies of the Software 
+freely to other individual users, without the need to ask for a permission.
+The source code has to contain all copies of the software as well.
+
+4 DISCLAIMER: This software is provided 'as-is', without any express or 
+implied warranty. In no event will Bforartists be held liable for any damages 
+arising from the use of this software in any form. The risk of using the software
+remains with you.
+ 
+5. LAW: The license agreement and all possible disputes will be governed by 
+the german law.
+
+http://www.Bforartists.de
+
+

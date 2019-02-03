@@ -1,0 +1,38 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/itasc/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/itasc/CMakeFiles/generate.stamp is up-to-date.
+  Armature.cpp
+  Cache.cpp
+  ConstraintSet.cpp
+  ControlledObject.cpp
+  CopyPose.cpp
+  Distance.cpp
+  FixedObject.cpp
+  MovingFrame.cpp
+  Scene.cpp
+  UncontrolledObject.cpp
+  WDLSSolver.cpp
+  WSDLSSolver.cpp
+  WorldObject.cpp
+  eigen_types.cpp
+  chain.cpp
+  chainfksolverpos_recursive.cpp
+  chainjnttojacsolver.cpp
+  frameacc.cpp
+  frames.cpp
+  frames_io.cpp
+  framevel.cpp
+  inertia.cpp
+  jacobian.cpp
+  jntarray.cpp
+  jntarrayacc.cpp
+  jntarrayvel.cpp
+  joint.cpp
+  kinfam_io.cpp
+  segment.cpp
+  tree.cpp
+  treefksolverpos_recursive.cpp
+  treejnttojacsolver.cpp
+  error_stack.cpp
+  utility.cpp
+  utility_io.cpp
+  bf_intern_itasc.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_itasc.lib

@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/locale/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/locale/CMakeFiles/generate.stamp is up-to-date.
+  boost_locale_wrapper.cpp
+  bf_intern_locale.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_locale.lib

@@ -1,0 +1,31 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/elbeem/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/elbeem/CMakeFiles/generate.stamp is up-to-date.
+  attributes.cpp
+  controlparticles.cpp
+  elbeem.cpp
+  elbeem_control.cpp
+  isosurface.cpp
+  mvmcoords.cpp
+  ntl_blenderdumper.cpp
+  ntl_bsptree.cpp
+  ntl_geometrymodel.cpp
+C:\BlenderStuff\BlenderScope\intern\elbeem\intern\ntl_geometrymodel.cpp(167): warning C4311: 'type cast': pointer truncation from 'float *' to 'long'
+C:\BlenderStuff\BlenderScope\intern\elbeem\intern\ntl_geometrymodel.cpp(167): warning C4302: 'type cast': truncation from 'float *' to 'long'
+  ntl_geometryobject.cpp
+  ntl_lighting.cpp
+  ntl_ray.cpp
+  ntl_world.cpp
+  parametrizer.cpp
+  particletracer.cpp
+  simulation_object.cpp
+  solver_adap.cpp
+  solver_control.cpp
+  solver_init.cpp
+  solver_interface.cpp
+  solver_main.cpp
+  solver_util.cpp
+  utilities.cpp
+c:\blenderstuff\blenderscope\intern\elbeem\intern\solver_class.h(949): warning C4723: potential divide by 0
+c:\blenderstuff\blenderscope\intern\elbeem\intern\solver_class.h(949): warning C4723: potential divide by 0
+c:\blenderstuff\blenderscope\intern\elbeem\intern\solver_class.h(949): warning C4723: potential divide by 0
+  bf_intern_elbeem.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_elbeem.lib

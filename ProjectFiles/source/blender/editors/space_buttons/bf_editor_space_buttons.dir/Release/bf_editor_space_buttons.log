@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/space_buttons/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/space_buttons/CMakeFiles/generate.stamp is up-to-date.
+  buttons_context.c
+  buttons_ops.c
+  buttons_texture.c
+  space_buttons.c
+  bf_editor_space_buttons.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_space_buttons.lib

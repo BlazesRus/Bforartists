@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/sound/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/sound/CMakeFiles/generate.stamp is up-to-date.
+  sound_ops.c
+  bf_editor_sound.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_sound.lib

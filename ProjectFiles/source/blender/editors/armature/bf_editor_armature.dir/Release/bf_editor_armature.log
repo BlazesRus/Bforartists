@@ -1,0 +1,20 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/armature/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/armature/CMakeFiles/generate.stamp is up-to-date.
+  armature_add.c
+  armature_edit.c
+  armature_naming.c
+  armature_ops.c
+  armature_relations.c
+  armature_select.c
+  armature_skinning.c
+  armature_utils.c
+  editarmature_undo.c
+  meshlaplacian.c
+  pose_edit.c
+  pose_group.c
+  pose_lib.c
+  pose_select.c
+  pose_slide.c
+  pose_transform.c
+  pose_utils.c
+  bf_editor_armature.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_armature.lib

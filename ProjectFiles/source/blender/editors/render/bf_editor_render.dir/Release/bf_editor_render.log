@@ -1,0 +1,12 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/render/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/render/CMakeFiles/generate.stamp is up-to-date.
+  render_internal.c
+  render_opengl.c
+  render_ops.c
+  render_preview.c
+  render_shading.c
+  render_update.c
+  render_view.c
+C:\BlenderStuff\BlenderScope\source\blender\editors\render\render_shading.c(441): warning C4129: 'N': unrecognized character escape sequence
+C:\BlenderStuff\BlenderScope\source\blender\editors\render\render_shading.c(747): warning C4129: 'N': unrecognized character escape sequence
+  bf_editor_render.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_render.lib

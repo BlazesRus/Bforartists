@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\ar.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\ca.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\cs.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\de.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\eo.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\es.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\es_ES.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\eu.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\fa.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\fr.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\ha.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\he.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\hi.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\hr.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\hu.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\id.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\it.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\ja.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\ko.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\ky.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\nl.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\pl.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\pt.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\pt_BR.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\ru.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\sr.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\sr@latin.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\sv.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\tr.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\uk.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\vi.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\zh_CN.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\43bfc74f8f54f872f5a21ed5e55b8bb6\zh_TW.mo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0d2338e98360316e3a60830504742088\locales.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\creator\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\creator\CMakeFiles\locales" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B8EC40A3-4290-3D9F-8D54-9942BC1F9E27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

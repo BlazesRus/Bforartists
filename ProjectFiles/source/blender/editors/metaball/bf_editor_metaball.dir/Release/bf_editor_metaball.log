@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/metaball/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/metaball/CMakeFiles/generate.stamp is up-to-date.
+  editmball_undo.c
+  mball_edit.c
+  mball_ops.c
+  bf_editor_metaball.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_metaball.lib

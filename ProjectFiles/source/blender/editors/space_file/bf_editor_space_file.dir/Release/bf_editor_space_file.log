@@ -1,0 +1,11 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/space_file/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/space_file/CMakeFiles/generate.stamp is up-to-date.
+  file_draw.c
+  file_ops.c
+  file_panels.c
+  file_utils.c
+  filelist.c
+  filesel.c
+  fsmenu.c
+  space_file.c
+  bf_editor_space_file.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_space_file.lib

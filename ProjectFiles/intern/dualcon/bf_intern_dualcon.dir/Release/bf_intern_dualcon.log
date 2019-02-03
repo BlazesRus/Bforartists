@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/dualcon/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/dualcon/CMakeFiles/generate.stamp is up-to-date.
+  manifold_table.cpp
+  marching_cubes_table.cpp
+  octree.cpp
+  Projections.cpp
+  dualcon_c_api.cpp
+  bf_intern_dualcon.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_dualcon.lib

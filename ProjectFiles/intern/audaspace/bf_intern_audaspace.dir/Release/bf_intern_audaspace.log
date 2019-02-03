@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/audaspace/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/audaspace/CMakeFiles/generate.stamp is up-to-date.
+  AUD_Set.cpp
+  AUD_PyInit.cpp
+C:\BlenderStuff\BlenderScope\intern\audaspace\intern\AUD_PyInit.cpp(45): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+  bf_intern_audaspace.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_audaspace.lib

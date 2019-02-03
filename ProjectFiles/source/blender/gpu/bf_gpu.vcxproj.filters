@@ -1,0 +1,1210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_attr_binding.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_batch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_batch_presets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_batch_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_buffers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_codegen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_draw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_element.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_extensions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_framebuffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_immediate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_immediate_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_init_exit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_material.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_matrix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_primitive.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_select.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_select_pick.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_select_sample_query.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_shader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_shader_interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_state.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_texture.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_uniformbuffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_vertex_buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_vertex_format.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_viewport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_depth_only_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_uniform_color_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_checker_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_diag_stripes_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_simple_lighting_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_simple_lighting_smooth_color_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_simple_lighting_smooth_color_alpha_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_flat_color_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_flat_color_alpha_test_0_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_flat_id_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_area_borders_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_area_borders_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_widget_base_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_widget_base_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_widget_shadow_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_widget_shadow_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_nodelink_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_nodelink_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_flat_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_line_dashed_uniform_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_line_dashed_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_line_dashed_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_smooth_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_smooth_color_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_smooth_color_dithered_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_image_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_image_rect_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_image_multi_rect_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_desaturate_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_linear_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_shuffle_color_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_mask_uniform_color_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_modulate_alpha_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_alpha_color_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_color_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_varying_color_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_depth_linear_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_depth_copy_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_interlace_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_image_multisample_resolve_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_image_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_normal_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_flat_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_line_dashed_uniform_color_legacy_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_line_dashed_uniform_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_smooth_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_normal_smooth_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_smooth_color_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_passthrough_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_clipped_uniform_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_instance_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_instance_variying_size_variying_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_instance_variying_size_variying_id_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_instance_objectspace_variying_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_instance_screenspace_variying_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_instance_screen_aligned_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_instance_camera_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_instance_distance_line_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_instance_edges_variying_color_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_instance_edges_variying_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_groundline_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_groundpoint_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_point_uniform_color_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_point_uniform_color_aa_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_point_uniform_color_outline_aa_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_point_varying_color_outline_aa_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_point_varying_color_varying_outline_aa_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_point_varying_color_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_point_fixed_size_varying_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_point_varying_size_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_point_varying_size_varying_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_point_uniform_size_aa_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_point_uniform_size_outline_aa_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_point_varying_size_varying_color_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_point_uniform_size_aa_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_point_uniform_size_outline_aa_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_point_uniform_size_varying_color_outline_aa_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_edituvs_points_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_edituvs_facedots_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_edituvs_edges_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_edituvs_faces_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_2D_edituvs_stretch_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_3D_selection_id_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_selection_id_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_edges_front_back_persp_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_edges_front_back_persp_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_edges_front_back_persp_legacy_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_edges_front_back_ortho_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_edges_overlay_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_edges_overlay_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_edges_overlay_simple_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_edges_overlay_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_text_simple_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_text_simple_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_text_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_text_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_text_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_keyframe_diamond_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_keyframe_diamond_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_geometry.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_material.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_gpencil_stroke_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_gpencil_stroke_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_gpencil_stroke_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_gpencil_fill_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\gpu\shaders\gpu_shader_gpencil_fill_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_attr_binding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_batch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_batch_presets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_batch_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_buffers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_draw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_element.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_extensions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_framebuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_glew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_immediate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_immediate_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_init_exit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_legacy_stubs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_primitive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_select.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_shader_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_uniformbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_vertex_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_vertex_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\GPU_viewport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_attr_binding_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_batch_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_codegen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_context_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_primitive_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_select_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_shader_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_vertex_format_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_depth_only_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_uniform_color_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_checker_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_diag_stripes_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_simple_lighting_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_simple_lighting_smooth_color_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_simple_lighting_smooth_color_alpha_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_flat_color_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_flat_color_alpha_test_0_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_flat_id_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_area_borders_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_area_borders_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_widget_base_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_widget_base_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_widget_shadow_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_widget_shadow_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_nodelink_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_nodelink_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_flat_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_line_dashed_uniform_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_line_dashed_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_line_dashed_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_smooth_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_smooth_color_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_smooth_color_dithered_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_image_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_image_rect_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_image_multi_rect_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_desaturate_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_linear_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_shuffle_color_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_mask_uniform_color_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_modulate_alpha_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_alpha_color_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_color_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_varying_color_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_depth_linear_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_depth_copy_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_interlace_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_image_multisample_resolve_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_image_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_normal_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_flat_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_line_dashed_uniform_color_legacy_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_line_dashed_uniform_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_smooth_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_normal_smooth_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_smooth_color_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_passthrough_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_clipped_uniform_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_instance_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_instance_variying_size_variying_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_instance_variying_size_variying_id_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_instance_objectspace_variying_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_instance_screenspace_variying_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_instance_screen_aligned_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_instance_camera_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_instance_distance_line_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_instance_edges_variying_color_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_instance_edges_variying_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_groundline_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_groundpoint_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_point_uniform_color_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_point_uniform_color_aa_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_point_uniform_color_outline_aa_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_point_varying_color_outline_aa_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_point_varying_color_varying_outline_aa_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_point_varying_color_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_point_fixed_size_varying_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_point_varying_size_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_point_varying_size_varying_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_point_uniform_size_aa_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_point_uniform_size_outline_aa_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_point_varying_size_varying_color_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_point_uniform_size_aa_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_point_uniform_size_outline_aa_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_point_uniform_size_varying_color_outline_aa_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_edituvs_points_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_edituvs_facedots_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_edituvs_edges_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_edituvs_faces_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_2D_edituvs_stretch_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_3D_selection_id_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_selection_id_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_edges_front_back_persp_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_edges_front_back_persp_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_edges_front_back_persp_legacy_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_edges_front_back_ortho_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_edges_overlay_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_edges_overlay_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_edges_overlay_simple_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_edges_overlay_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_text_simple_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_text_simple_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_text_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_text_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_text_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_keyframe_diamond_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_keyframe_diamond_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_geometry.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_material.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_gpencil_stroke_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_gpencil_stroke_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_gpencil_stroke_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_gpencil_fill_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a0b1a068487e46e242a269deee003502\gpu_shader_gpencil_fill_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\CMakeLists.txt">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_depth_only_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_uniform_color_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_checker_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_diag_stripes_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_simple_lighting_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_simple_lighting_smooth_color_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_simple_lighting_smooth_color_alpha_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_flat_color_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_flat_color_alpha_test_0_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_flat_id_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_area_borders_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_area_borders_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_widget_base_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_widget_base_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_widget_shadow_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_widget_shadow_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_nodelink_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_nodelink_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_flat_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_line_dashed_uniform_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_line_dashed_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_line_dashed_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_smooth_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_smooth_color_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_smooth_color_dithered_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_image_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_image_rect_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_image_multi_rect_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_desaturate_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_linear_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_shuffle_color_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_mask_uniform_color_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_modulate_alpha_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_alpha_color_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_color_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_varying_color_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_depth_linear_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_depth_copy_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_interlace_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_image_multisample_resolve_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_image_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_normal_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_flat_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_line_dashed_uniform_color_legacy_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_line_dashed_uniform_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_smooth_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_normal_smooth_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_smooth_color_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_passthrough_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_clipped_uniform_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_instance_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_instance_variying_size_variying_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_instance_variying_size_variying_id_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_instance_objectspace_variying_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_instance_screenspace_variying_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_instance_screen_aligned_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_instance_camera_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_instance_distance_line_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_instance_edges_variying_color_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_instance_edges_variying_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_groundline_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_groundpoint_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_point_uniform_color_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_point_uniform_color_aa_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_point_uniform_color_outline_aa_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_point_varying_color_outline_aa_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_point_varying_color_varying_outline_aa_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_point_varying_color_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_point_fixed_size_varying_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_point_varying_size_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_point_varying_size_varying_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_point_uniform_size_aa_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_point_uniform_size_outline_aa_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_point_varying_size_varying_color_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_point_uniform_size_aa_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_point_uniform_size_outline_aa_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_point_uniform_size_varying_color_outline_aa_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_edituvs_points_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_edituvs_facedots_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_edituvs_edges_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_edituvs_faces_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_2D_edituvs_stretch_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_3D_selection_id_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_selection_id_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_edges_front_back_persp_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_edges_front_back_persp_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_edges_front_back_persp_legacy_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_edges_front_back_ortho_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_edges_overlay_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_edges_overlay_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_edges_overlay_simple_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_edges_overlay_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_text_simple_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_text_simple_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_text_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_text_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_text_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_keyframe_diamond_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_keyframe_diamond_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_geometry.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_material.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_gpencil_stroke_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_gpencil_stroke_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_gpencil_stroke_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_gpencil_fill_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\gpu\shaders\gpu_shader_gpencil_fill_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B8EC40A3-4290-3D9F-8D54-9942BC1F9E27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{2901CBAA-49A2-33DE-B37B-5306184C1275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0A083356-E22C-3FF4-89E7-40C1C36442D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EF281415-9C27-31F6-BC52-8296F3C94897}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

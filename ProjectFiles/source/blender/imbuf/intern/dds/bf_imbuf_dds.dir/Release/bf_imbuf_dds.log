@@ -1,0 +1,10 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/imbuf/intern/dds/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/imbuf/intern/dds/CMakeFiles/generate.stamp is up-to-date.
+  BlockDXT.cpp
+  ColorBlock.cpp
+  DirectDrawSurface.cpp
+  FlipDXT.cpp
+  Image.cpp
+  Stream.cpp
+  dds_api.cpp
+  bf_imbuf_dds.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_imbuf_dds.lib

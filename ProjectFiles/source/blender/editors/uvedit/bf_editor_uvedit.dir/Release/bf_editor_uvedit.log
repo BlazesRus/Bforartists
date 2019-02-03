@@ -1,0 +1,9 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/uvedit/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/uvedit/CMakeFiles/generate.stamp is up-to-date.
+  uvedit_buttons.c
+  uvedit_draw.c
+  uvedit_ops.c
+  uvedit_parametrizer.c
+  uvedit_smart_stitch.c
+  uvedit_unwrap_ops.c
+  bf_editor_uvedit.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_uvedit.lib

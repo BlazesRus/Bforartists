@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/cycles/subd/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/cycles/subd/CMakeFiles/generate.stamp is up-to-date.
+  subd_dice.cpp
+  subd_patch.cpp
+  subd_split.cpp
+  subd_patch_table.cpp
+  cycles_subd.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\cycles_subd.lib

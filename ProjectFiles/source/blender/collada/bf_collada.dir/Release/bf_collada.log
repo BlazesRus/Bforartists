@@ -1,0 +1,36 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/collada/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/collada/CMakeFiles/generate.stamp is up-to-date.
+  AnimationClipExporter.cpp
+  AnimationExporter.cpp
+  AnimationImporter.cpp
+  ArmatureExporter.cpp
+  ArmatureImporter.cpp
+  BCAnimationCurve.cpp
+  BCAnimationSampler.cpp
+  BCSampleData.cpp
+  BlenderContext.cpp
+  CameraExporter.cpp
+  ControllerExporter.cpp
+  DocumentExporter.cpp
+  DocumentImporter.cpp
+  EffectExporter.cpp
+  ErrorHandler.cpp
+  ExportSettings.cpp
+  ExtraHandler.cpp
+  ExtraTags.cpp
+  GeometryExporter.cpp
+  ImageExporter.cpp
+  ImportSettings.cpp
+  InstanceWriter.cpp
+  LightExporter.cpp
+  MaterialExporter.cpp
+  Materials.cpp
+  MeshImporter.cpp
+  SceneExporter.cpp
+  SkinInfo.cpp
+  TransformReader.cpp
+  TransformWriter.cpp
+  collada.cpp
+  collada_internal.cpp
+  collada_utils.cpp
+  bf_collada.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_collada.lib

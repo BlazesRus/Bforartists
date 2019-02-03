@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/iksolver/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/iksolver/CMakeFiles/generate.stamp is up-to-date.
+  IK_QJacobian.cpp
+  IK_QJacobianSolver.cpp
+  IK_QSegment.cpp
+  IK_QTask.cpp
+  IK_Solver.cpp
+  bf_intern_iksolver.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_iksolver.lib

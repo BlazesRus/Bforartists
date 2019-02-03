@@ -1,0 +1,35 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/cycles/render/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/cycles/render/CMakeFiles/generate.stamp is up-to-date.
+  attribute.cpp
+  background.cpp
+  bake.cpp
+  buffers.cpp
+  camera.cpp
+  constant_fold.cpp
+  coverage.cpp
+  film.cpp
+  graph.cpp
+  image.cpp
+  integrator.cpp
+  light.cpp
+  mesh.cpp
+  mesh_displace.cpp
+  mesh_subdivision.cpp
+  mesh_volume.cpp
+  nodes.cpp
+  object.cpp
+  osl.cpp
+  particles.cpp
+  curves.cpp
+  scene.cpp
+  session.cpp
+  shader.cpp
+  sobol.cpp
+  stats.cpp
+  svm.cpp
+  tables.cpp
+  tile.cpp
+C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\opencolorio\include\OpenColorIO/OpenColorIO.h(89): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'OpenColorIO::v1::Exception' (compiling source file C:\BlenderStuff\BlenderScope\intern\cycles\render\shader.cpp)
+  D:\UserFiles\ProgrammingTools\Compilers\VisualStudio2017CEd\VC\Tools\MSVC\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception' (compiling source file C:\BlenderStuff\BlenderScope\intern\cycles\render\shader.cpp)
+  C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\opencolorio\include\OpenColorIO/OpenColorIO.h(88): note: see declaration of 'OpenColorIO::v1::Exception' (compiling source file C:\BlenderStuff\BlenderScope\intern\cycles\render\shader.cpp)
+  cycles_render.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\cycles_render.lib

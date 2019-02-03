@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/lattice/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/lattice/CMakeFiles/generate.stamp is up-to-date.
+  editlattice_select.c
+  editlattice_tools.c
+  editlattice_undo.c
+  lattice_ops.c
+  bf_editor_lattice.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_lattice.lib

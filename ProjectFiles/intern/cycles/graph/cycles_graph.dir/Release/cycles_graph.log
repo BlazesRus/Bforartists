@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/cycles/graph/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/cycles/graph/CMakeFiles/generate.stamp is up-to-date.
+  node.cpp
+  node_type.cpp
+  node_xml.cpp
+  cycles_graph.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\cycles_graph.lib

@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/eigen/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/eigen/CMakeFiles/generate.stamp is up-to-date.
+  eigenvalues.cc
+  linear_solver.cc
+  matrix.cc
+  svd.cc
+  bf_intern_eigen.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_eigen.lib

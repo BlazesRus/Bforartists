@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/creator/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/creator/CMakeFiles/generate.stamp is up-to-date.
+  buildinfo.c
+  buildinfoobj.vcxproj -> C:\BlenderStuff\BlenderScope\Build\source\creator\buildinfoobj.dir\Release\buildinfoobj.lib

@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/extern/rangetree/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/extern/rangetree/CMakeFiles/generate.stamp is up-to-date.
+  range_tree.c
+  extern_rangetree.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\extern_rangetree.lib

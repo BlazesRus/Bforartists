@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/creator/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/creator/CMakeFiles/generate.stamp is up-to-date.
+  creator.c
+  creator_args.c
+  creator_signals.c
+  buildinfo.c
+     Creating library C:/BlenderStuff/BlenderScope/Build/bin/Release/bforartists.lib and object C:/BlenderStuff/BlenderScope/Build/bin/Release/bforartists.exp
+  bforartists.vcxproj -> C:\BlenderStuff\BlenderScope\Build\bin\Release\bforartists.exe

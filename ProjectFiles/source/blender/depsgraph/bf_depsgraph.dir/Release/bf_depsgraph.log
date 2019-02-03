@@ -1,0 +1,37 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/depsgraph/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/depsgraph/CMakeFiles/generate.stamp is up-to-date.
+  deg_builder.cc
+  deg_builder_cycle.cc
+  deg_builder_map.cc
+  deg_builder_nodes.cc
+  deg_builder_nodes_rig.cc
+  deg_builder_nodes_view_layer.cc
+  deg_builder_pchanmap.cc
+  deg_builder_relations.cc
+  deg_builder_relations_keys.cc
+  deg_builder_relations_rig.cc
+  deg_builder_relations_view_layer.cc
+  deg_builder_transitive.cc
+  deg_debug_relations_graphviz.cc
+  deg_debug_stats_gnuplot.cc
+  deg_eval.cc
+  deg_eval_copy_on_write.cc
+  deg_eval_flush.cc
+  deg_eval_stats.cc
+  deg_node.cc
+  deg_node_component.cc
+  deg_node_id.cc
+  deg_node_operation.cc
+  deg_node_time.cc
+  depsgraph.cc
+  depsgraph_build.cc
+  depsgraph_debug.cc
+  depsgraph_eval.cc
+  depsgraph_physics.cc
+  depsgraph_query.cc
+  depsgraph_query_filter.cc
+  depsgraph_query_foreach.cc
+  depsgraph_query_iter.cc
+  depsgraph_tag.cc
+  depsgraph_type_defines.cc
+  bf_depsgraph.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_depsgraph.lib

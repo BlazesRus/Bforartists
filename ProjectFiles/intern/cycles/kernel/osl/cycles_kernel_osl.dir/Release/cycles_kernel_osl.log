@@ -1,0 +1,11 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/cycles/kernel/osl/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/cycles/kernel/osl/CMakeFiles/generate.stamp is up-to-date.
+  background.cpp
+  bsdf_diffuse_ramp.cpp
+  bsdf_phong_ramp.cpp
+  emissive.cpp
+  osl_bssrdf.cpp
+  osl_closures.cpp
+  osl_services.cpp
+  osl_shader.cpp
+  cycles_kernel_osl.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\cycles_kernel_osl.lib

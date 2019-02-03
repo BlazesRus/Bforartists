@@ -1,0 +1,11 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/smoke/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/smoke/CMakeFiles/generate.stamp is up-to-date.
+  EIGENVALUE_HELPER.cpp
+  FLUID_3D.cpp
+  FLUID_3D_SOLVERS.cpp
+  FLUID_3D_STATIC.cpp
+  LU_HELPER.cpp
+  SPHERE.cpp
+  WTURBULENCE.cpp
+  smoke_API.cpp
+  bf_intern_smoke.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_smoke.lib

@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/space_toolbar/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/space_toolbar/CMakeFiles/generate.stamp is up-to-date.
+  space_toolbar.c
+C:\BlenderStuff\BlenderScope\source\blender\editors\space_toolbar\space_toolbar.c(90): warning C4189: 'stoolbar': local variable is initialized but not referenced
+  bf_editor_space_toolbar.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_space_toolbar.lib

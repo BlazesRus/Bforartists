@@ -1,0 +1,14 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/physics/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/physics/CMakeFiles/generate.stamp is up-to-date.
+  dynamicpaint_ops.c
+  particle_boids.c
+  particle_edit.c
+  particle_edit_undo.c
+  particle_object.c
+  physics_fluid.c
+  physics_ops.c
+  physics_pointcache.c
+  rigidbody_constraint.c
+  rigidbody_object.c
+  rigidbody_world.c
+  bf_editor_physics.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_physics.lib

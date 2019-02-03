@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/extern/wcwidth/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/extern/wcwidth/CMakeFiles/generate.stamp is up-to-date.
+  wcwidth.c
+  extern_wcwidth.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\extern_wcwidth.lib

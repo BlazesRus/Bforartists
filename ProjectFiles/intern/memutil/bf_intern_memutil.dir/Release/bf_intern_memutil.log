@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/memutil/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/memutil/CMakeFiles/generate.stamp is up-to-date.
+  MEM_CacheLimiterC-Api.cpp
+  MEM_RefCountedC-Api.cpp
+  bf_intern_memutil.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_memutil.lib

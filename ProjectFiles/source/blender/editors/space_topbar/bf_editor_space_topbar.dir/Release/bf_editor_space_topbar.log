@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/space_topbar/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/space_topbar/CMakeFiles/generate.stamp is up-to-date.
+  space_topbar.c
+  bf_editor_space_topbar.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_space_topbar.lib

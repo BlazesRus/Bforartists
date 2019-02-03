@@ -1,0 +1,254 @@
+﻿  Generating shaders/gpu_shader_depth_only_frag.glsl.c
+  Generating shaders/gpu_shader_uniform_color_frag.glsl.c
+  Generating shaders/gpu_shader_checker_frag.glsl.c
+  Generating shaders/gpu_shader_diag_stripes_frag.glsl.c
+  Generating shaders/gpu_shader_simple_lighting_frag.glsl.c
+  Generating shaders/gpu_shader_simple_lighting_smooth_color_frag.glsl.c
+  Generating shaders/gpu_shader_simple_lighting_smooth_color_alpha_frag.glsl.c
+  Generating shaders/gpu_shader_flat_color_frag.glsl.c
+  Generating shaders/gpu_shader_flat_color_alpha_test_0_frag.glsl.c
+  Generating shaders/gpu_shader_flat_id_frag.glsl.c
+  Generating shaders/gpu_shader_2D_vert.glsl.c
+  Generating shaders/gpu_shader_2D_area_borders_vert.glsl.c
+  Generating shaders/gpu_shader_2D_area_borders_frag.glsl.c
+  Generating shaders/gpu_shader_2D_widget_base_vert.glsl.c
+  Generating shaders/gpu_shader_2D_widget_base_frag.glsl.c
+  Generating shaders/gpu_shader_2D_widget_shadow_vert.glsl.c
+  Generating shaders/gpu_shader_2D_widget_shadow_frag.glsl.c
+  Generating shaders/gpu_shader_2D_nodelink_frag.glsl.c
+  Generating shaders/gpu_shader_2D_nodelink_vert.glsl.c
+  Generating shaders/gpu_shader_2D_flat_color_vert.glsl.c
+  Generating shaders/gpu_shader_2D_line_dashed_uniform_color_vert.glsl.c
+  Generating shaders/gpu_shader_2D_line_dashed_frag.glsl.c
+  Generating shaders/gpu_shader_2D_line_dashed_geom.glsl.c
+  Generating shaders/gpu_shader_2D_smooth_color_vert.glsl.c
+  Generating shaders/gpu_shader_2D_smooth_color_frag.glsl.c
+  Generating shaders/gpu_shader_2D_smooth_color_dithered_frag.glsl.c
+  Generating shaders/gpu_shader_2D_image_vert.glsl.c
+  Generating shaders/gpu_shader_2D_image_rect_vert.glsl.c
+  Generating shaders/gpu_shader_2D_image_multi_rect_vert.glsl.c
+  Generating shaders/gpu_shader_image_frag.glsl.c
+  Generating shaders/gpu_shader_image_desaturate_frag.glsl.c
+  Generating shaders/gpu_shader_image_linear_frag.glsl.c
+  Generating shaders/gpu_shader_image_shuffle_color_frag.glsl.c
+  Generating shaders/gpu_shader_image_mask_uniform_color_frag.glsl.c
+  Generating shaders/gpu_shader_image_modulate_alpha_frag.glsl.c
+  Generating shaders/gpu_shader_image_alpha_color_frag.glsl.c
+  Generating shaders/gpu_shader_image_color_frag.glsl.c
+  Generating shaders/gpu_shader_image_varying_color_frag.glsl.c
+  Generating shaders/gpu_shader_image_depth_linear_frag.glsl.c
+  Generating shaders/gpu_shader_image_depth_copy_frag.glsl.c
+  Generating shaders/gpu_shader_image_interlace_frag.glsl.c
+  Generating shaders/gpu_shader_image_multisample_resolve_frag.glsl.c
+  Generating shaders/gpu_shader_3D_image_vert.glsl.c
+  Generating shaders/gpu_shader_3D_vert.glsl.c
+  Generating shaders/gpu_shader_3D_normal_vert.glsl.c
+  Generating shaders/gpu_shader_3D_flat_color_vert.glsl.c
+  Generating shaders/gpu_shader_3D_line_dashed_uniform_color_legacy_vert.glsl.c
+  Generating shaders/gpu_shader_3D_line_dashed_uniform_color_vert.glsl.c
+  Generating shaders/gpu_shader_3D_smooth_color_vert.glsl.c
+  Generating shaders/gpu_shader_3D_normal_smooth_color_vert.glsl.c
+  Generating shaders/gpu_shader_3D_smooth_color_frag.glsl.c
+  Generating shaders/gpu_shader_3D_passthrough_vert.glsl.c
+  Generating shaders/gpu_shader_3D_clipped_uniform_color_vert.glsl.c
+  Generating shaders/gpu_shader_instance_vert.glsl.c
+  Generating shaders/gpu_shader_instance_variying_size_variying_color_vert.glsl.c
+  Generating shaders/gpu_shader_instance_variying_size_variying_id_vert.glsl.c
+  Generating shaders/gpu_shader_instance_objectspace_variying_color_vert.glsl.c
+  Generating shaders/gpu_shader_instance_screenspace_variying_color_vert.glsl.c
+  Generating shaders/gpu_shader_instance_screen_aligned_vert.glsl.c
+  Generating shaders/gpu_shader_instance_camera_vert.glsl.c
+  Generating shaders/gpu_shader_instance_distance_line_vert.glsl.c
+  Generating shaders/gpu_shader_instance_edges_variying_color_geom.glsl.c
+  Generating shaders/gpu_shader_instance_edges_variying_color_vert.glsl.c
+  Generating shaders/gpu_shader_3D_groundline_geom.glsl.c
+  Generating shaders/gpu_shader_3D_groundpoint_vert.glsl.c
+  Generating shaders/gpu_shader_point_uniform_color_frag.glsl.c
+  Generating shaders/gpu_shader_point_uniform_color_aa_frag.glsl.c
+  Generating shaders/gpu_shader_point_uniform_color_outline_aa_frag.glsl.c
+  Generating shaders/gpu_shader_point_varying_color_outline_aa_frag.glsl.c
+  Generating shaders/gpu_shader_point_varying_color_varying_outline_aa_frag.glsl.c
+  Generating shaders/gpu_shader_point_varying_color_frag.glsl.c
+  Generating shaders/gpu_shader_3D_point_fixed_size_varying_color_vert.glsl.c
+  Generating shaders/gpu_shader_3D_point_varying_size_vert.glsl.c
+  Generating shaders/gpu_shader_3D_point_varying_size_varying_color_vert.glsl.c
+  Generating shaders/gpu_shader_3D_point_uniform_size_aa_vert.glsl.c
+  Generating shaders/gpu_shader_3D_point_uniform_size_outline_aa_vert.glsl.c
+  Generating shaders/gpu_shader_2D_point_varying_size_varying_color_vert.glsl.c
+  Generating shaders/gpu_shader_2D_point_uniform_size_aa_vert.glsl.c
+  Generating shaders/gpu_shader_2D_point_uniform_size_outline_aa_vert.glsl.c
+  Generating shaders/gpu_shader_2D_point_uniform_size_varying_color_outline_aa_vert.glsl.c
+  Generating shaders/gpu_shader_2D_edituvs_points_vert.glsl.c
+  Generating shaders/gpu_shader_2D_edituvs_facedots_vert.glsl.c
+  Generating shaders/gpu_shader_2D_edituvs_edges_vert.glsl.c
+  Generating shaders/gpu_shader_2D_edituvs_faces_vert.glsl.c
+  Generating shaders/gpu_shader_2D_edituvs_stretch_vert.glsl.c
+  Generating shaders/gpu_shader_3D_selection_id_vert.glsl.c
+  Generating shaders/gpu_shader_selection_id_frag.glsl.c
+  Generating shaders/gpu_shader_edges_front_back_persp_vert.glsl.c
+  Generating shaders/gpu_shader_edges_front_back_persp_geom.glsl.c
+  Generating shaders/gpu_shader_edges_front_back_persp_legacy_vert.glsl.c
+  Generating shaders/gpu_shader_edges_front_back_ortho_vert.glsl.c
+  Generating shaders/gpu_shader_edges_overlay_vert.glsl.c
+  Generating shaders/gpu_shader_edges_overlay_geom.glsl.c
+  Generating shaders/gpu_shader_edges_overlay_simple_geom.glsl.c
+  Generating shaders/gpu_shader_edges_overlay_frag.glsl.c
+  Generating shaders/gpu_shader_text_simple_vert.glsl.c
+  Generating shaders/gpu_shader_text_simple_geom.glsl.c
+  Generating shaders/gpu_shader_text_vert.glsl.c
+  Generating shaders/gpu_shader_text_geom.glsl.c
+  Generating shaders/gpu_shader_text_frag.glsl.c
+  Generating shaders/gpu_shader_keyframe_diamond_vert.glsl.c
+  Generating shaders/gpu_shader_keyframe_diamond_frag.glsl.c
+  Generating shaders/gpu_shader_geometry.glsl.c
+  Generating shaders/gpu_shader_material.glsl.c
+  Generating shaders/gpu_shader_gpencil_stroke_vert.glsl.c
+  Generating shaders/gpu_shader_gpencil_stroke_frag.glsl.c
+  Generating shaders/gpu_shader_gpencil_stroke_geom.glsl.c
+  Generating shaders/gpu_shader_gpencil_fill_vert.glsl.c
+  Generating shaders/gpu_shader_gpencil_fill_frag.glsl.c
+  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/gpu/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/gpu/CMakeFiles/generate.stamp is up-to-date.
+  gpu_attr_binding.c
+  gpu_batch.c
+  gpu_batch_presets.c
+  gpu_batch_utils.c
+  gpu_buffers.c
+  gpu_codegen.c
+  gpu_debug.c
+  gpu_draw.c
+C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_batch.c(64): warning C4090: 'function': different 'const' qualifiers
+C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_batch.c(279): warning C4090: 'function': different 'const' qualifiers
+C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_batch.c(497): warning C4028: formal parameter 3 different from declaration
+C:\BlenderStuff\BlenderScope\source\blender\gpu\intern\gpu_batch.c(503): warning C4028: formal parameter 3 different from declaration
+  gpu_element.c
+  gpu_extensions.c
+  gpu_framebuffer.c
+  gpu_immediate.c
+  gpu_immediate_util.c
+  gpu_init_exit.c
+  gpu_material.c
+  gpu_matrix.c
+  gpu_primitive.c
+  gpu_select.c
+  gpu_select_pick.c
+  gpu_select_sample_query.c
+  gpu_shader.c
+  gpu_shader_interface.c
+  gpu_state.c
+  gpu_texture.c
+  gpu_uniformbuffer.c
+  gpu_vertex_buffer.c
+  gpu_vertex_format.c
+  gpu_viewport.c
+  gpu_shader_depth_only_frag.glsl.c
+  gpu_shader_uniform_color_frag.glsl.c
+  gpu_shader_checker_frag.glsl.c
+  gpu_shader_diag_stripes_frag.glsl.c
+  gpu_shader_simple_lighting_frag.glsl.c
+  gpu_shader_simple_lighting_smooth_color_frag.glsl.c
+  gpu_shader_simple_lighting_smooth_color_alpha_frag.glsl.c
+  gpu_shader_flat_color_frag.glsl.c
+  gpu_shader_flat_color_alpha_test_0_frag.glsl.c
+  gpu_shader_flat_id_frag.glsl.c
+  gpu_shader_2D_vert.glsl.c
+  gpu_shader_2D_area_borders_vert.glsl.c
+  gpu_shader_2D_area_borders_frag.glsl.c
+  gpu_shader_2D_widget_base_vert.glsl.c
+  gpu_shader_2D_widget_base_frag.glsl.c
+  gpu_shader_2D_widget_shadow_vert.glsl.c
+  gpu_shader_2D_widget_shadow_frag.glsl.c
+  gpu_shader_2D_nodelink_frag.glsl.c
+  gpu_shader_2D_nodelink_vert.glsl.c
+  gpu_shader_2D_flat_color_vert.glsl.c
+  gpu_shader_2D_line_dashed_uniform_color_vert.glsl.c
+  gpu_shader_2D_line_dashed_frag.glsl.c
+  gpu_shader_2D_line_dashed_geom.glsl.c
+  gpu_shader_2D_smooth_color_vert.glsl.c
+  gpu_shader_2D_smooth_color_frag.glsl.c
+  gpu_shader_2D_smooth_color_dithered_frag.glsl.c
+  gpu_shader_2D_image_vert.glsl.c
+  gpu_shader_2D_image_rect_vert.glsl.c
+  gpu_shader_2D_image_multi_rect_vert.glsl.c
+  gpu_shader_image_frag.glsl.c
+  gpu_shader_image_desaturate_frag.glsl.c
+  gpu_shader_image_linear_frag.glsl.c
+  gpu_shader_image_shuffle_color_frag.glsl.c
+  gpu_shader_image_mask_uniform_color_frag.glsl.c
+  gpu_shader_image_modulate_alpha_frag.glsl.c
+  gpu_shader_image_alpha_color_frag.glsl.c
+  gpu_shader_image_color_frag.glsl.c
+  gpu_shader_image_varying_color_frag.glsl.c
+  gpu_shader_image_depth_linear_frag.glsl.c
+  gpu_shader_image_depth_copy_frag.glsl.c
+  gpu_shader_image_interlace_frag.glsl.c
+  gpu_shader_image_multisample_resolve_frag.glsl.c
+  gpu_shader_3D_image_vert.glsl.c
+  gpu_shader_3D_vert.glsl.c
+  gpu_shader_3D_normal_vert.glsl.c
+  gpu_shader_3D_flat_color_vert.glsl.c
+  gpu_shader_3D_line_dashed_uniform_color_legacy_vert.glsl.c
+  gpu_shader_3D_line_dashed_uniform_color_vert.glsl.c
+  gpu_shader_3D_smooth_color_vert.glsl.c
+  gpu_shader_3D_normal_smooth_color_vert.glsl.c
+  gpu_shader_3D_smooth_color_frag.glsl.c
+  gpu_shader_3D_passthrough_vert.glsl.c
+  gpu_shader_3D_clipped_uniform_color_vert.glsl.c
+  gpu_shader_instance_vert.glsl.c
+  gpu_shader_instance_variying_size_variying_color_vert.glsl.c
+  gpu_shader_instance_variying_size_variying_id_vert.glsl.c
+  gpu_shader_instance_objectspace_variying_color_vert.glsl.c
+  gpu_shader_instance_screenspace_variying_color_vert.glsl.c
+  gpu_shader_instance_screen_aligned_vert.glsl.c
+  gpu_shader_instance_camera_vert.glsl.c
+  gpu_shader_instance_distance_line_vert.glsl.c
+  gpu_shader_instance_edges_variying_color_geom.glsl.c
+  gpu_shader_instance_edges_variying_color_vert.glsl.c
+  gpu_shader_3D_groundline_geom.glsl.c
+  gpu_shader_3D_groundpoint_vert.glsl.c
+  gpu_shader_point_uniform_color_frag.glsl.c
+  gpu_shader_point_uniform_color_aa_frag.glsl.c
+  gpu_shader_point_uniform_color_outline_aa_frag.glsl.c
+  gpu_shader_point_varying_color_outline_aa_frag.glsl.c
+  gpu_shader_point_varying_color_varying_outline_aa_frag.glsl.c
+  gpu_shader_point_varying_color_frag.glsl.c
+  gpu_shader_3D_point_fixed_size_varying_color_vert.glsl.c
+  gpu_shader_3D_point_varying_size_vert.glsl.c
+  gpu_shader_3D_point_varying_size_varying_color_vert.glsl.c
+  gpu_shader_3D_point_uniform_size_aa_vert.glsl.c
+  gpu_shader_3D_point_uniform_size_outline_aa_vert.glsl.c
+  gpu_shader_2D_point_varying_size_varying_color_vert.glsl.c
+  gpu_shader_2D_point_uniform_size_aa_vert.glsl.c
+  gpu_shader_2D_point_uniform_size_outline_aa_vert.glsl.c
+  gpu_shader_2D_point_uniform_size_varying_color_outline_aa_vert.glsl.c
+  gpu_shader_2D_edituvs_points_vert.glsl.c
+  gpu_shader_2D_edituvs_facedots_vert.glsl.c
+  gpu_shader_2D_edituvs_edges_vert.glsl.c
+  gpu_shader_2D_edituvs_faces_vert.glsl.c
+  gpu_shader_2D_edituvs_stretch_vert.glsl.c
+  gpu_shader_3D_selection_id_vert.glsl.c
+  gpu_shader_selection_id_frag.glsl.c
+  gpu_shader_edges_front_back_persp_vert.glsl.c
+  gpu_shader_edges_front_back_persp_geom.glsl.c
+  gpu_shader_edges_front_back_persp_legacy_vert.glsl.c
+  gpu_shader_edges_front_back_ortho_vert.glsl.c
+  gpu_shader_edges_overlay_vert.glsl.c
+  gpu_shader_edges_overlay_geom.glsl.c
+  gpu_shader_edges_overlay_simple_geom.glsl.c
+  gpu_shader_edges_overlay_frag.glsl.c
+  gpu_shader_text_simple_vert.glsl.c
+  gpu_shader_text_simple_geom.glsl.c
+  gpu_shader_text_vert.glsl.c
+  gpu_shader_text_geom.glsl.c
+  gpu_shader_text_frag.glsl.c
+  gpu_shader_keyframe_diamond_vert.glsl.c
+  gpu_shader_keyframe_diamond_frag.glsl.c
+  gpu_shader_geometry.glsl.c
+  gpu_shader_material.glsl.c
+  gpu_shader_gpencil_stroke_vert.glsl.c
+  gpu_shader_gpencil_stroke_frag.glsl.c
+  gpu_shader_gpencil_stroke_geom.glsl.c
+  gpu_shader_gpencil_fill_vert.glsl.c
+  gpu_shader_gpencil_fill_frag.glsl.c
+  gpu_context.cpp
+  bf_gpu.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_gpu.lib

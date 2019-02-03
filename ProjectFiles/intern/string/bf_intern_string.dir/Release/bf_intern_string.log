@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/string/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/string/CMakeFiles/generate.stamp is up-to-date.
+  STR_String.cpp
+  bf_intern_string.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_string.lib

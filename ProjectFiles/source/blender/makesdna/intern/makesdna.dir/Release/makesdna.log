@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/makesdna/intern/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/makesdna/intern/CMakeFiles/generate.stamp is up-to-date.
+  makesdna.c
+  mallocn.c
+  mallocn_guarded_impl.c
+  mallocn_lockfree_impl.c
+  mmap_win.c
+  makesdna.vcxproj -> C:\BlenderStuff\BlenderScope\Build\bin\Release\makesdna.exe

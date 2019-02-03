@@ -1,0 +1,14 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/space_sequencer/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/space_sequencer/CMakeFiles/generate.stamp is up-to-date.
+  sequencer_add.c
+  sequencer_buttons.c
+  sequencer_draw.c
+  sequencer_edit.c
+  sequencer_modifier.c
+  sequencer_ops.c
+  sequencer_preview.c
+  sequencer_scopes.c
+  sequencer_select.c
+  sequencer_view.c
+  space_sequencer.c
+  bf_editor_space_sequencer.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_space_sequencer.lib

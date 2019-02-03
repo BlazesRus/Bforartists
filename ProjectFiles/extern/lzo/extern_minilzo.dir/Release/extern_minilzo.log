@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/extern/lzo/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/extern/lzo/CMakeFiles/generate.stamp is up-to-date.
+  minilzo.c
+  extern_minilzo.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\extern_minilzo.lib

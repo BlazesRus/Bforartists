@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/undo/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/undo/CMakeFiles/generate.stamp is up-to-date.
+  ed_undo.c
+  memfile_undo.c
+  undo_system_types.c
+  bf_editor_undo.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_undo.lib

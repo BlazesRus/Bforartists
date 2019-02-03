@@ -1,0 +1,29 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/ghost/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/ghost/CMakeFiles/generate.stamp is up-to-date.
+  GHOST_Buttons.cpp
+  GHOST_C-api.cpp
+  GHOST_CallbackEventConsumer.cpp
+  GHOST_Context.cpp
+  GHOST_ContextNone.cpp
+  GHOST_DisplayManager.cpp
+  GHOST_EventManager.cpp
+  GHOST_ISystem.cpp
+  GHOST_ISystemPaths.cpp
+  GHOST_ModifierKeys.cpp
+  GHOST_Path-api.cpp
+  GHOST_Rect.cpp
+  GHOST_System.cpp
+  GHOST_TimerManager.cpp
+  GHOST_Window.cpp
+  GHOST_WindowManager.cpp
+  GHOST_NDOFManager.cpp
+  GHOST_DisplayManagerWin32.cpp
+  GHOST_DropTargetWin32.cpp
+  GHOST_SystemWin32.cpp
+  GHOST_WindowWin32.cpp
+  GHOST_ContextWGL.cpp
+  GHOST_ImeWin32.cpp
+  GHOST_NDOFManagerWin32.cpp
+  GHOST_SystemPathsWin32.cpp
+C:\BlenderStuff\BlenderScope\intern\ghost\intern\GHOST_ImeWin32.cpp(43): warning C5038: data member 'GHOST_ImeWin32::input_language_id_' will be initialized after data member 'GHOST_ImeWin32::is_composing_'
+  bf_intern_ghost.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_ghost.lib

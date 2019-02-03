@@ -1,0 +1,20 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/gpencil_modifiers/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/gpencil_modifiers/CMakeFiles/generate.stamp is up-to-date.
+  MOD_gpencil_util.c
+  MOD_gpencilarmature.c
+  MOD_gpencilarray.c
+  MOD_gpencilbuild.c
+  MOD_gpencilcolor.c
+  MOD_gpencilhook.c
+  MOD_gpencillattice.c
+  MOD_gpencilmirror.c
+  MOD_gpencilnoise.c
+  MOD_gpenciloffset.c
+  MOD_gpencilopacity.c
+  MOD_gpencilsimplify.c
+  MOD_gpencilsmooth.c
+  MOD_gpencilsubdiv.c
+  MOD_gpencilthick.c
+  MOD_gpenciltime.c
+  MOD_gpenciltint.c
+  bf_gpencil_modifiers.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_gpencil_modifiers.lib

@@ -1,0 +1,17 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/cycles/blender/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/cycles/blender/CMakeFiles/generate.stamp is up-to-date.
+  blender_camera.cpp
+  blender_mesh.cpp
+  blender_object.cpp
+  blender_object_cull.cpp
+  blender_particles.cpp
+  blender_curves.cpp
+  blender_logging.cpp
+  blender_python.cpp
+  blender_session.cpp
+C:\BlenderStuff\BlenderScope\..\lib\win64_vc14\openimageio\include\OpenImageIO/missing_math.h(112): warning C4005: 'copysign': macro redefinition (compiling source file C:\BlenderStuff\BlenderScope\intern\cycles\blender\blender_python.cpp)
+  c:\blenderstuff\lib\win64_vc14\python\include\python3.7\pyconfig.h(193): note: see previous definition of 'copysign' (compiling source file C:\BlenderStuff\BlenderScope\intern\cycles\blender\blender_python.cpp)
+  blender_shader.cpp
+  blender_sync.cpp
+  blender_texture.cpp
+  bf_intern_cycles.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_cycles.lib

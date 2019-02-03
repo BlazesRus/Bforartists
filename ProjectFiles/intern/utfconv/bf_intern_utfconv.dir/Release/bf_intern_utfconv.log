@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/utfconv/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/utfconv/CMakeFiles/generate.stamp is up-to-date.
+  utfconv.c
+  utf_winfunc.c
+  bf_intern_utfconv.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_utfconv.lib

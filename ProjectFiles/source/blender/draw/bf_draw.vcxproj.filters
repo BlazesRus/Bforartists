@@ -1,0 +1,2098 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_anim_viz.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_armature.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_builtin_shader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_cache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_cache_impl_curve.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_cache_impl_displist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_cache_impl_lattice.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_cache_impl_mesh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_cache_impl_metaball.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_cache_impl_particles.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_hair.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_instance_data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_manager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_manager_data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_manager_exec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_manager_profiling.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_manager_shader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_manager_text.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_manager_texture.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_view.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\edit_armature_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\edit_curve_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\edit_lattice_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\edit_mesh_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\edit_mesh_mode_text.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\edit_metaball_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\edit_text_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\object_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\overlay_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\paint_texture_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\paint_vertex_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\paint_weight_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\particle_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\pose_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\sculpt_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\basic\basic_engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_bloom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_depth_of_field.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_effects.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_lightcache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_lightprobes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_lights.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_lookdev.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_materials.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_mist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_motion_blur.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_occlusion.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_render.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_screen_raytrace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_shaders.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_subsurface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_temporal_sampling.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_volumes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\solid_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\transparent_mode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_deferred.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_effect_aa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_effect_dof.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_effect_fxaa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_effect_taa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_forward.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_materials.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_render.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_studiolight.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_volume.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\external\external_engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\gpencil_cache_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\gpencil_draw_cache_impl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\gpencil_draw_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\gpencil_engine.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\gpencil_render.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\gpencil_shader_fx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\ambient_occlusion_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\default_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\default_world_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\background_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\concentric_samples_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\common_uniforms_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lamps_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_filter_glossy_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_filter_diffuse_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_filter_visibility_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_cube_display_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_cube_display_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_grid_display_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_grid_display_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_grid_fill_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_planar_display_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_planar_display_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lit_surface_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lit_surface_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_bloom_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_dof_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_dof_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_downsample_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_downsample_cube_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_gtao_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_velocity_resolve_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_minmaxz_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_mist_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_motion_blur_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_ssr_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_subsurface_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\effect_temporal_aa.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_planar_downsample_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_planar_downsample_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\lightprobe_planar_downsample_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\prepass_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\prepass_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\shadow_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\shadow_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\shadow_store_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\shadow_copy_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\bsdf_lut_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\btdf_lut_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\bsdf_common_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\irradiance_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\octahedron_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\bsdf_sampling_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\raytrace_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\ltc_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\ssr_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\update_noise_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\volumetric_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\volumetric_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\volumetric_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\volumetric_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\volumetric_resolve_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\volumetric_scatter_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\eevee\shaders\volumetric_integration_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_background_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_cavity_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_cavity_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_checkerboard_depth_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_common_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_data_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_deferred_composite_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_deferred_background_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_effect_dof_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_effect_fxaa_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_effect_taa_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_forward_composite_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_forward_depth_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_forward_transparent_accum_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_ghost_resolve_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_object_outline_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_curvature_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_prepass_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_prepass_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_shadow_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_shadow_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_shadow_caps_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_shadow_debug_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_volume_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_volume_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\workbench\shaders\workbench_world_light_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\common_globals_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\common_hair_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\common_hair_refine_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\common_view_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\common_fxaa_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\common_fullscreen_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\common_world_clip_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\animviz_mpath_lines_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\animviz_mpath_lines_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\animviz_mpath_points_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_axes_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_sphere_solid_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_sphere_solid_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_sphere_outline_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_envelope_solid_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_envelope_solid_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_envelope_outline_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_envelope_distance_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_shape_solid_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_shape_solid_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_shape_outline_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_shape_outline_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_stick_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_stick_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\armature_dof_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_mesh_overlay_common_lib.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_mesh_overlay_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_mesh_overlay_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_mesh_overlay_geom_tri.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_mesh_overlay_geom_edge.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_mesh_overlay_points_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_mesh_overlay_facedot_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_mesh_overlay_facedot_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_mesh_overlay_mix_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_mesh_overlay_facefill_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_mesh_overlay_facefill_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_curve_overlay_handle_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_curve_overlay_handle_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_curve_overlay_loosevert_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_curve_overlay_normals_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_lattice_overlay_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_lattice_overlay_loosevert_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_normals_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\edit_normals_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\overlay_face_orientation_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\overlay_face_orientation_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\overlay_face_wireframe_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\overlay_face_wireframe_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\overlay_face_wireframe_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_empty_axes_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_empty_image_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_empty_image_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_outline_resolve_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_outline_expand_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_outline_detect_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_outline_prepass_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_outline_prepass_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_outline_prepass_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_grid_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_grid_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_lightprobe_grid_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_mball_handles_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_particle_prim_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_particle_dot_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_particle_dot_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\object_loose_points_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\paint_texture_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\paint_texture_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\paint_vertex_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\paint_vertex_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\paint_weight_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\paint_weight_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\paint_face_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\paint_wire_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\paint_wire_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\paint_vert_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\particle_strand_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\particle_strand_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\sculpt_mask_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\modes\shaders\volume_velocity_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_fill_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_fill_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_stroke_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_stroke_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_stroke_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_zdepth_mix_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_simple_mix_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_blend_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_point_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_point_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_point_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_background_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_paper_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_edit_point_vert.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_edit_point_geom.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\gpencil_edit_point_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_blur_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_colorize_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_flip_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_glow_prepare_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_glow_resolve_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_light_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_pixel_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_rim_prepare_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_rim_resolve_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_shadow_prepare_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_shadow_resolve_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_swirl_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_wave_frag.glsl.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\gpencil_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\DRW_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\DRW_render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_builtin_shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_cache_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_hair_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_instance_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_manager_profiling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_manager_text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\intern\draw_view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\draw_mode_engines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\edit_mesh_mode_intern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\basic\basic_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_lightcache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_lut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\eevee_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\external\external_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\workbench_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\ambient_occlusion_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\default_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\default_world_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\background_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\concentric_samples_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\common_uniforms_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lamps_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_filter_glossy_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_filter_diffuse_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_filter_visibility_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_cube_display_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_cube_display_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_grid_display_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_grid_display_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_grid_fill_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_planar_display_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_planar_display_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lit_surface_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lit_surface_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_bloom_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_dof_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_dof_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_downsample_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_downsample_cube_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_gtao_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_velocity_resolve_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_minmaxz_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_mist_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_motion_blur_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_ssr_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_subsurface_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\effect_temporal_aa.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_planar_downsample_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_planar_downsample_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\lightprobe_planar_downsample_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\prepass_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\prepass_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\shadow_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\shadow_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\shadow_store_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\shadow_copy_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\bsdf_lut_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\btdf_lut_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\bsdf_common_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\irradiance_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\octahedron_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\bsdf_sampling_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\raytrace_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\ltc_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\ssr_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\update_noise_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\volumetric_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\volumetric_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\volumetric_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\volumetric_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\volumetric_resolve_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\volumetric_scatter_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\1554304f60b96262614f1077af86c513\volumetric_integration_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_background_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_cavity_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_cavity_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_checkerboard_depth_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_common_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_data_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_deferred_composite_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_deferred_background_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_effect_dof_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_effect_fxaa_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_effect_taa_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_forward_composite_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_forward_depth_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_forward_transparent_accum_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_ghost_resolve_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_object_outline_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_curvature_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_prepass_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_prepass_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_shadow_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_shadow_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_shadow_caps_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_shadow_debug_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_volume_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_volume_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\ccd8316c86065a89121dc36447d484e5\workbench_world_light_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\common_globals_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\common_hair_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\common_hair_refine_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\common_view_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\common_fxaa_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\common_fullscreen_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\common_world_clip_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\animviz_mpath_lines_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\animviz_mpath_lines_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\animviz_mpath_points_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_axes_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_sphere_solid_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_sphere_solid_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_sphere_outline_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_envelope_solid_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_envelope_solid_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_envelope_outline_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_envelope_distance_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_shape_solid_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_shape_solid_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_shape_outline_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_shape_outline_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_stick_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_stick_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\armature_dof_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_mesh_overlay_common_lib.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_mesh_overlay_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_mesh_overlay_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_mesh_overlay_geom_tri.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_mesh_overlay_geom_edge.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_mesh_overlay_points_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_mesh_overlay_facedot_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_mesh_overlay_facedot_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_mesh_overlay_mix_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_mesh_overlay_facefill_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_mesh_overlay_facefill_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_curve_overlay_handle_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_curve_overlay_handle_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_curve_overlay_loosevert_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_curve_overlay_normals_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_lattice_overlay_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_lattice_overlay_loosevert_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_normals_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\edit_normals_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\overlay_face_orientation_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\overlay_face_orientation_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\overlay_face_wireframe_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\overlay_face_wireframe_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\overlay_face_wireframe_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_empty_axes_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_empty_image_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_empty_image_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_outline_resolve_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_outline_expand_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_outline_detect_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_outline_prepass_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_outline_prepass_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_outline_prepass_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_grid_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_grid_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_lightprobe_grid_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_mball_handles_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_particle_prim_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_particle_dot_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_particle_dot_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\object_loose_points_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\paint_texture_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\paint_texture_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\paint_vertex_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\paint_vertex_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\paint_weight_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\paint_weight_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\paint_face_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\paint_wire_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\paint_wire_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\paint_vert_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\particle_strand_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\particle_strand_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\sculpt_mask_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\0e9163b17769d9b6421e4931e8ba7047\volume_velocity_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_fill_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_fill_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_stroke_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_stroke_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_stroke_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_zdepth_mix_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_simple_mix_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_blend_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_point_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_point_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_point_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_background_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_paper_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_edit_point_vert.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_edit_point_geom.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\7b961332c6c73502c9eb187a7cd147c8\gpencil_edit_point_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_blur_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_colorize_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_flip_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_glow_prepare_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_glow_resolve_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_light_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_pixel_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_rim_prepare_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_rim_resolve_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_shadow_prepare_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_shadow_resolve_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_swirl_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\Bforartists\ProjectFiles\CMakeFiles\a2f13dbe7a90729a15fcc0df62e0f70f\gpencil_fx_wave_frag.glsl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\blender\draw\CMakeLists.txt">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\ambient_occlusion_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\default_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\default_world_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\background_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\concentric_samples_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\common_uniforms_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lamps_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_filter_glossy_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_filter_diffuse_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_filter_visibility_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_cube_display_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_cube_display_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_grid_display_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_grid_display_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_grid_fill_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_planar_display_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_planar_display_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lit_surface_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lit_surface_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_bloom_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_dof_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_dof_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_downsample_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_downsample_cube_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_gtao_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_velocity_resolve_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_minmaxz_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_mist_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_motion_blur_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_ssr_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_subsurface_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\effect_temporal_aa.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_planar_downsample_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_planar_downsample_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\lightprobe_planar_downsample_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\prepass_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\prepass_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\shadow_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\shadow_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\shadow_store_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\shadow_copy_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\bsdf_lut_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\btdf_lut_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\bsdf_common_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\irradiance_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\octahedron_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\bsdf_sampling_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\raytrace_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\ltc_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\ssr_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\update_noise_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\volumetric_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\volumetric_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\volumetric_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\volumetric_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\volumetric_resolve_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\volumetric_scatter_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\eevee\shaders\volumetric_integration_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_background_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_cavity_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_cavity_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_checkerboard_depth_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_common_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_data_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_deferred_composite_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_deferred_background_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_effect_dof_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_effect_fxaa_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_effect_taa_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_forward_composite_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_forward_depth_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_forward_transparent_accum_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_ghost_resolve_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_object_outline_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_curvature_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_prepass_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_prepass_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_shadow_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_shadow_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_shadow_caps_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_shadow_debug_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_volume_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_volume_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\workbench\shaders\workbench_world_light_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\common_globals_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\common_hair_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\common_hair_refine_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\common_view_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\common_fxaa_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\common_fullscreen_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\common_world_clip_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\animviz_mpath_lines_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\animviz_mpath_lines_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\animviz_mpath_points_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_axes_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_sphere_solid_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_sphere_solid_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_sphere_outline_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_envelope_solid_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_envelope_solid_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_envelope_outline_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_envelope_distance_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_shape_solid_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_shape_solid_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_shape_outline_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_shape_outline_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_stick_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_stick_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\armature_dof_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_mesh_overlay_common_lib.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_mesh_overlay_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_mesh_overlay_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_mesh_overlay_geom_tri.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_mesh_overlay_geom_edge.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_mesh_overlay_points_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_mesh_overlay_facedot_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_mesh_overlay_facedot_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_mesh_overlay_mix_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_mesh_overlay_facefill_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_mesh_overlay_facefill_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_curve_overlay_handle_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_curve_overlay_handle_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_curve_overlay_loosevert_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_curve_overlay_normals_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_lattice_overlay_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_lattice_overlay_loosevert_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_normals_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\edit_normals_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\overlay_face_orientation_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\overlay_face_orientation_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\overlay_face_wireframe_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\overlay_face_wireframe_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\overlay_face_wireframe_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_empty_axes_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_empty_image_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_empty_image_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_outline_resolve_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_outline_expand_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_outline_detect_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_outline_prepass_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_outline_prepass_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_outline_prepass_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_grid_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_grid_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_lightprobe_grid_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_mball_handles_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_particle_prim_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_particle_dot_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_particle_dot_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\object_loose_points_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\paint_texture_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\paint_texture_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\paint_vertex_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\paint_vertex_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\paint_weight_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\paint_weight_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\paint_face_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\paint_wire_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\paint_wire_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\paint_vert_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\particle_strand_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\particle_strand_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\sculpt_mask_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\modes\shaders\volume_velocity_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_fill_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_fill_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_stroke_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_stroke_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_stroke_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_zdepth_mix_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_simple_mix_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_blend_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_point_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_point_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_point_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_background_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_paper_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_edit_point_vert.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_edit_point_geom.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\gpencil_edit_point_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_blur_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_colorize_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_flip_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_glow_prepare_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_glow_resolve_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_light_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_pixel_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_rim_prepare_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_rim_resolve_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_shadow_prepare_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_shadow_resolve_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_swirl_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="C:\BlenderStuff\BlenderScope\source\blender\draw\engines\gpencil\shaders\fx\gpencil_fx_wave_frag.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B8EC40A3-4290-3D9F-8D54-9942BC1F9E27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{2901CBAA-49A2-33DE-B37B-5306184C1275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0A083356-E22C-3FF4-89E7-40C1C36442D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EF281415-9C27-31F6-BC52-8296F3C94897}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

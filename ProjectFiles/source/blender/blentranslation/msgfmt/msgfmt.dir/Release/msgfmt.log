@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/blentranslation/msgfmt/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/blentranslation/msgfmt/CMakeFiles/generate.stamp is up-to-date.
+  msgfmt.c
+  msgfmt.vcxproj -> C:\BlenderStuff\BlenderScope\Build\bin\Release\msgfmt.exe

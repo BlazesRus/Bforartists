@@ -1,0 +1,13 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/space_outliner/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/space_outliner/CMakeFiles/generate.stamp is up-to-date.
+  outliner_collections.c
+  outliner_dragdrop.c
+  outliner_draw.c
+  outliner_edit.c
+  outliner_ops.c
+  outliner_select.c
+  outliner_tools.c
+  outliner_tree.c
+  outliner_utils.c
+  space_outliner.c
+  bf_editor_space_outliner.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_space_outliner.lib

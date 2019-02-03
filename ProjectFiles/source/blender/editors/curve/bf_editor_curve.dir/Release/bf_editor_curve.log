@@ -1,0 +1,12 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/curve/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/curve/CMakeFiles/generate.stamp is up-to-date.
+  curve_ops.c
+  editcurve.c
+  editcurve_add.c
+  editcurve_paint.c
+  editcurve_select.c
+  editcurve_undo.c
+  editfont.c
+  editfont_undo.c
+C:\BlenderStuff\BlenderScope\source\blender\editors\curve\editcurve_select.c(1182): warning C4129: 'R': unrecognized character escape sequence
+  bf_editor_curve.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_curve.lib

@@ -1,0 +1,117 @@
+﻿  Generating ../../../../release/datafiles/bfont.pfb.c
+  Generating ../../../../release/datafiles/bfont.ttf.c
+  Generating ../../../../release/datafiles/bmonofont.ttf.c
+  Generating ../../../../release/datafiles/preview_cycles.blend.c
+  Generating ../../../../release/datafiles/preview_grease_pencil.blend.c
+  Generating ../../../../release/datafiles/splash.png.c
+  Generating ../../../../release/datafiles/splash_2x.png.c
+  Generating ../../../../release/datafiles/blender_icons16.png, ../../../../release/datafiles/blender_icons16.png.c
+  Generating ../../../../release/datafiles/blender_icons32.png, ../../../../release/datafiles/blender_icons32.png.c
+  Generating ../../../../release/datafiles/prvicons.png.c
+  Generating ../../../../release/datafiles/brushicons/blob.png.c
+  Generating ../../../../release/datafiles/brushicons/blur.png.c
+  Generating ../../../../release/datafiles/brushicons/clay.png.c
+  Generating ../../../../release/datafiles/brushicons/claystrips.png.c
+  Generating ../../../../release/datafiles/brushicons/clone.png.c
+  Generating ../../../../release/datafiles/brushicons/crease.png.c
+  Generating ../../../../release/datafiles/brushicons/draw.png.c
+  Generating ../../../../release/datafiles/brushicons/fill.png.c
+  Generating ../../../../release/datafiles/brushicons/flatten.png.c
+  Generating ../../../../release/datafiles/brushicons/grab.png.c
+  Generating ../../../../release/datafiles/brushicons/inflate.png.c
+  Generating ../../../../release/datafiles/brushicons/layer.png.c
+  Generating ../../../../release/datafiles/brushicons/mask.png.c
+  Generating ../../../../release/datafiles/brushicons/mix.png.c
+  Generating ../../../../release/datafiles/brushicons/nudge.png.c
+  Generating ../../../../release/datafiles/brushicons/pinch.png.c
+  Generating ../../../../release/datafiles/brushicons/scrape.png.c
+  Generating ../../../../release/datafiles/brushicons/smear.png.c
+  Generating ../../../../release/datafiles/brushicons/smooth.png.c
+  Generating ../../../../release/datafiles/brushicons/snake_hook.png.c
+  Generating ../../../../release/datafiles/brushicons/soften.png.c
+  Generating ../../../../release/datafiles/brushicons/texdraw.png.c
+  Generating ../../../../release/datafiles/brushicons/texfill.png.c
+  Generating ../../../../release/datafiles/brushicons/texmask.png.c
+  Generating ../../../../release/datafiles/brushicons/thumb.png.c
+  Generating ../../../../release/datafiles/brushicons/twist.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_smooth.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_thickness.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_strength.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_grab.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_push.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_twist.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_pinch.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_randomize.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_clone.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_weight.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_pencil.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_pen.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_ink.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_inknoise.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_block.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_marker.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_fill.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_erase_soft.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_erase_hard.png.c
+  Generating ../../../../release/datafiles/brushicons/gp_brush_erase_stroke.png.c
+  Generating ../../../../release/datafiles/startup.blend.c
+  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/datafiles/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/datafiles/CMakeFiles/generate.stamp is up-to-date.
+  bfont.pfb.c
+  bfont.ttf.c
+  bmonofont.ttf.c
+  preview_cycles.blend.c
+  preview_grease_pencil.blend.c
+  splash.png.c
+  splash_2x.png.c
+  blender_icons16.png.c
+  blender_icons32.png.c
+  prvicons.png.c
+  blob.png.c
+  blur.png.c
+  clay.png.c
+  claystrips.png.c
+  clone.png.c
+  crease.png.c
+  draw.png.c
+  fill.png.c
+  flatten.png.c
+  grab.png.c
+  inflate.png.c
+  layer.png.c
+  mask.png.c
+  mix.png.c
+  nudge.png.c
+  pinch.png.c
+  scrape.png.c
+  smear.png.c
+  smooth.png.c
+  snake_hook.png.c
+  soften.png.c
+  texdraw.png.c
+  texfill.png.c
+  texmask.png.c
+  thumb.png.c
+  twist.png.c
+  gp_brush_smooth.png.c
+  gp_brush_thickness.png.c
+  gp_brush_strength.png.c
+  gp_brush_grab.png.c
+  gp_brush_push.png.c
+  gp_brush_twist.png.c
+  gp_brush_pinch.png.c
+  gp_brush_randomize.png.c
+  gp_brush_clone.png.c
+  gp_brush_weight.png.c
+  gp_brush_pencil.png.c
+  gp_brush_pen.png.c
+  gp_brush_ink.png.c
+  gp_brush_inknoise.png.c
+  gp_brush_block.png.c
+  gp_brush_marker.png.c
+  gp_brush_fill.png.c
+  gp_brush_erase_soft.png.c
+  gp_brush_erase_hard.png.c
+  gp_brush_erase_stroke.png.c
+  startup.blend.c
+  bf_editor_datafiles.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_datafiles.lib

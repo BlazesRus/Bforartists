@@ -1,0 +1,473 @@
+﻿  Generating engines/eevee/shaders/ambient_occlusion_lib.glsl.c
+  Generating engines/eevee/shaders/default_frag.glsl.c
+  Generating engines/eevee/shaders/default_world_frag.glsl.c
+  Generating engines/eevee/shaders/background_vert.glsl.c
+  Generating engines/eevee/shaders/concentric_samples_lib.glsl.c
+  Generating engines/eevee/shaders/common_uniforms_lib.glsl.c
+  Generating engines/eevee/shaders/lamps_lib.glsl.c
+  Generating engines/eevee/shaders/lightprobe_lib.glsl.c
+  Generating engines/eevee/shaders/lightprobe_filter_glossy_frag.glsl.c
+  Generating engines/eevee/shaders/lightprobe_filter_diffuse_frag.glsl.c
+  Generating engines/eevee/shaders/lightprobe_filter_visibility_frag.glsl.c
+  Generating engines/eevee/shaders/lightprobe_geom.glsl.c
+  Generating engines/eevee/shaders/lightprobe_vert.glsl.c
+  Generating engines/eevee/shaders/lightprobe_cube_display_frag.glsl.c
+  Generating engines/eevee/shaders/lightprobe_cube_display_vert.glsl.c
+  Generating engines/eevee/shaders/lightprobe_grid_display_frag.glsl.c
+  Generating engines/eevee/shaders/lightprobe_grid_display_vert.glsl.c
+  Generating engines/eevee/shaders/lightprobe_grid_fill_frag.glsl.c
+  Generating engines/eevee/shaders/lightprobe_planar_display_frag.glsl.c
+  Generating engines/eevee/shaders/lightprobe_planar_display_vert.glsl.c
+  Generating engines/eevee/shaders/lit_surface_frag.glsl.c
+  Generating engines/eevee/shaders/lit_surface_vert.glsl.c
+  Generating engines/eevee/shaders/effect_bloom_frag.glsl.c
+  Generating engines/eevee/shaders/effect_dof_vert.glsl.c
+  Generating engines/eevee/shaders/effect_dof_frag.glsl.c
+  Generating engines/eevee/shaders/effect_downsample_frag.glsl.c
+  Generating engines/eevee/shaders/effect_downsample_cube_frag.glsl.c
+  Generating engines/eevee/shaders/effect_gtao_frag.glsl.c
+  Generating engines/eevee/shaders/effect_velocity_resolve_frag.glsl.c
+  Generating engines/eevee/shaders/effect_minmaxz_frag.glsl.c
+  Generating engines/eevee/shaders/effect_mist_frag.glsl.c
+  Generating engines/eevee/shaders/effect_motion_blur_frag.glsl.c
+  Generating engines/eevee/shaders/effect_ssr_frag.glsl.c
+  Generating engines/eevee/shaders/effect_subsurface_frag.glsl.c
+  Generating engines/eevee/shaders/effect_temporal_aa.glsl.c
+  Generating engines/eevee/shaders/lightprobe_planar_downsample_frag.glsl.c
+  Generating engines/eevee/shaders/lightprobe_planar_downsample_geom.glsl.c
+  Generating engines/eevee/shaders/lightprobe_planar_downsample_vert.glsl.c
+  Generating engines/eevee/shaders/prepass_frag.glsl.c
+  Generating engines/eevee/shaders/prepass_vert.glsl.c
+  Generating engines/eevee/shaders/shadow_frag.glsl.c
+  Generating engines/eevee/shaders/shadow_vert.glsl.c
+  Generating engines/eevee/shaders/shadow_store_frag.glsl.c
+  Generating engines/eevee/shaders/shadow_copy_frag.glsl.c
+  Generating engines/eevee/shaders/bsdf_lut_frag.glsl.c
+  Generating engines/eevee/shaders/btdf_lut_frag.glsl.c
+  Generating engines/eevee/shaders/bsdf_common_lib.glsl.c
+  Generating engines/eevee/shaders/irradiance_lib.glsl.c
+  Generating engines/eevee/shaders/octahedron_lib.glsl.c
+  Generating engines/eevee/shaders/bsdf_sampling_lib.glsl.c
+  Generating engines/eevee/shaders/raytrace_lib.glsl.c
+  Generating engines/eevee/shaders/ltc_lib.glsl.c
+  Generating engines/eevee/shaders/ssr_lib.glsl.c
+  Generating engines/eevee/shaders/update_noise_frag.glsl.c
+  Generating engines/eevee/shaders/volumetric_lib.glsl.c
+  Generating engines/eevee/shaders/volumetric_frag.glsl.c
+  Generating engines/eevee/shaders/volumetric_geom.glsl.c
+  Generating engines/eevee/shaders/volumetric_vert.glsl.c
+  Generating engines/eevee/shaders/volumetric_resolve_frag.glsl.c
+  Generating engines/eevee/shaders/volumetric_scatter_frag.glsl.c
+  Generating engines/eevee/shaders/volumetric_integration_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_background_lib.glsl.c
+  Generating engines/workbench/shaders/workbench_cavity_lib.glsl.c
+  Generating engines/workbench/shaders/workbench_cavity_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_checkerboard_depth_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_common_lib.glsl.c
+  Generating engines/workbench/shaders/workbench_data_lib.glsl.c
+  Generating engines/workbench/shaders/workbench_deferred_composite_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_deferred_background_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_effect_dof_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_effect_fxaa_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_effect_taa_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_forward_composite_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_forward_depth_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_forward_transparent_accum_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_ghost_resolve_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_object_outline_lib.glsl.c
+  Generating engines/workbench/shaders/workbench_curvature_lib.glsl.c
+  Generating engines/workbench/shaders/workbench_prepass_vert.glsl.c
+  Generating engines/workbench/shaders/workbench_prepass_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_shadow_vert.glsl.c
+  Generating engines/workbench/shaders/workbench_shadow_geom.glsl.c
+  Generating engines/workbench/shaders/workbench_shadow_caps_geom.glsl.c
+  Generating engines/workbench/shaders/workbench_shadow_debug_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_volume_vert.glsl.c
+  Generating engines/workbench/shaders/workbench_volume_frag.glsl.c
+  Generating engines/workbench/shaders/workbench_world_light_lib.glsl.c
+  Generating modes/shaders/common_globals_lib.glsl.c
+  Generating modes/shaders/common_hair_lib.glsl.c
+  Generating modes/shaders/common_hair_refine_vert.glsl.c
+  Generating modes/shaders/common_view_lib.glsl.c
+  Generating modes/shaders/common_fxaa_lib.glsl.c
+  Generating modes/shaders/common_fullscreen_vert.glsl.c
+  Generating modes/shaders/common_world_clip_lib.glsl.c
+  Generating modes/shaders/animviz_mpath_lines_vert.glsl.c
+  Generating modes/shaders/animviz_mpath_lines_geom.glsl.c
+  Generating modes/shaders/animviz_mpath_points_vert.glsl.c
+  Generating modes/shaders/armature_axes_vert.glsl.c
+  Generating modes/shaders/armature_sphere_solid_vert.glsl.c
+  Generating modes/shaders/armature_sphere_solid_frag.glsl.c
+  Generating modes/shaders/armature_sphere_outline_vert.glsl.c
+  Generating modes/shaders/armature_envelope_solid_vert.glsl.c
+  Generating modes/shaders/armature_envelope_solid_frag.glsl.c
+  Generating modes/shaders/armature_envelope_outline_vert.glsl.c
+  Generating modes/shaders/armature_envelope_distance_frag.glsl.c
+  Generating modes/shaders/armature_shape_solid_vert.glsl.c
+  Generating modes/shaders/armature_shape_solid_frag.glsl.c
+  Generating modes/shaders/armature_shape_outline_vert.glsl.c
+  Generating modes/shaders/armature_shape_outline_geom.glsl.c
+  Generating modes/shaders/armature_stick_vert.glsl.c
+  Generating modes/shaders/armature_stick_frag.glsl.c
+  Generating modes/shaders/armature_dof_vert.glsl.c
+  Generating modes/shaders/edit_mesh_overlay_common_lib.glsl.c
+  Generating modes/shaders/edit_mesh_overlay_frag.glsl.c
+  Generating modes/shaders/edit_mesh_overlay_vert.glsl.c
+  Generating modes/shaders/edit_mesh_overlay_geom_tri.glsl.c
+  Generating modes/shaders/edit_mesh_overlay_geom_edge.glsl.c
+  Generating modes/shaders/edit_mesh_overlay_points_vert.glsl.c
+  Generating modes/shaders/edit_mesh_overlay_facedot_frag.glsl.c
+  Generating modes/shaders/edit_mesh_overlay_facedot_vert.glsl.c
+  Generating modes/shaders/edit_mesh_overlay_mix_frag.glsl.c
+  Generating modes/shaders/edit_mesh_overlay_facefill_vert.glsl.c
+  Generating modes/shaders/edit_mesh_overlay_facefill_frag.glsl.c
+  Generating modes/shaders/edit_curve_overlay_handle_vert.glsl.c
+  Generating modes/shaders/edit_curve_overlay_handle_geom.glsl.c
+  Generating modes/shaders/edit_curve_overlay_loosevert_vert.glsl.c
+  Generating modes/shaders/edit_curve_overlay_normals_vert.glsl.c
+  Generating modes/shaders/edit_lattice_overlay_frag.glsl.c
+  Generating modes/shaders/edit_lattice_overlay_loosevert_vert.glsl.c
+  Generating modes/shaders/edit_normals_vert.glsl.c
+  Generating modes/shaders/edit_normals_geom.glsl.c
+  Generating modes/shaders/overlay_face_orientation_frag.glsl.c
+  Generating modes/shaders/overlay_face_orientation_vert.glsl.c
+  Generating modes/shaders/overlay_face_wireframe_vert.glsl.c
+  Generating modes/shaders/overlay_face_wireframe_geom.glsl.c
+  Generating modes/shaders/overlay_face_wireframe_frag.glsl.c
+  Generating modes/shaders/object_empty_axes_vert.glsl.c
+  Generating modes/shaders/object_empty_image_frag.glsl.c
+  Generating modes/shaders/object_empty_image_vert.glsl.c
+  Generating modes/shaders/object_outline_resolve_frag.glsl.c
+  Generating modes/shaders/object_outline_expand_frag.glsl.c
+  Generating modes/shaders/object_outline_detect_frag.glsl.c
+  Generating modes/shaders/object_outline_prepass_vert.glsl.c
+  Generating modes/shaders/object_outline_prepass_geom.glsl.c
+  Generating modes/shaders/object_outline_prepass_frag.glsl.c
+  Generating modes/shaders/object_grid_frag.glsl.c
+  Generating modes/shaders/object_grid_vert.glsl.c
+  Generating modes/shaders/object_lightprobe_grid_vert.glsl.c
+  Generating modes/shaders/object_mball_handles_vert.glsl.c
+  Generating modes/shaders/object_particle_prim_vert.glsl.c
+  Generating modes/shaders/object_particle_dot_vert.glsl.c
+  Generating modes/shaders/object_particle_dot_frag.glsl.c
+  Generating modes/shaders/object_loose_points_frag.glsl.c
+  Generating modes/shaders/paint_texture_frag.glsl.c
+  Generating modes/shaders/paint_texture_vert.glsl.c
+  Generating modes/shaders/paint_vertex_frag.glsl.c
+  Generating modes/shaders/paint_vertex_vert.glsl.c
+  Generating modes/shaders/paint_weight_frag.glsl.c
+  Generating modes/shaders/paint_weight_vert.glsl.c
+  Generating modes/shaders/paint_face_vert.glsl.c
+  Generating modes/shaders/paint_wire_frag.glsl.c
+  Generating modes/shaders/paint_wire_vert.glsl.c
+  Generating modes/shaders/paint_vert_frag.glsl.c
+  Generating modes/shaders/particle_strand_frag.glsl.c
+  Generating modes/shaders/particle_strand_vert.glsl.c
+  Generating modes/shaders/sculpt_mask_vert.glsl.c
+  Generating modes/shaders/volume_velocity_vert.glsl.c
+  Generating engines/gpencil/shaders/gpencil_fill_vert.glsl.c
+  Generating engines/gpencil/shaders/gpencil_fill_frag.glsl.c
+  Generating engines/gpencil/shaders/gpencil_stroke_vert.glsl.c
+  Generating engines/gpencil/shaders/gpencil_stroke_geom.glsl.c
+  Generating engines/gpencil/shaders/gpencil_stroke_frag.glsl.c
+  Generating engines/gpencil/shaders/gpencil_zdepth_mix_frag.glsl.c
+  Generating engines/gpencil/shaders/gpencil_simple_mix_frag.glsl.c
+  Generating engines/gpencil/shaders/gpencil_blend_frag.glsl.c
+  Generating engines/gpencil/shaders/gpencil_point_vert.glsl.c
+  Generating engines/gpencil/shaders/gpencil_point_geom.glsl.c
+  Generating engines/gpencil/shaders/gpencil_point_frag.glsl.c
+  Generating engines/gpencil/shaders/gpencil_background_frag.glsl.c
+  Generating engines/gpencil/shaders/gpencil_paper_frag.glsl.c
+  Generating engines/gpencil/shaders/gpencil_edit_point_vert.glsl.c
+  Generating engines/gpencil/shaders/gpencil_edit_point_geom.glsl.c
+  Generating engines/gpencil/shaders/gpencil_edit_point_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_blur_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_colorize_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_flip_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_glow_prepare_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_glow_resolve_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_light_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_pixel_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_rim_prepare_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_rim_resolve_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_shadow_prepare_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_shadow_resolve_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_swirl_frag.glsl.c
+  Generating engines/gpencil/shaders/fx/gpencil_fx_wave_frag.glsl.c
+  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/draw/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/draw/CMakeFiles/generate.stamp is up-to-date.
+  draw_anim_viz.c
+  draw_armature.c
+  draw_builtin_shader.c
+  draw_cache.c
+  draw_cache_impl_curve.c
+  draw_cache_impl_displist.c
+  draw_cache_impl_lattice.c
+  draw_cache_impl_mesh.c
+  draw_cache_impl_metaball.c
+  draw_cache_impl_particles.c
+  draw_common.c
+  draw_debug.c
+  draw_hair.c
+  draw_instance_data.c
+  draw_manager.c
+  draw_manager_data.c
+  draw_manager_exec.c
+  draw_manager_profiling.c
+  draw_manager_shader.c
+  draw_manager_text.c
+  draw_manager_texture.c
+  draw_view.c
+  edit_armature_mode.c
+  edit_curve_mode.c
+  edit_lattice_mode.c
+  edit_mesh_mode.c
+  edit_mesh_mode_text.c
+  edit_metaball_mode.c
+  edit_text_mode.c
+  object_mode.c
+  overlay_mode.c
+  paint_texture_mode.c
+  paint_vertex_mode.c
+  paint_weight_mode.c
+  particle_mode.c
+  pose_mode.c
+  sculpt_mode.c
+  basic_engine.c
+  eevee_bloom.c
+  eevee_data.c
+  eevee_depth_of_field.c
+  eevee_effects.c
+  eevee_engine.c
+  eevee_lightcache.c
+  eevee_lightprobes.c
+  eevee_lights.c
+  eevee_lookdev.c
+  eevee_materials.c
+  eevee_mist.c
+  eevee_motion_blur.c
+  eevee_occlusion.c
+  eevee_render.c
+  eevee_screen_raytrace.c
+  eevee_shaders.c
+  eevee_subsurface.c
+  eevee_temporal_sampling.c
+  eevee_volumes.c
+  solid_mode.c
+  transparent_mode.c
+  workbench_data.c
+  workbench_deferred.c
+  workbench_effect_aa.c
+  workbench_effect_dof.c
+  workbench_effect_fxaa.c
+  workbench_effect_taa.c
+  workbench_engine.c
+  workbench_forward.c
+  workbench_materials.c
+  workbench_render.c
+  workbench_studiolight.c
+  workbench_volume.c
+  external_engine.c
+  gpencil_cache_utils.c
+  gpencil_draw_cache_impl.c
+  gpencil_draw_utils.c
+  gpencil_engine.c
+  gpencil_render.c
+  gpencil_shader_fx.c
+  ambient_occlusion_lib.glsl.c
+  default_frag.glsl.c
+  default_world_frag.glsl.c
+  background_vert.glsl.c
+  concentric_samples_lib.glsl.c
+  common_uniforms_lib.glsl.c
+  lamps_lib.glsl.c
+  lightprobe_lib.glsl.c
+  lightprobe_filter_glossy_frag.glsl.c
+  lightprobe_filter_diffuse_frag.glsl.c
+  lightprobe_filter_visibility_frag.glsl.c
+  lightprobe_geom.glsl.c
+  lightprobe_vert.glsl.c
+  lightprobe_cube_display_frag.glsl.c
+  lightprobe_cube_display_vert.glsl.c
+  lightprobe_grid_display_frag.glsl.c
+  lightprobe_grid_display_vert.glsl.c
+  lightprobe_grid_fill_frag.glsl.c
+  lightprobe_planar_display_frag.glsl.c
+  lightprobe_planar_display_vert.glsl.c
+  lit_surface_frag.glsl.c
+  lit_surface_vert.glsl.c
+  effect_bloom_frag.glsl.c
+  effect_dof_vert.glsl.c
+  effect_dof_frag.glsl.c
+  effect_downsample_frag.glsl.c
+  effect_downsample_cube_frag.glsl.c
+  effect_gtao_frag.glsl.c
+  effect_velocity_resolve_frag.glsl.c
+  effect_minmaxz_frag.glsl.c
+  effect_mist_frag.glsl.c
+  effect_motion_blur_frag.glsl.c
+  effect_ssr_frag.glsl.c
+  effect_subsurface_frag.glsl.c
+  effect_temporal_aa.glsl.c
+  lightprobe_planar_downsample_frag.glsl.c
+  lightprobe_planar_downsample_geom.glsl.c
+  lightprobe_planar_downsample_vert.glsl.c
+  prepass_frag.glsl.c
+  prepass_vert.glsl.c
+  shadow_frag.glsl.c
+  shadow_vert.glsl.c
+  shadow_store_frag.glsl.c
+  shadow_copy_frag.glsl.c
+  bsdf_lut_frag.glsl.c
+  btdf_lut_frag.glsl.c
+  bsdf_common_lib.glsl.c
+  irradiance_lib.glsl.c
+  octahedron_lib.glsl.c
+  bsdf_sampling_lib.glsl.c
+  raytrace_lib.glsl.c
+  ltc_lib.glsl.c
+  ssr_lib.glsl.c
+  update_noise_frag.glsl.c
+  volumetric_lib.glsl.c
+  volumetric_frag.glsl.c
+  volumetric_geom.glsl.c
+  volumetric_vert.glsl.c
+  volumetric_resolve_frag.glsl.c
+  volumetric_scatter_frag.glsl.c
+  volumetric_integration_frag.glsl.c
+  workbench_background_lib.glsl.c
+  workbench_cavity_lib.glsl.c
+  workbench_cavity_frag.glsl.c
+  workbench_checkerboard_depth_frag.glsl.c
+  workbench_common_lib.glsl.c
+  workbench_data_lib.glsl.c
+  workbench_deferred_composite_frag.glsl.c
+  workbench_deferred_background_frag.glsl.c
+  workbench_effect_dof_frag.glsl.c
+  workbench_effect_fxaa_frag.glsl.c
+  workbench_effect_taa_frag.glsl.c
+  workbench_forward_composite_frag.glsl.c
+  workbench_forward_depth_frag.glsl.c
+  workbench_forward_transparent_accum_frag.glsl.c
+  workbench_ghost_resolve_frag.glsl.c
+  workbench_object_outline_lib.glsl.c
+  workbench_curvature_lib.glsl.c
+  workbench_prepass_vert.glsl.c
+  workbench_prepass_frag.glsl.c
+  workbench_shadow_vert.glsl.c
+  workbench_shadow_geom.glsl.c
+  workbench_shadow_caps_geom.glsl.c
+  workbench_shadow_debug_frag.glsl.c
+  workbench_volume_vert.glsl.c
+  workbench_volume_frag.glsl.c
+  workbench_world_light_lib.glsl.c
+  common_globals_lib.glsl.c
+  common_hair_lib.glsl.c
+  common_hair_refine_vert.glsl.c
+  common_view_lib.glsl.c
+  common_fxaa_lib.glsl.c
+  common_fullscreen_vert.glsl.c
+  common_world_clip_lib.glsl.c
+  animviz_mpath_lines_vert.glsl.c
+  animviz_mpath_lines_geom.glsl.c
+  animviz_mpath_points_vert.glsl.c
+  armature_axes_vert.glsl.c
+  armature_sphere_solid_vert.glsl.c
+  armature_sphere_solid_frag.glsl.c
+  armature_sphere_outline_vert.glsl.c
+  armature_envelope_solid_vert.glsl.c
+  armature_envelope_solid_frag.glsl.c
+  armature_envelope_outline_vert.glsl.c
+  armature_envelope_distance_frag.glsl.c
+  armature_shape_solid_vert.glsl.c
+  armature_shape_solid_frag.glsl.c
+  armature_shape_outline_vert.glsl.c
+  armature_shape_outline_geom.glsl.c
+  armature_stick_vert.glsl.c
+  armature_stick_frag.glsl.c
+  armature_dof_vert.glsl.c
+  edit_mesh_overlay_common_lib.glsl.c
+  edit_mesh_overlay_frag.glsl.c
+  edit_mesh_overlay_vert.glsl.c
+  edit_mesh_overlay_geom_tri.glsl.c
+  edit_mesh_overlay_geom_edge.glsl.c
+  edit_mesh_overlay_points_vert.glsl.c
+  edit_mesh_overlay_facedot_frag.glsl.c
+  edit_mesh_overlay_facedot_vert.glsl.c
+  edit_mesh_overlay_mix_frag.glsl.c
+  edit_mesh_overlay_facefill_vert.glsl.c
+  edit_mesh_overlay_facefill_frag.glsl.c
+  edit_curve_overlay_handle_vert.glsl.c
+  edit_curve_overlay_handle_geom.glsl.c
+  edit_curve_overlay_loosevert_vert.glsl.c
+  edit_curve_overlay_normals_vert.glsl.c
+  edit_lattice_overlay_frag.glsl.c
+  edit_lattice_overlay_loosevert_vert.glsl.c
+  edit_normals_vert.glsl.c
+  edit_normals_geom.glsl.c
+  overlay_face_orientation_frag.glsl.c
+  overlay_face_orientation_vert.glsl.c
+  overlay_face_wireframe_vert.glsl.c
+  overlay_face_wireframe_geom.glsl.c
+  overlay_face_wireframe_frag.glsl.c
+  object_empty_axes_vert.glsl.c
+  object_empty_image_frag.glsl.c
+  object_empty_image_vert.glsl.c
+  object_outline_resolve_frag.glsl.c
+  object_outline_expand_frag.glsl.c
+  object_outline_detect_frag.glsl.c
+  object_outline_prepass_vert.glsl.c
+  object_outline_prepass_geom.glsl.c
+  object_outline_prepass_frag.glsl.c
+  object_grid_frag.glsl.c
+  object_grid_vert.glsl.c
+  object_lightprobe_grid_vert.glsl.c
+  object_mball_handles_vert.glsl.c
+  object_particle_prim_vert.glsl.c
+  object_particle_dot_vert.glsl.c
+  object_particle_dot_frag.glsl.c
+  object_loose_points_frag.glsl.c
+  paint_texture_frag.glsl.c
+  paint_texture_vert.glsl.c
+  paint_vertex_frag.glsl.c
+  paint_vertex_vert.glsl.c
+  paint_weight_frag.glsl.c
+  paint_weight_vert.glsl.c
+  paint_face_vert.glsl.c
+  paint_wire_frag.glsl.c
+  paint_wire_vert.glsl.c
+  paint_vert_frag.glsl.c
+  particle_strand_frag.glsl.c
+  particle_strand_vert.glsl.c
+  sculpt_mask_vert.glsl.c
+  volume_velocity_vert.glsl.c
+  gpencil_fill_vert.glsl.c
+  gpencil_fill_frag.glsl.c
+  gpencil_stroke_vert.glsl.c
+  gpencil_stroke_geom.glsl.c
+  gpencil_stroke_frag.glsl.c
+  gpencil_zdepth_mix_frag.glsl.c
+  gpencil_simple_mix_frag.glsl.c
+  gpencil_blend_frag.glsl.c
+  gpencil_point_vert.glsl.c
+  gpencil_point_geom.glsl.c
+  gpencil_point_frag.glsl.c
+  gpencil_background_frag.glsl.c
+  gpencil_paper_frag.glsl.c
+  gpencil_edit_point_vert.glsl.c
+  gpencil_edit_point_geom.glsl.c
+  gpencil_edit_point_frag.glsl.c
+  gpencil_fx_blur_frag.glsl.c
+  gpencil_fx_colorize_frag.glsl.c
+  gpencil_fx_flip_frag.glsl.c
+  gpencil_fx_glow_prepare_frag.glsl.c
+  gpencil_fx_glow_resolve_frag.glsl.c
+  gpencil_fx_light_frag.glsl.c
+  gpencil_fx_pixel_frag.glsl.c
+  gpencil_fx_rim_prepare_frag.glsl.c
+  gpencil_fx_rim_resolve_frag.glsl.c
+  gpencil_fx_shadow_prepare_frag.glsl.c
+  gpencil_fx_shadow_resolve_frag.glsl.c
+  gpencil_fx_swirl_frag.glsl.c
+  gpencil_fx_wave_frag.glsl.c
+  bf_draw.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_draw.lib

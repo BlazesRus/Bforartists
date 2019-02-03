@@ -1,0 +1,21 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/cycles/kernel/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/cycles/kernel/CMakeFiles/generate.stamp is up-to-date.
+  kernel.cpp
+  kernel_sse2.cpp
+  kernel_sse3.cpp
+  kernel_sse41.cpp
+  kernel_split.cpp
+  kernel_split_sse2.cpp
+  kernel_split_sse3.cpp
+  kernel_split_sse41.cpp
+  filter.cpp
+  filter_sse2.cpp
+  filter_sse3.cpp
+  filter_sse41.cpp
+  kernel_avx.cpp
+  kernel_split_avx.cpp
+  filter_avx.cpp
+  kernel_avx2.cpp
+  kernel_split_avx2.cpp
+  filter_avx2.cpp
+  cycles_kernel.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\cycles_kernel.lib

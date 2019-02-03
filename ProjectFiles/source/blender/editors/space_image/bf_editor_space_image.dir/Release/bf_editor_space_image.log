@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/space_image/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/space_image/CMakeFiles/generate.stamp is up-to-date.
+  image_buttons.c
+  image_draw.c
+  image_edit.c
+  image_ops.c
+  space_image.c
+  bf_editor_space_image.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_space_image.lib

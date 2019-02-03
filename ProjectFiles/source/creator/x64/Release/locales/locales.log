@@ -1,0 +1,35 @@
+﻿  Generating ar.mo
+  Generating ca.mo
+  Generating cs.mo
+  Generating de.mo
+  Generating eo.mo
+  Generating es.mo
+  Generating es_ES.mo
+  Generating eu.mo
+  Generating fa.mo
+  Generating fr.mo
+  Generating ha.mo
+  Generating he.mo
+  Generating hi.mo
+  Generating hr.mo
+  Generating hu.mo
+  Generating id.mo
+  Generating it.mo
+  Generating ja.mo
+  Generating ko.mo
+  Generating ky.mo
+  Generating nl.mo
+  Generating pl.mo
+  Generating pt.mo
+  Generating pt_BR.mo
+  Generating ru.mo
+  Generating sr.mo
+  Generating sr@latin.mo
+  Generating sv.mo
+  Generating tr.mo
+  Generating uk.mo
+  Generating vi.mo
+  Generating zh_CN.mo
+  Generating zh_TW.mo
+  Building Custom Rule C:/BlenderStuff/BlenderScope/source/creator/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/creator/CMakeFiles/generate.stamp is up-to-date.

@@ -1,0 +1,26 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/imbuf/intern/oiio/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/imbuf/intern/oiio/CMakeFiles/generate.stamp is up-to-date.
+  openimageio_api.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\corecrt_math_defines.h(17): warning C4005: 'M_E': macro redefinition
+  C:\BlenderStuff\lib\win64_vc14\OpenImageIO\include\OpenImageIO/missing_math.h(98): note: see previous definition of 'M_E'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\corecrt_math_defines.h(18): warning C4005: 'M_LOG2E': macro redefinition
+  C:\BlenderStuff\lib\win64_vc14\OpenImageIO\include\OpenImageIO/missing_math.h(103): note: see previous definition of 'M_LOG2E'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\corecrt_math_defines.h(20): warning C4005: 'M_LN2': macro redefinition
+  C:\BlenderStuff\lib\win64_vc14\OpenImageIO\include\OpenImageIO/missing_math.h(88): note: see previous definition of 'M_LN2'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\corecrt_math_defines.h(21): warning C4005: 'M_LN10': macro redefinition
+  C:\BlenderStuff\lib\win64_vc14\OpenImageIO\include\OpenImageIO/missing_math.h(93): note: see previous definition of 'M_LN10'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  C:\BlenderStuff\lib\win64_vc14\OpenImageIO\include\OpenImageIO/missing_math.h(48): note: see previous definition of 'M_PI'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\corecrt_math_defines.h(23): warning C4005: 'M_PI_2': macro redefinition
+  C:\BlenderStuff\lib\win64_vc14\OpenImageIO\include\OpenImageIO/missing_math.h(53): note: see previous definition of 'M_PI_2'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\corecrt_math_defines.h(24): warning C4005: 'M_PI_4': macro redefinition
+  C:\BlenderStuff\lib\win64_vc14\OpenImageIO\include\OpenImageIO/missing_math.h(58): note: see previous definition of 'M_PI_4'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\corecrt_math_defines.h(25): warning C4005: 'M_1_PI': macro redefinition
+  C:\BlenderStuff\lib\win64_vc14\OpenImageIO\include\OpenImageIO/missing_math.h(68): note: see previous definition of 'M_1_PI'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\corecrt_math_defines.h(26): warning C4005: 'M_2_PI': macro redefinition
+  C:\BlenderStuff\lib\win64_vc14\OpenImageIO\include\OpenImageIO/missing_math.h(73): note: see previous definition of 'M_2_PI'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\corecrt_math_defines.h(28): warning C4005: 'M_SQRT2': macro redefinition
+  C:\BlenderStuff\lib\win64_vc14\OpenImageIO\include\OpenImageIO/missing_math.h(78): note: see previous definition of 'M_SQRT2'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\ucrt\corecrt_math_defines.h(29): warning C4005: 'M_SQRT1_2': macro redefinition
+  C:\BlenderStuff\lib\win64_vc14\OpenImageIO\include\OpenImageIO/missing_math.h(83): note: see previous definition of 'M_SQRT1_2'
+  bf_imbuf_openimageio.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_imbuf_openimageio.lib

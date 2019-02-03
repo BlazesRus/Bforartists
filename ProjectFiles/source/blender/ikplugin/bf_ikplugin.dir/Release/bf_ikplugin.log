@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/ikplugin/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/ikplugin/CMakeFiles/generate.stamp is up-to-date.
+  ikplugin_api.c
+  iksolver_plugin.c
+  itasc_plugin.cpp
+  bf_ikplugin.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_ikplugin.lib

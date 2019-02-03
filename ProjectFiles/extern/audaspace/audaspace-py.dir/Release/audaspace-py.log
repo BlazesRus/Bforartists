@@ -1,0 +1,13 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/extern/audaspace/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/extern/audaspace/CMakeFiles/generate.stamp is up-to-date.
+  PyAPI.cpp
+  PyDevice.cpp
+  PyDynamicMusic.cpp
+  PyHandle.cpp
+  PyPlaybackManager.cpp
+  PySequence.cpp
+  PySequenceEntry.cpp
+  PySound.cpp
+  PySource.cpp
+  PyThreadPool.cpp
+  audaspace-py.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\audaspace-py.lib

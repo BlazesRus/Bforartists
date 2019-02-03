@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/extern/curve_fit_nd/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/extern/curve_fit_nd/CMakeFiles/generate.stamp is up-to-date.
+  curve_fit_cubic.c
+  curve_fit_cubic_refit.c
+  curve_fit_corners_detect.c
+  generic_heap.c
+  extern_curve_fit_nd.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\extern_curve_fit_nd.lib

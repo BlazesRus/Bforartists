@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/extern/lzma/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/extern/lzma/CMakeFiles/generate.stamp is up-to-date.
+  Alloc.c
+  LzFind.c
+  LzmaDec.c
+  LzmaEnc.c
+  LzmaLib.c
+  extern_lzma.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\extern_lzma.lib

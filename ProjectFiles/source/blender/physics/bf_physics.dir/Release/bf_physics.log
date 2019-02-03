@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/physics/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/physics/CMakeFiles/generate.stamp is up-to-date.
+  BPH_mass_spring.cpp
+  hair_volume.cpp
+  implicit_eigen.cpp
+  implicit_blender.c
+C:\BlenderStuff\BlenderScope\source\blender\physics\intern\implicit_blender.c(602): warning C4189: 'i': local variable is initialized but not referenced
+  bf_physics.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_physics.lib

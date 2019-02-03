@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/editors/io/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/editors/io/CMakeFiles/generate.stamp is up-to-date.
+  io_alembic.c
+  io_cache.c
+  io_collada.c
+  io_ops.c
+  bf_editor_io.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_editor_io.lib

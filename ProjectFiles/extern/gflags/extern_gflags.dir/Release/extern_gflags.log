@@ -1,0 +1,10 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/extern/gflags/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/extern/gflags/CMakeFiles/generate.stamp is up-to-date.
+  gflags.cc
+  gflags_completions.cc
+  gflags_reporting.cc
+  windows_port.cc
+c:\blenderstuff\blenderscope\extern\gflags\src\util.h(255): warning C4189: 'tmppath_len': local variable is initialized but not referenced (compiling source file C:\BlenderStuff\BlenderScope\extern\gflags\src\gflags_completions.cc)
+c:\blenderstuff\blenderscope\extern\gflags\src\util.h(255): warning C4189: 'tmppath_len': local variable is initialized but not referenced (compiling source file C:\BlenderStuff\BlenderScope\extern\gflags\src\gflags.cc)
+c:\blenderstuff\blenderscope\extern\gflags\src\util.h(255): warning C4189: 'tmppath_len': local variable is initialized but not referenced (compiling source file C:\BlenderStuff\BlenderScope\extern\gflags\src\gflags_reporting.cc)
+  extern_gflags.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\extern_gflags.lib

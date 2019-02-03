@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/guardedalloc/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/guardedalloc/CMakeFiles/generate.stamp is up-to-date.
+  mallocn.c
+  mallocn_guarded_impl.c
+  mallocn_lockfree_impl.c
+  mmap_win.c
+  bf_intern_guardedalloc.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_guardedalloc.lib

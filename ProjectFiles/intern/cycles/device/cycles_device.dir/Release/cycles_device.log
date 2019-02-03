@@ -1,0 +1,17 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/cycles/device/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/cycles/device/CMakeFiles/generate.stamp is up-to-date.
+  device.cpp
+  device_cpu.cpp
+  device_cuda.cpp
+  device_denoising.cpp
+  device_memory.cpp
+  device_multi.cpp
+  device_opencl.cpp
+  device_split_kernel.cpp
+  device_task.cpp
+  opencl_base.cpp
+  opencl_mega.cpp
+  opencl_split.cpp
+  opencl_util.cpp
+  memory_manager.cpp
+  cycles_device.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\cycles_device.lib

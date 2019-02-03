@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/extern/clew/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/extern/clew/CMakeFiles/generate.stamp is up-to-date.
+  clew.c
+  extern_clew.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\extern_clew.lib

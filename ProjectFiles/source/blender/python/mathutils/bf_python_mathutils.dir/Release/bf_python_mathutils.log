@@ -1,0 +1,14 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/python/mathutils/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/python/mathutils/CMakeFiles/generate.stamp is up-to-date.
+  mathutils.c
+  mathutils_Color.c
+  mathutils_Euler.c
+  mathutils_Matrix.c
+  mathutils_Quaternion.c
+  mathutils_Vector.c
+  mathutils_bvhtree.c
+  mathutils_geometry.c
+  mathutils_interpolate.c
+  mathutils_kdtree.c
+  mathutils_noise.c
+  bf_python_mathutils.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_python_mathutils.lib

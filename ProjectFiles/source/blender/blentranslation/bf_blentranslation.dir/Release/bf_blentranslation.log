@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/blentranslation/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/blentranslation/CMakeFiles/generate.stamp is up-to-date.
+  blt_lang.c
+  blt_translation.c
+  bf_blentranslation.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_blentranslation.lib

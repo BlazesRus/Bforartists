@@ -1,0 +1,10 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/python/generic/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/python/generic/CMakeFiles/generate.stamp is up-to-date.
+  bgl.c
+  blf_py_api.c
+  bpy_internal_import.c
+  bpy_threads.c
+  idprop_py_api.c
+  imbuf_py_api.c
+  py_capi_utils.c
+  bf_python_ext.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_python_ext.lib

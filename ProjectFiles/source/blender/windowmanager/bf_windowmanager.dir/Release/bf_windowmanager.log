@@ -1,0 +1,38 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/windowmanager/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/windowmanager/CMakeFiles/generate.stamp is up-to-date.
+  wm.c
+  wm_cursors.c
+  wm_dragdrop.c
+  wm_draw.c
+  wm_event_system.c
+  wm_files.c
+  wm_files_link.c
+  wm_gesture.c
+  wm_gesture_ops.c
+  wm_init_exit.c
+  wm_jobs.c
+  wm_keymap.c
+  wm_keymap_utils.c
+  wm_menu_type.c
+  wm_operator_props.c
+  wm_operator_type.c
+  wm_operators.c
+  wm_panel_type.c
+  wm_playanim.c
+  wm_stereo.c
+  wm_subwindow.c
+C:\BlenderStuff\BlenderScope\source\blender\windowmanager\intern\wm_operators.c(1483): warning C4189: 'version_suffix': local variable is initialized but not referenced
+  wm_toolsystem.c
+  wm_tooltip.c
+  wm_uilist_type.c
+  wm_window.c
+  wm_gizmo.c
+  wm_gizmo_group.c
+  wm_gizmo_map.c
+  wm_gizmo_group_type.c
+  wm_gizmo_target_props.c
+  wm_gizmo_type.c
+  wm_message_bus.c
+  wm_message_bus_rna.c
+  wm_message_bus_static.c
+  bf_windowmanager.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_windowmanager.lib

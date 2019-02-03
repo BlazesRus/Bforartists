@@ -1,0 +1,13 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/python/gpu/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/python/gpu/CMakeFiles/generate.stamp is up-to-date.
+  gpu_py_api.c
+  gpu_py_batch.c
+  gpu_py_element.c
+  gpu_py_matrix.c
+  gpu_py_offscreen.c
+  gpu_py_select.c
+  gpu_py_shader.c
+  gpu_py_types.c
+  gpu_py_vertex_buffer.c
+  gpu_py_vertex_format.c
+  bf_python_gpu.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_python_gpu.lib

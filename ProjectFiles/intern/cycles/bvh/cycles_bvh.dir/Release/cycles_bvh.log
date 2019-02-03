@@ -1,0 +1,14 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/cycles/bvh/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/cycles/bvh/CMakeFiles/generate.stamp is up-to-date.
+  bvh.cpp
+  bvh2.cpp
+  bvh4.cpp
+  bvh8.cpp
+  bvh_binning.cpp
+  bvh_build.cpp
+  bvh_embree.cpp
+  bvh_node.cpp
+  bvh_sort.cpp
+  bvh_split.cpp
+  bvh_unaligned.cpp
+  cycles_bvh.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\cycles_bvh.lib

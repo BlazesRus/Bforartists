@@ -1,0 +1,28 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/alembic/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/alembic/CMakeFiles/generate.stamp is up-to-date.
+  abc_archive.cc
+  abc_camera.cc
+  abc_curves.cc
+  abc_customdata.cc
+  abc_exporter.cc
+  abc_hair.cc
+  abc_mball.cc
+  abc_mesh.cc
+C:\BlenderStuff\BlenderScope\source\blender\alembic\intern\abc_curves.cc(174): warning C4244: 'argument': conversion from 'short' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=unsigned char
+          ]
+C:\BlenderStuff\BlenderScope\source\blender\alembic\intern\abc_exporter.cc(207): warning C4244: 'initializing': conversion from 'double' to 'unsigned int', possible loss of data
+C:\BlenderStuff\BlenderScope\source\blender\alembic\intern\abc_exporter.cc(230): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\BlenderStuff\BlenderScope\source\blender\alembic\intern\abc_exporter.cc(306): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\BlenderStuff\BlenderScope\source\blender\alembic\intern\abc_exporter.cc(309): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\BlenderStuff\BlenderScope\source\blender\alembic\intern\abc_mesh.cc(1153): warning C4244: '=': conversion from 'Alembic::AbcCoreAbstract::v10::chrono_t' to 'float', possible loss of data
+C:\BlenderStuff\BlenderScope\source\blender\alembic\intern\abc_mesh.cc(1447): warning C4244: '=': conversion from 'Alembic::AbcCoreAbstract::v10::chrono_t' to 'float', possible loss of data
+  abc_nurbs.cc
+  abc_object.cc
+  abc_points.cc
+  abc_transform.cc
+  abc_util.cc
+  alembic_capi.cc
+  bf_alembic.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_alembic.lib

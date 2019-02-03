@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/mikktspace/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/mikktspace/CMakeFiles/generate.stamp is up-to-date.
+  mikktspace.c
+  bf_intern_mikktspace.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_mikktspace.lib

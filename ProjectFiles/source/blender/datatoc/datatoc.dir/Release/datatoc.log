@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/datatoc/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/datatoc/CMakeFiles/generate.stamp is up-to-date.
+  datatoc.c
+  datatoc.vcxproj -> C:\BlenderStuff\BlenderScope\Build\bin\Release\datatoc.exe

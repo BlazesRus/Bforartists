@@ -1,0 +1,21 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/cycles/util/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/cycles/util/CMakeFiles/generate.stamp is up-to-date.
+  util_aligned_malloc.cpp
+  util_debug.cpp
+  util_ies.cpp
+  util_logging.cpp
+  util_math_cdf.cpp
+  util_md5.cpp
+  util_murmurhash.cpp
+  util_path.cpp
+  util_profiling.cpp
+  util_string.cpp
+  util_simd.cpp
+  util_system.cpp
+  util_task.cpp
+  util_thread.cpp
+  util_time.cpp
+  util_transform.cpp
+  util_guarded_allocator.cpp
+  util_sky_model.cpp
+  cycles_util.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\cycles_util.lib

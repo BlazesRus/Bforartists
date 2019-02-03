@@ -1,0 +1,10 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/avi/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/avi/CMakeFiles/generate.stamp is up-to-date.
+  avi.c
+  avi_codecs.c
+  avi_endian.c
+  avi_mjpeg.c
+  avi_options.c
+  avi_rgb.c
+  avi_rgb32.c
+  bf_avi.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_avi.lib

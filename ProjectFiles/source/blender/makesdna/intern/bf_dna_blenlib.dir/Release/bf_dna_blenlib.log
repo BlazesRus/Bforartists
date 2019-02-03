@@ -1,0 +1,9 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/makesdna/intern/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/makesdna/intern/CMakeFiles/generate.stamp is up-to-date.
+  BLI_ghash.c
+  BLI_ghash_utils.c
+  BLI_mempool.c
+  endian_switch.c
+  hash_mm2a.c
+  listbase.c
+  bf_dna_blenlib.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_dna_blenlib.lib

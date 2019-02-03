@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/glew-mx/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/glew-mx/CMakeFiles/generate.stamp is up-to-date.
+  glew-mx.c
+  bf_intern_glew_mx.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_glew_mx.lib

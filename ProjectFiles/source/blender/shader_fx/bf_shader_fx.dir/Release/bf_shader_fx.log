@@ -1,0 +1,14 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/shader_fx/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/shader_fx/CMakeFiles/generate.stamp is up-to-date.
+  FX_shader_blur.c
+  FX_shader_colorize.c
+  FX_shader_flip.c
+  FX_shader_glow.c
+  FX_shader_light.c
+  FX_shader_pixel.c
+  FX_shader_rim.c
+  FX_shader_shadow.c
+  FX_shader_swirl.c
+  FX_shader_util.c
+  FX_shader_wave.c
+  bf_shader_fx.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_shader_fx.lib

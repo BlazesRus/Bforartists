@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/imbuf/intern/cineon/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/imbuf/intern/cineon/CMakeFiles/generate.stamp is up-to-date.
+  cineon_dpx.c
+  cineonlib.c
+  dpxlib.c
+  logImageCore.c
+  logmemfile.c
+  bf_imbuf_cineon.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_imbuf_cineon.lib

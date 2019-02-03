@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CCAC55F1-95DA-36AB-9AB1-0608CA0D112E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bf_python</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\Bforartists\ProjectFiles\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_python.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_python</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\Bforartists\ProjectFiles\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_python.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_python</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\Bforartists\ProjectFiles\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_python.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_python</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\Bforartists\ProjectFiles\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_python.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_python</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\opencolorio;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\freestyle\intern\python;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\source\blender\imbuf\intern\oiio;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\lib\win64_vc14\python\include\Python3.7;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\lib\win64_vc14\sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800;4828;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4133;4431</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG;_DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;BUILD_DATE;WITH_AUDASPACE;WITH_BULLET;WITH_AVI;WITH_FFMPEG;WITH_COMPOSITOR;WITH_CYCLES;WITH_CYCLES_OSL;WITH_FREESTYLE;WITH_CINEON;WITH_DDS;WITH_HDR;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_TIFF;WITH_INPUT_NDOF;WITH_INTERNATIONAL;WITH_OPENAL;WITH_SDL;WITH_LIBMV;WITH_MOD_FLUID;WITH_MOD_REMESH;WITH_SMOKE;WITH_COLLADA;WITH_ALEMBIC;WITH_OCIO;WITH_OPENSUBDIV;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;BUILD_DATE;WITH_AUDASPACE;WITH_BULLET;WITH_AVI;WITH_FFMPEG;WITH_COMPOSITOR;WITH_CYCLES;WITH_CYCLES_OSL;WITH_FREESTYLE;WITH_CINEON;WITH_DDS;WITH_HDR;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_TIFF;WITH_INPUT_NDOF;WITH_INTERNATIONAL;WITH_OPENAL;WITH_SDL;WITH_LIBMV;WITH_MOD_FLUID;WITH_MOD_REMESH;WITH_SMOKE;WITH_COLLADA;WITH_ALEMBIC;WITH_OCIO;WITH_OPENSUBDIV;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\opencolorio;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\freestyle\intern\python;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\source\blender\imbuf\intern\oiio;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\lib\win64_vc14\python\include\Python3.7;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\lib\win64_vc14\sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\opencolorio;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\freestyle\intern\python;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\source\blender\imbuf\intern\oiio;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\lib\win64_vc14\python\include\Python3.7;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\lib\win64_vc14\sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\opencolorio;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\freestyle\intern\python;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\source\blender\imbuf\intern\oiio;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\lib\win64_vc14\python\include\Python3.7;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\lib\win64_vc14\sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800;4828;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4133;4431</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;BUILD_DATE;WITH_AUDASPACE;WITH_BULLET;WITH_AVI;WITH_FFMPEG;WITH_COMPOSITOR;WITH_CYCLES;WITH_CYCLES_OSL;WITH_FREESTYLE;WITH_CINEON;WITH_DDS;WITH_HDR;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_TIFF;WITH_INPUT_NDOF;WITH_INTERNATIONAL;WITH_OPENAL;WITH_SDL;WITH_LIBMV;WITH_MOD_FLUID;WITH_MOD_REMESH;WITH_SMOKE;WITH_COLLADA;WITH_ALEMBIC;WITH_OCIO;WITH_OPENSUBDIV;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;BUILD_DATE;WITH_AUDASPACE;WITH_BULLET;WITH_AVI;WITH_FFMPEG;WITH_COMPOSITOR;WITH_CYCLES;WITH_CYCLES_OSL;WITH_FREESTYLE;WITH_CINEON;WITH_DDS;WITH_HDR;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_TIFF;WITH_INPUT_NDOF;WITH_INTERNATIONAL;WITH_OPENAL;WITH_SDL;WITH_LIBMV;WITH_MOD_FLUID;WITH_MOD_REMESH;WITH_SMOKE;WITH_COLLADA;WITH_ALEMBIC;WITH_OCIO;WITH_OPENSUBDIV;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\opencolorio;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\freestyle\intern\python;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\source\blender\imbuf\intern\oiio;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\lib\win64_vc14\python\include\Python3.7;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\lib\win64_vc14\sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\opencolorio;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\freestyle\intern\python;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\source\blender\imbuf\intern\oiio;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\lib\win64_vc14\python\include\Python3.7;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\lib\win64_vc14\sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\opencolorio;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\freestyle\intern\python;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\source\blender\imbuf\intern\oiio;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\lib\win64_vc14\python\include\Python3.7;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\lib\win64_vc14\sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800;4828;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4133;4431</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;BUILD_DATE;WITH_AUDASPACE;WITH_BULLET;WITH_AVI;WITH_FFMPEG;WITH_COMPOSITOR;WITH_CYCLES;WITH_CYCLES_OSL;WITH_FREESTYLE;WITH_CINEON;WITH_DDS;WITH_HDR;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_TIFF;WITH_INPUT_NDOF;WITH_INTERNATIONAL;WITH_OPENAL;WITH_SDL;WITH_LIBMV;WITH_MOD_FLUID;WITH_MOD_REMESH;WITH_SMOKE;WITH_COLLADA;WITH_ALEMBIC;WITH_OCIO;WITH_OPENSUBDIV;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;BUILD_DATE;WITH_AUDASPACE;WITH_BULLET;WITH_AVI;WITH_FFMPEG;WITH_COMPOSITOR;WITH_CYCLES;WITH_CYCLES_OSL;WITH_FREESTYLE;WITH_CINEON;WITH_DDS;WITH_HDR;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_TIFF;WITH_INPUT_NDOF;WITH_INTERNATIONAL;WITH_OPENAL;WITH_SDL;WITH_LIBMV;WITH_MOD_FLUID;WITH_MOD_REMESH;WITH_SMOKE;WITH_COLLADA;WITH_ALEMBIC;WITH_OCIO;WITH_OPENSUBDIV;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\opencolorio;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\freestyle\intern\python;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\source\blender\imbuf\intern\oiio;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\lib\win64_vc14\python\include\Python3.7;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\lib\win64_vc14\sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\opencolorio;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\freestyle\intern\python;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\source\blender\imbuf\intern\oiio;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\lib\win64_vc14\python\include\Python3.7;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\lib\win64_vc14\sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\opencolorio;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\freestyle\intern\python;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\source\blender\imbuf\intern\oiio;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\lib\win64_vc14\python\include\Python3.7;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\lib\win64_vc14\sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w34062 /w34189 /w35038 /J /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800;4828;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4133;4431</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;BUILD_DATE;WITH_AUDASPACE;WITH_BULLET;WITH_AVI;WITH_FFMPEG;WITH_COMPOSITOR;WITH_CYCLES;WITH_CYCLES_OSL;WITH_FREESTYLE;WITH_CINEON;WITH_DDS;WITH_HDR;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_TIFF;WITH_INPUT_NDOF;WITH_INTERNATIONAL;WITH_OPENAL;WITH_SDL;WITH_LIBMV;WITH_MOD_FLUID;WITH_MOD_REMESH;WITH_SMOKE;WITH_COLLADA;WITH_ALEMBIC;WITH_OCIO;WITH_OPENSUBDIV;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;OIIO_NO_SSE=1;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENGL;WITH_ASSERT_ABORT;BUILD_DATE;WITH_AUDASPACE;WITH_BULLET;WITH_AVI;WITH_FFMPEG;WITH_COMPOSITOR;WITH_CYCLES;WITH_CYCLES_OSL;WITH_FREESTYLE;WITH_CINEON;WITH_DDS;WITH_HDR;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_TIFF;WITH_INPUT_NDOF;WITH_INTERNATIONAL;WITH_OPENAL;WITH_SDL;WITH_LIBMV;WITH_MOD_FLUID;WITH_MOD_REMESH;WITH_SMOKE;WITH_COLLADA;WITH_ALEMBIC;WITH_OCIO;WITH_OPENSUBDIV;WITH_GL_PROFILE_CORE;GLEW_STATIC;GLEW_NO_ES;GLEW_NO_GLU;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\opencolorio;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\freestyle\intern\python;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\source\blender\imbuf\intern\oiio;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\lib\win64_vc14\python\include\Python3.7;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\lib\win64_vc14\sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\BlenderStuff\BlenderScope\source\blender\python;C:\BlenderStuff\BlenderScope\source\blender\blenkernel;C:\BlenderStuff\BlenderScope\source\blender\blenlib;C:\BlenderStuff\BlenderScope\source\blender\blenloader;C:\BlenderStuff\BlenderScope\source\blender\blentranslation;C:\BlenderStuff\BlenderScope\source\blender\editors\include;C:\BlenderStuff\BlenderScope\source\blender\gpu;C:\BlenderStuff\BlenderScope\source\blender\imbuf;C:\BlenderStuff\BlenderScope\source\blender\makesdna;C:\BlenderStuff\BlenderScope\source\blender\makesrna;C:\BlenderStuff\BlenderScope\source\blender\windowmanager;C:\BlenderStuff\BlenderScope\intern\clog;C:\BlenderStuff\BlenderScope\intern\guardedalloc;C:\BlenderStuff\BlenderScope\intern\opencolorio;C:\BlenderStuff\BlenderScope\intern\cycles\blender;C:\BlenderStuff\BlenderScope\source\blender\freestyle\intern\python;C:\BlenderStuff\BlenderScope\source\blender\alembic;C:\BlenderStuff\BlenderScope\source\blender\imbuf\intern\oiio;C:\BlenderStuff\BlenderScope\intern\opensubdiv;C:\BlenderStuff\lib\win64_vc14\pthreads\include;C:\BlenderStuff\lib\win64_vc14\python\include\Python3.7;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include;C:\BlenderStuff\lib\win64_vc14\ffmpeg\include\msvc;C:\BlenderStuff\lib\win64_vc14\sdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/python/intern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/ProjectFiles/source/blender/python/intern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/BlenderStuff/BlenderScope/source/blender/python/intern/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\python\intern\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\python\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\python\intern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/python/intern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/ProjectFiles/source/blender/python/intern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/BlenderStuff/BlenderScope/source/blender/python/intern/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\python\intern\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\python\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\python\intern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/python/intern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/ProjectFiles/source/blender/python/intern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/BlenderStuff/BlenderScope/source/blender/python/intern/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\python\intern\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\python\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\python\intern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/python/intern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\UserFiles\SubversionTools\CMake\bin\cmake.exe -SC:/BlenderStuff/BlenderScope -BC:/BlenderStuff/BlenderScope/Build --check-stamp-file C:/BlenderStuff/BlenderScope/ProjectFiles/source/blender/python/intern/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/BlenderStuff/BlenderScope/source/blender/python/intern/CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\python\intern\CMakeLists.txt;C:\BlenderStuff\BlenderScope\source\blender\python\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\BlenderStuff\Bforartists\ProjectFiles\source\blender\python\intern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_alembic.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_build_options.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_ffmpeg.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_handlers.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_icons.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_ocio.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_oiio.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_opensubdiv.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_openvdb.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_sdl.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_timers.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_translations.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_capi_utils.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_driver.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_gizmo_wrap.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_interface.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_interface_atexit.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_intern_string.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_library_load.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_library_write.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_msgbus.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_operator.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_operator_wrap.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_path.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_props.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna_anim.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna_array.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna_callback.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna_driver.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna_gizmo.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna_id_collection.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_traceback.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_utils_previews.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_utils_units.c" />
+    <ClCompile Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\stubs.c" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_alembic.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_build_options.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_ffmpeg.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_handlers.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_icons.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_ocio.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_oiio.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_opensubdiv.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_openvdb.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_sdl.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_timers.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_app_translations.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_capi_utils.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_driver.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_gizmo_wrap.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_intern_string.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_library.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_msgbus.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_operator.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_operator_wrap.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_path.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_props.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna_anim.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna_callback.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna_driver.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna_gizmo.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_rna_id_collection.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_traceback.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_utils_previews.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\intern\bpy_utils_units.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\BPY_extern.h" />
+    <ClInclude Include="C:\BlenderStuff\BlenderScope\source\blender\python\BPY_extern_clog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\BlenderStuff\Bforartists\ProjectFiles\ZERO_CHECK.vcxproj">
+      <Project>{D519D051-5A79-323C-9110-7C69506A4014}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

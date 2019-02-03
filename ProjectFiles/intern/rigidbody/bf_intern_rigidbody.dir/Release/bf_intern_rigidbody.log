@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/intern/rigidbody/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/intern/rigidbody/CMakeFiles/generate.stamp is up-to-date.
+  rb_bullet_api.cpp
+  bf_intern_rigidbody.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_intern_rigidbody.lib

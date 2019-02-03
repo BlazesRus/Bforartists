@@ -1,0 +1,11 @@
+﻿  Building Custom Rule C:/BlenderStuff/BlenderScope/source/blender/blenfont/CMakeLists.txt
+  CMake does not need to re-run because C:/BlenderStuff/BlenderScope/Build/source/blender/blenfont/CMakeFiles/generate.stamp is up-to-date.
+  blf.c
+  blf_dir.c
+  blf_font.c
+  blf_font_i18n.c
+  blf_glyph.c
+  blf_thumbs.c
+  blf_util.c
+  blf_font_win32_compat.c
+  bf_blenfont.vcxproj -> C:\BlenderStuff\BlenderScope\Build\lib\Release\bf_blenfont.lib
