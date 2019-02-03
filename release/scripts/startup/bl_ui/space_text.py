@@ -109,14 +109,12 @@ class TEXT_MT_editor_menus(Menu):
         st = context.space_data
         text = st.text
 
-        layout.menu("TEXT_MT_view")
         layout.menu("TEXT_MT_text")
-
+        layout.menu("TEXT_MT_view")
+        
         if text:
             layout.menu("TEXT_MT_edit")
             layout.menu("TEXT_MT_format")
-
-        layout.menu("TEXT_MT_templates")
 
 
 class TEXT_PT_properties(Panel):
@@ -131,9 +129,6 @@ class TEXT_PT_properties(Panel):
         st = context.space_data
 
         flow = layout.column_flow()
-        flow.prop(st, "show_line_numbers")
-        flow.prop(st, "show_word_wrap")
-        flow.prop(st, "show_syntax_highlight")
         flow.prop(st, "show_line_highlight")
         flow.prop(st, "use_live_edit")
 
@@ -218,7 +213,7 @@ class TEXT_MT_redraw_timer(Menu):
 
 
 class TEXT_MT_text(Menu):
-    bl_label = "Text"
+    bl_label = "File"
 
     def draw(self, context):
         layout = self.layout
@@ -240,7 +235,11 @@ class TEXT_MT_text(Menu):
                 layout.operator("text.make_internal")
 
             layout.column()
-            layout.operator("text.run_script")
+            layout.operator("text.run_script", icon = "PLAY")
+
+        layout.separator()
+
+        layout.menu("TEXT_MT_templates")
             
         layout.separator()
         
@@ -278,16 +277,6 @@ class TEXT_MT_templates(Menu):
         layout = self.layout
         layout.menu("TEXT_MT_templates_py")
         layout.menu("TEXT_MT_templates_osl")
-
-
-class TEXT_MT_edit_select(Menu):
-    bl_label = "Select"
-
-    def draw(self, context):
-        layout = self.layout
-
-        layout.operator("text.select_all")
-        layout.operator("text.select_line")
 
 
 class TEXT_MT_format(Menu):
@@ -346,7 +335,12 @@ class TEXT_MT_edit(Menu):
 
         layout.separator()
 
-        layout.menu("TEXT_MT_edit_select")
+        layout.menu("TEXT_MT_edit_move_select")
+
+        layout.separator()
+
+        layout.operator("text.select_all", icon = "SELECT_ALL")
+        layout.operator("text.select_line", icon = "SELECT_LINE")
 
         layout.separator()
 
@@ -357,6 +351,25 @@ class TEXT_MT_edit(Menu):
         layout.separator()
 
         layout.menu("TEXT_MT_edit_to3d")
+
+
+# move_select submenu
+class TEXT_MT_edit_move_select(Menu):
+    bl_label = "Select Text"
+
+    def draw(self, context):
+        layout = self.layout
+
+        layout.operator("text.move_select", text = "Line End", icon = "HAND").type = 'LINE_END'
+        layout.operator("text.move_select", text = "Line Begin", icon = "HAND").type = 'LINE_BEGIN'
+        layout.operator("text.move_select", text = "Previous Character", icon = "HAND").type = 'PREVIOUS_CHARACTER'
+        layout.operator("text.move_select", text = "Next Character", icon = "HAND").type = 'NEXT_CHARACTER'
+        layout.operator("text.move_select", text = "Previous Word", icon = "HAND").type = 'PREVIOUS_WORD'
+        layout.operator("text.move_select", text = "Next Word", icon = "HAND").type = 'NEXT_WORD'
+        layout.operator("text.move_select", text = "Previous Line", icon = "HAND").type = 'PREVIOUS_LINE'
+        layout.operator("text.move_select", text = "Next Line", icon = "HAND").type = 'NEXT_LINE'
+        layout.operator("text.move_select", text = "Previous Character", icon = "HAND").type = 'PREVIOUS_CHARACTER'
+        layout.operator("text.move_select", text = "Next Character", icon = "HAND").type = 'NEXT_CHARACTER'
 
 
 class TEXT_MT_toolbox(Menu):
@@ -379,7 +392,6 @@ class TEXT_MT_toolbox(Menu):
 classes = (
     ALL_MT_editormenu,
     TEXT_HT_header,
-    TEXT_MT_edit,
     TEXT_MT_editor_menus,
     TEXT_PT_properties,
     TEXT_PT_find,
@@ -389,9 +401,10 @@ classes = (
     TEXT_MT_templates,
     TEXT_MT_templates_py,
     TEXT_MT_templates_osl,
-    TEXT_MT_edit_select,
     TEXT_MT_format,
     TEXT_MT_edit_to3d,
+    TEXT_MT_edit,
+    TEXT_MT_edit_move_select,
     TEXT_MT_toolbox,
 )
 
