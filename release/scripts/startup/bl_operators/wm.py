@@ -2170,7 +2170,7 @@ class WM_OT_addon_remove(Operator):
         addon_utils.disable(self.module, default_set=True)
 
         import shutil
-        if isdir:
+        if isdir and (not os.path.islink(path)):
             shutil.rmtree(path)
         else:
             os.remove(path)
@@ -2665,7 +2665,7 @@ class WM_MT_splash(Menu):
         row.label(text="Theme")
         label = bpy.types.USERPREF_MT_interface_theme_presets.bl_label
         if label == "Presets":
-            label = "Blender Dark"
+            label = "Bforartists"
         sub.menu("USERPREF_MT_interface_theme_presets", text=label)
 
         # We need to make switching to a language easier first
