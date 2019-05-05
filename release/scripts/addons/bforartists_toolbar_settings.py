@@ -59,7 +59,6 @@ class BFA_OT_toolbar_settings_prefs(AddonPreferences):
     file_render : BoolProperty(name="Render", default=True, description = "Display the Render Toolbar\nAll Modes", )
     file_render_opengl : BoolProperty(name="Render Open GL", default=False, description = "Display the Render Open GL Toolbar\nAll Modes", )
     file_render_misc : BoolProperty(name="Render Misc", default=False, description = "Display the Render Misc Toolbar\nAll Modes", )
-    file_window_search : BoolProperty(name="Window Search", default=False, description = "Display the Search Toolbar\nAll Modes", )
 
     # meshedit
 
@@ -81,14 +80,18 @@ class BFA_OT_toolbar_settings_prefs(AddonPreferences):
 
     # primitives
 
-    primitives_mesh : BoolProperty(name="Mesh", default=True, description = "Display the Mesh Toolbar\nDisplay is mode dependant", )
-    primitives_curve : BoolProperty(name="Curve", default=False, description = "Display the Curve Toolbar\nDisplay is mode dependant", )
-    primitives_surface : BoolProperty(name="Surface", default=False, description = "Display the Surface Toolbar\nDisplay is mode dependant", )
-    primitives_metaball : BoolProperty(name="Metaball", default=False, description = "Display the Metaball Toolbar\nDisplay is mode dependant", )
-    primitives_light : BoolProperty(name="Light", default=False, description = "Display the Light Toolbar\nDisplay is mode dependant", )
-    primitives_other : BoolProperty(name="Other", default=True, description = "Display the Other Toolbar\nDisplay is mode dependant", )
-    primitives_empties : BoolProperty(name="Empties", default=False, description = "Display the Empties Toolbar\nDisplay is mode dependant", )
-    primitives_forcefield : BoolProperty(name="Force Field", default=False, description = "Display the Forcefield Toolbar\nDisplay is mode dependant", )
+    primitives_mesh : BoolProperty(name="Mesh", default=True, description = "Display the Mesh primitive Toolbar\nDisplay is mode dependant", )
+    primitives_curve : BoolProperty(name="Curve", default=False, description = "Display the Curve primitive Toolbar\nDisplay is mode dependant", )
+    primitives_surface : BoolProperty(name="Surface", default=False, description = "Display the Surface primitive Toolbar\nDisplay is mode dependant", )
+    primitives_metaball : BoolProperty(name="Metaball", default=False, description = "Display the Metaball primitive Toolbar\nDisplay is mode dependant", )
+    primitives_gpencil : BoolProperty(name="Grease Pencil", default=True, description = "Display the Greasepencil primitive Toolbar\nDisplay is mode dependant", )
+    primitives_light : BoolProperty(name="Light", default=False, description = "Display the Light primitive Toolbar\nDisplay is mode dependant", )
+    primitives_other : BoolProperty(name="Other", default=True, description = "Display the Other primitive Toolbar\nDisplay is mode dependant", )
+    primitives_empties : BoolProperty(name="Empties", default=False, description = "Display the Empties primitive Toolbar\nDisplay is mode dependant", )
+    primitives_image : BoolProperty(name="Image", default=False, description = "Display the Image primitive Toolbar\nDisplay is mode dependant", )
+    primitives_lightprobe : BoolProperty(name="Light Probe", default=False, description = "Display the light probe primitive Toolbar\nDisplay is mode dependant", )
+    primitives_forcefield : BoolProperty(name="Force Field", default=False, description = "Display the Forcefield primitive Toolbar\nDisplay is mode dependant", )
+    primitives_collection : BoolProperty(name="Collection", default=False, description = "Display the Collection primitive Toolbar\nDisplay is mode dependant", )
 
     # Image
 
@@ -130,8 +133,19 @@ class BFA_OT_toolbar_settings_prefs(AddonPreferences):
     misc_undoredo : BoolProperty(name="Undo / Redo", default=True, description = "Display the Undo Redo toolbar\nAll Modes", )
     misc_undohistory : BoolProperty(name="Undo History", default=True, description = "Display the Undo History Toolbar\nAll Modes", )
     misc_repeat : BoolProperty(name="Repeat", default=True, description = "Display the Repeat Toolbar\nAll Modes", )
-    misc_scene : BoolProperty(name="Scene", default=False, description = "Display the Scene dropdown box", )
-    misc_misc : BoolProperty(name="Misc", default=False, description = "Display the Misc Toolbar\nAll Modes", )
+    misc_scene : BoolProperty(name="Scene", default=False, description = "Display the Scene dropdown box", )    
+    misc_last : BoolProperty(name="Last", default=True, description = "Display the Adjust Last Operator panel\nAll Modes", )
+    misc_operatorsearch : BoolProperty(name="Operatorsearch", default=True, description = "Display the Operator Search\nAll Modes", )
+    misc_info : BoolProperty(name="Info", default=False, description = "Displays the Info and Messages string", )
+
+    # THE ONE FLAG IN THE NODE EDITOR!
+    # Node Editor, text or icon buttons
+
+    Node_text_or_icon : BoolProperty(name="Icon / Text Buttons", default = False, description = "Display the buttons in the Node editor tool shelf as text or iconbuttons\nSave User preferences to save the current state")
+
+    # Outliner, show search prop
+
+    outliner_show_search : BoolProperty(name="Show search", default = False, description = "Show the search form")
 
 
     def draw(self, context):
@@ -167,7 +181,6 @@ class BFA_OT_toolbar_settings_prefs(AddonPreferences):
         row.prop(self, "file_render")
         row.prop(self, "file_render_opengl")
         row.prop(self, "file_render_misc")
-        row.prop(self, "file_window_search")
 
         layout.label(text="The Mesh Edit toolbar container")
 
@@ -207,10 +220,17 @@ class BFA_OT_toolbar_settings_prefs(AddonPreferences):
 
         row = layout.row()
 
+        row.prop(self, "primitives_gpencil")
         row.prop(self, "primitives_light")
         row.prop(self, "primitives_other")
         row.prop(self, "primitives_empties")
+
+        row = layout.row()
+
+        row.prop(self, "primitives_image")
+        row.prop(self, "primitives_lightprobe")
         row.prop(self, "primitives_forcefield")
+        row.prop(self, "primitives_collection")
 
         layout.label(text="The Image toolbar container")
 
@@ -271,8 +291,25 @@ class BFA_OT_toolbar_settings_prefs(AddonPreferences):
         row.prop(self, "misc_undohistory")
         row.prop(self, "misc_repeat")
         row.prop(self, "misc_scene")
-        row.prop(self, "misc_misc")
-        
+        row.prop(self, "misc_last")
+        row.prop(self, "misc_info")
+        row.prop(self, "misc_operatorsearch")
+
+    # THE ONE FLAG IN THE NODE EDITOR!
+    # Node Editor, text or icon buttons
+
+        layout.label(text="THE ONE FLAG IN THE NODE EDITOR! Text or icon buttons in Properties sidebar")
+
+        row = layout.row()
+        row.prop(self, "Node_text_or_icon")
+
+
+    # Outliner, show search prop
+
+        layout.label(text="The show hide prop for the outliner.")
+
+        row = layout.row()
+        row.prop(self, "outliner_show_search")
 
 
 class BFA_OT_toolbar_prefs(Operator):

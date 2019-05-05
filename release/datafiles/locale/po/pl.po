@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.80 (sub 39) (b'6d89337257b6')\n"
+"Project-Id-Version: Blender 2.80 (sub 57) (b'bcefceb20058')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-24 15:04:25\n"
+"POT-Creation-Date: 2019-04-15 15:28:38\n"
 "PO-Revision-Date: 2017-08-26 11:13+0200\n"
 "Last-Translator: Mikołaj Juda <mikolaj.juda@gmail.com>\n"
 "Language: pl\n"
@@ -274,10 +274,6 @@ msgid "Replace"
 msgstr "Zastąp"
 
 
-msgid "Result strip replaces the accumulated results by amount specified by influence"
-msgstr "Wynikowy pasek zastępuje połączone rezultaty w stopniu określonym przez wpływ"
-
-
 msgid "Add"
 msgstr "Dodaj"
 
@@ -376,14 +372,6 @@ msgstr "Trajektorie"
 
 msgid "Motion Path settings for visualization"
 msgstr "Ustawienia wizualizacji trajektorii"
-
-
-msgid "Onion Skinning"
-msgstr "Pokrywanie wielowarstwowe"
-
-
-msgid "Onion Skinning (ghosting) settings for visualization"
-msgstr "Ustawienia pokrywania wielowarstwowego (eterycznego) dla wizualizacji"
 
 
 msgid "Motion Path Settings"
@@ -512,70 +500,6 @@ msgstr "W zakresie"
 
 msgid "Display Paths of poses within specified range"
 msgstr "Wyświetlaj trajektorie póz w określonym zakresie"
-
-
-msgid "Onion Skinning Settings"
-msgstr "Ustawienia pokrywania warstwowego"
-
-
-msgid "Onion Skinning settings for animation visualization"
-msgstr "Pokrywanie warstwowe dla wizualizacji animacji"
-
-
-msgid "End frame of range of Ghosts to display (not for 'Around Current Frame' Onion-skinning method)"
-msgstr "Końcowa klatka w której duchy zaczynają być wyświetlane (nie dla 'wokół bieżącej klatki' dla metody pokrywania wielowarstwowego)"
-
-
-msgid "Starting frame of range of Ghosts to display (not for 'Around Current Frame' Onion-skinning method)"
-msgstr "Początkowa klatka w której duchy zaczynają być wyświetlane (nie dla 'wokół bieżącej klatki' dla metody pokrywania wielowarstwowego)"
-
-
-msgid "Number of frames between ghosts shown (not for 'On Keyframes' Onion-skinning method)"
-msgstr "Liczba klatek pomiędzy którymi pokazane są duchy (nie dla 'w klatkach kluczowych' dla metody pokrywania wielowarstwowego)"
-
-
-msgid "On Selected Bones Only"
-msgstr "Tylko dla wybranych kości"
-
-
-msgid "For Pose-Mode drawing, only draw ghosts for selected bones"
-msgstr "Dla trybu szkicowania pozy rysuj duchy tylko dla wybranych kości"
-
-
-msgid "Type"
-msgstr "Rodzaj"
-
-
-msgid "Method used for determining what ghosts get drawn"
-msgstr "Metoda używana do określania który duch będzie narysowany"
-
-
-msgid "No Ghosts"
-msgstr "Brak duchów"
-
-
-msgid "Do not show any ghosts"
-msgstr "Nie pokazuj żadnego ducha"
-
-
-msgid "Around Current Frame"
-msgstr "Wokół bieżącej klatki"
-
-
-msgid "Show ghosts from around the current frame"
-msgstr "Pokazuj duchy wokół bieżącej klatki"
-
-
-msgid "Show ghosts for the specified frame range"
-msgstr "Pokazuj duchy w określonym przedziale klatek"
-
-
-msgid "On Keyframes"
-msgstr "W klatkach kluczowych"
-
-
-msgid "Show ghosts on keyframes"
-msgstr "Pokazuj duchy w miejscu klatek kluczowych"
 
 
 msgid "Any Type"
@@ -724,10 +648,6 @@ msgstr "Przeglądaj pliki i zasoby"
 
 msgid "Edit persistent configuration settings"
 msgstr "Zmieniaj ustawienia konfiguracyjne programu"
-
-
-msgid "Default"
-msgstr "Domyślnie"
 
 
 msgid "Width"
@@ -1224,6 +1144,10 @@ msgstr "Reguły boidów"
 
 msgid "Boid rule name"
 msgstr "Nazwa reguły boidów"
+
+
+msgid "Type"
+msgstr "Rodzaj"
 
 
 msgid "Goal"
@@ -1922,10 +1846,6 @@ msgid "Brush Capabilities"
 msgstr "Możliwości narzędzia"
 
 
-msgid "Read-only indications of which brush operations are supported by the current brush"
-msgstr "Wykazanie możliwości bieżącego narzędzia"
-
-
 msgid "Has Overlay"
 msgstr "Posiada nakładkę"
 
@@ -1944,6 +1864,10 @@ msgstr "Odstępy"
 
 msgid "Mode"
 msgstr "Tryb"
+
+
+msgid "Default"
+msgstr "Domyślnie"
 
 
 msgid "Threshold"
@@ -2995,10 +2919,6 @@ msgid "Active"
 msgstr "Aktywny"
 
 
-msgid "Constraint is the one being edited "
-msgstr "Ogranicznik jest tym, który jest właśnie edytowany"
-
-
 msgid "Lin error"
 msgstr "Błąd położenia"
 
@@ -3079,10 +2999,6 @@ msgid "Local With Parent"
 msgstr "Lokalnie z rodzicem"
 
 
-msgid "The constraint is applied relative to the local coordinate system of the object, with the parent transformation added"
-msgstr "Ogranicznik jest obliczany względem lokalnego układu współrzędnych obiektu z dodanymi transformacjami od obiektu nadrzędnego"
-
-
 msgid "Local Space"
 msgstr "Przestrzeń lokalna"
 
@@ -3109,10 +3025,6 @@ msgstr "Przekształcenia obiektu docelowego są obliczane względem systemu wsp�
 
 msgid "The transformation of the target is only evaluated in the Pose Space, the target armature object transformation is ignored"
 msgstr "Przekształcenia obiektu docelowego są obliczane jedynie w przestrzeni pozy, a transformacje na poziomie obiektu dla szkieletu docelowego są ignorowane"
-
-
-msgid "The transformation of the target bone is evaluated relative its local coordinate system, with the parent transformation added"
-msgstr "Transformacje kości docelowej są obliczane w jej lokalnym systemie współrzędnych z dodaną transformacją rodzica"
 
 
 msgid "The transformation of the target is evaluated relative to its local coordinate system"
@@ -3271,6 +3183,10 @@ msgid "Use transform property of target to look up pose for owner from an Action
 msgstr "Użyj własności transformacji obiektu docelowego z Akcji aby wyszukać pozę dla posiadacza"
 
 
+msgid "Armature"
+msgstr "Szkielet"
+
+
 msgid "Child Of"
 msgstr "Dziecko"
 
@@ -3305,10 +3221,6 @@ msgstr "Owijanie"
 
 msgid "Restrict movements to surface of target mesh"
 msgstr "Wymuś ruchy tylko po powierzchni docelowego obiektu"
-
-
-msgid "Armature"
-msgstr "Szkielet"
 
 
 msgid "Action Constraint"
@@ -4919,10 +4831,6 @@ msgid "Safe Areas"
 msgstr "Obszary bezpieczne"
 
 
-msgid "Safe Areas used in 3D view and the VSE"
-msgstr "Obszary bezpieczne używane w widoku 3D oraz w Edytorze Wideo"
-
-
 msgid "Action Safe Margins"
 msgstr "Bezpieczne marginesy akcji"
 
@@ -5807,10 +5715,6 @@ msgid "Muted"
 msgstr "Wyciszony"
 
 
-msgid "F-Curve is not evaluated"
-msgstr "Krzywa-F nie jest obliczana"
-
-
 msgid "F-Curve is selected for editing"
 msgstr "Krzywa-F jest wybrana do edycji"
 
@@ -6086,10 +5990,6 @@ msgstr "Wyłączone"
 
 msgid "F-Curve Modifier has invalid settings and will not be evaluated"
 msgstr "Krzywa-F ma niewłaściwe ustawienia i nie będzie przetwarzana"
-
-
-msgid "F-Curve Modifier will not be evaluated"
-msgstr "Krzywa-F nie będzie przetwarzana"
 
 
 msgid "F-Curve Modifier's panel is expanded in UI"
@@ -6476,12 +6376,20 @@ msgid "Parent Object"
 msgstr "Obiekt rodzica"
 
 
+msgid "Onion Skinning"
+msgstr "Pokrywanie wielowarstwowe"
+
+
 msgid "Direction"
 msgstr "Kierunek"
 
 
 msgid "Brush"
 msgstr "Pędzel"
+
+
+msgid "Flat"
+msgstr "Płaskie"
 
 
 msgid "Groups"
@@ -6576,10 +6484,6 @@ msgid "Use Nodes"
 msgstr "Używaj Węzłów"
 
 
-msgid "Flat"
-msgstr "Płaskie"
-
-
 msgid "Cube"
 msgstr "Sześcian"
 
@@ -6590,18 +6494,6 @@ msgstr "Wierzchołki"
 
 msgid "Faces"
 msgstr "Ściany"
-
-
-msgid "Mesh"
-msgstr "Siatka"
-
-
-msgid "GPencil"
-msgstr "Szkicownik"
-
-
-msgid "Speaker"
-msgstr "Głośnik"
 
 
 msgid "Angular Velocity"
@@ -6709,8 +6601,16 @@ msgid "External Data"
 msgstr "Zewnętrzne Dane"
 
 
+msgid "Mesh"
+msgstr "Siatka"
+
+
 msgid "Ball"
 msgstr "Kula"
+
+
+msgid "New"
+msgstr "Nowy"
 
 
 msgid "Local"
@@ -6855,14 +6755,6 @@ msgid "Limit"
 msgstr "Ograniczenie"
 
 
-msgid "New"
-msgstr "Nowy"
-
-
-msgid "Warning"
-msgstr "Uwaga"
-
-
 msgid "Flat/Smooth"
 msgstr "Płaskie/Gładkie"
 
@@ -6956,8 +6848,8 @@ msgid "Performance"
 msgstr "Wydajność"
 
 
-msgid "Ghost"
-msgstr "Duch"
+msgid "Slot"
+msgstr "Otwór"
 
 
 msgid "Dynamics"
@@ -6966,6 +6858,27 @@ msgstr "Dynamika"
 
 msgid "Behavior"
 msgstr "Zachowanie"
+
+
+msgid "Timeline"
+msgstr "Oś czasu"
+
+
+msgid "Development"
+msgstr "Rozwój"
+
+
+msgid "Video Sequence Editor"
+msgstr "Edytor Sekwencji Wideo"
+
+
+msgid "3D View"
+msgstr "Widok 3D"
+
+
+msgctxt "Operator"
+msgid "Scale"
+msgstr "Skaluj"
 
 
 msgid "Continue"
@@ -6992,24 +6905,16 @@ msgid "Animated"
 msgstr "Animowana"
 
 
-msgid "Timeline"
-msgstr "Oś czasu"
-
-
 msgid "Timeline and playback controls"
 msgstr "Oś czasu oraz kontrolki odtwarzania"
 
 
+msgid "Speaker"
+msgstr "Głośnik"
+
+
 msgid "3D"
 msgstr "3D"
-
-
-msgid "3D View"
-msgstr "Widok 3D"
-
-
-msgid "Video Sequence Editor"
-msgstr "Edytor Sekwencji Wideo"
 
 
 msgid "Laplacian"
@@ -7021,21 +6926,12 @@ msgid "Remove"
 msgstr "Usuń"
 
 
-msgid "Resolution:"
-msgstr "Rozdzielczość:"
-
-
 msgid "Layer:"
 msgstr "Warstwa:"
 
 
 msgid "Priority"
 msgstr "Priorytet"
-
-
-msgctxt "Operator"
-msgid "Scale"
-msgstr "Skaluj"
 
 
 msgctxt "Operator"
@@ -7226,6 +7122,10 @@ msgid "Mball"
 msgstr "Mball"
 
 
+msgid "GPencil"
+msgstr "Szkicownik"
+
+
 msgid "No new files have been packed"
 msgstr "Nie spakowano żadnych nowych plików"
 
@@ -7278,14 +7178,6 @@ msgid "ParticleSettings"
 msgstr "DaneCząsteczek"
 
 
-msgid "ParticleSystem %i"
-msgstr "SystemCząsteczek %i"
-
-
-msgid "ParticleSystem"
-msgstr "SystemCząsteczek"
-
-
 msgid "%i frames found!"
 msgstr "Odnaleziono %i klatek!"
 
@@ -7316,6 +7208,10 @@ msgstr "%s, schowek jest przestarzały"
 
 msgid "%s, not exact since frame %i"
 msgstr "%s nie dokładne w klatce %i"
+
+
+msgid "Warning"
+msgstr "Uwaga"
 
 
 msgid "Invalid Input Error"
@@ -7780,16 +7676,16 @@ msgid "No ID block and/or AnimData to delete keyframe from"
 msgstr "Brak bloku ID i/lub AnimData, z którego można usunąć klatki kluczowe"
 
 
-msgid "No active keying set"
-msgstr "Brak aktywnego zestawu kluczowania"
-
-
 msgid "No suitable context info for active keying set"
 msgstr "Brak pasującej informacji kontekstu dla aktywnego zestawu kluczowania"
 
 
 msgid "Keying set failed to insert any keyframes"
 msgstr "Zestaw Kluczowania nie zdołał wstawić żadnych klatek kluczowych"
+
+
+msgid "No active keying set"
+msgstr "Brak aktywnego zestawu kluczowania"
 
 
 msgid "No active Keying Set"
@@ -8236,12 +8132,12 @@ msgid "No active frame to delete"
 msgstr "Brak aktywnej klatki do usunięcia"
 
 
-msgid "Grease Pencil operator is already active"
-msgstr "Operator Szkicownik jest już aktywny"
-
-
 msgid "No active area"
 msgstr "Brak aktywnego obszaru"
+
+
+msgid "Grease Pencil operator is already active"
+msgstr "Operator Szkicownik jest już aktywny"
 
 
 msgid "Shift+Left Mouse"
@@ -8359,10 +8255,6 @@ msgid "Active button not found"
 msgstr "Nie odnaleziono aktywnego przycisku"
 
 
-msgid "Please set your User Preferences' 'Translation Branches Directory' path to a valid directory"
-msgstr "W Ustawieniach Użytkownika ustaw ścieżkę 'Ścieżka Gałęzi Tłumaczeń' na prawidłową ścieżkę"
-
-
 msgid "File '%s' cannot be opened"
 msgstr "Nie można otworzyć pliku '%s'"
 
@@ -8373,14 +8265,6 @@ msgstr "Patrz '%s' w edytorze tekstu"
 
 msgid "No valid po found for language '%s' under %s"
 msgstr "Nie odnaleziono prawidłowego 'po' dla języka '%s' pod '%s'"
-
-
-msgid "HSL"
-msgstr "HSL"
-
-
-msgid "HSV"
-msgstr "HSV"
 
 
 msgid "Hex"
@@ -8477,10 +8361,6 @@ msgstr "Python: %s.%s"
 
 msgid "ID-Block:"
 msgstr "Blok ID:"
-
-
-msgid "Can't edit external libdata"
-msgstr "Nie mogę edytować zewnętrznych danych biblioteki"
 
 
 msgid "%s parent deform"
@@ -8777,11 +8657,6 @@ msgstr "Nowy"
 
 
 msgctxt "Lattice"
-msgid "New"
-msgstr "Nowa"
-
-
-msgctxt "Lamp"
 msgid "New"
 msgstr "Nowa"
 
@@ -9204,10 +9079,6 @@ msgstr "Obiekt nie mógł być zduplikowany"
 
 msgid "This data does not support joining in edit mode"
 msgstr "Te dane nie obsługują łączenia w trybie edycji"
-
-
-msgid "Cannot edit external libdata"
-msgstr "Nie można edytować zewnętrznych libdata"
 
 
 msgid "Baking of multires data only works with an active mesh object"
@@ -10634,10 +10505,6 @@ msgid ", Frame: %d"
 msgstr ", Klatka: %d"
 
 
-msgid "Slot"
-msgstr "Otwór"
-
-
 msgid "Slot %d"
 msgstr "Otwór %d"
 
@@ -11220,10 +11087,6 @@ msgid "Could not reopen file"
 msgstr "Ponowne otwarcie pliku nie powiodło się"
 
 
-msgid "Python script fail, look in the console for now..."
-msgstr "Skrypt Python zawiódł, na razie sprawdź komunikat w konsoli..."
-
-
 msgid "Python disabled in this build"
 msgstr "Python wyłączony w tej wersji (build)"
 
@@ -11246,10 +11109,6 @@ msgstr "Nie odnaleziono tekstu: %s"
 
 msgid "No Recent Files"
 msgstr "Brak Ostatnich Plików"
-
-
-msgid "Open Recent..."
-msgstr "Otwórz Ostatnie..."
 
 
 msgid "Control Point:"
@@ -11422,18 +11281,6 @@ msgstr "Zaznaczanie krawędzi - Shift-klik dla trybów mieszanych, Ctrl-klik roz
 
 msgid "Face select - Shift-Click for multiple modes, Ctrl-Click expands selection"
 msgstr "Zaznaczanie ścian - Shift-klik dla trybów mieszanych, Ctrl-klik rozszerza wybór"
-
-
-msgid "Copied selected objects to buffer"
-msgstr "Zaznaczone obiekty skopiowane do bufora"
-
-
-msgid "Objects pasted from buffer"
-msgstr "Obiekty wklejone z bufora"
-
-
-msgid "No buffer to paste from"
-msgstr "Brak bufora, z którego można wkleić"
 
 
 msgid "No active camera"
@@ -12354,16 +12201,12 @@ msgid "Object '%s' does not support shapes"
 msgstr "Obiekt '%s' nie obsługuje kształtów"
 
 
-msgid "Object '%s' has no mesh data to be used for ray casting"
-msgstr "Obiekt '%s' nie posiada danych siatki możliwych do użycia do rzutu promienia"
-
-
-msgid "Object '%s' has no mesh data to be used for finding nearest point"
-msgstr "Obiekt '%s' nie posiada danych siatki możliwych do użycia do znalezienia najbliższego punktu"
-
-
 msgid "Object '%s' could not create internal data for finding nearest point"
 msgstr "Obiekt '%s' nie zdołał stworzyć wewnętrznych danych do znalezienia najbliższego punktu"
+
+
+msgid "ParticleSystem"
+msgstr "SystemCząsteczek"
 
 
 msgid "Mesh has no UV data"
@@ -12975,10 +12818,6 @@ msgid "Missing 'window' in context"
 msgstr "Brakuje \"Okna\" w kontekście"
 
 
-msgid "Save Over?"
-msgstr "Nadpisać?"
-
-
 msgid "unable to open the file"
 msgstr "Nie udało się otworzyć pliku"
 
@@ -13154,10 +12993,6 @@ msgstr "Dodaj krzywą"
 
 msgid "Add Mesh"
 msgstr "Dodaj Siatkę"
-
-
-msgid "Development"
-msgstr "Rozwój"
 
 
 msgid "Import-Export"

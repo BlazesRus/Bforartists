@@ -47,14 +47,6 @@ class OUTLINER_OT_switch_editors_to_outliner(bpy.types.Operator):
         bpy.ops.wm.context_set_enum(data_path="area.type", value="OUTLINER")
         return {'FINISHED'} 
 
-################################ Switch between the editors ##########################################
-
-class OUTLINER_OT_switch_editors_in_outliner(bpy.types.Operator):
-    """You are in Outliner Editor"""      # blender will use this as a tooltip for menu items and buttons.
-    bl_idname = "wm.switch_editor_in_outliner"        # unique identifier for buttons and menu items to reference.
-    bl_label = "Outliner Editor"         # display name in the interface.
-    #bl_options = {'REGISTER', 'UNDO'}  # enable undo for the operator.
-
 
 class OUTLINER_HT_header(Header):
     bl_space_type = 'OUTLINER'
@@ -67,20 +59,26 @@ class OUTLINER_HT_header(Header):
         scene = context.scene
         ks = context.scene.keying_sets.active
 
+        # addon prefs for the show search prop
+        preferences = context.preferences
+        addon_prefs = preferences.addons["bforartists_toolbar_settings"].preferences
+
         ALL_MT_editormenu.draw_hidden(context, layout) # bfa - show hide the editormenu
 
         row = layout.row(align=True)
-        row.operator("wm.switch_editor_in_outliner", text="", icon='OOPS_ACTIVE')
         row.operator("wm.switch_editor_to_properties", text="", icon='BUTS')
 
         layout.prop(space, "display_mode", icon_only=True)
 
         OUTLINER_MT_editor_menus.draw_collapsible(context, layout) # Collapsing everything in OUTLINER_MT_editor_menus when ticking collapse menus checkbox
 
-        layout.separator_spacer()
+        #layout.separator_spacer()
 
         row = layout.row(align=True)
-        row.prop(space, "filter_text", icon='VIEWZOOM', text="")
+
+        row.prop(addon_prefs,"outliner_show_search", icon='VIEWZOOM', text = "") # show search text prop
+        if addon_prefs.outliner_show_search:
+            row.prop(space, "filter_text", text="")
 
         layout.separator_spacer()
 
@@ -98,17 +96,13 @@ class OUTLINER_HT_header(Header):
             sub.prop(space, "filter_id_type", text="", icon_only=True)
 
         if display_mode == 'VIEW_LAYER':
-            layout.operator("outliner.collection_new", text="", icon='GROUP').nested = True
+            layout.operator("outliner.collection_new", text="", icon='GROUP')
 
         elif display_mode == 'ORPHAN_DATA':
             layout.operator("outliner.orphans_purge", text="Purge")
 
         elif space.display_mode == 'DATA_API':
             layout.separator()
-
-            row = layout.row(align=True)
-            row.operator("outliner.keyingset_add_selected", icon='ADD', text="")
-            row.operator("outliner.keyingset_remove_selected", icon='REMOVE', text="")
 
             if ks:
                 row = layout.row()
@@ -157,65 +151,78 @@ class OUTLINER_MT_view_hide_one_level(bpy.types.Operator):
 
     def execute(self, context):        # execute() is called by blender when running the operator.
         bpy.ops.outliner.show_one_level(open = False)
-        return {'FINISHED'}  
+        return {'FINISHED'}
+
+
+# Workaround to separate the tooltips
+class OUTLINER_MT_view_select_inverse(bpy.types.Operator):
+    """Inverse\nInverts the current selection """      # blender will use this as a tooltip for menu items and buttons.
+    bl_idname = "outliner.select_all_inverse"        # unique identifier for buttons and menu items to reference.
+    bl_label = "Select Inverse"         # display name in the interface.
+    bl_options = {'REGISTER', 'UNDO'}  # enable undo for the operator.
+
+    def execute(self, context):        # execute() is called by blender when running the operator.
+        bpy.ops.outliner.select_all(action = 'INVERT')
+        return {'FINISHED'}
+
+# Workaround to separate the tooltips
+class OUTLINER_MT_view_select_none(bpy.types.Operator):
+    """None\nDeselects everything """      # blender will use this as a tooltip for menu items and buttons.
+    bl_idname = "outliner.select_all_none"        # unique identifier for buttons and menu items to reference.
+    bl_label = "Select None"         # display name in the interface.
+    bl_options = {'REGISTER', 'UNDO'}  # enable undo for the operator.
+
+    def execute(self, context):        # execute() is called by blender when running the operator.
+        bpy.ops.outliner.select_all(action = 'DESELECT')
+        return {'FINISHED'}
+
 
 class OUTLINER_MT_view(Menu):
     bl_label = "View"
 
     def draw(self, context):
         layout = self.layout
+        
+        space = context.space_data
+
+        layout.operator("outliner.show_active", icon = "CENTER")
+
+        layout.separator()
 
         layout.operator("outliner.show_one_level", text = "Show One Level", icon = "HIERARCHY_DOWN")
         layout.operator("outliner.hide_one_level", text = "Hide One Level", icon = "HIERARCHY_UP") # bfa - separated tooltip
+        layout.operator("outliner.expanded_toggle", icon = 'INVERSE')
         layout.operator("outliner.show_hierarchy", icon = "HIERARCHY")
 
         layout.separator()
 
         layout.operator("outliner.select_box", icon = 'BORDER_RECT')
-        layout.operator("outliner.expanded_toggle", icon = 'INVERSE')
-
+        
         layout.separator()
 
         layout.operator("outliner.select_all", text = "Select All", icon='SELECT_ALL').action = 'SELECT'
-        layout.operator("outliner.select_all", text = "Deselect All", icon = 'SELECT_ALL').action = 'DESELECT'
-        layout.operator("outliner.select_all", text = "Invert Selection", icon ='INVERSE').action = 'INVERT'
+        layout.operator("outliner.select_all_none", text="None", icon='SELECT_NONE') # bfa - separated tooltip
+        layout.operator("outliner.select_all_inverse", text="Inverse", icon='INVERSE') # bfa - separated tooltip
 
         layout.separator()
 
         layout.menu("INFO_MT_area")
 
-class OUTLINER_MT_context(Menu):
-    bl_label = "Outliner"
-
-    def draw(self, context):
-        layout = self.layout
-
-        layout.operator("outliner.show_one_level", text="Show One Level")
-        layout.operator("outliner.show_one_level", text="Hide One Level").open = False
-        layout.operator("outliner.show_hierarchy")
-
-        layout.separator()
-
-        layout.operator("outliner.show_active")
-
-        layout.separator()
-
-        layout.menu("INFO_MT_area")
 
 
 class OUTLINER_MT_edit_datablocks(Menu):
     bl_label = "Edit"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
-        layout.operator("outliner.keyingset_add_selected")
-        layout.operator("outliner.keyingset_remove_selected")
+        layout.operator("outliner.keyingset_add_selected", icon = "KEYINGSET")
+        layout.operator("outliner.keyingset_remove_selected", icon = "DELETE")
 
         layout.separator()
 
-        layout.operator("outliner.drivers_add_selected")
-        layout.operator("outliner.drivers_delete_selected")
+        layout.operator("outliner.drivers_add_selected", icon = "DRIVER")
+        layout.operator("outliner.drivers_delete_selected", icon = "DELETE")
 
 
 class OUTLINER_MT_collection_view_layer(Menu):
@@ -224,15 +231,41 @@ class OUTLINER_MT_collection_view_layer(Menu):
     def draw(self, context):
         layout = self.layout
 
-        layout.operator("outliner.collection_exclude_set")
-        layout.operator("outliner.collection_exclude_clear")
+        layout.operator("outliner.collection_exclude_set", icon='RENDERLAYERS')
+        layout.operator("outliner.collection_exclude_clear", icon='CLEAR')
 
         if context.engine == 'CYCLES':
-            layout.operator("outliner.collection_indirect_only_set")
-            layout.operator("outliner.collection_indirect_only_clear")
+            layout.operator("outliner.collection_indirect_only_set", icon='RENDERLAYERS')
+            layout.operator("outliner.collection_indirect_only_clear", icon='CLEAR')
 
-            layout.operator("outliner.collection_holdout_set")
-            layout.operator("outliner.collection_holdout_clear")
+            layout.operator("outliner.collection_holdout_set", icon='RENDERLAYERS')
+            layout.operator("outliner.collection_holdout_clear", icon='CLEAR')
+
+
+class OUTLINER_MT_collection_visibility(Menu):
+    bl_label = "Visibility"
+
+    def draw(self, _context):
+        layout = self.layout
+
+        layout.operator("outliner.collection_isolate", text="Isolate")
+
+        layout.separator()
+
+        layout.operator("outliner.collection_show", text="Show", icon="HIDE_OFF")
+        layout.operator("outliner.collection_show_inside", text="Show All Inside", icon="HIDE_OFF")
+        layout.operator("outliner.collection_hide", text="Hide", icon="HIDE_ON")
+        layout.operator("outliner.collection_hide_inside", text="Hide All Inside", icon="HIDE_ON")
+
+        layout.separator()
+
+        layout.operator("outliner.collection_enable", text="Enable in Viewports", icon="RESTRICT_VIEW_OFF")
+        layout.operator("outliner.collection_disable", text="Disable in Viewports", icon="HIDE_ON")
+
+        layout.separator()
+
+        layout.operator("outliner.collection_enable_render", text="Enable in Render", icon="RESTRICT_RENDER_OFF")
+        layout.operator("outliner.collection_disable_render", text="Disable in Render", icon="RESTRICT_RENDER_ON")
 
 
 class OUTLINER_MT_collection(Menu):
@@ -243,33 +276,42 @@ class OUTLINER_MT_collection(Menu):
 
         space = context.space_data
 
-        layout.operator("outliner.collection_new", text="New").nested = True
-        layout.operator("outliner.collection_duplicate", text="Duplicate")
-        layout.operator("outliner.collection_delete", text="Delete").hierarchy = False
-        layout.operator("outliner.collection_delete", text="Delete Hierarchy").hierarchy = True
+        layout.operator("outliner.collection_new", text="New", icon='GROUP')
+        layout.operator("outliner.collection_new", text="New Nested", icon='GROUP').nested = True
+        layout.operator("outliner.collection_duplicate", text="Duplicate Collection", icon = "DUPLICATE")
+        layout.operator("outliner.collection_duplicate_linked", text="Duplicate Linked", icon = "DUPLICATE")
+        layout.operator("outliner.id_copy", text="Copy", icon='COPYDOWN')
+        layout.operator("outliner.id_paste", text="Paste", icon='PASTEDOWN')
 
         layout.separator()
 
-        layout.operator("outliner.collection_objects_select", text="Select Objects")
-        layout.operator("outliner.collection_objects_deselect", text="Deselect Objects")
+        layout.operator("outliner.collection_delete", text="Delete", icon="DELETE").hierarchy = False
+        layout.operator("outliner.collection_delete", text="Delete Hierarchy", icon="DELETE").hierarchy = True
 
         layout.separator()
 
-        layout.operator("outliner.collection_instance", text="Instance to Scene")
+        layout.operator("outliner.collection_objects_select", text="Select Objects", icon="RESTRICT_SELECT_OFF")
+        layout.operator("outliner.collection_objects_deselect", text="Deselect Objects", icon = "SELECT_NONE")
+
+        layout.separator()
+
+        layout.operator("outliner.collection_instance", text="Instance to Scene", icon = "OUTLINER_OB_GROUP_INSTANCE")
+
         if space.display_mode != 'VIEW_LAYER':
-            layout.operator("outliner.collection_link", text="Link to Scene")
-        layout.operator("outliner.id_operation", text="Unlink").type = 'UNLINK'
+            layout.operator("outliner.collection_link", text="Link to Scene", icon = "LINKED")
+        layout.operator("outliner.id_operation", text="Unlink", icon = "UNLINKED").type = 'UNLINK'
+
+        layout.separator()
+
+        layout.menu("OUTLINER_MT_collection_visibility")
 
         if space.display_mode == 'VIEW_LAYER':
             layout.separator()
             layout.menu("OUTLINER_MT_collection_view_layer")
 
         layout.separator()
+
         layout.operator_menu_enum("outliner.id_operation", "type", text="ID Data")
-
-        layout.separator()
-
-        OUTLINER_MT_context.draw(self, context)
 
 
 class OUTLINER_MT_collection_new(Menu):
@@ -278,11 +320,9 @@ class OUTLINER_MT_collection_new(Menu):
     def draw(self, context):
         layout = self.layout
 
-        layout.operator("outliner.collection_new", text="New").nested = False
-
-        layout.separator()
-
-        OUTLINER_MT_context.draw(self, context)
+        layout.operator("outliner.collection_new", text="New", icon='GROUP')
+        layout.operator("outliner.collection_new", text="New Nested", icon='GROUP').nested = True
+        layout.operator("outliner.id_paste", text="Paste", icon='PASTEDOWN')
 
 
 class OUTLINER_MT_object(Menu):
@@ -295,15 +335,21 @@ class OUTLINER_MT_object(Menu):
         obj = context.active_object
         object_mode = 'OBJECT' if obj is None else obj.mode
 
-        layout.operator("outliner.object_operation", text="Delete").type = 'DELETE'
-        if space.display_mode == 'VIEW_LAYER' and not space.use_filter_collection:
-            layout.operator("outliner.object_operation", text="Delete Hierarchy").type = 'DELETE_HIERARCHY'
+        layout.operator("outliner.id_copy", text="Copy", icon='COPYDOWN')
+        layout.operator("outliner.id_paste", text="Paste", icon='PASTEDOWN')
 
         layout.separator()
 
-        layout.operator("outliner.object_operation", text="Select").type = 'SELECT'
-        layout.operator("outliner.object_operation", text="Select Hierarchy").type = 'SELECT_HIERARCHY'
-        layout.operator("outliner.object_operation", text="Deselect").type = 'DESELECT'
+        layout.operator("outliner.object_operation", text="Delete", icon="DELETE").type = 'DELETE'
+
+        if space.display_mode == 'VIEW_LAYER' and not space.use_filter_collection:
+            layout.operator("outliner.object_operation", text="Delete Hierarchy", icon="DELETE").type = 'DELETE_HIERARCHY'
+
+        layout.separator()
+
+        layout.operator("outliner.object_operation", text="Select", icon="RESTRICT_SELECT_OFF").type = 'SELECT'
+        layout.operator("outliner.object_operation", text="Select Hierarchy", icon="RESTRICT_SELECT_OFF").type = 'SELECT_HIERARCHY'
+        layout.operator("outliner.object_operation", text="Deselect", icon = "SELECT_NONE").type = 'DESELECT'
 
         layout.separator()
 
@@ -316,14 +362,10 @@ class OUTLINER_MT_object(Menu):
             layout.separator()
 
         if not (space.display_mode == 'VIEW_LAYER' and not space.use_filter_collection):
-            layout.operator("outliner.id_operation", text="Unlink").type = 'UNLINK'
+            layout.operator("outliner.id_operation", text="Unlink", icon = "UNLINKED").type = 'UNLINK'
             layout.separator()
 
         layout.operator_menu_enum("outliner.id_operation", "type", text="ID Data")
-
-        layout.separator()
-
-        OUTLINER_MT_context.draw(self, context)
 
 
 class OUTLINER_PT_filter(Panel):
@@ -385,18 +427,19 @@ class OUTLINER_PT_filter(Panel):
 classes = (
     OUTLINER_OT_switch_editors_to_properties,
     OUTLINER_OT_switch_editors_to_outliner,
-    OUTLINER_OT_switch_editors_in_outliner,
     OUTLINER_HT_header,
     ALL_MT_editormenu,
     OUTLINER_MT_editor_menus,
     OUTLINER_MT_view_hide_one_level,
+    OUTLINER_MT_view_select_inverse,
+    OUTLINER_MT_view_select_none,
     OUTLINER_MT_view,
     OUTLINER_MT_edit_datablocks,
     OUTLINER_MT_collection,
     OUTLINER_MT_collection_new,
+    OUTLINER_MT_collection_visibility,
     OUTLINER_MT_collection_view_layer,
     OUTLINER_MT_object,
-    OUTLINER_MT_context,
     OUTLINER_PT_filter,
 
 )

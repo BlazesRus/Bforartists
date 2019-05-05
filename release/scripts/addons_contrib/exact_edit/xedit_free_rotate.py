@@ -90,7 +90,7 @@ def backup_blender_settings():
         deepcopy(bpy.context.space_data.pivot_point),
         deepcopy(bpy.context.space_data.transform_orientation),
         deepcopy(bpy.context.space_data.show_manipulator),
-        deepcopy(bpy.context.scene.cursor_location)]
+        deepcopy(bpy.context.scene.cursor.location)]
     return backup
 
 
@@ -111,7 +111,7 @@ def restore_blender_settings(backup):
     bpy.context.space_data.pivot_point = deepcopy(backup[3])
     bpy.context.space_data.transform_orientation = deepcopy(backup[4])
     bpy.context.space_data.show_manipulator = deepcopy(backup[5])
-    bpy.context.scene.cursor_location = deepcopy(backup[6])
+    bpy.context.scene.cursor.location = deepcopy(backup[6])
     return
 
 
@@ -1054,9 +1054,9 @@ def get_reg_overlap():
     return rtoolsw
 
 
-class XEditFreeRotate(bpy.types.Operator):
+class XEDIT_OT_free_rotate(bpy.types.Operator):
     bl_idname = "view3d.xedit_free_rotate_op"
-    bl_label = "XEdit Free Rotate"
+    bl_label = "Exact Edit Free Rotate"
 
     # Only launch Add-On from OBJECT or EDIT modes
     @classmethod
@@ -1150,7 +1150,7 @@ class XEditFreeRotate(bpy.types.Operator):
                     curs_loc = self.pts[2].co3d.copy()
                 self.running_transf = True
                 bpy.context.space_data.pivot_point = 'CURSOR'
-                bpy.context.scene.cursor_location = curs_loc
+                bpy.context.scene.cursor.location = curs_loc
                 bpy.ops.transform.rotate('INVOKE_DEFAULT',axis=rot_axis)
 
             #===========================================

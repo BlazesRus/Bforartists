@@ -61,7 +61,7 @@ class Library(bpy_types.ID):
         # See: readblenentry.c, IDTYPE_FLAGS_ISLINKABLE,
         # we could make this an attribute in rna.
         attr_links = ("actions", "armatures", "brushes", "cameras",
-                      "curves", "grease_pencil", "collections", "images",
+                      "curves", "grease_pencils", "collections", "images",
                       "lights", "lattices", "materials", "metaballs",
                       "meshes", "node_groups", "objects", "scenes",
                       "sounds", "speakers", "textures", "texts",
@@ -120,10 +120,12 @@ class Object(bpy_types.ID):
 
     @property
     def users_collection(self):
-        """The collections this object is in. Warning: takes O(len(bpy.data.collections)) time."""
+        """The collections this object is in. Warning: takes O(len(bpy.data.collections) + len(bpy.data.scenes)) time."""
         import bpy
         return tuple(collection for collection in bpy.data.collections
-                     if self in collection.objects[:])
+                     if self in collection.objects[:]) + \
+               tuple(scene.collection for scene in bpy.data.scenes
+                     if self in scene.collection.objects[:])
 
     @property
     def users_scene(self):
@@ -520,6 +522,15 @@ class Text(bpy_types.ID):
         """Replace text with this string."""
         self.clear()
         self.write(string)
+
+    def as_module(self):
+        from os.path import splitext
+        from types import ModuleType
+        mod = ModuleType(splitext(self.name)[0])
+        # TODO: We could use Text.compiled (C struct member)
+        # if this is called often it will be much faster.
+        exec(self.as_string(), mod.__dict__)
+        return mod
 
 
 class Sound(bpy_types.ID):

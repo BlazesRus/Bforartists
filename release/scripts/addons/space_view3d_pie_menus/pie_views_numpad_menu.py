@@ -72,7 +72,7 @@ class LockTransforms(Operator):
 
 # Pie View All Sel Glob Etc - Q
 class PieViewallSelGlobEtc(Menu):
-    bl_idname = "pie.vieallselglobetc"
+    bl_idname = "PIE_MT_vieallselglobetc"
     bl_label = "Pie View All Sel Glob..."
 
     def draw(self, context):
@@ -87,9 +87,9 @@ class PieViewallSelGlobEtc(Menu):
         # 8 - TOP
         layout.operator("view3d.localview", text="Local/Global")
         # 7 - TOP - LEFT
-        layout.operator("screen.region_quadview", text="Toggle Quad View", icon='SPLITSCREEN')
+        layout.operator("screen.region_quadview", text="Toggle Quad View", icon='NONE')
         # 1 - BOTTOM - LEFT
-        layout.operator("wm.call_menu_pie", text="Previous Menu", icon='BACK').name = "pie.viewnumpad"
+        layout.operator("wm.call_menu_pie", text="Previous Menu", icon='BACK').name = "PIE_MT_viewnumpad"
         # 9 - TOP - RIGHT
         layout.operator("screen.screen_full_area", text="Full Screen", icon='FULLSCREEN_ENTER')
         # 3 - BOTTOM - RIGHT
@@ -97,7 +97,7 @@ class PieViewallSelGlobEtc(Menu):
 
 # Pie views numpad - Q
 class PieViewNumpad(Menu):
-    bl_idname = "pie.viewnumpad"
+    bl_idname = "PIE_MT_viewnumpad"
     bl_label = "Pie Views Ortho"
 
     def draw(self, context):
@@ -164,7 +164,7 @@ def register():
         # Views numpad
         km = wm.keyconfigs.addon.keymaps.new(name='3D View Generic', space_type='VIEW_3D')
         kmi = km.keymap_items.new('wm.call_menu_pie', 'Q', 'PRESS')
-        kmi.properties.name = "pie.viewnumpad"
+        kmi.properties.name = "PIE_MT_viewnumpad"
         addon_keymaps.append((km, kmi))
 
 

@@ -1546,7 +1546,7 @@ def gather_particles(**kwargs):
     area_type = kwargs.get("area_type", context.area.type)
 
     scene = kwargs.get("scene", context.scene)
-	
+
     view_layer = kwargs.get("view_layer", context.view_layer)
 
     space_data = kwargs.get("space_data", context.space_data)
@@ -3191,10 +3191,6 @@ class MeshCache:
             tmp_obj.show_in_front = src_obj.show_in_front
 
             tmp_obj.instance_faces_scale = src_obj.instance_faces_scale
-            tmp_obj.instance_frames_end = src_obj.instance_frames_end
-            tmp_obj.instance_frames_off = src_obj.instance_frames_off
-            tmp_obj.instance_frames_on = src_obj.instance_frames_on
-            tmp_obj.instance_frames_start = src_obj.instance_frames_start
             tmp_obj.instance_collection = src_obj.instance_collection
             #tmp_obj.dupli_list = src_obj.dupli_list
             tmp_obj.instance_type = src_obj.instance_type
@@ -4781,7 +4777,7 @@ class CursorMonitor(bpy.types.Operator):
                 # startup location should be added
                 new_pos = curr_pos
 
-        # Seems like scene.cursor_location is fast enough here
+        # Seems like scene.cursor.location is fast enough here
         # -> no need to resort to v3d.cursor_location.
         """
         screen = bpy.context.screen
@@ -5456,7 +5452,7 @@ def get_cursor_location(v3d=None, scene=None):
     if v3d:
         pos = v3d.cursor_location
     elif scene:
-        pos = scene.cursor_location
+        pos = scene.cursor.location
 
     return pos.copy()
 
@@ -5466,12 +5462,12 @@ def set_cursor_location(pos, v3d=None, scene=None):
 
     if v3d:
         scene = bpy.context.scene
-        # Accessing scene.cursor_location is SLOW
+        # Accessing scene.cursor.location is SLOW
         # (well, at least assigning to it).
-        # Accessing v3d.cursor_location is fast.
+        # Accessing v3d.cursor.location is fast.
         v3d.cursor_location = pos
     elif scene:
-        scene.cursor_location = pos
+        scene.cursor.location = pos
 
     if set_cursor_location__reset_stick:
         set_stick_obj(scene, None)

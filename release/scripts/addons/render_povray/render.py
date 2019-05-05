@@ -31,6 +31,7 @@ import subprocess#
 import tempfile #generate temporary files with random names
 from bpy.types import(Operator)
 from imghdr import what #imghdr is a python lib to identify image file types
+from bpy.utils import register_class
 
 from . import df3 # for smoke rendering
 from . import shading # for BI POV haders emulation
@@ -189,7 +190,7 @@ def safety(name, Level):
 csg_list = []
 
 def is_renderable(scene, ob):
-    return (ob.is_visible(scene) and not ob.hide_render and ob not in csg_list)
+    return (not ob.hide_render and ob not in csg_list)
 
 
 def renderable_objects(scene):
@@ -443,9 +444,9 @@ def write_pov(filename, scene=None, info_callback=None):
         #if material and material.transparency_method == 'RAYTRACE':
         if material:
             # But there can be only one!
-            if material.subsurface_scattering.use:  # SSS IOR get highest priority
+            if material.pov_subsurface_scattering.use:  # SSS IOR get highest priority
                 tabWrite("interior {\n")
-                tabWrite("ior %.6f\n" % material.subsurface_scattering.ior)
+                tabWrite("ior %.6f\n" % material.pov_subsurface_scattering.ior)
             # Then the raytrace IOR taken from raytrace transparency properties and used for
             # reflections if IOR Mirror option is checked.
             elif material.pov.mirror_use_IOR:
@@ -517,7 +518,7 @@ def write_pov(filename, scene=None, info_callback=None):
 
         # DH disabled for now, this isn't the correct context
         active_object = None  # bpy.context.active_object # does not always work  MR
-        matrix = global_matrix * camera.matrix_world
+        matrix = global_matrix @ camera.matrix_world
         focal_point = camera.data.dof_distance
 
         # compute resolution
@@ -553,7 +554,7 @@ def write_pov(filename, scene=None, info_callback=None):
                 tabWrite("confidence %.3g\n" % camera.data.pov.dof_confidence)
                 if camera.data.dof_object:
                     focalOb = scene.objects[camera.data.dof_object.name]
-                    matrixBlur = global_matrix * focalOb.matrix_world
+                    matrixBlur = global_matrix @ focalOb.matrix_world
                     tabWrite("focal_point <%.4f,%.4f,%.4f>\n"% matrixBlur.translation[:])
                 else:
                     tabWrite("focal_point <0, 0, %f>\n" % focal_point)
@@ -576,7 +577,7 @@ def write_pov(filename, scene=None, info_callback=None):
         for ob in lamps:
             lamp = ob.data
 
-            matrix = global_matrix * ob.matrix_world
+            matrix = global_matrix @ ob.matrix_world
 
             # Color is modified by energy #multiplied by 2 for a better match --Maurice
             color = tuple([c * (lamp.energy) for c in lamp.color])
@@ -652,14 +653,14 @@ def write_pov(filename, scene=None, info_callback=None):
                     tabWrite("adaptive 1\n")
                     tabWrite("jitter\n")
 
-            # HEMI never has any shadow_method attribute
-            if(not scene.render.use_shadows or lamp.type == 'HEMI' or
-               (lamp.type != 'HEMI' and lamp.shadow_method == 'NOSHADOW')):
+            # No shadow checked either at global or light level:
+            if(not scene.render.use_shadows or
+               (lamp.shadow_method == 'NOSHADOW')):
                 tabWrite("shadowless\n")
 
-            # Sun shouldn't be attenuated. Hemi and area lights have no falloff attribute so they
+            # Sun shouldn't be attenuated. Area lights have no falloff attribute so they
             # are put to type 2 attenuation a little higher above.
-            if lamp.type not in {'SUN', 'AREA', 'HEMI'}:
+            if lamp.type not in {'SUN', 'AREA'}:
                 if lamp.falloff_type == 'INVERSE_SQUARE':
                     tabWrite("fade_distance %.6f\n" % (sqrt(lamp.distance/2.0)))
                     tabWrite("fade_power %d\n" % 2)  # Use blenders lamp quad equivalent
@@ -706,7 +707,7 @@ def write_pov(filename, scene=None, info_callback=None):
                         # ob.rotation_euler.x, ob.rotation_euler.y, ob.rotation_euler.z))
 
             direction = (ob.location.x,ob.location.y,ob.location.z) # not taking matrix into account
-            rmatrix = global_matrix * ob.matrix_world
+            rmatrix = global_matrix @ ob.matrix_world
 
             #ob.rotation_euler.to_matrix().to_4x4() * mathutils.Vector((0,0,1))
             # XXX Is result of the below offset by 90 degrees?
@@ -747,7 +748,7 @@ def write_pov(filename, scene=None, info_callback=None):
             #tabWrite("texture {%s}\n"%povMatName)
             write_object_modifiers(scene,ob,file)
             #tabWrite("rotate x*90\n")
-            #matrix = global_matrix * ob.matrix_world
+            #matrix = global_matrix @ ob.matrix_world
             #writeMatrix(matrix)
             tabWrite("}\n")
             #continue #Don't render proxy mesh, skip to next object
@@ -761,7 +762,7 @@ def write_pov(filename, scene=None, info_callback=None):
         dataname = string_strip_hyphen(bpy.path.clean_name(dataname_orig))
 
         global_matrix = mathutils.Matrix.Rotation(-pi / 2.0, 4, 'X')
-        matrix=global_matrix*ob.matrix_world
+        matrix = global_matrix @ ob.matrix_world
         bezier_sweep = False
         if ob.pov.curveshape == 'sphere_sweep':
             #inlined spheresweep macro, which itself calls Shapes.inc:
@@ -1653,14 +1654,14 @@ def write_pov(filename, scene=None, info_callback=None):
                             if elem.type == 'BALL':
                                 tabWrite("sphere { <%.6g, %.6g, %.6g>, %.4g, %.4g " %
                                          (loc.x, loc.y, loc.z, elem.radius, stiffness))
-                                writeMatrix(global_matrix * elems[1].matrix_world)
+                                writeMatrix(global_matrix @ elems[1].matrix_world)
                                 tabWrite("}\n")
                             elif elem.type == 'ELLIPSOID':
                                 tabWrite("sphere{ <%.6g, %.6g, %.6g>,%.4g,%.4g " %
                                          (loc.x / elem.size_x, loc.y / elem.size_y, loc.z / elem.size_z,
                                           elem.radius, stiffness))
                                 tabWrite("scale <%.6g, %.6g, %.6g>" % (elem.size_x, elem.size_y, elem.size_z))
-                                writeMatrix(global_matrix * elems[1].matrix_world)
+                                writeMatrix(global_matrix @ elems[1].matrix_world)
                                 tabWrite("}\n")
                             elif elem.type == 'CAPSULE':
                                 tabWrite("cylinder{ <%.6g, %.6g, %.6g>,<%.6g, %.6g, %.6g>,%.4g,%.4g " %
@@ -1668,26 +1669,26 @@ def write_pov(filename, scene=None, info_callback=None):
                                           (loc.x + elem.size_x), (loc.y), (loc.z),
                                           elem.radius, stiffness))
                                 #tabWrite("scale <%.6g, %.6g, %.6g>" % (elem.size_x, elem.size_y, elem.size_z))
-                                writeMatrix(global_matrix * elems[1].matrix_world)
+                                writeMatrix(global_matrix @ elems[1].matrix_world)
                                 tabWrite("}\n")
 
                             elif elem.type == 'CUBE':
                                 tabWrite("cylinder { -x*8, +x*8,%.4g,%.4g translate<%.6g,%.6g,%.6g> scale  <1/4,1,1> scale <%.6g, %.6g, %.6g>\n" % (elem.radius*2.0, stiffness/4.0, loc.x, loc.y, loc.z, elem.size_x, elem.size_y, elem.size_z))
-                                writeMatrix(global_matrix * elems[1].matrix_world)
+                                writeMatrix(global_matrix @ elems[1].matrix_world)
                                 tabWrite("}\n")
                                 tabWrite("cylinder { -y*8, +y*8,%.4g,%.4g translate<%.6g,%.6g,%.6g> scale <1,1/4,1> scale <%.6g, %.6g, %.6g>\n" % (elem.radius*2.0, stiffness/4.0, loc.x, loc.y, loc.z, elem.size_x, elem.size_y, elem.size_z))
-                                writeMatrix(global_matrix * elems[1].matrix_world)
+                                writeMatrix(global_matrix @ elems[1].matrix_world)
                                 tabWrite("}\n")
                                 tabWrite("cylinder { -z*8, +z*8,%.4g,%.4g translate<%.6g,%.6g,%.6g> scale <1,1,1/4> scale <%.6g, %.6g, %.6g>\n" % (elem.radius*2.0, stiffness/4.0, loc.x, loc.y, loc.z, elem.size_x, elem.size_y, elem.size_z))
-                                writeMatrix(global_matrix * elems[1].matrix_world)
+                                writeMatrix(global_matrix @ elems[1].matrix_world)
                                 tabWrite("}\n")
 
                             elif elem.type == 'PLANE':
                                 tabWrite("cylinder { -x*8, +x*8,%.4g,%.4g translate<%.6g,%.6g,%.6g> scale  <1/4,1,1> scale <%.6g, %.6g, %.6g>\n" % (elem.radius*2.0, stiffness/4.0, loc.x, loc.y, loc.z, elem.size_x, elem.size_y, elem.size_z))
-                                writeMatrix(global_matrix * elems[1].matrix_world)
+                                writeMatrix(global_matrix @ elems[1].matrix_world)
                                 tabWrite("}\n")
                                 tabWrite("cylinder { -y*8, +y*8,%.4g,%.4g translate<%.6g,%.6g,%.6g> scale <1,1/4,1> scale <%.6g, %.6g, %.6g>\n" % (elem.radius*2.0, stiffness/4.0, loc.x, loc.y, loc.z, elem.size_x, elem.size_y, elem.size_z))
-                                writeMatrix(global_matrix * elems[1].matrix_world)
+                                writeMatrix(global_matrix @ elems[1].matrix_world)
                                 tabWrite("}\n")
 
                         try:
@@ -1782,7 +1783,7 @@ def write_pov(filename, scene=None, info_callback=None):
 
                 writeObjectMaterial(material, elems[1])
 
-                writeMatrix(global_matrix * ob.matrix_world)
+                writeMatrix(global_matrix @ ob.matrix_world)
                 # Importance for radiosity sampling added here
                 tabWrite("radiosity { \n")
                 # importance > ob.pov.importance_value
@@ -2049,7 +2050,7 @@ def write_pov(filename, scene=None, info_callback=None):
 
                 # We apply object's transformations to get final loc/rot/size in world space!
                 # Note: we could combine the two previous transformations with this matrix directly...
-                writeMatrix(global_matrix * smoke_obj.matrix_world)
+                writeMatrix(global_matrix @ smoke_obj.matrix_world)
 
                 # END OF TRANSFORMATIONS
 
@@ -2245,7 +2246,7 @@ def write_pov(filename, scene=None, info_callback=None):
                                 file.write('    #local I = I + HairStep;\n')
                                 file.write('  #end\n')
 
-                                writeMatrix(global_matrix * ob.matrix_world)
+                                writeMatrix(global_matrix @ ob.matrix_world)
 
 
                                 file.write('}')
@@ -2297,7 +2298,7 @@ def write_pov(filename, scene=None, info_callback=None):
                 #    continue
                 # me = ob.data
 
-                matrix = global_matrix * ob.matrix_world
+                matrix = global_matrix @ ob.matrix_world
                 povdataname = store(scene, ob, name, dataname, matrix)
                 if povdataname is None:
                     print("This is an instance of " + name)
@@ -2677,7 +2678,7 @@ def write_pov(filename, scene=None, info_callback=None):
                         tabWrite("#declare %s =sphere {<0, 0, 0>,0 pigment{rgbt 1} no_image no_reflection no_radiosity photons{pass_through collect off} hollow}\n" % povdataname)
 
                     try:
-                        me = ob.to_mesh(scene, True, 'RENDER')
+                        me = ob.to_mesh(bpy.context.depsgraph, True, 'RENDER')
 
                     #XXX Here? identify the specific exception for mesh object with no data
                     #XXX So that we can write something for the dataname !
@@ -2831,8 +2832,8 @@ def write_pov(filename, scene=None, info_callback=None):
                             else:
                                 if material:
                                     # Multiply diffuse with SSS Color
-                                    if material.subsurface_scattering.use:
-                                        diffuse_color = [i * j for i, j in zip(material.subsurface_scattering.color[:], material.diffuse_color[:])]
+                                    if material.pov_subsurface_scattering.use:
+                                        diffuse_color = [i * j for i, j in zip(material.pov_subsurface_scattering.color[:], material.diffuse_color[:])]
                                         key = diffuse_color[0], diffuse_color[1], diffuse_color[2], \
                                               material_index
                                         vertCols[key] = [-1]
@@ -2877,8 +2878,8 @@ def write_pov(filename, scene=None, info_callback=None):
                                     ci3 = vertCols[col3[0], col3[1], col3[2], material_index][0]
                                 else:
                                     # Color per material - flat material color
-                                    if material.subsurface_scattering.use:
-                                        diffuse_color = [i * j for i, j in zip(material.subsurface_scattering.color[:], material.diffuse_color[:])]
+                                    if material.pov_subsurface_scattering.use:
+                                        diffuse_color = [i * j for i, j in zip(material.pov_subsurface_scattering.color[:], material.diffuse_color[:])]
                                     else:
                                         diffuse_color = material.diffuse_color[:]
                                     ci1 = ci2 = ci3 = vertCols[diffuse_color[0], diffuse_color[1], \
@@ -2991,8 +2992,8 @@ def write_pov(filename, scene=None, info_callback=None):
 
                             if material and material.pov.material_use_nodes == False:  # WARNING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                                 # Multiply diffuse with SSS Color
-                                if material.subsurface_scattering.use:
-                                    diffuse_color = [i * j for i, j in zip(material.subsurface_scattering.color[:], material.diffuse_color[:])]
+                                if material.pov_subsurface_scattering.use:
+                                    diffuse_color = [i * j for i, j in zip(material.pov_subsurface_scattering.color[:], material.diffuse_color[:])]
                                     key = diffuse_color[0], diffuse_color[1], diffuse_color[2], i  # i == f.mat
                                     vertCols[key] = [-1]
                                 else:
@@ -3103,9 +3104,9 @@ def write_pov(filename, scene=None, info_callback=None):
                                     ci1 = ci2 = ci3 = 0
                                 else:
                                     # Color per material - flat material color
-                                    if material.subsurface_scattering.use:
+                                    if material.pov_subsurface_scattering.use:
                                         diffuse_color = [i * j for i, j in
-                                            zip(material.subsurface_scattering.color[:],
+                                            zip(material.pov_subsurface_scattering.color[:],
                                                 material.diffuse_color[:])]
                                     else:
                                         diffuse_color = material.diffuse_color[:]
@@ -3215,7 +3216,7 @@ def write_pov(filename, scene=None, info_callback=None):
         if csg:
             duplidata_ref = []
             for ob in sel:
-                #matrix = global_matrix * ob.matrix_world
+                #matrix = global_matrix @ ob.matrix_world
                 if ob.is_instancer:
                     tabWrite("\n//--DupliObjects in %s--\n\n"% ob.name)
                     ob.dupli_list_create(scene)
@@ -3257,7 +3258,7 @@ def write_pov(filename, scene=None, info_callback=None):
                                     else:
                                         operation = mod.operation.lower()
                                     mod_ob_name = string_strip_hyphen(bpy.path.clean_name(mod.object.name))
-                                    mod_matrix = global_matrix * mod.object.matrix_world
+                                    mod_matrix = global_matrix @ mod.object.matrix_world
                                     mod_ob_matrix = MatrixAsPovString(mod_matrix)
                                     tabWrite("%s { \n"%operation)
                                     tabWrite("object { \n")
@@ -3279,26 +3280,26 @@ def write_pov(filename, scene=None, info_callback=None):
     def exportWorld(world):
         render = scene.render
         camera = scene.camera
-        matrix = global_matrix * camera.matrix_world
+        matrix = global_matrix @ camera.matrix_world
         if not world:
             return
         #############Maurice####################################
         #These lines added to get sky gradient (visible with PNG output)
         if world:
             #For simple flat background:
-            if not world.use_sky_blend:
+            if not world.pov.use_sky_blend:
                 # Non fully transparent background could premultiply alpha and avoid anti-aliasing
                 # display issue:
                 if render.alpha_mode == 'TRANSPARENT':
                     tabWrite("background {rgbt<%.3g, %.3g, %.3g, 0.75>}\n" % \
-                             (world.horizon_color[:]))
+                             (world.pov.horizon_color[:]))
                 #Currently using no alpha with Sky option:
                 elif render.alpha_mode == 'SKY':
-                    tabWrite("background {rgbt<%.3g, %.3g, %.3g, 0>}\n" % (world.horizon_color[:]))
+                    tabWrite("background {rgbt<%.3g, %.3g, %.3g, 0>}\n" % (world.pov.horizon_color[:]))
                 #StraightAlpha:
                 # XXX Does not exists anymore
                 #else:
-                    #tabWrite("background {rgbt<%.3g, %.3g, %.3g, 1>}\n" % (world.horizon_color[:]))
+                    #tabWrite("background {rgbt<%.3g, %.3g, %.3g, 1>}\n" % (world.pov.horizon_color[:]))
 
             worldTexCount = 0
             #For Background image textures
@@ -3372,7 +3373,7 @@ def write_pov(filename, scene=None, info_callback=None):
             #For only Background gradient
 
             if worldTexCount == 0:
-                if world.use_sky_blend:
+                if world.pov.use_sky_blend:
                     tabWrite("sky_sphere {\n")
                     tabWrite("pigment {\n")
                     # maybe Should follow the advice of POV doc about replacing gradient
@@ -3381,27 +3382,27 @@ def write_pov(filename, scene=None, info_callback=None):
                     tabWrite("color_map {\n")
                     # XXX Does not exists anymore
                     #if render.alpha_mode == 'STRAIGHT':
-                        #tabWrite("[0.0 rgbt<%.3g, %.3g, %.3g, 1>]\n" % (world.horizon_color[:]))
-                        #tabWrite("[1.0 rgbt<%.3g, %.3g, %.3g, 1>]\n" % (world.zenith_color[:]))
+                        #tabWrite("[0.0 rgbt<%.3g, %.3g, %.3g, 1>]\n" % (world.pov.horizon_color[:]))
+                        #tabWrite("[1.0 rgbt<%.3g, %.3g, %.3g, 1>]\n" % (world.pov.zenith_color[:]))
                     if render.alpha_mode == 'TRANSPARENT':
-                        tabWrite("[0.0 rgbt<%.3g, %.3g, %.3g, 0.99>]\n" % (world.horizon_color[:]))
+                        tabWrite("[0.0 rgbt<%.3g, %.3g, %.3g, 0.99>]\n" % (world.pov.horizon_color[:]))
                         # aa premult not solved with transmit 1
-                        tabWrite("[1.0 rgbt<%.3g, %.3g, %.3g, 0.99>]\n" % (world.zenith_color[:]))
+                        tabWrite("[1.0 rgbt<%.3g, %.3g, %.3g, 0.99>]\n" % (world.pov.zenith_color[:]))
                     else:
-                        tabWrite("[0.0 rgbt<%.3g, %.3g, %.3g, 0>]\n" % (world.horizon_color[:]))
-                        tabWrite("[1.0 rgbt<%.3g, %.3g, %.3g, 0>]\n" % (world.zenith_color[:]))
+                        tabWrite("[0.0 rgbt<%.3g, %.3g, %.3g, 0>]\n" % (world.pov.horizon_color[:]))
+                        tabWrite("[1.0 rgbt<%.3g, %.3g, %.3g, 0>]\n" % (world.pov.zenith_color[:]))
                     tabWrite("}\n")
                     tabWrite("}\n")
                     tabWrite("}\n")
                     # Sky_sphere alpha (transmit) is not translating into image alpha the same
                     # way as 'background'
 
-            #if world.light_settings.use_indirect_light:
+            #if world.pov.light_settings.use_indirect_light:
             #    scene.pov.radio_enable=1
 
             # Maybe change the above to a function copyInternalRenderer settings when
             # user pushes a button, then:
-            #scene.pov.radio_enable = world.light_settings.use_indirect_light
+            #scene.pov.radio_enable = world.pov.light_settings.use_indirect_light
             # and other such translations but maybe this would not be allowed either?
 
         ###############################################################
@@ -3417,7 +3418,7 @@ def write_pov(filename, scene=None, info_callback=None):
             elif mist.falloff=='INVERSE_QUADRATIC':    # n**2 or squrt(n)?
                 tabWrite("distance %.6f\n" % ((mist.start+mist.depth)**2*0.368))
             tabWrite("color rgbt<%.3g, %.3g, %.3g, %.3g>\n" % \
-                     (*world.horizon_color, 1.0 - mist.intensity))
+                     (*world.pov.horizon_color, 1.0 - mist.intensity))
             #tabWrite("fog_offset %.6f\n" % mist.start) #create a pov property to prepend
             #tabWrite("fog_alt %.6f\n" % mist.height) #XXX right?
             #tabWrite("turbulence 0.2\n")
@@ -3479,23 +3480,23 @@ def write_pov(filename, scene=None, info_callback=None):
         onceAmbient = 1
         oncePhotons = 1
         for material in bpy.data.materials:
-            if material.subsurface_scattering.use and onceSss:
+            if material.pov_subsurface_scattering.use and onceSss:
                 # In pov, the scale has reversed influence compared to blender. these number
                 # should correct that
                 tabWrite("mm_per_unit %.6f\n" % \
-                         (material.subsurface_scattering.scale * 1000.0))
+                         (material.pov_subsurface_scattering.scale * 1000.0))
                          # 1000 rather than scale * (-100.0) + 15.0))
 
                 # In POV-Ray, the scale factor for all subsurface shaders needs to be the same
 
                 # formerly sslt_samples were multiplied by 100 instead of 10
-                sslt_samples = (11 - material.subsurface_scattering.error_threshold) * 10
+                sslt_samples = (11 - material.pov_subsurface_scattering.error_threshold) * 10
 
                 tabWrite("subsurface { samples %d, %d }\n" % (sslt_samples, sslt_samples / 10))
                 onceSss = 0
 
             if world and onceAmbient:
-                tabWrite("ambient_light rgb<%.3g, %.3g, %.3g>\n" % world.ambient_color[:])
+                tabWrite("ambient_light rgb<%.3g, %.3g, %.3g>\n" % world.pov.ambient_color[:])
                 onceAmbient = 0
 
             if scene.pov.photon_enable:
@@ -3546,7 +3547,8 @@ def write_pov(filename, scene=None, info_callback=None):
                    "//--Exported with POV-Ray exporter for Blender--\n" \
                    "//----------------------------------------------\n\n")
     file.write("#version 3.7;\n")
-
+    file.write("#declare Default_texture = texture{pigment {rgb 0.8} "
+               "finish {brilliance 3.8} }\n\n")
     if comments:
         file.write("\n//--Global settings--\n\n")
 
@@ -3669,6 +3671,7 @@ def write_pov_ini(scene, filename_ini, filename_log, filename_pov, filename_imag
     feature_set = bpy.context.preferences.addons[__package__].preferences.branch_feature_set_povray
     using_uberpov = (feature_set=='uberpov')
     #scene = bpy.data.scenes[0]
+    scene = bpy.context.scene
     render = scene.render
 
     x = int(render.resolution_x * render.resolution_percentage * 0.01)
@@ -3794,9 +3797,10 @@ class PovrayRender(bpy.types.RenderEngine):
                 return pov_binary
         return ""
 
-    def _export(self, scene, povPath, renderImagePath):
+    def _export(self, depsgraph, povPath, renderImagePath):
         import tempfile
-
+        scene = bpy.context.scene
+        
         if scene.pov.tempfiles_enable:
             self._temp_file_in = tempfile.NamedTemporaryFile(suffix=".pov", delete=False).name
             # PNG with POV 3.7, can show the background color with alpha. In the long run using the
@@ -3832,7 +3836,7 @@ class PovrayRender(bpy.types.RenderEngine):
             write_pov(self._temp_file_in, scene, info_callback)
         else:
             pass
-    def _render(self, scene):
+    def _render(self, depsgraph):
         try:
             os.remove(self._temp_file_out)  # so as not to load the old file
         except OSError:
@@ -3900,8 +3904,9 @@ class PovrayRender(bpy.types.RenderEngine):
                     # Wait a bit before retrying file might be still in use by Blender,
                     # and Windows does not know how to delete a file in use!
                     time.sleep(self.DELAY)
-    def render(self, scene):
+    def render(self, depsgraph):
         import tempfile
+        scene = bpy.context.scene
         r = scene.render
         x = int(r.resolution_x * r.resolution_percentage * 0.01)
         y = int(r.resolution_y * r.resolution_percentage * 0.01)
@@ -3932,7 +3937,7 @@ class PovrayRender(bpy.types.RenderEngine):
 
             return True
 
-        if scene.pov.text_block !="":
+        if bpy.context.scene.pov.text_block !="":
             if scene.pov.tempfiles_enable:
                 self._temp_file_in = tempfile.NamedTemporaryFile(suffix=".pov", delete=False).name
                 self._temp_file_out = tempfile.NamedTemporaryFile(suffix=".png", delete=False).name
@@ -4146,10 +4151,10 @@ class PovrayRender(bpy.types.RenderEngine):
 
             # start export
             self.update_stats("", "POV-Ray 3.7: Exporting data from Blender")
-            self._export(scene, povPath, renderImagePath)
+            self._export(depsgraph, povPath, renderImagePath)
             self.update_stats("", "POV-Ray 3.7: Parsing File")
 
-            if not self._render(scene):
+            if not self._render(depsgraph):
                 self.update_stats("", "POV-Ray 3.7: Not found")
                 #return
 
@@ -4400,3 +4405,23 @@ class RunPovTextRender(Operator):
         #empty text name property engain
         scene.pov.text_block = ""
         return {'FINISHED'}
+
+classes = (
+    PovrayRender,
+    RenderPovTexturePreview,
+    RunPovTextRender,
+)
+
+
+def register():
+    #from bpy.utils import register_class
+
+    for cls in classes:
+        register_class(cls)
+
+
+def unregister():
+    from bpy.utils import unregister_class
+
+    for cls in reversed(classes):
+        unregister_class(cls)

@@ -1,6 +1,4 @@
 /*
- * ***** BEGIN GPL LICENSE BLOCK *****
- *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -16,21 +14,17 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  *
  * Copyright 2016, Blender Foundation.
- * Contributor(s): Blender Institute
- *
- * ***** END GPL LICENSE BLOCK *****
- *
  */
 
-/** \file draw_view.h
- *  \ingroup draw
+/** \file
+ * \ingroup draw
  */
 
 #ifndef __DRAW_VIEW_H__
 #define __DRAW_VIEW_H__
 
 void DRW_draw_region_info(void);
-void DRW_draw_background(void);
+void DRW_draw_background(bool do_alpha_checker);
 void DRW_draw_cursor(void);
 void DRW_draw_gizmo_3d(void);
 void DRW_draw_gizmo_2d(void);

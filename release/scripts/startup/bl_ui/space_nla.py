@@ -8,6 +8,7 @@
 #  This program is distributed in the hope that it will be useful,
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
 #
 #  You should have received a copy of the GNU General Public License
@@ -39,8 +40,6 @@ class NLA_HT_header(Header):
         NLA_MT_editor_menus.draw_collapsible(context, layout)
 
         layout.separator_spacer()
-
-        dopesheet_filter(layout, context)
 
         layout.popover(
             panel="NLA_PT_filters",
@@ -82,7 +81,7 @@ class NLA_MT_editor_menus(Menu):
     bl_idname = "NLA_MT_editor_menus"
     bl_label = ""
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
         layout.menu("NLA_MT_view")
         layout.menu("NLA_MT_select")
@@ -99,25 +98,16 @@ class NLA_MT_view(Menu):
 
         st = context.space_data
 
-        layout.operator("nla.properties", text = "Sidebar", icon='MENU_PANEL')
+        layout.prop(st, "show_region_ui")
 
         layout.separator()
 
-        layout.prop(st, "use_realtime_update")
-        layout.prop(st, "show_frame_indicator")
-
-        layout.prop(st, "show_seconds")
-        layout.prop(st, "show_locked_time")
-
-        layout.prop(st, "show_strip_curves")
-        layout.prop(st, "show_local_markers")
-
-        layout.separator()
         layout.operator("anim.previewrange_set", icon='BORDER_RECT')
         layout.operator("anim.previewrange_clear", icon = "CLEAR")
         layout.operator("nla.previewrange_set", icon='BORDER_RECT')
 
         layout.separator()
+
         layout.operator("nla.view_all", icon = "VIEWALL")
         layout.operator("nla.view_selected", icon = "VIEW_SELECTED")
         layout.operator("nla.view_frame", icon = "VIEW_FRAME" )
@@ -125,16 +115,82 @@ class NLA_MT_view(Menu):
         layout.separator()
         layout.menu("INFO_MT_area")
 
-
-class NLA_MT_select(Menu):
-    bl_label = "Select"
+class NLA_PT_view_marker_options(Panel):
+    bl_label = "Marker Options"
+    bl_space_type = 'NLA_EDITOR'
+    bl_region_type = 'UI'
+    bl_category = 'View'
 
     def draw(self, context):
         layout = self.layout
 
+        tool_settings = context.tool_settings
+
+        layout.prop(tool_settings, "lock_markers")
+        
+
+class NLA_PT_view_view_options(Panel):
+    bl_label = "View Options"
+    bl_space_type = 'NLA_EDITOR'
+    bl_region_type = 'UI'
+    bl_category = 'View'
+
+    def draw(self, context):
+        layout = self.layout
+
+        st = context.space_data
+
+        layout.separator()
+
+        
+        layout.prop(st, "show_marker_lines")
+        layout.prop(st, "show_frame_indicator")
+        
+        layout.separator()
+
+        layout.prop(st, "show_seconds")
+        layout.prop(st, "show_locked_time")
+        
+        layout.separator()
+
+        layout.prop(st, "show_strip_curves")
+        layout.prop(st, "show_local_markers")
+        layout.prop(st, "use_realtime_update")
+        
+
+
+# Workaround to separate the tooltips
+class NLA_MT_select_inverse(bpy.types.Operator):
+    """Inverse\nInverts the current selection """      # blender will use this as a tooltip for menu items and buttons.
+    bl_idname = "nla.select_all_inverse"        # unique identifier for buttons and menu items to reference.
+    bl_label = "Select Inverse"         # display name in the interface.
+    bl_options = {'REGISTER', 'UNDO'}  # enable undo for the operator.
+
+    def execute(self, context):        # execute() is called by blender when running the operator.
+        bpy.ops.nla.select_all(action = 'INVERT')
+        return {'FINISHED'}
+
+# Workaround to separate the tooltips
+class NLA_MT_select_none(bpy.types.Operator):
+    """None\nDeselects everything """      # blender will use this as a tooltip for menu items and buttons.
+    bl_idname = "nla.select_all_none"        # unique identifier for buttons and menu items to reference.
+    bl_label = "Select None"         # display name in the interface.
+    bl_options = {'REGISTER', 'UNDO'}  # enable undo for the operator.
+
+    def execute(self, context):        # execute() is called by blender when running the operator.
+        bpy.ops.nla.select_all(action = 'DESELECT')
+        return {'FINISHED'}
+
+
+class NLA_MT_select(Menu):
+    bl_label = "Select"
+
+    def draw(self, _context):
+        layout = self.layout
+
         layout.operator("nla.select_all", text="All", icon='SELECT_ALL').action = 'SELECT'
-        layout.operator("nla.select_all", text="None").action = 'DESELECT'
-        layout.operator("nla.select_all", text="Invert", icon = 'INVERSE').action = 'INVERT'
+        layout.operator("nla.select_all_none", text="None", icon='SELECT_NONE') # bfa - separated tooltip
+        layout.operator("nla.select_all_inverse", text="Inverse", icon='INVERSE') # bfa - separated tooltip
 
         layout.separator()
         layout.operator("nla.select_box", icon='BORDER_RECT').axis_range = False
@@ -156,7 +212,7 @@ class NLA_MT_marker(Menu):
         layout = self.layout
 
         from .space_time import marker_menu_generic
-        marker_menu_generic(layout)
+        marker_menu_generic(layout, context)
 
 
 class NLA_MT_edit(Menu):
@@ -215,7 +271,7 @@ class NLA_MT_edit(Menu):
 class NLA_MT_add(Menu):
     bl_label = "Add"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
         layout.operator("nla.actionclip_add", icon = "ADD_STRIP")
@@ -224,7 +280,7 @@ class NLA_MT_add(Menu):
 
         layout.separator()
         layout.operator("nla.meta_add", icon = "ADD_METASTRIP")
-        layout.operator("nla.meta_remove", icon = "REMOVE_MTEASTRIP")
+        layout.operator("nla.meta_remove", icon = "REMOVE_METASTRIP")
 
         layout.separator()
         layout.operator("nla.tracks_add", icon = "ADD_TRACK").above_selected = False
@@ -237,7 +293,7 @@ class NLA_MT_add(Menu):
 class NLA_MT_edit_transform(Menu):
     bl_label = "Transform"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
         layout.operator("transform.translate", text="Grab/Move", icon = "TRANSFORM_MOVE")
@@ -248,7 +304,7 @@ class NLA_MT_edit_transform(Menu):
 class NLA_MT_snap_pie(Menu):
     bl_label = "Snap"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
         pie = layout.menu_pie()
 
@@ -265,6 +321,10 @@ classes = (
     NLA_MT_edit,
     NLA_MT_editor_menus,
     NLA_MT_view,
+    NLA_PT_view_marker_options,
+    NLA_PT_view_view_options,
+    NLA_MT_select_inverse,
+    NLA_MT_select_none,
     NLA_MT_select,
     NLA_MT_marker,
     NLA_MT_add,

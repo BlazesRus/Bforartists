@@ -1,6 +1,4 @@
 /*
- * ***** BEGIN GPL LICENSE BLOCK *****
- *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -17,15 +15,10 @@
  *
  * The Original Code is Copyright (C) 2008 Blender Foundation.
  * All rights reserved.
- *
- *
- * Contributor(s): Blender Foundation
- *
- * ***** END GPL LICENSE BLOCK *****
  */
 
-/** \file ED_space_api.h
- *  \ingroup editors
+/** \file
+ * \ingroup editors
  */
 
 #ifndef __ED_SPACE_API_H__
@@ -67,13 +60,15 @@ void ED_spacetype_toolbar(void);
 void ED_file_init(void);
 void ED_file_exit(void);
 
-#define REGION_DRAW_POST_VIEW   0
-#define REGION_DRAW_POST_PIXEL  1
-#define REGION_DRAW_PRE_VIEW    2
+#define REGION_DRAW_POST_VIEW 0
+#define REGION_DRAW_POST_PIXEL 1
+#define REGION_DRAW_PRE_VIEW 2
+#define REGION_DRAW_BACKDROP 3
 
 void *ED_region_draw_cb_activate(struct ARegionType *,
                                  void (*draw)(const struct bContext *, struct ARegion *, void *),
-                                 void *custumdata, int type);
+                                 void *custumdata,
+                                 int type);
 void ED_region_draw_cb_draw(const struct bContext *, struct ARegion *, int);
 void ED_region_draw_cb_exit(struct ARegionType *, void *);
 /* generic callbacks */

@@ -25,7 +25,6 @@ from bpy.types import (
 )
 
 from rna_prop_ui import PropertyPanel
-from bl_operators.presets import PresetMenu
 
 from .properties_physics_common import (
     point_cache_ui,
@@ -34,7 +33,7 @@ from .properties_physics_common import (
 
 
 class SCENE_UL_keying_set_paths(UIList):
-    def draw_item(self, context, layout, data, item, icon, active_data, active_propname, index):
+    def draw_item(self, _context, layout, _data, item, icon, _active_data, _active_propname, _index):
         # assert(isinstance(item, bpy.types.KeyingSetPath)
         kspath = item
         icon = layout.enum_item_icon(kspath, "id_type", kspath.id_type)
@@ -51,14 +50,9 @@ class SceneButtonsPanel:
     bl_region_type = 'WINDOW'
     bl_context = "scene"
 
-    @classmethod
-    def poll(cls, context):
-        return (context.engine in cls.COMPAT_ENGINES)
-
 
 class SCENE_PT_scene(SceneButtonsPanel, Panel):
     bl_label = "Scene"
-    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
 
     def draw(self, context):
         layout = self.layout
@@ -82,7 +76,6 @@ class SCENE_PT_scene(SceneButtonsPanel, Panel):
 class SCENE_PT_unit(SceneButtonsPanel, Panel):
     bl_label = "Units"
     bl_options = {'DEFAULT_CLOSED'}
-    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
 
     def draw(self, context):
         layout = self.layout
@@ -97,6 +90,8 @@ class SCENE_PT_unit(SceneButtonsPanel, Panel):
         col = layout.column()
         col.enabled = unit.system != 'NONE'
         col.prop(unit, "scale_length")
+        
+        col.use_property_split = False
         col.prop(unit, "use_separate")
 
         col = layout.column()
@@ -166,7 +161,6 @@ class SceneKeyingSetsPanel:
 class SCENE_PT_keying_sets(SceneButtonsPanel, SceneKeyingSetsPanel, Panel):
     bl_label = "Keying Sets"
     bl_options = {'DEFAULT_CLOSED'}
-    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
 
     def draw(self, context):
         layout = self.layout
@@ -200,7 +194,6 @@ class SCENE_PT_keying_sets(SceneButtonsPanel, SceneKeyingSetsPanel, Panel):
 class SCENE_PT_keyframing_settings(SceneButtonsPanel, SceneKeyingSetsPanel, Panel):
     bl_label = "Keyframing Settings"
     bl_parent_id = "SCENE_PT_keying_sets"
-    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE'}
 
     @classmethod
     def poll(cls, context):
@@ -237,7 +230,6 @@ class SCENE_PT_keyframing_settings(SceneButtonsPanel, SceneKeyingSetsPanel, Pane
 class SCENE_PT_keying_set_paths(SceneButtonsPanel, SceneKeyingSetsPanel, Panel):
     bl_label = "Active Keying Set"
     bl_parent_id = "SCENE_PT_keying_sets"
-    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
 
     @classmethod
     def poll(cls, context):
@@ -300,7 +292,6 @@ class SCENE_PT_keying_set_paths(SceneButtonsPanel, SceneKeyingSetsPanel, Panel):
 class SCENE_PT_audio(SceneButtonsPanel, Panel):
     bl_label = "Audio"
     bl_options = {'DEFAULT_CLOSED'}
-    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
 
     def draw(self, context):
         layout = self.layout
@@ -317,6 +308,25 @@ class SCENE_PT_audio(SceneButtonsPanel, Panel):
 
         col.separator()
 
+        layout.operator("sound.bake_animation")
+
+class SCENE_PT_audio_options(SceneButtonsPanel, Panel):
+    bl_label = "Audio Options"
+    bl_parent_id = "SCENE_PT_audio"
+    bl_options = {'DEFAULT_CLOSED'}
+
+    def draw(self, context):
+        layout = self.layout
+        layout.use_property_split = True
+
+        scene = context.scene
+        rd = context.scene.render
+        ffmpeg = rd.ffmpeg
+
+        flow = layout.grid_flow(row_major=True, columns=0, even_columns=True, even_rows=False, align=True)
+
+        col = flow.column()
+
         col.prop(scene, "audio_distance_model")
         col.prop(ffmpeg, "audio_channels")
 
@@ -331,15 +341,11 @@ class SCENE_PT_audio(SceneButtonsPanel, Panel):
         col.prop(scene, "audio_doppler_speed", text="Doppler Speed")
         col.prop(scene, "audio_doppler_factor", text="Doppler Factor")
 
-        col.separator()
-
-        layout.operator("sound.bake_animation")
 
 
 class SCENE_PT_physics(SceneButtonsPanel, Panel):
     bl_label = "Gravity"
     bl_options = {'DEFAULT_CLOSED'}
-    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
 
     def draw_header(self, context):
         self.layout.prop(context.scene, "use_gravity", text="")
@@ -358,11 +364,6 @@ class SCENE_PT_physics(SceneButtonsPanel, Panel):
 class SCENE_PT_rigid_body_world(SceneButtonsPanel, Panel):
     bl_label = "Rigid Body World"
     bl_options = {'DEFAULT_CLOSED'}
-    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
-
-    @classmethod
-    def poll(cls, context):
-        return (context.engine in cls.COMPAT_ENGINES)
 
     def draw_header(self, context):
         scene = context.scene
@@ -383,15 +384,17 @@ class SCENE_PT_rigid_body_world(SceneButtonsPanel, Panel):
             layout.operator("rigidbody.world_remove")
 
 
-class SCENE_PT_rigid_body_world_settings(SceneButtonsPanel, Panel):
-    bl_label = "Settings"
+class RigidBodySubPanel(SceneButtonsPanel):
     bl_parent_id = "SCENE_PT_rigid_body_world"
-    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE'}
 
     @classmethod
     def poll(cls, context):
         scene = context.scene
-        return scene and scene.rigidbody_world and (context.engine in cls.COMPAT_ENGINES)
+        return scene and scene.rigidbody_world
+
+
+class SCENE_PT_rigid_body_world_settings(RigidBodySubPanel, Panel):
+    bl_label = "Settings"
 
     def draw(self, context):
         layout = self.layout
@@ -422,44 +425,30 @@ class SCENE_PT_rigid_body_world_settings(SceneButtonsPanel, Panel):
             col.prop(rbw, "solver_iterations", text="Solver Iterations")
 
 
-class SCENE_PT_rigid_body_cache(SceneButtonsPanel, Panel):
+class SCENE_PT_rigid_body_cache(RigidBodySubPanel, Panel):
     bl_label = "Cache"
-    bl_parent_id = "SCENE_PT_rigid_body_world"
     bl_options = {'DEFAULT_CLOSED'}
-    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
-
-    @classmethod
-    def poll(cls, context):
-        scene = context.scene
-        return scene and scene.rigidbody_world and (context.engine in cls.COMPAT_ENGINES)
 
     def draw(self, context):
         scene = context.scene
         rbw = scene.rigidbody_world
 
-        point_cache_ui(self, context, rbw.point_cache, rbw.point_cache.is_baked is False and rbw.enabled, 'RIGID_BODY')
+        point_cache_ui(self, rbw.point_cache, rbw.point_cache.is_baked is False and rbw.enabled, 'RIGID_BODY')
 
 
-class SCENE_PT_rigid_body_field_weights(SceneButtonsPanel, Panel):
+class SCENE_PT_rigid_body_field_weights(RigidBodySubPanel, Panel):
     bl_label = "Field Weights"
     bl_parent_id = "SCENE_PT_rigid_body_world"
     bl_options = {'DEFAULT_CLOSED'}
-    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
-
-    @classmethod
-    def poll(cls, context):
-        scene = context.scene
-        return scene and scene.rigidbody_world and (context.engine in cls.COMPAT_ENGINES)
 
     def draw(self, context):
         scene = context.scene
         rbw = scene.rigidbody_world
 
-        effector_weights_ui(self, context, rbw.effector_weights, 'RIGID_BODY')
+        effector_weights_ui(self, rbw.effector_weights, 'RIGID_BODY')
 
 
 class SCENE_PT_custom_props(SceneButtonsPanel, PropertyPanel, Panel):
-    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
     _context_path = "scene"
     _property_type = bpy.types.Scene
 
@@ -473,6 +462,7 @@ classes = (
     SCENE_PT_keying_set_paths,
     SCENE_PT_keyframing_settings,
     SCENE_PT_audio,
+    SCENE_PT_audio_options,
     SCENE_PT_rigid_body_world,
     SCENE_PT_rigid_body_world_settings,
     SCENE_PT_rigid_body_cache,

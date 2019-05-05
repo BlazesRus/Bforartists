@@ -20,17 +20,17 @@
 # <pep8 compliant>
 import bpy
 from bpy.types import Menu, Panel, UIList
-from bl_operators.presets import PresetMenu
+from bl_ui.utils import PresetPanel
 
 
-class RENDER_PT_presets(PresetMenu):
+class RENDER_PT_presets(PresetPanel, Panel):
     bl_label = "Render Presets"
     preset_subdir = "render"
     preset_operator = "script.execute_preset"
     preset_add_operator = "render.preset_add"
 
 
-class RENDER_PT_ffmpeg_presets(PresetMenu):
+class RENDER_PT_ffmpeg_presets(PresetPanel, Panel):
     bl_label = "FFMPEG Presets"
     preset_subdir = "ffmpeg"
     preset_operator = "script.python_file_run"
@@ -61,7 +61,7 @@ class RENDER_PT_dimensions(RenderOutputButtonsPanel, Panel):
     _frame_rate_args_prev = None
     _preset_class = None
 
-    def draw_header_preset(self, context):
+    def draw_header_preset(self, _context):
         RENDER_PT_presets.draw_panel_header(self.layout)
 
     @staticmethod
@@ -122,12 +122,12 @@ class RENDER_PT_dimensions(RenderOutputButtonsPanel, Panel):
         col = layout.column(align=True)
         col.prop(rd, "pixel_aspect_x", text="Aspect X")
         col.prop(rd, "pixel_aspect_y", text="Y")
-
-        col = layout.column(align=True)
-        col.prop(rd, "use_border", text="Border")
-        sub = col.column(align=True)
-        sub.active = rd.use_border
-        sub.prop(rd, "use_crop_to_border", text="Crop")
+            
+        row = layout.row(align=False)
+        row.use_property_split = False
+        row.prop(rd, "use_border")     
+        if rd.use_border:
+            row.prop(rd, "use_crop_to_border")
 
         col = layout.column(align=True)
         col.prop(scene, "frame_start", text="Frame Start")
@@ -185,7 +185,7 @@ class RENDER_PT_stamp(RenderOutputButtonsPanel, Panel):
 
     def draw(self, context):
         layout = self.layout
-        layout.use_property_split = True
+        layout.use_property_split = False
         layout.use_property_decorate = False  # No animation.
 
         rd = context.scene.render
@@ -270,9 +270,9 @@ class RENDER_PT_stamp_burn(RenderOutputButtonsPanel, Panel):
         col = layout.column()
         col.active = rd.use_stamp
         col.prop(rd, "stamp_font_size", text="Font Size")
-        col.prop(rd, "use_stamp_labels", text="Draw Labels")
         col.column().prop(rd, "stamp_foreground", slider=True)
         col.column().prop(rd, "stamp_background", slider=True)
+        col.prop(rd, "use_stamp_labels", text="Include Labels")
 
 
 class RENDER_PT_output(RenderOutputButtonsPanel, Panel):
@@ -289,7 +289,22 @@ class RENDER_PT_output(RenderOutputButtonsPanel, Panel):
 
         layout.prop(rd, "filepath", text="")
 
-        layout.use_property_split = True
+        layout.template_image_settings(image_settings, color_management=False)
+
+# Options subpanel for the output panel
+class RENDER_PT_output_options(RenderOutputButtonsPanel, Panel):
+    bl_label = "Options"
+    COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
+    bl_parent_id = "RENDER_PT_output"
+    bl_options = {'DEFAULT_CLOSED'}
+
+    def draw(self, context):
+        layout = self.layout
+        layout.use_property_split = False
+        layout.use_property_decorate = False  # No animation.
+
+        rd = context.scene.render
+        image_settings = rd.image_settings
 
         flow = layout.grid_flow(row_major=True, columns=0, even_columns=True, even_rows=False, align=False)
 
@@ -304,8 +319,6 @@ class RENDER_PT_output(RenderOutputButtonsPanel, Panel):
         col = flow.column()
         col.prop(rd, "use_render_cache")
 
-        layout.template_image_settings(image_settings, color_management=False)
-
 
 class RENDER_PT_output_views(RenderOutputButtonsPanel, Panel):
     bl_label = "Views"
@@ -313,7 +326,7 @@ class RENDER_PT_output_views(RenderOutputButtonsPanel, Panel):
     COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
 
     @classmethod
-    def poll(self, context):
+    def poll(cls, context):
         rd = context.scene.render
         return rd.use_multiview
 
@@ -332,7 +345,7 @@ class RENDER_PT_encoding(RenderOutputButtonsPanel, Panel):
     bl_options = {'DEFAULT_CLOSED'}
     COMPAT_ENGINES = {'BLENDER_RENDER', 'BLENDER_EEVEE', 'BLENDER_WORKBENCH'}
 
-    def draw_header_preset(self, context):
+    def draw_header_preset(self, _context):
         RENDER_PT_ffmpeg_presets.draw_panel_header(self.layout)
 
     @classmethod
@@ -443,7 +456,7 @@ class RENDER_PT_encoding_audio(RenderOutputButtonsPanel, Panel):
 
 
 class RENDER_UL_renderviews(UIList):
-    def draw_item(self, context, layout, data, item, icon, active_data, active_propname, index):
+    def draw_item(self, _context, layout, _data, item, icon, _active_data, _active_propname, index):
         view = item
         if self.layout_type in {'DEFAULT', 'COMPACT'}:
             if view.name in {"left", "right"}:
@@ -477,15 +490,18 @@ class RENDER_PT_stereoscopy(RenderOutputButtonsPanel, Panel):
         basic_stereo = rd.views_format == 'STEREO_3D'
 
         row = layout.row()
-        row.prop(rd, "views_format", expand=True)
+        row.use_property_split = True
+        row.use_property_decorate = False
+        row.prop(rd, "views_format")
 
         if basic_stereo:
             row = layout.row()
             row.template_list("RENDER_UL_renderviews", "name", rd, "stereo_views", rd.views, "active_index", rows=2)
 
             row = layout.row()
-            row.label(text="File Suffix:")
-            row.prop(rv, "file_suffix", text="")
+            row.use_property_split = True
+            row.use_property_decorate = False
+            row.prop(rv, "file_suffix")
 
         else:
             row = layout.row()
@@ -496,8 +512,9 @@ class RENDER_PT_stereoscopy(RenderOutputButtonsPanel, Panel):
             col.operator("scene.render_view_remove", icon='REMOVE', text="")
 
             row = layout.row()
-            row.label(text="Camera Suffix:")
-            row.prop(rv, "camera_suffix", text="")
+            row.use_property_split = True
+            row.use_property_decorate = False
+            row.prop(rv, "camera_suffix")
 
 
 classes = (
@@ -506,7 +523,9 @@ classes = (
     RENDER_MT_framerate_presets,
     RENDER_PT_dimensions,
     RENDER_PT_frame_remapping,
+    RENDER_PT_stereoscopy,
     RENDER_PT_output,
+    RENDER_PT_output_options,
     RENDER_PT_output_views,
     RENDER_PT_encoding,
     RENDER_PT_encoding_video,
@@ -515,7 +534,6 @@ classes = (
     RENDER_PT_stamp_note,
     RENDER_PT_stamp_burn,
     RENDER_UL_renderviews,
-    RENDER_PT_stereoscopy,
     RENDER_PT_post_processing,
 )
 

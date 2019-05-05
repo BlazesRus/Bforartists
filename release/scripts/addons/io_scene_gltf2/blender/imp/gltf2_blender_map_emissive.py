@@ -37,7 +37,7 @@ class BlenderEmissiveMap():
         node_tree = material.node_tree
 
         if factor_only is False:
-            BlenderTextureInfo.create(gltf, pymaterial.emissive_texture.index)
+            BlenderTextureInfo.create(gltf, pymaterial.emissive_texture)
 
         # check if there is some emissive_factor on material
         if pymaterial.emissive_factor is None:
@@ -101,7 +101,7 @@ class BlenderEmissiveMap():
         add = node_tree.nodes.new('ShaderNodeAddShader')
         add.location = 500, 500
 
-        # following  links will modify PBR node tree
+        # following links will modify PBR node tree
         node_tree.links.new(add.inputs[0], emit.outputs[0])
         node_tree.links.new(add.inputs[1], principled)
         node_tree.links.new(output.inputs[0], add.outputs[0])

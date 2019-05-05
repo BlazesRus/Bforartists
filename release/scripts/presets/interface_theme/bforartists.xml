@@ -4,7 +4,6 @@
       <ThemeUserInterface
         menu_shadow_fac="0.5"
         menu_shadow_width="12"
-        icon_file=""
         icon_alpha="1"
         icon_saturation="0.5"
         widget_emboss="#ffffff05"
@@ -87,10 +86,10 @@
           <ThemeWidgetColors
             outline="#252525"
             inner="#595959ff"
-            inner_sel="#5680c2ff"
-            item="#394c66ff"
+            inner_sel="#999999ff"
+            item="#e6e6e6ff"
             text="#cccccc"
-            text_sel="#ffffff"
+            text_sel="#000000"
             show_shaded="FALSE"
             shadetop="0"
             shadedown="25"
@@ -101,7 +100,7 @@
         <wcol_option>
           <ThemeWidgetColors
             outline="#252525"
-            inner="#394c66ff"
+            inner="#808080ff"
             inner_sel="#5680c2ff"
             item="#b3ffb3ff"
             text="#cccccc"
@@ -416,7 +415,7 @@
             text="#ffffff"
             text_hi="#ffffff"
             header="#33333300"
-            header_text="#000000"
+            header_text="#ffffff"
             header_text_hi="#ffffff"
             button="#40404000"
             button_title="#cccccc"
@@ -462,7 +461,7 @@
         preview_range="#a14d0066"
         vertex="#000000"
         vertex_select="#ff8500"
-        vertex_size="3"
+        vertex_size="6"
         vertex_bevel="#000000"
         vertex_unreferenced="#000000"
         handle_free="#000000"
@@ -478,7 +477,7 @@
         lastsel_point="#000000"
         handle_vertex="#000000"
         handle_vertex_select="#ff8500"
-        handle_vertex_size="3"
+        handle_vertex_size="6"
         >
         <space>
           <ThemeSpaceGeneric
@@ -916,7 +915,7 @@
         node_backdrop="#9b9b9ba0"
         converter_node="#686a75"
         color_node="#6f6a64"
-        group_node="#69756e"
+        group_node="#69756eff"
         group_socket_node="#dfca35"
         frame_node="#9b9b9ba0"
         matte_node="#977474"

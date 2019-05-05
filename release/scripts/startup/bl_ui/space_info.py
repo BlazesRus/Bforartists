@@ -24,13 +24,12 @@ from bpy.types import Header, Menu
 class INFO_HT_header(Header):
     bl_space_type = 'INFO'
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
         ALL_MT_editormenu.draw_hidden(context, layout) # bfa - show hide the editormenu
 
         # Empty for now until info editor gets turned into log editor
-        pass
 
 # bfa - show hide the editormenu
 class ALL_MT_editormenu(Menu):
@@ -68,8 +67,8 @@ class INFO_MT_area(Menu):
             layout.operator("screen.region_quadview", icon = "QUADVIEW")
             layout.separator()
 
-        layout.operator("screen.area_split", text="Horizontal Split").direction = 'HORIZONTAL'
-        layout.operator("screen.area_split", text="Vertical Split").direction = 'VERTICAL'
+        layout.operator("screen.area_split", text="Horizontal Split", icon = "SPLIT_HORIZONTAL").direction = 'HORIZONTAL'
+        layout.operator("screen.area_split", text="Vertical Split", icon = "SPLIT_VERTICAL").direction = 'VERTICAL'
 
         layout.separator()
 

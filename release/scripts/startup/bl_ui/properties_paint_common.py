@@ -52,39 +52,44 @@ class UnifiedPaintPanel:
         flow = parent.grid_flow(row_major=True, columns=0, even_columns=True, even_rows=False, align=False)
 
         col = flow.column()
+        col.use_property_split = False
         col.prop(ups, "use_unified_size", text="Size")
         col = flow.column()
+        col.use_property_split = False
         col.prop(ups, "use_unified_strength", text="Strength")
         if context.weight_paint_object:
             col = flow.column()
+            col.use_property_split = False
             col.prop(ups, "use_unified_weight", text="Weight")
         elif context.vertex_paint_object or context.image_paint_object:
             col = flow.column()
+            col.use_property_split = False
             col.prop(ups, "use_unified_color", text="Color")
         else:
             col = flow.column()
+            col.use_property_split = False
             col.prop(ups, "use_unified_color", text="Color")
 
     @staticmethod
-    def prop_unified_size(parent, context, brush, prop_name, icon='NONE', text="", slider=False):
+    def prop_unified_size(parent, context, brush, prop_name, *, icon='NONE', text=None, slider=False):
         ups = context.tool_settings.unified_paint_settings
         ptr = ups if ups.use_unified_size else brush
         parent.prop(ptr, prop_name, icon=icon, text=text, slider=slider)
 
     @staticmethod
-    def prop_unified_strength(parent, context, brush, prop_name, icon='NONE', text="", slider=False):
+    def prop_unified_strength(parent, context, brush, prop_name, *, icon='NONE', text=None, slider=False):
         ups = context.tool_settings.unified_paint_settings
         ptr = ups if ups.use_unified_strength else brush
         parent.prop(ptr, prop_name, icon=icon, text=text, slider=slider)
 
     @staticmethod
-    def prop_unified_weight(parent, context, brush, prop_name, icon='NONE', text="", slider=False):
+    def prop_unified_weight(parent, context, brush, prop_name, *, icon='NONE', text=None, slider=False):
         ups = context.tool_settings.unified_paint_settings
         ptr = ups if ups.use_unified_weight else brush
         parent.prop(ptr, prop_name, icon=icon, text=text, slider=slider)
 
     @staticmethod
-    def prop_unified_color(parent, context, brush, prop_name, text=""):
+    def prop_unified_color(parent, context, brush, prop_name, *, text=None):
         ups = context.tool_settings.unified_paint_settings
         ptr = ups if ups.use_unified_color else brush
         parent.prop(ptr, prop_name, text=text)
@@ -108,115 +113,101 @@ class VIEW3D_MT_tools_projectpaint_clone(Menu):
             props.value = i
 
 
-def brush_texpaint_common(panel, context, layout, brush, settings, projpaint=False):
+def brush_texpaint_common(panel, context, layout, brush, _settings, projpaint=False):
     capabilities = brush.image_paint_capabilities
 
     col = layout.column()
 
     if capabilities.has_color:
-        if brush.blend not in {'ERASE_ALPHA', 'ADD_ALPHA'}:
-            if not brush.use_gradient:
-                panel.prop_unified_color_picker(col, context, brush, "color", value_slider=True)
-
-            if settings.palette:
-                col.template_palette(settings, "palette", color=True)
-
-            if brush.use_gradient:
-                col.label(text="Gradient Colors")
-                col.template_color_ramp(brush, "gradient", expand=True)
-
-                if brush.image_tool == 'DRAW':
-                    col.label(text="Background Color")
-                    row = col.row(align=True)
-                    panel.prop_unified_color(row, context, brush, "secondary_color", text="")
-                    col.prop(brush, "gradient_stroke_mode", text="Mode")
-                    if brush.gradient_stroke_mode in {'SPACING_REPEAT', 'SPACING_CLAMP'}:
-                        col.prop(brush, "grad_spacing")
-                else:  # if brush.image_tool == 'FILL':
-                    col.prop(brush, "gradient_fill_mode")
-            else:
-                row = col.row(align=True)
-                panel.prop_unified_color(row, context, brush, "color", text="")
-                if brush.image_tool == 'FILL' and not projpaint:
-                    col.prop(brush, "fill_threshold")
-                else:
-                    panel.prop_unified_color(row, context, brush, "secondary_color", text="")
-                    row.separator()
-                    row.operator("paint.brush_colors_flip", icon='FILE_REFRESH', text="")
-                    #row.operator("paint.sample_color", icon='EYEDROPPER', text="")# bfa - picker doesn't activate here.
-        else:
+        if brush.blend in {'ERASE_ALPHA', 'ADD_ALPHA'}:
             if brush.image_tool == 'FILL' and not projpaint:
                 col.prop(brush, "fill_threshold")
 
     elif brush.image_tool == 'SOFTEN':
-        col = layout.column(align=True)
         col.row().prop(brush, "direction", expand=True)
-        col.separator()
         col.prop(brush, "sharp_threshold")
         if not projpaint:
             col.prop(brush, "blur_kernel_radius")
-        col.separator()
         col.prop(brush, "blur_mode")
     elif brush.image_tool == 'MASK':
         col.prop(brush, "weight", text="Mask Value", slider=True)
 
     elif brush.image_tool == 'CLONE':
-        col.separator()
-        if projpaint:
-            if settings.mode == 'MATERIAL':
-                col.prop(settings, "use_clone_layer", text="Clone from Paint Slot")
-            elif settings.mode == 'IMAGE':
-                col.prop(settings, "use_clone_layer", text="Clone from Image/UV Map")
-
-            if settings.use_clone_layer:
-                ob = context.active_object
-                col = layout.column()
-
-                if settings.mode == 'MATERIAL':
-                    if len(ob.material_slots) > 1:
-                        col.label(text="Materials")
-                        col.template_list("MATERIAL_UL_matslots", "",
-                                          ob, "material_slots",
-                                          ob, "active_material_index", rows=2)
-
-                    mat = ob.active_material
-                    if mat:
-                        col.label(text="Source Clone Slot")
-                        col.template_list("TEXTURE_UL_texpaintslots", "",
-                                          mat, "texture_paint_images",
-                                          mat, "paint_clone_slot", rows=2)
-
-                elif settings.mode == 'IMAGE':
-                    mesh = ob.data
-
-                    clone_text = mesh.uv_layer_clone.name if mesh.uv_layer_clone else ""
-                    col.label(text="Source Clone Image")
-                    col.template_ID(settings, "clone_image")
-                    col.label(text="Source Clone UV Map")
-                    col.menu("VIEW3D_MT_tools_projectpaint_clone", text=clone_text, translate=False)
-        else:
+        if not projpaint:
             col.prop(brush, "clone_image", text="Image")
             col.prop(brush, "clone_alpha", text="Alpha")
-
-    col.separator()
 
     if not panel.is_popover:
         brush_basic_texpaint_settings(col, context, brush)
 
+
+def brush_texpaint_common_clone(_panel, context, layout, _brush, settings, projpaint=False):
+    ob = context.active_object
     col = layout.column()
 
-    # use_accumulate
+    if settings.mode == 'MATERIAL':
+        if len(ob.material_slots) > 1:
+            col.label(text="Materials")
+            col.template_list("MATERIAL_UL_matslots", "",
+                              ob, "material_slots",
+                              ob, "active_material_index", rows=2)
+
+        mat = ob.active_material
+        if mat:
+            col.label(text="Source Clone Slot")
+            col.template_list("TEXTURE_UL_texpaintslots", "",
+                              mat, "texture_paint_images",
+                              mat, "paint_clone_slot", rows=2)
+
+    elif settings.mode == 'IMAGE':
+        mesh = ob.data
+
+        clone_text = mesh.uv_layer_clone.name if mesh.uv_layer_clone else ""
+        col.label(text="Source Clone Image")
+        col.template_ID(settings, "clone_image")
+        col.label(text="Source Clone UV Map")
+        col.menu("VIEW3D_MT_tools_projectpaint_clone", text=clone_text, translate=False)
+
+
+def brush_texpaint_common_color(_panel, context, layout, brush, _settings, projpaint=False):
+    UnifiedPaintPanel.prop_unified_color_picker(layout, context, brush, "color", value_slider=True)
+
+    row = layout.row(align=True)
+    UnifiedPaintPanel.prop_unified_color(row, context, brush, "color", text="")
+    UnifiedPaintPanel.prop_unified_color(row, context, brush, "secondary_color", text="")
+    row.separator()
+    row.operator("paint.brush_colors_flip", icon='FILE_REFRESH', text="", emboss=False)
+
+
+def brush_texpaint_common_gradient(_panel, context, layout, brush, _settings, projpaint=False):
+    layout.template_color_ramp(brush, "gradient", expand=True)
+
+    layout.use_property_split = True
+
+    col = layout.column()
+
+    if brush.image_tool == 'DRAW':
+        UnifiedPaintPanel.prop_unified_color(col, context, brush, "secondary_color", text="Background Color")
+        col.prop(brush, "gradient_stroke_mode", text="Mode")
+        if brush.gradient_stroke_mode in {'SPACING_REPEAT', 'SPACING_CLAMP'}:
+            col.prop(brush, "grad_spacing")
+    else:  # if brush.image_tool == 'FILL':
+        col.prop(brush, "gradient_fill_mode")
+
+
+def brush_texpaint_common_options(_panel, _context, layout, brush, _settings, projpaint=False):
+    capabilities = brush.image_paint_capabilities
+
+    col = layout.column()
+
     if capabilities.has_accumulate:
-        col = layout.column(align=True)
         col.prop(brush, "use_accumulate")
+
+    if capabilities.has_space_attenuation:
+        col.prop(brush, "use_space_attenuation")
 
     if projpaint:
         col.prop(brush, "use_alpha")
-
-    col.prop(brush, "use_gradient")
-
-    col.separator()
-    col.template_ID(settings, "palette", new="palette.new")
 
 
 # Used in both the View3D toolbar and texture properties
@@ -236,73 +227,15 @@ def brush_texture_settings(layout, brush, sculpt):
 
     if tex_slot.map_mode == 'STENCIL':
         if brush.texture and brush.texture.type == 'IMAGE':
-            layout.operator("brush.stencil_fit_image_aspect", icon = "IMAGE_ASPECT", text = " Image Aspect")       
-
-        # bfa - stencil brush control buttons
-        col = layout.column()
-        col.label(text="Stencil Brush Controls:")
-        row = layout.row(align=False)
-        row.alignment = 'LEFT'
-        row.operator("brush.stencil_control", text = '', icon ='TRANSFORM_MOVE').mode = 'TRANSLATION'
-        row.operator("brush.stencil_control", text = '', icon ='TRANSFORM_ROTATE').mode = 'ROTATION'
-        row.operator("brush.stencil_control", text = '', icon ='TRANSFORM_SCALE').mode = 'SCALE'
-        row.operator("brush.stencil_reset_transform", icon = "RESET", text = "")
-
+            layout.operator("brush.stencil_fit_image_aspect")
+        layout.operator("brush.stencil_reset_transform")
 
     # angle and texture_angle_source
     if tex_slot.has_texture_angle:
         col = layout.column()
-        col.label(text="Angle:")
-        row = col.row(align=True)
-        row.prop(tex_slot, "angle", text="")
-        
-        if image_paint:
-        #radial control button brushsize for texture paint mode
-            myvar = row.operator("wm.radial_control", text = "", icon = "BRUSHANGLE")
-            myvar.data_path_primary = 'tool_settings.image_paint.brush.texture_slot.angle'
-            myvar.data_path_secondary = ''
-            myvar.use_secondary = ''
-            myvar.rotation_path = 'tool_settings.image_paint.brush.texture_slot.angle'
-            myvar.color_path = 'tool_settings.image_paint.brush.cursor_color_add'
-            myvar.fill_color_path = 'tool_settings.image_paint.brush.color'
-            myvar.fill_color_override_path = 'tool_settings.unified_paint_settings.color'
-            myvar.fill_color_override_test_path = 'tool_settings.unified_paint_settings.use_unified_color'
-            myvar.zoom_path = ''
-            myvar.image_id = 'tool_settings.image_paint.brush'
-            myvar.secondary_tex = False
-
-        elif vertex_paint:
-        #radial control button brushsize for texture paint mode
-            myvar = row.operator("wm.radial_control", text = "", icon = "BRUSHANGLE")
-            myvar.data_path_primary = 'tool_settings.vertex_paint.brush.texture_slot.angle'
-            myvar.data_path_secondary = ''
-            myvar.use_secondary = ''
-            myvar.rotation_path = 'tool_settings.vertex_paint.brush.texture_slot.angle'
-            myvar.color_path = 'tool_settings.vertex_paint.brush.cursor_color_add'
-            myvar.fill_color_path = 'tool_settings.vertex_paint.brush.color'
-            myvar.fill_color_override_path = 'tool_settings.unified_paint_settings.color'
-            myvar.fill_color_override_test_path = 'tool_settings.unified_paint_settings.use_unified_color'
-            myvar.zoom_path = ''
-            myvar.image_id = 'tool_settings.vertex_paint.brush'
-            myvar.secondary_tex = False
-
-        elif sculpt:
-        #radial control button brushsize for texture paint mode
-            myvar = row.operator("wm.radial_control", text = "", icon = "BRUSHANGLE")
-            myvar.data_path_primary = 'tool_settings.sculpt.brush.texture_slot.angle'
-            myvar.data_path_secondary = ''
-            myvar.use_secondary = ''
-            myvar.rotation_path = 'tool_settings.sculpt.brush.texture_slot.angle'
-            myvar.color_path = 'tool_settings.sculpt.brush.cursor_color_add'
-            myvar.fill_color_path = ''
-            myvar.fill_color_override_path = ''
-            myvar.fill_color_override_test_path = ''
-            myvar.zoom_path = ''
-            myvar.image_id = 'tool_settings.sculpt.brush'
-            myvar.secondary_tex = False
-        
-               
+        col.prop(tex_slot, "angle", text="Angle")
         if tex_slot.has_texture_angle_source:
+            col.use_property_split = False
             col.prop(tex_slot, "use_rake", text="Rake")
 
             if brush.brush_capabilities.has_random_texture_angle and tex_slot.has_random_texture_angle:
@@ -339,50 +272,12 @@ def brush_mask_texture_settings(layout, brush):
             layout.operator("brush.stencil_fit_image_aspect").mask = True
         layout.operator("brush.stencil_reset_transform").mask = True
 
-        # stencil brush controls hotkeys. This is the secondary set.
-
-        col = layout.column()
-        col.label(text="Stencil Brush Control Secondary:")
-        row = layout.row(align=False)
-        row.alignment = 'LEFT'
-        myvar = row.operator("brush.stencil_control", text = "", icon ='TRANSFORM_MOVE')
-        myvar.mode = 'TRANSLATION'
-        myvar.texmode = 'SECONDARY'
-        myvar = row.operator("brush.stencil_control", text = "", icon ='TRANSFORM_ROTATE')
-        myvar.mode = 'ROTATION'
-        myvar.texmode = 'SECONDARY'
-        myvar = row.operator("brush.stencil_control", text = "", icon ='TRANSFORM_SCALE')
-        myvar.mode = 'SCALE'
-        myvar.texmode = 'SECONDARY'
-        row.operator("brush.stencil_reset_transform", icon = "RESET", text = "").mask = True
-        
-        layout.separator()
-
     col = layout.column()
     col.prop(brush, "use_pressure_masking", text="Pressure Masking")
     # angle and texture_angle_source
     if mask_tex_slot.has_texture_angle:
         col = layout.column()
-        col.label(text="Angle:")
-        
-        row = col.row(align=True)
-        row.prop(mask_tex_slot, "angle", text="")
-        
-        #radial control button brushsize
-        myvar = row.operator("wm.radial_control", text = "", icon = "BRUSHANGLE")
-        myvar.data_path_primary = 'tool_settings.image_paint.brush.mask_texture_slot.angle'
-        myvar.data_path_secondary = ''
-        myvar.use_secondary = ''
-        myvar.rotation_path = 'tool_settings.image_paint.brush.mask_texture_slot.angle'
-        myvar.color_path = 'tool_settings.image_paint.brush.cursor_color_add'
-        myvar.fill_color_path = 'tool_settings.image_paint.brush.color'
-        myvar.fill_color_override_path = 'tool_settings.unified_paint_settings.color'
-        myvar.fill_color_override_test_path = 'tool_settings.unified_paint_settings.use_unified_color'
-        myvar.zoom_path = ''
-        myvar.image_id = 'tool_settings.image_paint.brush'
-        myvar.secondary_tex = True
-        
-        
+        col.prop(mask_tex_slot, "angle", text="Angle")
         if mask_tex_slot.has_texture_angle_source:
             col.prop(mask_tex_slot, "use_rake", text="Rake")
 
@@ -399,51 +294,22 @@ def brush_mask_texture_settings(layout, brush):
 #
 # Share between topbar and brush panel.
 
+
 def brush_basic_wpaint_settings(layout, context, brush, *, compact=False):
     capabilities = brush.weight_paint_capabilities
 
     if capabilities.has_weight:
         row = layout.row(align=True)
-        UnifiedPaintPanel.prop_unified_weight(row, context, brush, "weight", slider=True, text="Weight")
+        UnifiedPaintPanel.prop_unified_weight(row, context, brush, "weight", slider=True)
 
     row = layout.row(align=True)
-    UnifiedPaintPanel.prop_unified_size(row, context, brush, "size", slider=True, text="Radius")
-    UnifiedPaintPanel.prop_unified_size(row, context, brush, "use_pressure_size")
-
-    #radial control button brush size
-    myvar = row.operator("wm.radial_control", text = "", icon = "BRUSHSIZE")
-    myvar.data_path_primary = 'tool_settings.weight_paint.brush.size'
-    myvar.data_path_secondary = 'tool_settings.unified_paint_settings.size'
-    myvar.use_secondary = 'tool_settings.unified_paint_settings.use_unified_size'
-    myvar.rotation_path = 'tool_settings.weight_paint.brush.texture_slot.angle'
-    myvar.color_path = 'tool_settings.weight_paint.brush.cursor_color_add'
-    myvar.fill_color_path = ''
-    myvar.fill_color_override_path = ''
-    myvar.fill_color_override_test_path = ''
-    myvar.zoom_path = ''
-    myvar.image_id = 'tool_settings.weight_paint.brush'
-    myvar.secondary_tex = False
+    UnifiedPaintPanel.prop_unified_size(row, context, brush, "size", slider=True)
+    UnifiedPaintPanel.prop_unified_size(row, context, brush, "use_pressure_size", text="")
 
     row = layout.row(align=True)
-    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "strength", text="Strength")
-    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "use_pressure_strength")
+    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "strength")
+    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "use_pressure_strength", text="")
 
-
-    #radial control button brush strength
-    myvar = row.operator("wm.radial_control", text = "", icon = "BRUSHSTRENGTH")
-    myvar.data_path_primary = 'tool_settings.weight_paint.brush.strength'
-    myvar.data_path_secondary = 'tool_settings.unified_paint_settings.strength'
-    myvar.use_secondary = 'tool_settings.unified_paint_settings.use_unified_strength'
-    myvar.rotation_path = 'tool_settings.weight_paint.brush.texture_slot.angle'
-    myvar.color_path = 'tool_settings.weight_paint.brush.cursor_color_add'
-    myvar.fill_color_path = ''
-    myvar.fill_color_override_path = ''
-    myvar.fill_color_override_test_path = ''
-    myvar.zoom_path = ''
-    myvar.image_id = 'tool_settings.weight_paint.brush'
-    myvar.secondary_tex = False
-
-    layout.separator()
     layout.prop(brush, "blend", text="" if compact else "Blend")
 
 
@@ -451,45 +317,14 @@ def brush_basic_vpaint_settings(layout, context, brush, *, compact=False):
     capabilities = brush.vertex_paint_capabilities
 
     row = layout.row(align=True)
-    UnifiedPaintPanel.prop_unified_size(row, context, brush, "size", slider=True, text="Radius")
-    UnifiedPaintPanel.prop_unified_size(row, context, brush, "use_pressure_size")
-
-    #radial control button brush size
-    myvar = row.operator("wm.radial_control", text = "", icon = "BRUSHSIZE")
-    myvar.data_path_primary = 'tool_settings.vertex_paint.brush.size'
-    myvar.data_path_secondary = 'tool_settings.unified_paint_settings.size'
-    myvar.use_secondary = 'tool_settings.unified_paint_settings.use_unified_size'
-    myvar.rotation_path = 'tool_settings.vertex_paint.brush.texture_slot.angle'
-    myvar.color_path = 'tool_settings.vertex_paint.brush.cursor_color_add'
-    myvar.fill_color_path = 'tool_settings.vertex_paint.brush.color'
-    myvar.fill_color_override_path = 'tool_settings.unified_paint_settings.color'
-    myvar.fill_color_override_test_path = 'tool_settings.unified_paint_settings.use_unified_color'
-    myvar.zoom_path = ''
-    myvar.image_id = 'tool_settings.vertex_paint.brush'
-    myvar.secondary_tex = False
+    UnifiedPaintPanel.prop_unified_size(row, context, brush, "size", slider=True)
+    UnifiedPaintPanel.prop_unified_size(row, context, brush, "use_pressure_size", text="")
 
     row = layout.row(align=True)
-    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "strength", text="Strength")
-    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "use_pressure_strength")
-
-
-    #radial control button brush strength
-    myvar = row.operator("wm.radial_control", text = "", icon = "BRUSHSTRENGTH")
-    myvar.data_path_primary = 'tool_settings.vertex_paint.brush.strength'
-    myvar.data_path_secondary = 'tool_settings.unified_paint_settings.strength'
-    myvar.use_secondary = 'tool_settings.unified_paint_settings.use_unified_strength'
-    myvar.rotation_path = 'tool_settings.vertex_paint.brush.texture_slot.angle'
-    myvar.color_path = 'tool_settings.vertex_paint.brush.cursor_color_add'
-    myvar.fill_color_path = 'tool_settings.vertex_paint.brush.color'
-    myvar.fill_color_override_path = 'tool_settings.unified_paint_settings.color'
-    myvar.fill_color_override_test_path = 'tool_settings.unified_paint_settings.use_unified_color'
-    myvar.zoom_path = ''
-    myvar.image_id = 'tool_settings.vertex_paint.brush'
-    myvar.secondary_tex = False
-
+    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "strength")
+    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "use_pressure_strength", text="")
 
     if capabilities.has_color:
-        layout.separator()
         layout.prop(brush, "blend", text="" if compact else "Blend")
 
 
@@ -498,52 +333,16 @@ def brush_basic_texpaint_settings(layout, context, brush, *, compact=False):
 
     if capabilities.has_radius:
         row = layout.row(align=True)
-        UnifiedPaintPanel.prop_unified_size(row, context, brush, "size", slider=True, text="Radius")
-        UnifiedPaintPanel.prop_unified_size(row, context, brush, "use_pressure_size")
-
-        #radial control button brushsize
-        myvar = row.operator("wm.radial_control", text = "", icon = "BRUSHSIZE")
-        myvar.data_path_primary = 'tool_settings.image_paint.brush.size'
-        myvar.data_path_secondary = 'tool_settings.unified_paint_settings.size'
-        myvar.use_secondary = 'tool_settings.unified_paint_settings.use_unified_size'
-        myvar.rotation_path = 'tool_settings.image_paint.brush.mask_texture_slot.angle'
-        myvar.color_path = 'tool_settings.image_paint.brush.cursor_color_add'
-        myvar.fill_color_path = 'tool_settings.image_paint.brush.color'
-        myvar.fill_color_override_path = 'tool_settings.unified_paint_settings.color'
-        myvar.fill_color_override_test_path = 'tool_settings.unified_paint_settings.use_unified_color'
-        myvar.zoom_path = 'space_data.zoom'
-        myvar.image_id = 'tool_settings.image_paint.brush'
-        myvar.secondary_tex = True
-
+        UnifiedPaintPanel.prop_unified_size(row, context, brush, "size", slider=True)
+        UnifiedPaintPanel.prop_unified_size(row, context, brush, "use_pressure_size", text="")
 
     row = layout.row(align=True)
 
-    if capabilities.has_space_attenuation:
-        row.prop(brush, "use_space_attenuation", toggle=True, icon_only=True)
-
-    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "strength", text="Strength")
-    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "use_pressure_strength")
+    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "strength")
+    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "use_pressure_strength", text="")
 
     if capabilities.has_color:
-        layout.separator()
         layout.prop(brush, "blend", text="" if compact else "Blend")
-
-    #radial control button brushsize
-    myvar = row.operator("wm.radial_control", text = "", icon = "BRUSHSTRENGTH")
-    myvar.data_path_primary = 'tool_settings.image_paint.brush.strength'
-    myvar.data_path_secondary = 'tool_settings.unified_paint_settings.strength'
-    myvar.use_secondary = 'tool_settings.unified_paint_settings.use_unified_strength'
-    myvar.rotation_path = 'tool_settings.image_paint.brush.mask_texture_slot.angle'
-    myvar.color_path = 'tool_settings.image_paint.brush.cursor_color_add'
-    myvar.fill_color_path = 'tool_settings.image_paint.brush.color'
-    myvar.fill_color_override_path = 'tool_settings.unified_paint_settings.color'
-    myvar.fill_color_override_test_path = 'tool_settings.unified_paint_settings.use_unified_color'
-    myvar.zoom_path = ''
-    myvar.image_id = 'tool_settings.image_paint.brush'
-    myvar.secondary_tex = True
-
-    if brush.image_tool in {'DRAW', 'FILL'}:
-        layout.separator()
 
 
 def brush_basic_sculpt_settings(layout, context, brush, *, compact=False):
@@ -551,66 +350,32 @@ def brush_basic_sculpt_settings(layout, context, brush, *, compact=False):
     capabilities = brush.sculpt_capabilities
 
     row = layout.row(align=True)
-    UnifiedPaintPanel.prop_unified_size(row, context, brush, "use_locked_size")
 
     ups = tool_settings.unified_paint_settings
     if (
-            (ups.use_unified_size and ups.use_locked_size) or
-            ((not ups.use_unified_size) and brush.use_locked_size)
+            (ups.use_unified_size and ups.use_locked_size == 'SCENE') or
+            ((not ups.use_unified_size) and brush.use_locked_size == 'SCENE')
     ):
         UnifiedPaintPanel.prop_unified_size(row, context, brush, "unprojected_radius", slider=True, text="Radius")
     else:
-        UnifiedPaintPanel.prop_unified_size(row, context, brush, "size", slider=True, text="Radius")
+        UnifiedPaintPanel.prop_unified_size(row, context, brush, "size", slider=True)
 
-    UnifiedPaintPanel.prop_unified_size(row, context, brush, "use_pressure_size")
-      
-    #radial control button brush size
-    myvar = row.operator("wm.radial_control", text = "", icon = "BRUSHSIZE")
-    myvar.data_path_primary = 'tool_settings.sculpt.brush.size'
-    myvar.data_path_secondary = 'tool_settings.unified_paint_settings.size'
-    myvar.use_secondary = 'tool_settings.unified_paint_settings.use_unified_size'
-    myvar.rotation_path = 'tool_settings.sculpt.brush.texture_slot.angle'
-    myvar.color_path = 'tool_settings.sculpt.brush.cursor_color_add'
-    myvar.fill_color_path = ''
-    myvar.fill_color_override_path = ''
-    myvar.fill_color_override_test_path = ''
-    myvar.zoom_path = ''
-    myvar.image_id = 'tool_settings.sculpt.brush'
-    myvar.secondary_tex = False   
+    UnifiedPaintPanel.prop_unified_size(row, context, brush, "use_pressure_size", text="")
 
     # strength, use_strength_pressure, and use_strength_attenuation
-    layout.separator()
     row = layout.row(align=True)
 
-    if capabilities.has_space_attenuation:
-        row.prop(brush, "use_space_attenuation", toggle=True, icon_only=True)
-
-    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "strength", text="Strength")
+    UnifiedPaintPanel.prop_unified_strength(row, context, brush, "strength")
 
     if capabilities.has_strength_pressure:
-        UnifiedPaintPanel.prop_unified_strength(row, context, brush, "use_pressure_strength")
-        
-        #radial control button brush strength
-        myvar = row.operator("wm.radial_control", text = "", icon = "BRUSHSTRENGTH")
-        myvar.data_path_primary = 'tool_settings.sculpt.brush.strength'
-        myvar.data_path_secondary = 'tool_settings.unified_paint_settings.strength'
-        myvar.use_secondary = 'tool_settings.unified_paint_settings.use_unified_strength'
-        myvar.rotation_path = 'tool_settings.sculpt.brush.texture_slot.angle'
-        myvar.color_path = 'tool_settings.sculpt.brush.cursor_color_add'
-        myvar.fill_color_path = ''
-        myvar.fill_color_override_path = ''
-        myvar.fill_color_override_test_path = ''
-        myvar.zoom_path = ''
-        myvar.image_id = 'tool_settings.sculpt.brush'
-        myvar.secondary_tex = False
-
+        UnifiedPaintPanel.prop_unified_strength(row, context, brush, "use_pressure_strength", text="")
 
     # direction
-    layout.separator()
-    layout.row().prop(brush, "direction", expand=True, **({"text": ""} if compact else {}))
+    if not capabilities.has_direction:
+        layout.row().prop(brush, "direction", expand=True, **({"text": ""} if compact else {}))
 
 
-def brush_basic_gpencil_paint_settings(layout, context, brush, *, compact=False):
+def brush_basic_gpencil_paint_settings(layout, _context, brush, *, compact=True):
     gp_settings = brush.gpencil_settings
 
     # Brush details
@@ -629,24 +394,15 @@ def brush_basic_gpencil_paint_settings(layout, context, brush, *, compact=False)
             row = layout.row(align=True)
             row.prop(gp_settings, "eraser_thickness_factor")
     elif brush.gpencil_tool == 'FILL':
-        col = layout.column(align=True)
-        col.prop(gp_settings, "fill_leak", text="Leak Size")
-
-        col.separator()
-
-        col.prop(brush, "size", text="Thickness")
-        col.prop(gp_settings, "fill_simplify_level", text="Simplify")
-
         row = layout.row(align=True)
-        row.prop(gp_settings, "fill_draw_mode", text="Boundary Draw Mode")
+        row.prop(gp_settings, "fill_leak", text="Leak Size")
+        row = layout.row(align=True)
+        row.prop(brush, "size", text="Thickness")
+        row = layout.row(align=True)
+        row.prop(gp_settings, "fill_simplify_level", text="Simplify")
+        row = layout.row(align=True)
+        row.prop(gp_settings, "fill_draw_mode", text="Boundary")
         row.prop(gp_settings, "show_fill_boundary", text="", icon='GRID')
-
-        row = layout.column(align=True)
-        row.enabled = gp_settings.fill_draw_mode != 'STROKE'
-        row.prop(gp_settings, "show_fill", text="Ignore Transparent Strokes")
-        sub = layout.row(align=True)
-        sub.enabled = not gp_settings.show_fill
-        sub.prop(gp_settings, "fill_threshold", text="Threshold")
     else:  # brush.gpencil_tool == 'DRAW':
         row = layout.row(align=True)
         row.prop(brush, "size", text="Radius")
@@ -670,7 +426,8 @@ def brush_basic_gpencil_sculpt_settings(layout, context, brush, *, compact=False
     row = layout.row(align=True)
     row.prop(brush, "strength", slider=True)
     row.prop(brush, "use_pressure_strength", text="")
-
+    
+    layout.use_property_split = False
     layout.prop(brush, "use_falloff")
 
     if compact:
@@ -693,16 +450,18 @@ def brush_basic_gpencil_sculpt_settings(layout, context, brush, *, compact=False
         layout.use_property_split = use_property_split_prev
 
 
-def brush_basic_gpencil_weight_settings(layout, context, brush, *, compact=False):
+def brush_basic_gpencil_weight_settings(layout, _context, brush, *, compact=False):
     layout.prop(brush, "size", slider=True)
 
     row = layout.row(align=True)
     row.prop(brush, "strength", slider=True)
     row.prop(brush, "use_pressure_strength", text="")
-
+    layout.prop(brush, "weight", slider=True)
+    
+    layout.use_property_split = False
     layout.prop(brush, "use_falloff")
 
-    layout.prop(brush, "weight", slider=True)
+    
 
 
 classes = (

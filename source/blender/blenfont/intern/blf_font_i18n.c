@@ -1,6 +1,4 @@
 /*
- * ***** BEGIN GPL LICENSE BLOCK *****
- *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -17,15 +15,10 @@
  *
  * The Original Code is Copyright (C) 2011 Blender Foundation.
  * All rights reserved.
- *
- * Contributor(s): Blender Foundation,
- *                 Sergey Sharybin
- *
- * ***** END GPL LICENSE BLOCK *****
  */
 
-/** \file blender/blenfont/intern/blf_font_i18n.c
- *  \ingroup blf
+/** \file
+ * \ingroup blf
  *
  * API for accessing font files.
  */
@@ -43,80 +36,78 @@
 
 #ifdef WITH_INTERNATIONAL
 
-#include "BLI_fileops.h"
-#include "BLI_string.h"
+#  include "BLI_fileops.h"
+#  include "BLI_string.h"
 
 struct FontBuf {
-	const char *filename;
-	uchar *data;
-	int data_len;
+  const char *filename;
+  uchar *data;
+  int data_len;
 };
 
-static struct FontBuf unifont_ttf =  {"droidsans.ttf.gz"};
+static struct FontBuf unifont_ttf = {"droidsans.ttf.gz"};
 static struct FontBuf unifont_mono_ttf = {"bmonofont-i18n.ttf.gz"};
 
 static void fontbuf_load(struct FontBuf *fb)
 {
-	const char *fontpath = BKE_appdir_folder_id(BLENDER_DATAFILES, "fonts");
-	if (fontpath) {
-		char unifont_path[1024];
-		BLI_snprintf(unifont_path, sizeof(unifont_path), "%s/%s", fontpath, fb->filename);
-		fb->data = (uchar *)BLI_file_ungzip_to_mem(unifont_path, &fb->data_len);
-
-	}
-	else {
-		printf("%s: 'fonts' data path not found for '%s', continuing\n", __func__, fb->filename);
-	}
+  const char *fontpath = BKE_appdir_folder_id(BLENDER_DATAFILES, "fonts");
+  if (fontpath) {
+    char unifont_path[1024];
+    BLI_snprintf(unifont_path, sizeof(unifont_path), "%s/%s", fontpath, fb->filename);
+    fb->data = (uchar *)BLI_file_ungzip_to_mem(unifont_path, &fb->data_len);
+  }
+  else {
+    printf("%s: 'fonts' data path not found for '%s', continuing\n", __func__, fb->filename);
+  }
 }
 
 static void fontbuf_free(struct FontBuf *fb)
 {
-	MEM_SAFE_FREE(fb->data);
-	fb->data_len = 0;
+  MEM_SAFE_FREE(fb->data);
+  fb->data_len = 0;
 }
 
 static uchar *fontbuf_get_mem(struct FontBuf *fb, int *r_size)
 {
-	if (fb->data == NULL) {
-		fontbuf_load(fb);
-	}
-	*r_size = fb->data_len;
-	return fb->data;
+  if (fb->data == NULL) {
+    fontbuf_load(fb);
+  }
+  *r_size = fb->data_len;
+  return fb->data;
 }
 
 #endif /* WITH_INTERNATIONAL */
 
-
 uchar *BLF_get_unifont(int *r_unifont_size)
 {
 #ifdef WITH_INTERNATIONAL
-	return fontbuf_get_mem(&unifont_ttf, r_unifont_size);
+  return fontbuf_get_mem(&unifont_ttf, r_unifont_size);
 #else
-	UNUSED_VARS(r_unifont_size);
-	return NULL;
+  UNUSED_VARS(r_unifont_size);
+  return NULL;
 #endif
 }
 
 uchar *BLF_get_unifont_mono(int *r_unifont_size)
 {
 #ifdef WITH_INTERNATIONAL
-	return fontbuf_get_mem(&unifont_mono_ttf, r_unifont_size);
+  return fontbuf_get_mem(&unifont_mono_ttf, r_unifont_size);
 #else
-	UNUSED_VARS(r_unifont_size);
-	return NULL;
+  UNUSED_VARS(r_unifont_size);
+  return NULL;
 #endif
 }
 
 void BLF_free_unifont(void)
 {
 #ifdef WITH_INTERNATIONAL
-	fontbuf_free(&unifont_ttf);
+  fontbuf_free(&unifont_ttf);
 #endif
 }
 
 void BLF_free_unifont_mono(void)
 {
 #ifdef WITH_INTERNATIONAL
-	fontbuf_free(&unifont_mono_ttf);
+  fontbuf_free(&unifont_mono_ttf);
 #endif
 }

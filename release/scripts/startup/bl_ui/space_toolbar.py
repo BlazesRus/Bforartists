@@ -1,4 +1,4 @@
-﻿# ##### BEGIN GPL LICENSE BLOCK #####
+# ##### BEGIN GPL LICENSE BLOCK #####
 #
 #  This program is free software; you can redistribute it and/or
 #  modify it under the terms of the GNU General Public License
@@ -131,7 +131,6 @@ class TOOLBAR_MT_toolbars_file_menu(Menu):
         layout.prop(addon_prefs, "file_render")
         layout.prop(addon_prefs, "file_render_opengl")
         layout.prop(addon_prefs, "file_render_misc")
-        layout.prop(addon_prefs, "file_window_search")
 
             
 ############### bfa - Load Save menu hidable by the flag in the right click menu
@@ -208,6 +207,8 @@ class TOOLBAR_MT_file(Menu):
             row.operator("wm.collada_import", text="", icon='LOAD_DAE')
             row.operator("import_anim.bvh", text="", icon='LOAD_BVH')
             #row.operator("import_scene.autodesk_3ds", text="", icon='LOAD_3DS') # bfa - not ported to 2.8 yet
+            row.operator("import_scene.gltf", text="", icon='LOAD_GITF')
+
             
         ## ------------------ Import uncommon
 
@@ -237,6 +238,7 @@ class TOOLBAR_MT_file(Menu):
             row.operator("wm.collada_export", text="", icon='SAVE_DAE')
             row.operator("export_anim.bvh", text="", icon='SAVE_BVH')
             #row.operator("export_scene.autodesk_3ds", text="", icon='SAVE_3DS') # bfa - not ported to 2.8 yet
+            row.operator("export_scene.gltf", text="", icon='SAVE_GITF')
 
         ## ------------------ Export uncommon
 
@@ -281,13 +283,6 @@ class TOOLBAR_MT_file(Menu):
             row.operator("render.view_show", text="", icon = 'HIDE_RENDERVIEW')
             row.operator("render.play_rendered_anim", icon='PLAY', text="")
 
-        ## ------------------ Search
-
-        if addon_prefs.file_window_search:
-
-            row = layout.row(align=True)
-
-            row.operator("wm.search_menu", text= "", icon='VIEWZOOM') # The search menu. Note that this just calls the pure search menu, and not the whole search menu addon.
 
 
 ######################################## Mesh Edit ##############################################
@@ -525,10 +520,14 @@ class TOOLBAR_MT_toolbars_primitives_menu(Menu):
         layout.prop(addon_prefs, "primitives_curve")
         layout.prop(addon_prefs, "primitives_surface")
         layout.prop(addon_prefs, "primitives_metaball")
+        layout.prop(addon_prefs, "primitives_gpencil")
         layout.prop(addon_prefs, "primitives_light")
         layout.prop(addon_prefs, "primitives_other")
         layout.prop(addon_prefs, "primitives_empties")
+        layout.prop(addon_prefs, "primitives_image")
+        layout.prop(addon_prefs, "primitives_lightprobe")
         layout.prop(addon_prefs, "primitives_forcefield")
+        layout.prop(addon_prefs, "primitives_collection")
 
             
 ############### bfa - menu hidable by the flag in the right click menu
@@ -601,6 +600,14 @@ class TOOLBAR_MT_primitives(Menu):
                 row.operator("object.metaball_add", text="", icon='META_ELLIPSOID').type= 'ELLIPSOID'
                 row.operator("object.metaball_add", text="", icon='META_CUBE').type= 'CUBE'
 
+            if addon_prefs.primitives_gpencil:
+                 
+                row = layout.row(align=True)
+
+                row.operator("object.gpencil_add", text="", icon='EMPTY_AXIS').type= 'EMPTY'
+                row.operator("object.gpencil_add", text="", icon='STROKE').type= 'STROKE'
+                row.operator("object.gpencil_add", text="", icon='MONKEY').type= 'MONKEY'
+
             if addon_prefs.primitives_light: 
 
                 row = layout.row(align=True)
@@ -633,6 +640,21 @@ class TOOLBAR_MT_primitives(Menu):
                 row.operator("object.empty_add", text="", icon='EMPTY_ARROWS').type = 'ARROWS'
                 row.operator("object.empty_add", text="", icon='EMPTY_IMAGE').type = 'IMAGE'
 
+            if addon_prefs.primitives_image: 
+
+                row = layout.row(align=True)
+
+                row.operator("object.load_reference_image", text="", icon='IMAGE_REFERENCE')
+                row.operator("object.load_background_image", text="", icon='IMAGE_BACKGROUND')
+
+            if addon_prefs.primitives_lightprobe: 
+
+                row = layout.row(align=True)
+
+                row.operator("object.lightprobe_add", text="", icon='LIGHTPROBE_CUBEMAP').type='CUBEMAP'
+                row.operator("object.lightprobe_add", text="", icon='LIGHTPROBE_PLANAR').type='PLANAR'
+                row.operator("object.lightprobe_add", text="", icon='LIGHTPROBE_GRID').type='GRID'
+
             if addon_prefs.primitives_forcefield: 
 
                 row = layout.row(align=True)
@@ -650,6 +672,12 @@ class TOOLBAR_MT_primitives(Menu):
                 row.operator("object.effector_add", text="", icon='FORCE_TURBULENCE').type='TURBULENCE'
                 row.operator("object.effector_add", text="", icon='FORCE_VORTEX').type='VORTEX'
                 row.operator("object.effector_add", text="", icon='FORCE_WIND').type='WIND'
+
+            if addon_prefs.primitives_collection: 
+
+                row = layout.row(align=True)
+
+                row.operator("object.collection_instance_add", text="", icon='GROUP')
 
         elif obj is not None:
 
@@ -704,6 +732,14 @@ class TOOLBAR_MT_primitives(Menu):
                     row.operator("object.metaball_add", text="", icon='META_ELLIPSOID').type= 'ELLIPSOID'
                     row.operator("object.metaball_add", text="", icon='META_CUBE').type= 'CUBE'
 
+                if addon_prefs.primitives_gpencil:
+                 
+                    row = layout.row(align=True)
+
+                    row.operator("object.gpencil_add", text="", icon='EMPTY_AXIS').type= 'EMPTY'
+                    row.operator("object.gpencil_add", text="", icon='STROKE').type= 'STROKE'
+                    row.operator("object.gpencil_add", text="", icon='MONKEY').type= 'MONKEY'
+
                 if addon_prefs.primitives_light: 
 
                     row = layout.row(align=True)
@@ -736,6 +772,21 @@ class TOOLBAR_MT_primitives(Menu):
                     row.operator("object.empty_add", text="", icon='EMPTY_ARROWS').type = 'ARROWS'
                     row.operator("object.empty_add", text="", icon='EMPTY_IMAGE').type = 'IMAGE'
 
+                if addon_prefs.primitives_image: 
+
+                    row = layout.row(align=True)
+
+                    row.operator("object.load_reference_image", text="", icon='IMAGE_REFERENCE')
+                    row.operator("object.load_background_image", text="", icon='IMAGE_BACKGROUND')
+
+                if addon_prefs.primitives_lightprobe: 
+
+                    row = layout.row(align=True)
+
+                    row.operator("object.lightprobe_add", text="", icon='LIGHTPROBE_CUBEMAP').type='CUBEMAP'
+                    row.operator("object.lightprobe_add", text="", icon='LIGHTPROBE_PLANAR').type='PLANAR'
+                    row.operator("object.lightprobe_add", text="", icon='LIGHTPROBE_GRID').type='GRID'
+
                 if addon_prefs.primitives_forcefield: 
 
                     row = layout.row(align=True)
@@ -753,6 +804,12 @@ class TOOLBAR_MT_primitives(Menu):
                     row.operator("object.effector_add", text="", icon='FORCE_TURBULENCE').type='TURBULENCE'
                     row.operator("object.effector_add", text="", icon='FORCE_VORTEX').type='VORTEX'
                     row.operator("object.effector_add", text="", icon='FORCE_WIND').type='WIND'
+
+                if addon_prefs.primitives_collection: 
+
+                    row = layout.row(align=True)
+
+                    row.operator("object.collection_instance_add", text="", icon='GROUP')
 
             if mode == 'EDIT':
 
@@ -808,6 +865,7 @@ class TOOLBAR_MT_primitives(Menu):
                         row.operator("object.metaball_add", text="", icon='META_PLANE').type= 'PLANE'
                         row.operator("object.metaball_add", text="", icon='META_ELLIPSOID').type= 'ELLIPSOID'
                         row.operator("object.metaball_add", text="", icon='META_CUBE').type= 'CUBE'
+
 
 ######################################## Image ##############################################
 
@@ -1071,6 +1129,7 @@ class TOOLBAR_MT_tools(Menu):
                         row.operator("object.origin_set", icon ='ORIGIN_TO_GEOMETRY', text="").type='ORIGIN_GEOMETRY'
                         row.operator("object.origin_set", icon ='ORIGIN_TO_CURSOR', text="").type='ORIGIN_CURSOR'
                         row.operator("object.origin_set", icon ='ORIGIN_TO_CENTEROFMASS', text="").type='ORIGIN_CENTER_OF_MASS'
+                        row.operator("object.origin_set", icon ='ORIGIN_TO_VOLUME', text = "").type='ORIGIN_CENTER_OF_VOLUME'
 
                 if addon_prefs.tools_shading:
 
@@ -1145,11 +1204,11 @@ class TOOLBAR_MT_toolbars_animation_menu(Menu):
         addon_prefs = preferences.addons["bforartists_toolbar_settings"].preferences
 
         layout.prop(addon_prefs, "animation_keyframes")
-        layout.prop(addon_prefs, "animation_range")
         layout.prop(addon_prefs, "animation_play")
+        layout.prop(addon_prefs, "animation_range")
+        layout.prop(addon_prefs, "animation_keyframetype") 
         layout.prop(addon_prefs, "animation_sync")
         layout.prop(addon_prefs, "animation_keyingset")
-        layout.prop(addon_prefs, "animation_keyframetype")
         
          
 ############### bfa - menu hidable by the flag in the right click menu
@@ -1201,17 +1260,6 @@ class TOOLBAR_MT_animation(Menu):
 
                     row = layout.row(align=True)
 
-                    row.operator("pose.push", icon = 'PUSH_POSE', text="")
-                    row.operator("pose.relax", icon = 'RELAX_POSE',text="")
-                    row.operator("pose.breakdown", icon = 'BREAKDOWNER_POSE',text="")
-
-                    row = layout.row(align=True)
-
-                    row.operator("pose.propagate", text="Propagate")
-                    row.menu("VIEW3D_MT_pose_propagate", icon='TRIA_RIGHT', text="")
-
-                    row = layout.row(align=True)
-
                     row.operator("anim.keyframe_insert_menu", icon= 'KEYFRAMES_INSERT',text="")
                     row.operator("anim.keyframe_delete_v3d", icon= 'KEYFRAMES_REMOVE',text="")
                     row.operator("nla.bake", icon= 'BAKE_ACTION',text="")
@@ -1222,12 +1270,40 @@ class TOOLBAR_MT_animation(Menu):
                     row.operator("object.paths_calculate", icon ='MOTIONPATHS_CALCULATE',  text="")
                     row.operator("object.paths_clear", icon ='MOTIONPATHS_CLEAR',  text="")
 
+        if addon_prefs.animation_play: 
+
+            row = layout.row(align=True)
+            row.operator("screen.frame_jump", text="", icon='REW').end = False
+            row.operator("screen.keyframe_jump", text="", icon='PREV_KEYFRAME').next = False
+
+            if not screen.is_animation_playing:
+                # if using JACK and A/V sync:
+                #   hide the play-reversed button
+                #   since JACK transport doesn't support reversed playback
+                if scene.sync_mode == 'AUDIO_SYNC' and context.preferences.system.audio_device == 'JACK':
+                    sub = row.row(align=True)
+                    sub.scale_x = 1.4
+                    sub.operator("screen.animation_play", text="", icon='PLAY')
+                else:
+                    row.operator("screen.animation_play", text="", icon='PLAY_REVERSE').reverse = True
+                    row.operator("screen.animation_play", text="", icon='PLAY')
+            else:
+                sub = row.row(align=True)
+                sub.scale_x = 1.4
+                sub.operator("screen.animation_play", text="", icon='PAUSE')
+            row.operator("screen.keyframe_jump", text="", icon='NEXT_KEYFRAME').next = True
+            row.operator("screen.frame_jump", text="", icon='FF').end = True
+            
+            row = layout.row(align=True)
+
+            row.prop(scene, "frame_current", text="")
+
         if addon_prefs.animation_range: 
 
             row = layout.row(align=True)
 
             row.prop(scene, "use_preview_range", text="", toggle=True)
-            row.prop(scene, "lock_frame_selection_to_range", text="", toggle=True)
+            row.prop(scene, "lock_frame_selection_to_range", text="", icon = "LOCKED", toggle=True)
 
             row = layout.row(align=True)
             if not scene.use_preview_range:
@@ -1237,34 +1313,19 @@ class TOOLBAR_MT_animation(Menu):
                 row.prop(scene, "frame_preview_start", text="Start")
                 row.prop(scene, "frame_preview_end", text="End")
 
-        if addon_prefs.animation_play: 
+        if addon_prefs.animation_keyingset: 
 
             row = layout.row(align=True)
 
-            layout.prop(scene, "frame_current", text="")
-
-            layout.separator()
+            row.operator("anim.keyframe_insert", text="", icon='KEY_HLT')
+            row.operator("anim.keyframe_delete", text="", icon='KEY_DEHLT')
 
             row = layout.row(align=True)
-            row.operator("screen.frame_jump", text="", icon='REW').end = False
-            row.operator("screen.keyframe_jump", text="", icon='PREV_KEYFRAME').next = False
-            if not screen.is_animation_playing:
-                # if using JACK and A/V sync:
-                #   hide the play-reversed button
-                #   since JACK transport doesn't support reversed playback
-                if scene.sync_mode == 'AUDIO_SYNC' and context.preferences.system.audio_device == 'JACK':
-                    sub = row.row(align=True)
-                    sub.scale_x = 2.0
-                    sub.operator("screen.animation_play", text="", icon='PLAY')
-                else:
-                    row.operator("screen.animation_play", text="", icon='PLAY_REVERSE').reverse = True
-                    row.operator("screen.animation_play", text="", icon='PLAY')
-            else:
-                sub = row.row(align=True)
-                sub.scale_x = 2.0
-                sub.operator("screen.animation_play", text="", icon='PAUSE')
-            row.operator("screen.keyframe_jump", text="", icon='NEXT_KEYFRAME').next = True
-            row.operator("screen.frame_jump", text="", icon='FF').end = True
+
+            row.prop(toolsettings, "use_keyframe_insert_auto", text="", toggle=True)
+
+            row.prop_search(scene.keying_sets_all, "active", scene, "keying_sets_all", text="")
+
 
         if addon_prefs.animation_sync: 
 
@@ -1277,24 +1338,7 @@ class TOOLBAR_MT_animation(Menu):
             row = layout.row(align=True)
 
             layout.prop(toolsettings, "keyframe_type", text="", icon_only=True)
-
-        if addon_prefs.animation_keyingset: 
-
-            row = layout.row(align=True)
-
-            row.prop(toolsettings, "use_keyframe_insert_auto", text="", toggle=True)
-            if toolsettings.use_keyframe_insert_auto:
-                row.prop(toolsettings, "use_keyframe_insert_keyingset", text="", toggle=True)
-
-                if screen.is_animation_playing and not userprefs.edit.use_keyframe_insert_available:
-                    subsub = row.row(align=True)
-                    subsub.prop(toolsettings, "use_record_with_nla", toggle=True)
-
-            row = layout.row(align=True)
-            row.prop_search(scene.keying_sets_all, "active", scene, "keying_sets_all", text="")
-            row.operator("anim.keyframe_insert", text="", icon='KEY_HLT')
-            row.operator("anim.keyframe_delete", text="", icon='KEY_DEHLT')
-
+            
 
 ######################################## Edit toolbars ##############################################
 
@@ -1328,10 +1372,20 @@ class VIEW3D_MT_object_apply_scale(bpy.types.Operator):
         bpy.ops.object.transform_apply(location=True, rotation=False, scale=True)
         return {'FINISHED'}
 
+class VIEW3D_MT_object_apply_all(bpy.types.Operator):
+    """Apply All\nApplies the current location, rotation and scale"""
+    bl_idname = "3dview.tb_apply_all"
+    bl_label = "Apply All"
+    bl_options = {'REGISTER', 'UNDO'}
+
+    def execute(self, context):
+        bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)
+        return {'FINISHED'}
+
 class VIEW3D_MT_object_apply_rotscale(bpy.types.Operator):
     """Apply Rotation & Scale\nApplies the current rotation and scale"""
     bl_idname = "3dview.tb_apply_rotscale"
-    bl_label = "Apply All"
+    bl_label = "Apply Rotate Scale"
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
@@ -1448,7 +1502,8 @@ class TOOLBAR_MT_edit(Menu):
                     row.operator("3dview.tb_apply_location", text="", icon = "APPLYMOVE") # needed a tooltip, so see above ...
                     row.operator("3dview.tb_apply_rotate", text="", icon = "APPLYROTATE")
                     row.operator("3dview.tb_apply_scale", text="", icon = "APPLYSCALE")
-                    row.operator("3dview.tb_apply_rotscale", text="", icon = "APPLYALL")
+                    row.operator("3dview.tb_apply_all", text="", icon = "APPLYALL")
+                    row.operator("3dview.tb_apply_rotscale", text="", icon = "APPLY_ROTSCALE")
 
                     row = layout.row(align=True)
 
@@ -1514,8 +1569,10 @@ class TOOLBAR_MT_toolbars_misc_menu(Menu):
         layout.prop(addon_prefs, "misc_undoredo")
         layout.prop(addon_prefs, "misc_undohistory")
         layout.prop(addon_prefs, "misc_repeat")
-        layout.prop(addon_prefs, "misc_scene")
-        layout.prop(addon_prefs, "misc_misc")
+        layout.prop(addon_prefs, "misc_scene")       
+        layout.prop(addon_prefs, "misc_last")
+        layout.prop(addon_prefs, "misc_operatorsearch")
+        layout.prop(addon_prefs, "misc_info")
             
 ############### bfa - menu hidable by the flag in the right click menu
 
@@ -1565,11 +1622,33 @@ class TOOLBAR_MT_misc(Menu):
 
             layout.template_ID(window, "scene", new="scene.new", unlink="scene.delete") # bfa - the scene drodpown box from the info menu bar
 
-        if addon_prefs.misc_misc:
+        if addon_prefs.misc_last:
 
             row = layout.row(align=True)
 
-            row.label(text=" - Misc Toolbar, Nothing yet - ")
+            row.operator("screen.redo_last", text="Last", icon = "LASTOPERATOR")
+
+        if addon_prefs.misc_operatorsearch:
+
+            row = layout.row(align=True)
+
+            row.operator("wm.search_menu", text="", icon='VIEWZOOM')
+
+        if addon_prefs.misc_info:
+
+            row = layout.row(align=True)
+
+            row.separator_spacer()
+
+            # messages
+            row.template_reports_banner()
+            row.template_running_jobs()
+
+            # stats
+            scene = context.scene
+            view_layer = context.view_layer
+
+            row.label(text=scene.statistics(view_layer), translate=False)
 
 classes = (
 
@@ -1585,6 +1664,7 @@ classes = (
     VIEW3D_MT_object_apply_location,
     VIEW3D_MT_object_apply_rotate,
     VIEW3D_MT_object_apply_scale,
+    VIEW3D_MT_object_apply_all,
     VIEW3D_MT_object_apply_rotscale,
     TOOLBAR_MT_menu_animation,
     TOOLBAR_MT_toolbars_animation_menu,

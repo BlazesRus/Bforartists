@@ -26,8 +26,8 @@ from bpy.types import Menu, UIList
 
 
 class MASK_UL_layers(UIList):
-    def draw_item(self, context, layout, data, item, icon,
-                  active_data, active_propname, index):
+    def draw_item(self, _context, layout, _data, item, icon,
+                  _active_data, _active_propname, _index):
         # assert(isinstance(item, bpy.types.MaskLayer)
         mask = item
         if self.layout_type in {'DEFAULT', 'COMPACT'}:
@@ -199,8 +199,9 @@ class MASK_PT_point:
             tracks_list = "tracks" if parent.type == 'POINT_TRACK' else "plane_tracks"
 
             if parent.parent in tracking.objects:
-                object = tracking.objects[parent.parent]
-                col.prop_search(parent, "sub_parent", object, tracks_list, text="Track", icon = 'ANIM_DATA')
+                ob = tracking.objects[parent.parent]
+                col.prop_search(parent, "sub_parent", ob,
+                                tracks_list, icon='ANIM_DATA', text="Track")
             else:
                 col.prop_search(parent, "sub_parent", tracking, tracks_list, text="Track", icon = 'ANIM_DATA')
 
@@ -231,38 +232,10 @@ class MASK_PT_display:
         sub.prop(space_data, "mask_overlay_mode", text="")
 
 
-class MASK_PT_transforms:
-    # subclasses must define...
-    # ~ bl_space_type = 'CLIP_EDITOR'
-    # ~ bl_region_type = 'TOOLS'
-    bl_label = "Transforms"
-    bl_category = "Mask"
-    bl_options = {'DEFAULT_CLOSED'}
-
-    @classmethod
-    def poll(cls, context):
-        space_data = context.space_data
-        return space_data.mask and space_data.mode == 'MASK'
-
-    def draw(self, context):
-        layout = self.layout
-
-        col = layout.column(align=True)
-        col.label(text="Transform:")
-        col.operator("transform.translate", icon = "TRANSFORM_MOVE")
-        col.operator("transform.rotate", icon = "TRANSFORM_ROTATE")
-        col.operator("transform.resize", text = "Scale", icon = "TRANSFORM_SCALE")
-        col.operator("transform.transform", text = "Scale Feather", icon = 'SHRINK_FATTEN').mode = 'MASK_SHRINKFATTEN'
-
-        layout.separator()
-
-        col.operator("mask.feather_weight_clear", text = "  Clear Feather Weight", icon = "CLEAR")
-
-
 class MASK_MT_add(Menu):
     bl_label = "Add"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
         layout.operator("mask.primitive_circle_add", icon = 'MESH_CIRCLE')
@@ -272,7 +245,7 @@ class MASK_MT_add(Menu):
 class MASK_MT_mask(Menu):
     bl_label = "Mask"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
         layout.operator("mask.delete", icon = "DELETE")
@@ -304,7 +277,7 @@ class MASK_MT_mask(Menu):
 class MASK_MT_visibility(Menu):
     bl_label = "Show/Hide"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
         layout.operator("mask.hide_view_clear", text = "Show Hidden", icon = "RESTRICT_VIEW_OFF")
@@ -315,7 +288,7 @@ class MASK_MT_visibility(Menu):
 class MASK_MT_transform(Menu):
     bl_label = "Transform"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
         layout.operator("transform.translate", icon = "TRANSFORM_MOVE")
@@ -331,7 +304,7 @@ class MASK_MT_transform(Menu):
 class MASK_MT_animation(Menu):
     bl_label = "Animation"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
         layout.operator("mask.shape_key_clear", icon = "CLEAR")
@@ -340,10 +313,33 @@ class MASK_MT_animation(Menu):
         layout.operator("mask.shape_key_rekey", icon = 'KEY_HLT')
 
 
+# Workaround to separate the tooltips
+class MASK_MT_select_inverse(bpy.types.Operator):
+    """Inverse\nInverts the current selection """      # blender will use this as a tooltip for menu items and buttons.
+    bl_idname = "mask.select_all_inverse"        # unique identifier for buttons and menu items to reference.
+    bl_label = "Select Inverse"         # display name in the interface.
+    bl_options = {'REGISTER', 'UNDO'}  # enable undo for the operator.
+
+    def execute(self, context):        # execute() is called by blender when running the operator.
+        bpy.ops.mask.select_all(action = 'INVERT')
+        return {'FINISHED'}
+
+# Workaround to separate the tooltips
+class MASK_MT_select_none(bpy.types.Operator):
+    """None\nDeselects everything """       # blender will use this as a tooltip for menu items and buttons.
+    bl_idname = "mask.select_all_none"        # unique identifier for buttons and menu items to reference.
+    bl_label = "Select None"         # display name in the interface.
+    bl_options = {'REGISTER', 'UNDO'}  # enable undo for the operator.
+
+    def execute(self, context):        # execute() is called by blender when running the operator.
+        bpy.ops.mask.select_all(action = 'DESELECT')
+        return {'FINISHED'}
+
+
 class MASK_MT_select(Menu):
     bl_label = "Select"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
         layout.operator("mask.select_box", icon = 'CIRCLE_SELECT')
@@ -351,8 +347,12 @@ class MASK_MT_select(Menu):
 
         layout.separator()
 
-        layout.operator("mask.select_all", icon = 'SELECT_ALL').action = 'TOGGLE'
-        layout.operator("mask.select_all", text = "Inverse", icon='INVERSE').action = 'INVERT'
+        layout.operator("mask.select_all", icon = 'SELECT_ALL').action = 'SELECT'
+        layout.operator("mask.select_all_none", text="None", icon='SELECT_NONE') # bfa - separated tooltip
+        layout.operator("mask.select_all_inverse", text="Inverse", icon='INVERSE') # bfa - separated tooltip
+        
+        layout.separator()
+
         layout.operator("mask.select_linked", text = "Select Linked", icon = "LINKED")
 
         layout.separator()
@@ -367,7 +367,9 @@ classes = (
     MASK_MT_mask,
     MASK_MT_visibility,
     MASK_MT_transform,
-    MASK_MT_animation,
+    MASK_MT_animation,  
+    MASK_MT_select_inverse,
+    MASK_MT_select_none,
     MASK_MT_select,
 )
 

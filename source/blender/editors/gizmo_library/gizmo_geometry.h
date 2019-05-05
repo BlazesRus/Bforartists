@@ -1,6 +1,4 @@
 /*
- * ***** BEGIN GPL LICENSE BLOCK *****
- *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -17,29 +15,27 @@
  *
  * The Original Code is Copyright (C) 2016 Blender Foundation.
  * All rights reserved.
- *
- * ***** END GPL LICENSE BLOCK *****
  */
 
-/** \file gizmo_geometry.h
- *  \ingroup edgizmolib
+/** \file
+ * \ingroup edgizmolib
  *
  * \name Gizmo Geometry
  *
- * \brief Prototypes for arrays defining the gizmo geometry. The actual definitions can be found in files usually
- *        called geom_xxx_gizmo.c
+ * \brief Prototypes for arrays defining the gizmo geometry.
+ * The actual definitions can be found in files usually
+ * called geom_xxx_gizmo.c
  */
-
 
 #ifndef __GIZMO_GEOMETRY_H__
 #define __GIZMO_GEOMETRY_H__
 
 typedef struct GizmoGeomInfo {
-	int nverts;
-	int ntris;
-	const float (*verts)[3];
-	const float (*normals)[3];
-	const unsigned short *indices;
+  int nverts;
+  int ntris;
+  const float (*verts)[3];
+  const float (*normals)[3];
+  const unsigned short *indices;
 } GizmoGeomInfo;
 
 /* arrow gizmo */
@@ -51,4 +47,4 @@ extern GizmoGeomInfo wm_gizmo_geom_data_cube;
 /* dial gizmo */
 extern GizmoGeomInfo wm_gizmo_geom_data_dial;
 
-#endif  /* __GIZMO_GEOMETRY_H__ */
+#endif /* __GIZMO_GEOMETRY_H__ */

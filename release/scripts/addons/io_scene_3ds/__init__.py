@@ -29,7 +29,6 @@ bl_info = {
     "warning": "",
     "wiki_url": "http://wiki.blender.org/index.php/Extensions:2.6/Py/"
                 "Scripts/Import-Export/Autodesk_3DS",
-    "support": 'OFFICIAL',
     "category": "Import-Export"}
 
 if "bpy" in locals():
@@ -138,11 +137,11 @@ class Export3DS(bpy.types.Operator, ExportHelper):
 
 # Add to a menu
 def menu_func_export(self, context):
-    self.layout.operator(Export3DS.bl_idname, text="3D Studio (.3ds)")
+    self.layout.operator(Export3DS.bl_idname, text="3D Studio (.3ds)", icon = "LOAD_3DS")
 
 
 def menu_func_import(self, context):
-    self.layout.operator(Import3DS.bl_idname, text="3D Studio (.3ds)")
+    self.layout.operator(Import3DS.bl_idname, text="3D Studio (.3ds)", icon = "SAVE_3DS")
 
 
 def register():

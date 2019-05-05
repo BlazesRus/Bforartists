@@ -14,6 +14,7 @@
 
 import bpy
 from .gltf2_blender_texture import BlenderTextureInfo
+from ..com.gltf2_blender_conversion import texture_transform_gltf_to_blender
 
 
 class BlenderPbr():
@@ -55,8 +56,8 @@ class BlenderPbr():
             main_node = node_tree.nodes.new('ShaderNodeBsdfPrincipled')
             main_node.location = 0, 0
         elif nodetype == "unlit":
-            main_node = node_tree.nodes.new('ShaderNodeBackground')
-            main_node.location = 0, 0
+            main_node = node_tree.nodes.new('ShaderNodeEmission')
+            main_node.location = 750, -300
 
         if pypbr.color_type == gltf.SIMPLE:
 
@@ -101,7 +102,7 @@ class BlenderPbr():
                 vc_mult_node.blend_type = 'MULTIPLY'
                 vc_mult_node.inputs['Fac'].default_value = 1.0
 
-            BlenderTextureInfo.create(gltf, pypbr.base_color_texture.index)
+            BlenderTextureInfo.create(gltf, pypbr.base_color_texture)
 
             # create UV Map / Mapping / Texture nodes / separate & math and combine
             text_node = node_tree.nodes.new('ShaderNodeTexImage')
@@ -126,6 +127,14 @@ class BlenderPbr():
 
             mapping = node_tree.nodes.new('ShaderNodeMapping')
             mapping.location = -1500, 500
+            mapping.vector_type = 'POINT'
+            tex_transform = text_node.image['tex_transform'][str(pypbr.base_color_texture.index)]
+            mapping.translation[0] = texture_transform_gltf_to_blender(tex_transform)['offset'][0]
+            mapping.translation[1] = texture_transform_gltf_to_blender(tex_transform)['offset'][1]
+            mapping.rotation[2] = texture_transform_gltf_to_blender(tex_transform)['rotation']
+            mapping.scale[0] = texture_transform_gltf_to_blender(tex_transform)['scale'][0]
+            mapping.scale[1] = texture_transform_gltf_to_blender(tex_transform)['scale'][1]
+
 
             uvmap = node_tree.nodes.new('ShaderNodeUVMap')
             uvmap.location = -2000, 500
@@ -151,7 +160,7 @@ class BlenderPbr():
 
         elif pypbr.color_type == gltf.TEXTURE:
 
-            BlenderTextureInfo.create(gltf, pypbr.base_color_texture.index)
+            BlenderTextureInfo.create(gltf, pypbr.base_color_texture)
 
             # TODO alpha ?
             if vertex_color:
@@ -183,6 +192,13 @@ class BlenderPbr():
                 mapping.location = -2500, 500
             else:
                 mapping.location = -1500, 500
+            mapping.vector_type = 'POINT'
+            tex_transform = text_node.image['tex_transform'][str(pypbr.base_color_texture.index)]
+            mapping.translation[0] = texture_transform_gltf_to_blender(tex_transform)['offset'][0]
+            mapping.translation[1] = texture_transform_gltf_to_blender(tex_transform)['offset'][1]
+            mapping.rotation[2] = texture_transform_gltf_to_blender(tex_transform)['rotation']
+            mapping.scale[0] = texture_transform_gltf_to_blender(tex_transform)['scale'][0]
+            mapping.scale[1] = texture_transform_gltf_to_blender(tex_transform)['scale'][1]
 
             uvmap = node_tree.nodes.new('ShaderNodeUVMap')
             if vertex_color:
@@ -216,7 +232,7 @@ class BlenderPbr():
                 main_node.inputs[7].default_value = pypbr.roughness_factor
 
             elif pypbr.metallic_type == gltf.TEXTURE:
-                BlenderTextureInfo.create(gltf, pypbr.metallic_roughness_texture.index)
+                BlenderTextureInfo.create(gltf, pypbr.metallic_roughness_texture)
                 metallic_text = node_tree.nodes.new('ShaderNodeTexImage')
                 metallic_text.image = bpy.data.images[gltf.data.images[
                     gltf.data.textures[pypbr.metallic_roughness_texture.index].source
@@ -249,7 +265,7 @@ class BlenderPbr():
 
             elif pypbr.metallic_type == gltf.TEXTURE_FACTOR:
 
-                BlenderTextureInfo.create(gltf, pypbr.metallic_roughness_texture.index)
+                BlenderTextureInfo.create(gltf, pypbr.metallic_roughness_texture)
                 metallic_text = node_tree.nodes.new('ShaderNodeTexImage')
                 metallic_text.image = bpy.data.images[gltf.data.images[
                     gltf.data.textures[pypbr.metallic_roughness_texture.index].source
@@ -273,6 +289,13 @@ class BlenderPbr():
 
                 metallic_mapping = node_tree.nodes.new('ShaderNodeMapping')
                 metallic_mapping.location = -1000, 0
+                metallic_mapping.vector_type = 'POINT'
+                tex_transform = metallic_text.image['tex_transform'][str(pypbr.metallic_roughness_texture.index)]
+                metallic_mapping.translation[0] = texture_transform_gltf_to_blender(tex_transform)['offset'][0]
+                metallic_mapping.translation[1] = texture_transform_gltf_to_blender(tex_transform)['offset'][1]
+                metallic_mapping.rotation[2] = texture_transform_gltf_to_blender(tex_transform)['rotation']
+                metallic_mapping.scale[0] = texture_transform_gltf_to_blender(tex_transform)['scale'][0]
+                metallic_mapping.scale[1] = texture_transform_gltf_to_blender(tex_transform)['scale'][1]
 
                 metallic_uvmap = node_tree.nodes.new('ShaderNodeUVMap')
                 metallic_uvmap.location = -1500, 0
@@ -297,6 +320,32 @@ class BlenderPbr():
                 node_tree.links.new(metallic_text.inputs[0], metallic_mapping.outputs[0])
 
         # link node to output
+        if nodetype == 'principled':
+            node_tree.links.new(output_node.inputs[0], main_node.outputs[0])
+        elif nodetype == 'unlit':
+            mix = node_tree.nodes.new('ShaderNodeMixShader')
+            mix.location = 1000, 0
+            path = node_tree.nodes.new('ShaderNodeLightPath')
+            path.location = 500, 300
+            if pypbr.color_type != gltf.SIMPLE:
+                math = node_tree.nodes.new('ShaderNodeMath')
+                math.location = 750, 200
+                math.operation = 'MULTIPLY'
 
-        node_tree.links.new(output_node.inputs[0], main_node.outputs[0])
+                # Set material alpha mode to blend
+                # This is needed for Eevee
+                material.blend_method = 'HASHED' # TODO check best result in eevee
+
+            transparent = node_tree.nodes.new('ShaderNodeBsdfTransparent')
+            transparent.location = 750, 0
+
+            node_tree.links.new(output_node.inputs[0], mix.outputs[0])
+            node_tree.links.new(mix.inputs[2], main_node.outputs[0])
+            node_tree.links.new(mix.inputs[1], transparent.outputs[0])
+            if pypbr.color_type != gltf.SIMPLE:
+                node_tree.links.new(math.inputs[0], path.outputs[0])
+                node_tree.links.new(math.inputs[1], text_node.outputs[1])
+                node_tree.links.new(mix.inputs[0], math.outputs[0])
+            else:
+                node_tree.links.new(mix.inputs[0], path.outputs[0])
 

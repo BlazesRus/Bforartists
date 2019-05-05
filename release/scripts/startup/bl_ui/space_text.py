@@ -36,11 +36,11 @@ class TEXT_HT_header(Header):
 
         row = layout.row(align=True)
         if text and text.is_modified:
-            sub = row.row(align=True)
-            sub.alert = True
-            sub.operator("text.resolve_conflict", text="", icon='HELP')
+            row = layout.row(align=True)
+            row.alert = True
+            row.operator("text.resolve_conflict", text="", icon='HELP')
 
-        layout.separator_spacer()
+        #layout.separator_spacer()
 
         row = layout.row(align=True)
         row.template_ID(st, "text", new="text.new", unlink="text.unlink", open="text.open")
@@ -54,7 +54,29 @@ class TEXT_HT_header(Header):
 
         if text:
             is_osl = text.name.endswith((".osl", ".osl"))
+            
+            if is_osl:
+                row = layout.row()
+                row.operator("node.shader_script_update")
+            else:
+                row = layout.row()
+                row.active = text.name.endswith(".py")
+                row.prop(text, "use_module")
 
+                row = layout.row()
+                row.operator("text.run_script")
+
+
+class TEXT_HT_footer(Header):
+    bl_space_type = 'TEXT_EDITOR'
+    bl_region_type = 'FOOTER'
+
+    def draw(self, context):
+        layout = self.layout
+
+        st = context.space_data
+        text = st.text
+        if text:
             row = layout.row()
             if text.filepath:
                 if text.is_dirty:
@@ -71,18 +93,9 @@ class TEXT_HT_header(Header):
                 row.label(
                     text="Text: External"
                     if text.library
-                    else "Text: Internal"
+                    else "Text: Internal",
                 )
-            if is_osl:
-                row = layout.row()
-                row.operator("node.shader_script_update")
-            else:
-                row = layout.row()
-                row.active = text.name.endswith(".py")
-                row.prop(text, "use_module")
 
-                row = layout.row()
-                row.operator("text.run_script")
 
 # bfa - show hide the editormenu
 class ALL_MT_editormenu(Menu):
@@ -141,9 +154,10 @@ class TEXT_PT_properties(Panel):
             flow.prop(text, "use_tabs_as_spaces")
 
         flow.prop(st, "show_margin")
-        col = flow.column()
-        col.active = st.show_margin
-        col.prop(st, "margin_column")
+        if st.show_margin:
+            col = flow.column()
+            col.active = st.show_margin
+            col.prop(st, "margin_column")
 
 
 class TEXT_PT_find(Panel):
@@ -184,7 +198,9 @@ class TEXT_MT_view(Menu):
     def draw(self, context):
         layout = self.layout
 
-        layout.operator("text.properties", text = "Sidebar", icon='MENU_PANEL')
+        st = context.space_data
+
+        layout.prop(st, "show_region_ui")
 
         layout.separator()
 
@@ -232,7 +248,7 @@ class TEXT_MT_text(Menu):
             layout.operator("text.save_as", icon='SAVE_AS')
 
             if text.filepath:
-                layout.operator("text.make_internal")
+                layout.operator("text.make_internal", icon = "MAKE_INTERNAL")
 
             layout.column()
             layout.operator("text.run_script", icon = "PLAY")
@@ -251,7 +267,7 @@ class TEXT_MT_text(Menu):
 class TEXT_MT_templates_py(Menu):
     bl_label = "Python"
 
-    def draw(self, context):
+    def draw(self, _context):
         self.path_menu(
             bpy.utils.script_paths("templates_py"),
             "text.open",
@@ -262,7 +278,7 @@ class TEXT_MT_templates_py(Menu):
 class TEXT_MT_templates_osl(Menu):
     bl_label = "Open Shading Language"
 
-    def draw(self, context):
+    def draw(self, _context):
         self.path_menu(
             bpy.utils.script_paths("templates_osl"),
             "text.open",
@@ -273,7 +289,7 @@ class TEXT_MT_templates_osl(Menu):
 class TEXT_MT_templates(Menu):
     bl_label = "Templates"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
         layout.menu("TEXT_MT_templates_py")
         layout.menu("TEXT_MT_templates_osl")
@@ -282,7 +298,7 @@ class TEXT_MT_templates(Menu):
 class TEXT_MT_format(Menu):
     bl_label = "Format"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
         layout.operator("text.indent", icon = "INDENT")
@@ -295,13 +311,14 @@ class TEXT_MT_format(Menu):
 
         layout.separator()
 
-        layout.operator_menu_enum("text.convert_whitespace", "type")
+        layout.operator("text.convert_whitespace", text = "Whitespace to Spaces", icon = "WHITESPACE_SPACES").type = 'SPACES'
+        layout.operator("text.convert_whitespace", text = "Whitespace to Tabs", icon = "WHITESPACE_TABS").type = 'TABS'
 
 
 class TEXT_MT_edit_to3d(Menu):
     bl_label = "Text To 3D Object"
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
         layout.operator("text.to_3d_object", text="One Object", icon = "OUTLINER_OB_FONT").split_lines = False
@@ -312,16 +329,11 @@ class TEXT_MT_edit(Menu):
     bl_label = "Edit"
 
     @classmethod
-    def poll(cls, context):
+    def poll(cls, _context):
         return (context.space_data.text)
 
     def draw(self, context):
         layout = self.layout
-
-        layout.operator("ed.undo", icon = "UNDO")
-        layout.operator("ed.redo", icon = "REDO")
-
-        layout.separator()
 
         layout.operator("text.cut", icon = "CUT")
         layout.operator("text.copy", icon = "COPYDOWN")
@@ -336,6 +348,10 @@ class TEXT_MT_edit(Menu):
         layout.separator()
 
         layout.menu("TEXT_MT_edit_move_select")
+
+        layout.separator()
+
+        layout.menu("TEXT_MT_edit_delete")
 
         layout.separator()
 
@@ -375,7 +391,7 @@ class TEXT_MT_edit_move_select(Menu):
 class TEXT_MT_toolbox(Menu):
     bl_label = ""
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
 
         layout.operator_context = 'INVOKE_DEFAULT'
@@ -388,10 +404,22 @@ class TEXT_MT_toolbox(Menu):
 
         layout.operator("text.run_script")
 
+class TEXT_MT_edit_delete(Menu):
+    bl_label = "Delete"
+
+    def draw(self, context):
+        layout = self.layout
+
+        layout.operator("text.delete", text = "Next Character", icon = "DELETE").type = 'NEXT_CHARACTER'
+        layout.operator("text.delete", text = "Previous Character", icon = "DELETE").type = 'PREVIOUS_CHARACTER'
+        layout.operator("text.delete", text = "Next Word", icon = "DELETE").type = 'NEXT_WORD'
+        layout.operator("text.delete", text = "Previous Word", icon = "DELETE").type = 'PREVIOUS_WORD'
+
 
 classes = (
     ALL_MT_editormenu,
     TEXT_HT_header,
+    TEXT_HT_footer,
     TEXT_MT_editor_menus,
     TEXT_PT_properties,
     TEXT_PT_find,
@@ -406,6 +434,7 @@ classes = (
     TEXT_MT_edit,
     TEXT_MT_edit_move_select,
     TEXT_MT_toolbox,
+    TEXT_MT_edit_delete,
 )
 
 if __name__ == "__main__":  # only for live edit.

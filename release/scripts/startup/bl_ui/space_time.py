@@ -38,8 +38,6 @@ class TIME_HT_editor_buttons(Header):
 
         layout.separator_spacer()
 
-        layout.prop(tool_settings, "use_keyframe_insert_auto", text="", toggle=True)
-
         row = layout.row(align=True)
         row.operator("screen.frame_jump", text="", icon='REW').end = False
         row.operator("screen.keyframe_jump", text="", icon='PREV_KEYFRAME').next = False
@@ -61,8 +59,6 @@ class TIME_HT_editor_buttons(Header):
         row.operator("screen.keyframe_jump", text="", icon='NEXT_KEYFRAME').next = True
         row.operator("screen.frame_jump", text="", icon='FF').end = True
 
-        layout.separator_spacer()
-
         row = layout.row()
         row.scale_x = 0.95
         if scene.show_subframe:
@@ -81,28 +77,34 @@ class TIME_HT_editor_buttons(Header):
             sub.prop(scene, "frame_preview_start", text="Start")
             sub.prop(scene, "frame_preview_end", text="End")
 
+        row.separator()
+
+        row.operator("anim.keyframe_insert", text="", icon='KEY_HLT')
+        row.operator("anim.keyframe_delete", text="", icon='KEY_DEHLT')
+
+        layout.separator_spacer()
+            
+        row = layout.row(align=True)
+
+        row.prop(tool_settings, "use_keyframe_insert_auto", text="", toggle=True)           
+        row.prop_search(scene.keying_sets_all, "active", scene, "keying_sets_all", text="")   
+
+        layout.popover(panel="TIME_PT_playback", text="Playback")
+        layout.popover(panel="TIME_PT_keyframing_settings", text="Keying")
 
 class TIME_MT_editor_menus(Menu):
     bl_idname = "TIME_MT_editor_menus"
     bl_label = ""
 
-    def draw(self, context):
+    def draw(self, _context):
         layout = self.layout
+        
         horizontal = (layout.direction == 'VERTICAL')
         if horizontal:
             row = layout.row()
             sub = row.row(align=True)
         else:
             sub = layout
-
-        sub.popover(
-            panel="TIME_PT_playback",
-            text="Playback",
-        )
-        sub.popover(
-            panel="TIME_PT_keyframing_settings",
-            text="Keying",
-        )
 
         if horizontal:
             sub = row.row(align=True)
@@ -117,7 +119,7 @@ class TIME_MT_marker(Menu):
     def draw(self, context):
         layout = self.layout
 
-        marker_menu_generic(layout)
+        marker_menu_generic(layout, context)
 
 
 class TIME_MT_view(Menu):
@@ -129,17 +131,7 @@ class TIME_MT_view(Menu):
         scene = context.scene
         st = context.space_data
 
-        layout.prop(st, "show_seconds")
-        layout.prop(st, "show_locked_time")
-
-        layout.separator()
-
-        layout.prop(st, "show_frame_indicator")
-        layout.prop(scene, "show_keys_from_selected_only")
-
-        layout.separator()
-
-        layout.menu("TIME_MT_cache")
+        layout.operator("action.properties", text = "Sidebar")
 
         layout.separator()
 
@@ -151,27 +143,6 @@ class TIME_MT_view(Menu):
 
         layout.menu("INFO_MT_area")
 
-
-class TIME_MT_cache(Menu):
-    bl_label = "Cache"
-
-    def draw(self, context):
-        layout = self.layout
-
-        st = context.space_data
-
-        layout.prop(st, "show_cache")
-
-        layout.separator()
-
-        col = layout.column()
-        col.enabled = st.show_cache
-        col.prop(st, "cache_softbody")
-        col.prop(st, "cache_particles")
-        col.prop(st, "cache_cloth")
-        col.prop(st, "cache_smoke")
-        col.prop(st, "cache_dynamicpaint")
-        col.prop(st, "cache_rigidbody")
 
 
 # Workaround to separate the tooltips
@@ -186,8 +157,7 @@ class TIME_MT_marker_jump_previous(bpy.types.Operator):
         return {'FINISHED'}  
 
 
-def marker_menu_generic(layout):
-    from bpy import context
+def marker_menu_generic(layout, context):
 
     # layout.operator_context = 'EXEC_REGION_WIN'
 
@@ -216,10 +186,6 @@ def marker_menu_generic(layout):
 
     layout.operator("screen.marker_jump", text="Jump to Next Marker", icon = "NEXT_KEYFRAME").next = True
     layout.operator("screen.marker_jump_previous", text="Jump to Previous Marker", icon = "PREV_KEYFRAME") # bfa - the separated tooltip
-
-    layout.separator()
-    tool_settings = context.tool_settings
-    layout.prop(tool_settings, "lock_markers")
 
     layout.separator()
 
@@ -296,13 +262,6 @@ class TIME_PT_keyframing_settings(TimelinePanelButtons, Panel):
         prefs = context.preferences
 
         col = layout.column(align=True)
-        col.label(text="Active Keying Set:")
-        row = col.row(align=True)
-        row.prop_search(scene.keying_sets_all, "active", scene, "keying_sets_all", text="")
-        row.operator("anim.keyframe_insert", text="", icon='KEY_HLT')
-        row.operator("anim.keyframe_delete", text="", icon='KEY_DEHLT')
-
-        col = layout.column(align=True)
         col.label(text="New Keyframe Type:")
         col.prop(tool_settings, "keyframe_type", text="")
 
@@ -311,10 +270,92 @@ class TIME_PT_keyframing_settings(TimelinePanelButtons, Panel):
         row = col.row()
         row.prop(tool_settings, "auto_keying_mode", text="")
         row.prop(tool_settings, "use_keyframe_insert_keyingset", text="")
+
         if not prefs.edit.use_keyframe_insert_available:
-            col.prop(tool_settings, "use_record_with_nla", text="Layered Recording")
+            layout.prop(tool_settings, "use_record_with_nla", text="Layered Recording")
 
         layout.prop(tool_settings, "use_keyframe_cycle_aware")
+
+
+############# Panels in sidebar #########################
+
+
+class TIME_PT_view_marker_options(TimelinePanelButtons, Panel):
+    bl_label = "Marker Options"
+    bl_space_type = 'DOPESHEET_EDITOR'
+    bl_region_type = 'UI'
+    bl_category = 'View'
+
+    @classmethod
+    def poll(cls, context):
+        # only for timeline editor
+        return cls.has_timeline(context)
+
+    def draw(self, context):
+        layout = self.layout
+
+        tool_settings = context.tool_settings
+        st = context.space_data
+
+        layout.prop(tool_settings, "lock_markers")
+
+
+class TIME_PT_view_view_options(TimelinePanelButtons, Panel):
+    bl_label = "View Options"
+    bl_category = "View"
+    bl_space_type = 'DOPESHEET_EDITOR'
+    bl_region_type = 'UI'
+
+    @classmethod
+    def poll(cls, context):
+        # only for timeline editor
+        return cls.has_timeline(context)
+    
+    def draw(self, context):
+        sc = context.scene
+        layout = self.layout
+        
+        st = context.space_data
+        scene = context.scene
+
+        layout.prop(st, "show_marker_lines")
+        layout.prop(st, "show_frame_indicator")
+        layout.prop(scene, "show_keys_from_selected_only")
+
+        layout.separator()
+
+        layout.prop(st, "show_seconds")
+        layout.prop(st, "show_locked_time")
+
+class TIME_PT_view_view_cache(TimelinePanelButtons, Panel):
+    bl_label = "Cache"
+    bl_category = "Cache"
+    bl_space_type = 'DOPESHEET_EDITOR'
+    bl_region_type = 'UI'
+
+    @classmethod
+    def poll(cls, context):
+        # only for timeline editor
+        return cls.has_timeline(context)
+    
+    def draw(self, context):
+        sc = context.scene
+        layout = self.layout
+        
+        st = context.space_data
+
+        layout.prop(st, "show_cache")
+
+        layout.separator()
+
+        col = layout.column()
+        col.enabled = st.show_cache
+        col.prop(st, "cache_softbody")
+        col.prop(st, "cache_particles")
+        col.prop(st, "cache_cloth")
+        col.prop(st, "cache_smoke")
+        col.prop(st, "cache_dynamicpaint")
+        col.prop(st, "cache_rigidbody")
 
 
 ###################################
@@ -324,10 +365,12 @@ classes = (
     TIME_MT_editor_menus,
     TIME_MT_marker,
     TIME_MT_view,
-    TIME_MT_cache,
     TIME_MT_marker_jump_previous,
     TIME_PT_playback,
     TIME_PT_keyframing_settings,
+    TIME_PT_view_marker_options,
+    TIME_PT_view_view_options,
+    TIME_PT_view_view_cache,
 )
 
 if __name__ == "__main__":  # only for live edit.

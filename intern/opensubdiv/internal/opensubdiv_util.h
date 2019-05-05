@@ -13,9 +13,6 @@
 // You should have received a copy of the GNU General Public License
 // along with this program; if not, write to the Free Software Foundation,
 // Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
-//
-// Author: Sergey Sharybin
-// Contributor(s): Brecht van Lommel
 
 #ifndef OPENSUBDIV_UTIL_H_
 #define OPENSUBDIV_UTIL_H_
@@ -49,9 +46,9 @@ using std::vector;
 #define STRINGIFY_APPEND(a, b) "" a #b
 #define STRINGIFY(x) STRINGIFY_APPEND("", x)
 
-void stringSplit(vector<string>* tokens,
-                 const string& str,
-                 const string& separators,
+void stringSplit(vector<string> *tokens,
+                 const string &str,
+                 const string &separators,
                  bool skip_empty);
 
 }  // namespace opensubdiv_capi

@@ -36,9 +36,9 @@ from bpy.props import (
 
 
 class ANIM_OT_keying_set_export(Operator):
-    """Export Keying Set to a python script"""
+    """Export Keying Set\nExport Keying Set to a python script\nImport goes across Text Editor. Open, then run the python file"""
     bl_idname = "anim.keying_set_export"
-    bl_label = "Export Keying Set..."
+    bl_label = "Export Keying Set"
 
     filepath: StringProperty(
         subtype='FILE_PATH',
@@ -79,7 +79,7 @@ class ANIM_OT_keying_set_export(Operator):
         f.write("# Keying Set Level declarations\n")
         f.write("ks = scene.keying_sets.new(idname=\"%s\", name=\"%s\")\n"
                 "" % (ks.bl_idname, ks.bl_label))
-        f.write("ks.bl_description = \"%s\"\n" % ks.bl_description)
+        f.write("ks.bl_description = %r\n" % ks.bl_description)
 
         if not ks.is_path_absolute:
             f.write("ks.is_path_absolute = False\n")

@@ -58,6 +58,21 @@ def line_value(line_split):
         return b' '.join(line_split[1:])
 
 
+def filenames_group_by_ext(line, ext):
+    """
+    Splits material libraries supporting spaces, so:
+    b'foo bar.mtl baz spam.MTL' -> (b'foo bar.mtl', b'baz spam.MTL')
+    """
+    line_lower = line.lower()
+    i_prev = 0
+    while i_prev != -1 and i_prev < len(line):
+        i = line_lower.find(ext, i_prev)
+        if i != -1:
+            i += len(ext)
+        yield line[i_prev:i].strip()
+        i_prev = i
+
+
 def obj_image_load(context_imagepath_map, line, DIR, recursive, relpath):
     """
     Mainly uses comprehensiveImageLoad
@@ -454,8 +469,10 @@ def split_mesh(verts_loc, faces, unique_materials, filepath, SPLIT_OB_OR_GROUP):
         # if the key is a tuple, join it to make a string
         if not key:
             return filename  # assume its a string. make sure this is true if the splitting code is changed
-        else:
+        elif isinstance(key, bytes):
             return key.decode('utf-8', 'replace')
+        else:
+            return "_".join(k.decode('utf-8', 'replace') for k in key)
 
     # Return a key that makes the faces unique.
     face_split_dict = {}
@@ -468,10 +485,10 @@ def split_mesh(verts_loc, faces, unique_materials, filepath, SPLIT_OB_OR_GROUP):
          face_vert_tex_indices,
          context_material,
          context_smooth_group,
-         context_object,
+         context_object_key,
          face_invalid_blenpoly,
          ) = face
-        key = context_object
+        key = context_object_key
 
         if oldkey != key:
             # Check the key has changed.
@@ -532,7 +549,7 @@ def create_mesh(new_objects,
     edges = []
     tot_loops = 0
 
-    context_object = None
+    context_object_key = None
 
     # reverse loop through face indices
     for f_idx in range(len(faces) - 1, -1, -1):
@@ -541,7 +558,7 @@ def create_mesh(new_objects,
          face_vert_tex_indices,
          context_material,
          context_smooth_group,
-         context_object,
+         context_object_key,
          face_invalid_blenpoly,
          ) = faces[f_idx]
 
@@ -591,7 +608,7 @@ def create_mesh(new_objects,
                                     ] if face_vert_tex_indices else [],
                                 context_material,
                                 context_smooth_group,
-                                context_object,
+                                context_object_key,
                                 [],
                                 )
                                 for ngon in ngon_face_indices]
@@ -674,7 +691,7 @@ def create_mesh(new_objects,
         me.loops.foreach_set("normal", loops_nor)
 
     if verts_tex and me.polygons:
-        me.uv_layers.new()
+        me.uv_layers.new(do_init=False)
         loops_uv = tuple(uv for (_, _, face_vert_tex_indices, _, _, _, _) in faces for face_uvidx in face_vert_tex_indices for uv in verts_tex[face_uvidx])
         me.uv_layers[0].data.foreach_set("uv", loops_uv)
 
@@ -849,7 +866,7 @@ def load(context,
          use_smooth_groups=True,
          use_edges=True,
          use_split_objects=True,
-         use_split_groups=True,
+         use_split_groups=False,
          use_image_search=True,
          use_groups_as_vgroups=False,
          relpath=None,
@@ -880,7 +897,7 @@ def load(context,
             data.append(tuple(vec[:vec_len]))
         return ret_context_multi_line
 
-    def create_face(context_material, context_smooth_group, context_object):
+    def create_face(context_material, context_smooth_group, context_object_key):
         face_vert_loc_indices = []
         face_vert_nor_indices = []
         face_vert_tex_indices = []
@@ -890,7 +907,7 @@ def load(context,
             face_vert_tex_indices,
             context_material,
             context_smooth_group,
-            context_object,
+            context_object_key,
             [],  # If non-empty, that face is a Blender-invalid ngon (holes...), need a mutable object for that...
         )
 
@@ -918,7 +935,8 @@ def load(context,
         # Context variables
         context_material = None
         context_smooth_group = None
-        context_object = None
+        context_object_key = None
+        context_object_obpart = None
         context_vgroup = None
 
         objects_names = set()
@@ -944,7 +962,6 @@ def load(context,
         face_vert_loc_indices = None
         face_vert_nor_indices = None
         face_vert_tex_indices = None
-        face_vert_nor_valid = face_vert_tex_valid = False
         verts_loc_len = verts_nor_len = verts_tex_len = 0
         face_items_usage = set()
         face_invalid_blenpoly = None
@@ -1003,7 +1020,7 @@ def load(context,
                     if not context_multi_line:
                         line_split = line_split[1:]
                         # Instantiate a face
-                        face = create_face(context_material, context_smooth_group, context_object)
+                        face = create_face(context_material, context_smooth_group, context_object_key)
                         (face_vert_loc_indices, face_vert_nor_indices, face_vert_tex_indices,
                          _1, _2, _3, face_invalid_blenpoly) = face
                         faces.append(face)
@@ -1040,25 +1057,16 @@ def load(context,
                         if len(obj_vert) > 1 and obj_vert[1] and obj_vert[1] != b'0':
                             idx = int(obj_vert[1])
                             face_vert_tex_indices.append((idx + verts_tex_len) if (idx < 1) else idx - 1)
-                            face_vert_tex_valid = True
                         else:
                             face_vert_tex_indices.append(0)
 
                         if len(obj_vert) > 2 and obj_vert[2] and obj_vert[2] != b'0':
                             idx = int(obj_vert[2])
                             face_vert_nor_indices.append((idx + verts_nor_len) if (idx < 1) else idx - 1)
-                            face_vert_nor_valid = True
                         else:
                             face_vert_nor_indices.append(0)
 
                     if not context_multi_line:
-                        # Clear nor/tex indices in case we had none defined for this face.
-                        if not face_vert_nor_valid:
-                            face_vert_nor_indices.clear()
-                        if not face_vert_tex_valid:
-                            face_vert_tex_indices.clear()
-                        face_vert_nor_valid = face_vert_tex_valid = False
-
                         # Means we have finished a face, we have to do final check if ngon is suspected to be blender-invalid...
                         if face_invalid_blenpoly:
                             face_invalid_blenpoly.clear()
@@ -1077,7 +1085,7 @@ def load(context,
                     if not context_multi_line:
                         line_split = line_split[1:]
                         # Instantiate a face
-                        face = create_face(context_material, context_smooth_group, context_object)
+                        face = create_face(context_material, context_smooth_group, context_object_key)
                         face_vert_loc_indices = face[0]
                         # XXX A bit hackish, we use special 'value' of face_vert_nor_indices (a single True item) to tag this
                         #     as a polyline, and not a regular face...
@@ -1102,14 +1110,16 @@ def load(context,
 
                 elif line_start == b'o':
                     if use_split_objects:
-                        context_object = unique_name(objects_names, line_value(line_split))
-                        # unique_obects[context_object]= None
+                        context_object_key = unique_name(objects_names, line_value(line_split))
+                        context_object_obpart = context_object_key
+                        # unique_objects[context_object_key]= None
 
                 elif line_start == b'g':
                     if use_split_groups:
-                        context_object = unique_name(objects_names, line_value(line_split))
-                        # print 'context_object', context_object
-                        # unique_obects[context_object]= None
+                        grppart = line_value(line_split)
+                        context_object_key = (context_object_obpart, grppart) if context_object_obpart else grppart
+                        # print 'context_object_key', context_object_key
+                        # unique_objects[context_object_key]= None
                     elif use_groups_as_vgroups:
                         context_vgroup = line_value(line.split())
                         if context_vgroup and context_vgroup != b'(null)':
@@ -1123,7 +1133,8 @@ def load(context,
                 elif line_start == b'mtllib':  # usemap or usemat
                     # can have multiple mtllib filenames per line, mtllib can appear more than once,
                     # so make sure only occurrence of material exists
-                    material_libs |= {os.fsdecode(f) for f in line.split()[1:]}
+                    material_libs |= {os.fsdecode(f) for f in filenames_group_by_ext(line.lstrip()[7:].strip(), b'.mtl')
+                    }
 
                     # Nurbs support
                 elif line_start == b'cstype':
@@ -1170,8 +1181,8 @@ def load(context,
                     context_nurbs[b'deg'] = [int(i) for i in line.split()[1:]]
                 elif line_start == b'end':
                     # Add the nurbs curve
-                    if context_object:
-                        context_nurbs[b'name'] = context_object
+                    if context_object_key:
+                        context_nurbs[b'name'] = context_object_key
                     nurbs.append(context_nurbs)
                     context_nurbs = {}
                     context_parm = b''

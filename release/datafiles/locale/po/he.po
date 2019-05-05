@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.80 (sub 39) (b'6d89337257b6')\n"
+"Project-Id-Version: Blender 2.80 (sub 57) (b'bcefceb20058')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-24 15:04:25\n"
+"POT-Creation-Date: 2019-04-15 15:28:38\n"
 "PO-Revision-Date: 2012-10-07 13:56+0300\n"
 "Last-Translator: Barak Itkin <lightningismyname@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,10 +29,6 @@ msgstr "ביתנ"
 
 msgid "Add"
 msgstr "ףסוה"
-
-
-msgid "Default"
-msgstr "לדחמ תרירב"
 
 
 msgid "Width"
@@ -63,8 +59,8 @@ msgid "Random"
 msgstr "יארקא"
 
 
-msgid "Both"
-msgstr "םהינש"
+msgid "Default"
+msgstr "לדחמ תרירב"
 
 
 msgid "Smooth"
@@ -169,6 +165,10 @@ msgstr "תופיפצ"
 
 msgid "Environment"
 msgstr "הביבס"
+
+
+msgid "Both"
+msgstr "םהינש"
 
 
 msgid "End"
@@ -487,11 +487,6 @@ msgstr "תופקתשה"
 
 
 msgctxt "Operator"
-msgid "Copy Selection to Buffer"
-msgstr "רחבנל קתעה"
-
-
-msgctxt "Operator"
 msgid "Rotate View"
 msgstr "בוביס"
 
@@ -521,8 +516,13 @@ msgid "Color Management"
 msgstr "עבצ לוהינ"
 
 
-msgid "GPU Mipmap Generation"
-msgstr "היוור"
+msgid "Text Style"
+msgstr "האבה הבכש"
+
+
+msgctxt "Operator"
+msgid "Add"
+msgstr "ףסוה"
 
 
 msgid "Tile Order"
@@ -573,21 +573,12 @@ msgid "Blender File"
 msgstr "Blender לש טנרטניאה רתא"
 
 
-msgid "Text Style"
-msgstr "האבה הבכש"
-
-
 msgid "Theme Background Color"
 msgstr "עקר"
 
 
 msgid "Default Layout"
 msgstr "לדחמ תרירב"
-
-
-msgctxt "Operator"
-msgid "Add"
-msgstr "ףסוה"
 
 
 msgid "Location:"
@@ -709,11 +700,6 @@ msgstr "Blender שמתשמ תופדעה"
 
 
 msgctxt "Operator"
-msgid "Shrink Fatten"
-msgstr "ץווכ"
-
-
-msgctxt "Operator"
 msgid "Right"
 msgstr "ןימי"
 
@@ -741,6 +727,11 @@ msgstr "בוביס"
 msgctxt "Operator"
 msgid "Make"
 msgstr "הכסמ"
+
+
+msgctxt "Operator"
+msgid "Shrink Fatten"
+msgstr "ץווכ"
 
 
 msgctxt "Operator"

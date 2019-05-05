@@ -24,6 +24,7 @@ import bpy
 import os.path
 from bpy_extras.io_utils import ImportHelper
 from bpy_extras import object_utils
+from bpy.utils import register_class
 from math import atan, pi, degrees, sqrt, cos, sin
 
 
@@ -69,7 +70,7 @@ class POVRAY_OT_lathe_add(bpy.types.Operator):
         layers=[False]*20
         layers[0]=True
         bpy.ops.curve.primitive_bezier_curve_add(
-            location=context.scene.cursor_location,
+            location=context.scene.cursor.location,
             rotation=(0, 0, 0),
             layers=layers,
         )
@@ -584,7 +585,7 @@ class POVRAY_OT_loft_add(bpy.types.Operator):
         ob = bpy.data.objects.new('Loft_shape', loftData)
         scn = bpy.context.scene
         scn.objects.link(ob)
-        scn.objects.active = ob
+        context.view_layer.objects.active = ob
         ob.select_set(True)
         ob.pov.curveshape = "loft"
         return {'FINISHED'}
@@ -634,7 +635,7 @@ class POVRAY_OT_box_add(bpy.types.Operator):
 def pov_cylinder_define(context, op, ob, radius, loc, loc_cap):
     if op:
         R = op.R
-        loc = bpy.context.scene.cursor_location
+        loc = bpy.context.scene.cursor.location
         loc_cap[0] = loc[0]
         loc_cap[1] = loc[1]
         loc_cap[2] = (loc[2]+2)
@@ -697,7 +698,7 @@ class POVRAY_OT_cylinder_add(bpy.types.Operator):
                 LOC_CAP = ob.pov.imported_cyl_loc_cap
         else:
             if not props.imported_cyl_loc:
-                LOC_CAP = LOC = bpy.context.scene.cursor_location
+                LOC_CAP = LOC = bpy.context.scene.cursor.location
                 LOC_CAP[2] += 2.0
             else:
                 LOC = props.imported_cyl_loc
@@ -738,7 +739,7 @@ class POVRAY_OT_cylinder_update(bpy.types.Operator):
 def pov_sphere_define(context, op, ob, loc):
         if op:
             R = op.R
-            loc = bpy.context.scene.cursor_location
+            loc = bpy.context.scene.cursor.location
         else:
             assert(ob)
             R = ob.pov.sphere_radius
@@ -753,7 +754,7 @@ def pov_sphere_define(context, op, ob, loc):
             bpy.ops.mesh.select_all(action='SELECT')
             bpy.ops.mesh.delete(type='VERT')
             bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=4, size=ob.pov.sphere_radius, location=loc, rotation=obrot)
-            #bpy.ops.transform.rotate(axis=obrot,constraint_orientation='GLOBAL')
+            #bpy.ops.transform.rotate(axis=obrot,orient_type='GLOBAL')
             bpy.ops.transform.resize(value=obscale)
             #bpy.ops.transform.rotate(axis=obrot, proportional_size=1)
 
@@ -761,7 +762,7 @@ def pov_sphere_define(context, op, ob, loc):
             bpy.ops.mesh.hide(unselected=False)
             bpy.ops.object.mode_set(mode="OBJECT")
             bpy.ops.object.shade_smooth()
-            #bpy.ops.transform.rotate(axis=obrot,constraint_orientation='GLOBAL')
+            #bpy.ops.transform.rotate(axis=obrot,orient_type='GLOBAL')
 
         if not ob:
             bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=4, size=R, location=loc)
@@ -799,7 +800,7 @@ class POVRAY_OT_sphere_add(bpy.types.Operator):
                 LOC = ob.pov.imported_loc
         else:
             if not props.imported_loc:
-                LOC = bpy.context.scene.cursor_location
+                LOC = bpy.context.scene.cursor.location
 
             else:
                 LOC = props.imported_loc
@@ -1295,7 +1296,7 @@ class POVRAY_OT_prism_add(bpy.types.Operator):
         ob = bpy.data.objects.new('Prism_shape', loftData)
         scn = bpy.context.scene
         scn.objects.link(ob)
-        scn.objects.active = ob
+        context.view_layer.objects.active = ob
         ob.select_set(True)
         ob.pov.curveshape = "prism"
         ob.name = ob.data.name = "Prism"
@@ -1327,7 +1328,7 @@ def pov_parametric_define(context, op, ob):
             obrot = ob.rotation_euler # In radians
             #Parametric addon has no loc rot, some extra work is needed
             #in case cursor has moved
-            curloc = bpy.context.scene.cursor_location
+            curloc = bpy.context.scene.cursor.location
 
 
             bpy.ops.object.mode_set(mode="EDIT")
@@ -1710,7 +1711,7 @@ class ImportPOV(bpy.types.Operator, ImportHelper):
                                 # bpy.ops.object.mode_set(mode='EDIT')
                                 # bpy.ops.mesh.reveal()
                                 # bpy.ops.mesh.select_all(action='SELECT')
-                                # bpy.ops.transform.resize(value=(1,1,scaleZ), constraint_orientation='LOCAL')
+                                # bpy.ops.transform.resize(value=(1,1,scaleZ), orient_type='LOCAL')
                                 # bpy.ops.mesh.hide(unselected=False)
                                 # bpy.ops.object.mode_set(mode='OBJECT')
 
@@ -1907,7 +1908,7 @@ class ImportPOV(bpy.types.Operator, ImportHelper):
                                     # ob.data.materials.append(bpy.data.materials[matNames[i]])
 
         ##To keep Avogadro Camera angle:
-        # for obj in bpy.context.scene.objects:
+        # for obj in bpy.context.view_layer.objects:
             # if obj.type == "CAMERA":
                 # track = obj.constraints.new(type = "TRACK_TO")
                 # track.target = ob
@@ -1915,3 +1916,47 @@ class ImportPOV(bpy.types.Operator, ImportHelper):
                 # track.up_axis = "UP_Y"
                 # obj.location = (0,0,0)
         return {'FINISHED'}
+
+classes = (
+    POVRAY_OT_lathe_add,
+    POVRAY_OT_superellipsoid_add,
+    POVRAY_OT_superellipsoid_update,
+    POVRAY_OT_supertorus_add,
+    POVRAY_OT_supertorus_update,
+    POVRAY_OT_loft_add,
+    POVRAY_OT_plane_add,
+    POVRAY_OT_box_add,
+    POVRAY_OT_cylinder_add,
+    POVRAY_OT_cylinder_update,
+    POVRAY_OT_sphere_add,
+    POVRAY_OT_sphere_update,
+    POVRAY_OT_cone_add,
+    POVRAY_OT_cone_update,
+    POVRAY_OT_isosurface_box_add,
+    POVRAY_OT_isosurface_sphere_add,
+    POVRAY_OT_sphere_sweep_add,
+    POVRAY_OT_blob_add,
+    POVRAY_OT_rainbow_add,
+    POVRAY_OT_height_field_add,
+    POVRAY_OT_torus_add,
+    POVRAY_OT_torus_update,
+    POVRAY_OT_prism_add,
+    POVRAY_OT_parametric_add,
+    POVRAY_OT_parametric_update,
+    POVRAY_OT_shape_polygon_to_circle_add,
+    ImportPOV,
+)
+
+
+def register():
+    #from bpy.utils import register_class
+
+    for cls in classes:
+        register_class(cls)
+
+
+def unregister():
+    from bpy.utils import unregister_class
+
+    for cls in classes:
+        unregister_class(cls)

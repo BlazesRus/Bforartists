@@ -21,7 +21,7 @@
 bl_info = {
     "name": "FBX format",
     "author": "Campbell Barton, Bastien Montagne, Jens Restemeier",
-    "version": (4, 14, 2),
+    "version": (4, 14, 5),
     "blender": (2, 80, 0),
     "location": "File > Import-Export",
     "description": "FBX IO meshes, UV's, vertex colors, materials, textures, cameras, lamps and actions",
@@ -220,9 +220,10 @@ class ImportFBX(bpy.types.Operator, ImportHelper):
             layout.prop(self, "force_connect_children"),
             layout.prop(self, "automatic_bone_orientation"),
             sub = layout.column()
-            sub.enabled = not self.automatic_bone_orientation
-            sub.prop(self, "primary_bone_axis")
-            sub.prop(self, "secondary_bone_axis")
+            # sub.enabled = not self.automatic_bone_orientation # bfa - made the props hidden instead of deactivated.
+            if not self.automatic_bone_orientation:
+                sub.prop(self, "primary_bone_axis")
+                sub.prop(self, "secondary_bone_axis")
 
     def execute(self, context):
         keywords = self.as_keywords(ignore=("filter_glob", "directory", "ui_tab"))
@@ -257,7 +258,7 @@ class ExportFBX(bpy.types.Operator, ExportHelper):
     use_selection: BoolProperty(
             name="Selected Objects",
             description="Export selected and visible objects only",
-            default=False,
+            default=True, # bfa - only selected
             )
     use_active_collection: BoolProperty(
             name="Active Collection",
@@ -321,7 +322,7 @@ class ExportFBX(bpy.types.Operator, ExportHelper):
             )
     use_mesh_modifiers_render: BoolProperty(
             name="Use Modifiers Render Setting",
-            description="Use render settings when applying modifiers to mesh objects",
+            description="Use render settings when applying modifiers to mesh objects (DISABLED in Blender 2.8)",
             default=True,
             )
     mesh_smooth_type: EnumProperty(
@@ -504,7 +505,7 @@ class ExportFBX(bpy.types.Operator, ExportHelper):
         elif self.ui_tab == 'GEOMETRY':
             layout.prop(self, "use_mesh_modifiers")
             sub = layout.row()
-            sub.enabled = self.use_mesh_modifiers
+            sub.enabled = self.use_mesh_modifiers and False  # disabled in 2.8...
             sub.prop(self, "use_mesh_modifiers_render")
             layout.prop(self, "mesh_smooth_type")
             layout.prop(self, "use_mesh_edges")
@@ -553,11 +554,11 @@ class ExportFBX(bpy.types.Operator, ExportHelper):
 
 
 def menu_func_import(self, context):
-    self.layout.operator(ImportFBX.bl_idname, text="FBX (.fbx)")
+    self.layout.operator(ImportFBX.bl_idname, text="FBX (.fbx)", icon = "LOAD_FBX")
 
 
 def menu_func_export(self, context):
-    self.layout.operator(ExportFBX.bl_idname, text="FBX (.fbx)")
+    self.layout.operator(ExportFBX.bl_idname, text="FBX (.fbx)", icon = "SAVE_FBX")
 
 
 classes = (

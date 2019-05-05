@@ -2065,10 +2065,8 @@ def fbx_animations(scene_data):
                 'lock_location', 'lock_rotation', 'lock_rotation_w', 'lock_rotations_4d', 'lock_scale',
                 'tag', 'track_axis', 'up_axis', 'active_material', 'active_material_index',
                 'matrix_parent_inverse', 'empty_display_type', 'empty_display_size', 'empty_image_offset', 'pass_index',
-                'color', 'hide_viewport', 'hide_select', 'hide_render', 'use_slow_parent', 'slow_parent_offset',
-                'instance_type', 'use_instance_frames_speed',
+                'color', 'hide_viewport', 'hide_select', 'hide_render', 'instance_type',
                 'use_instance_vertices_rotation', 'use_instance_faces_scale', 'instance_faces_scale',
-                'instance_frames_start', 'instance_frames_end', 'instance_frames_on', 'instance_frames_off',
                 'display_type', 'show_bounds', 'display_bounds_type', 'show_name', 'show_axis', 'show_texture_space',
                 'show_wire', 'show_all_edges', 'show_transparent', 'show_in_front',
                 'show_only_shape_key', 'use_shape_key_edit_mode', 'active_shape_key_index',
@@ -2247,7 +2245,6 @@ def fbx_data_from_scene(scene, depsgraph, settings):
 
         for shape in me.shape_keys.key_blocks[1:]:
             # Only write vertices really different from org coordinates!
-            # XXX FBX does not like empty shapes (makes Unity crash e.g.), so we have to do this here... :/
             shape_verts_co = []
             shape_verts_idx = []
 
@@ -2260,8 +2257,13 @@ def fbx_data_from_scene(scene, depsgraph, settings):
                     continue
                 shape_verts_co.extend(Vector(sv_co) - Vector(ref_co))
                 shape_verts_idx.append(idx)
+
+            # FBX does not like empty shapes (makes Unity crash e.g.).
+            # To prevent this, we add a vertex that does nothing, but it keeps the shape key intact
             if not shape_verts_co:
-                continue
+                shape_verts_co.extend((0, 0, 0))
+                shape_verts_idx.append(0)
+
             channel_key, geom_key = get_blender_mesh_shape_channel_key(me, shape)
             data = (channel_key, geom_key, shape_verts_co, shape_verts_idx)
             data_deformers_shape.setdefault(me, (me_key, shapes_key, {}))[2][shape] = data

@@ -34,6 +34,8 @@ class BlenderNodeAnim():
             kf.interpolation = 'CONSTANT'
         elif interpolation == "CUBICSPLINE":
             kf.interpolation = 'BEZIER'
+            kf.handle_right_type = 'AUTO'
+            kf.handle_left_type = 'AUTO'
         else:
             kf.interpolation = 'LINEAR'
 
@@ -82,13 +84,13 @@ class BlenderNodeAnim():
 
                 if channel.target.path == "translation":
                     blender_path = "location"
-                    group_name = "location"
+                    group_name = "Location"
                     num_components = 3
                     values = [loc_gltf_to_blender(vals) for vals in values]
 
                 elif channel.target.path == "rotation":
                     blender_path = "rotation_quaternion"
-                    group_name = "rotation"
+                    group_name = "Rotation"
                     num_components = 4
                     if node.correction_needed is True:
                         values = [
@@ -106,7 +108,7 @@ class BlenderNodeAnim():
 
                 elif channel.target.path == "scale":
                     blender_path = "scale"
-                    group_name = "scale"
+                    group_name = "Scale"
                     num_components = 3
                     values = [scale_gltf_to_blender(vals) for vals in values]
 
@@ -128,6 +130,7 @@ class BlenderNodeAnim():
                     # Setting interpolation
                     for kf in fcurve.keyframe_points:
                         BlenderNodeAnim.set_interpolation(animation.samplers[channel.sampler].interpolation, kf)
+                    fcurve.update() # force updating tangents (this may change when tangent will be managed)
 
             elif channel.target.path == 'weights':
 
@@ -140,12 +143,13 @@ class BlenderNodeAnim():
 
                 for idx, key in enumerate(keys):
                     for sk in range(nb_targets):
-                        obj.data.shape_keys.key_blocks[sk + 1].value = values[idx * nb_targets + sk][0]
-                        obj.data.shape_keys.key_blocks[sk + 1].keyframe_insert(
-                            "value",
-                            frame=key[0] * fps,
-                            group='ShapeKeys'
-                        )
+                        if gltf.shapekeys[sk] is not None: # Do not animate shapekeys not created
+                            obj.data.shape_keys.key_blocks[gltf.shapekeys[sk]].value = values[idx * nb_targets + sk][0]
+                            obj.data.shape_keys.key_blocks[gltf.shapekeys[sk]].keyframe_insert(
+                                "value",
+                                frame=key[0] * fps,
+                                group='ShapeKeys'
+                            )
 
         if action.name not in gltf.current_animation_names.keys():
             gltf.current_animation_names[name] = action.name
